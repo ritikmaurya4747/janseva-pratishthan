@@ -1,0 +1,50 @@
+{
+  "documents": [
+    {
+      "title": "Indian Trusts Act Registration",
+      "registrationNumber": "DEL/TRUST/2026/0809-SSF",
+      "issuingAuthority": "Sub-Registrar of Trusts, Government of NCT of Delhi",
+      "validity": "Perpetual Public Charitable Trust",
+      "description": "Officially constituted public charitable trust dedicated to education, medical relief, women empowerment, and poverty alleviation."
+    },
+    {
+      "title": "Section 12A Tax Exemption",
+      "registrationNumber": "AAATS1234PE20261",
+      "issuingAuthority": "Income Tax Department, Ministry of Finance, Govt of India",
+      "validity": "Registered Charitable Entity",
+      "description": "Exempts foundation revenue and public contributions from income tax to guarantee all funds serve philanthropic purposes."
+    },
+    {
+      "title": "Section 80G Tax Exemption Certificate",
+      "registrationNumber": "AAATS1234PF20262",
+      "issuingAuthority": "Director of Income Tax (Exemption), New Delhi",
+      "validity": "Valid for all Indian donors",
+      "description": "Allows individual and corporate donors to claim 50% tax deductions on their financial contributions under Indian tax laws."
+    },
+    {
+      "title": "MCA CSR-1 Registration",
+      "registrationNumber": "CSR00078912",
+      "issuingAuthority": "Ministry of Corporate Affairs, Government of India",
+      "validity": "Authorized CSR Implementing Partner",
+      "description": "Enables corporate partners to allocate mandatory CSR funds toward our approved Schedule VII community programs."
+    },
+    {
+      "title": "Niti Aayog NGO Darpan Enrolment",
+      "registrationNumber": "DL/2026/0419823",
+      "issuingAuthority": "NITI Aayog, Government of India",
+      "validity": "Active National NGO Registry",
+      "description": "Recognized in the official government voluntary sector database for transparent collaboration and grant monitoring."
+    }
+  ],
+  "benefits80G": [
+    "Instant Provisional Receipt",
+    "Form 10BD Annual Filing",
+    "Eligible for Individual & Corporate Donors"
+  ],
+  "transparencyCharter": [
+    "Zero administrative deduction on designated emergency relief drives.",
+    "Annual statutory audit conducted by independent Chartered Accountants.",
+    "Strict compliance with Indian Trust Laws and Central Board of Direct Taxes guidelines.",
+    "Real-time photographic and digital verification for every student laptop handover."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "id": "faq-1",
+      "category": "general",
+      "question": "What is the mission and vision of the Janseva Pratishthan Foundation?",
+      "answer": "The Janseva Pratishthan Foundation is an Indian NGO founded by social entrepreneur and philanthropist Shabbir Shaikh with the foundational belief that 'Inequality is not inevitable; it can be changed.' Our mission is to empower vulnerable communities through sustainable education, women self-reliance (Project Swabhiman), accessible healthcare, environmental care, and disaster relief."
+    },
+    {
+      "id": "faq-2",
+      "category": "donation",
+      "question": "Are donations to the Janseva Pratishthan Foundation eligible for 80G tax exemptions?",
+      "answer": "Yes. The Janseva Pratishthan Foundation is registered under Section 12A and Section 80G of the Indian Income Tax Act, 1961. Donors paying Indian income taxes can claim up to a 50% tax deduction on eligible donations. A valid 80G receipt and certificate are issued immediately upon confirmation."
+    },
+    {
+      "id": "faq-3",
+      "category": "volunteering",
+      "question": "How can I join or volunteer with the foundation?",
+      "answer": "Anyone with passion and empathy is welcome! You can volunteer across fieldwork (distributing laptops, food, or blankets), digital mentoring (teaching coding/English to students), medical camps (if you are a healthcare professional), or creative content creation. Click on 'Join Us' or the floating 'JOIN US' tab to submit a simple application."
+    },
+    {
+      "id": "faq-4",
+      "category": "programs",
+      "question": "What is Project Swabhiman?",
+      "answer": "Swabhiman is our flagship women's empowerment initiative focusing on four pillars: Nutrition, Healthcare, Vocational Skilling, and Legal Awareness. We help women from marginalized households learn marketable crafts, build financial independence, and foster equal standing in society."
+    },
+    {
+      "id": "faq-5",
+      "category": "donation",
+      "question": "What payment methods are supported for contributions?",
+      "answer": "We accept all major Indian and international payment methods including UPI (Google Pay, PhonePe, Paytm, BHIM), Net Banking, RuPay/Visa/MasterCard/Amex Credit and Debit Cards, and direct NEFT/RTGS bank transfers to our dedicated Trust Account."
+    },
+    {
+      "id": "faq-6",
+      "category": "tax",
+      "question": "Can corporations partner with Janseva Pratishthan Foundation for CSR?",
+      "answer": "Yes! The foundation is registered with the Ministry of Corporate Affairs (MCA) with a valid CSR-1 registration number. We execute compliant CSR initiatives aligned with Schedule VII of the Companies Act, 2013, providing detailed audited utilization certificates and impact monitoring reports."
+    },
+    {
+      "id": "faq-7",
+      "category": "general",
+      "question": "Where is the foundation based, and where does it operate?",
+      "answer": "Our registered trust headquarters is located in New Delhi, India. While our primary active field chapters operate across Delhi NCR, Haryana, and Uttar Pradesh, we also deploy emergency humanitarian relief and rural development drives in other Indian states during times of crisis."
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "label": "All Questions"
+    },
+    {
+      "id": "general",
+      "label": "General & Mission"
+    },
+    {
+      "id": "donation",
+      "label": "Donations & 80G"
+    },
+    {
+      "id": "volunteering",
+      "label": "Volunteering"
+    },
+    {
+      "id": "programs",
+      "label": "Programs & Swabhiman"
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "mainNav": [
+    {
+      "id": "home",
+      "href": "/",
+      "label": "HOME",
+      "hindiLabel": "होम"
+    },
+    {
+      "id": "our-work",
+      "href": "/our-work",
+      "label": "OUR WORK",
+      "hindiLabel": "हमारा कार्य",
+      "hasMegaMenu": true
+    },
+    {
+      "id": "events",
+      "href": "/events",
+      "label": "EVENTS",
+      "hindiLabel": "आयोजन"
+    },
+    {
+      "id": "news",
+      "href": "/news",
+      "label": "NEWS",
+      "hindiLabel": "समाचार"
+    },
+    {
+      "id": "our-story",
+      "href": "/our-story",
+      "label": "OUR STORY",
+      "hindiLabel": "हमारी कहानी"
+    },
+    {
+      "id": "join-us",
+      "href": "/volunteer",
+      "label": "JOIN US",
+      "hindiLabel": "जुड़ें"
+    },
+    {
+      "id": "faqs",
+      "href": "/faqs",
+      "label": "FAQS",
+      "hindiLabel": "सवाल-जवाब"
+    },
+    {
+      "id": "contact",
+      "href": "/contact",
+      "label": "CONTACT",
+      "hindiLabel": "संपर्क"
+    },
+    {
+      "id": "registration",
+      "href": "/registration",
+      "label": "REGISTRATION",
+      "hindiLabel": "पंजीकरण"
+    }
+  ],
+  "workMenu": {
+    "eyebrow": "Our 10 Core Focus Pillars",
+    "eyebrowHindi": "हमारे १० प्रमुख कार्य क्षेत्र",
+    "title": "Explore Programs & Thematic Pillars",
+    "titleHindi": "क्षेत्रवार कार्यक्रम एवं परियोजनाएं",
+    "viewAll": "View All 10 Pillars",
+    "viewAllHindi": "सभी १० कार्य देखें",
+    "sections": [
+      {
+        "subtitle": "Women & Education",
+        "subtitleHindi": "महिला एवं शिक्षा",
+        "items": [
+          {
+            "id": "women-empowerment",
+            "title": "Project Swabhiman (Women Empowerment)",
+            "hindiTitle": "प्रोजेक्ट स्वाभिमान (महिला सशक्तिकरण)",
+            "desc": "Vocational tailoring, hygiene & economic independence",
+            "icon": "Sparkles",
+            "tag": "Flagship"
+          },
+          {
+            "id": "education",
+            "title": "Education & Digital Literacy",
+            "hindiTitle": "शिक्षा एवं डिजिटल साक्षरता",
+            "desc": "50-Laptop distributions, STEM tools & school retention",
+            "icon": "GraduationCap",
+            "tag": "Core"
+          }
+        ]
+      },
+      {
+        "subtitle": "Health & Ecology",
+        "subtitleHindi": "स्वास्थ्य एवं पर्यावरण",
+        "items": [
+          {
+            "id": "healthcare",
+            "title": "Healthcare & Nutrition",
+            "hindiTitle": "स्वास्थ्य एवं पोषण",
+            "desc": "Mobile medical vans, diagnostics & maternal aid",
+            "icon": "HeartPulse"
+          },
+          {
+            "id": "animal-environment",
+            "title": "Environment & Animal Welfare",
+            "hindiTitle": "पर्यावरण एवं पशु कल्याण",
+            "desc": "Urban afforestation, stray feeding & winter rescue",
+            "icon": "Leaf"
+          }
+        ]
+      },
+      {
+        "subtitle": "Community & Culture",
+        "subtitleHindi": "समाज एवं संस्कृति",
+        "items": [
+          {
+            "id": "rural-transformation",
+            "title": "Rural Transformation",
+            "hindiTitle": "ग्रामीण परिवर्तन",
+            "desc": "Clean drinking water kiosks & village artisan SHGs",
+            "icon": "Compass"
+          },
+          {
+            "id": "urban-renewal",
+            "title": "Urban Renewal & Slum Support",
+            "hindiTitle": "शहरी सुधार एवं मलिन बस्ती",
+            "desc": "Sanitation revamps & solar safety illumination",
+            "icon": "Building2"
+          },
+          {
+            "id": "arts-culture",
+            "title": "Arts, Culture & Heritage",
+            "hindiTitle": "कला, संस्कृति एवं विरासत",
+            "desc": "Patronage for indigenous master artisans & handlooms",
+            "icon": "Palette"
+          }
+        ]
+      },
+      {
+        "subtitle": "Youth, Sports & Relief",
+        "subtitleHindi": "युवा एवं आपातकालीन राहत",
+        "items": [
+          {
+            "id": "sports-development",
+            "title": "Sports for Development",
+            "hindiTitle": "विकास हेतु खेलकूद",
+            "desc": "Athletic kit distributions & girls self-defense camps",
+            "icon": "Trophy"
+          },
+          {
+            "id": "disaster-management",
+            "title": "Disaster Management & Relief",
+            "hindiTitle": "आपदा प्रबंधन एवं राहत",
+            "desc": "Rapid response rations, flood rescue & winter blankets",
+            "icon": "ShieldAlert"
+          },
+          {
+            "id": "humanitarian-relief",
+            "title": "Humanitarian Relief & Dignity",
+            "hindiTitle": "मानवीय राहत एवं गरिमा",
+            "desc": "Weekend community kitchens & senior citizen support",
+            "icon": "HandHeart"
+          }
+        ]
+      }
+    ],
+    "banner": {
+      "label": "Inaugural Milestone:",
+      "text": "50 Laptops Distributed to Girls in STEM on August 9, 2026.",
+      "ctaLabel": "Learn About Swabhiman",
+      "pillarId": "women-empowerment"
+    }
+  },
+  "footer": {
+    "quickLinks": [
+      {
+        "href": "/",
+        "label": "Home Portal"
+      },
+      {
+        "href": "/our-work",
+        "label": "Our 10 Focus Pillars"
+      },
+      {
+        "href": "/events",
+        "label": "Events & Laptop Drives"
+      },
+      {
+        "href": "/news",
+        "label": "News & Media Releases"
+      },
+      {
+        "href": "/donate",
+        "label": "Donate & 80G Tax Exemption",
+        "highlight": true
+      },
+      {
+        "href": "/our-story",
+        "label": "Our Story & Founder"
+      },
+      {
+        "href": "/advisory-panel",
+        "label": "Advisory Panel"
+      },
+      {
+        "href": "/volunteer",
+        "label": "Volunteer & CSR"
+      },
+      {
+        "href": "/faqs",
+        "label": "Frequently Asked Questions"
+      },
+      {
+        "href": "/registration",
+        "label": "Legal Registration & 80G"
+      }
+    ],
+    "initiatives": [
+      {
+        "pillarId": "women-empowerment",
+        "label": "Project Swabhiman (Women)"
+      },
+      {
+        "pillarId": "education",
+        "label": "Digital Laptop Distribution"
+      },
+      {
+        "pillarId": "healthcare",
+        "label": "Mobile Health Screening Camps"
+      },
+      {
+        "pillarId": "education",
+        "label": "Girl Child School Retention"
+      },
+      {
+        "pillarId": "animal-environment",
+        "label": "Community Animal Feeding"
+      },
+      {
+        "pillarId": "disaster-management",
+        "label": "Winter Warmth Blanket Drive"
+      },
+      {
+        "pillarId": "rural-transformation",
+        "label": "Rural Clean Water Kiosks"
+      }
+    ],
+    "legalLinks": [
+      {
+        "href": "/registration",
+        "label": "80G Certificate"
+      },
+      {
+        "href": "/registration",
+        "label": "12A Exemption"
+      },
+      {
+        "href": "/registration",
+        "label": "CSR-1 MCA"
+      },
+      {
+        "href": "/contact",
+        "label": "Trustee Contact"
+      }
+    ],
+    "trustNote": "Registered under the Indian Trusts Act, 1882. Donations are exempt under Section 80G and 12A of the Income Tax Act, 1961. MCA CSR-1 Registered."
+  },
+  "floatingControls": {
+    "defaultMessage": "Namaste! I would like to learn more about volunteering and supporting Janseva Pratishthan Foundation initiatives.",
+    "quickMessages": [
+      {
+        "label": "Volunteer inquiry",
+        "message": "Hi, I want to volunteer for the next Laptop / Book distribution drive."
+      },
+      {
+        "label": "CSR Partnership",
+        "message": "Namaste! I would like details about CSR partnership with our company."
+      },
+      {
+        "label": "80G Receipt help",
+        "message": "I need assistance regarding 80G tax certificate for my donation."
+      }
+    ]
+  }
+}

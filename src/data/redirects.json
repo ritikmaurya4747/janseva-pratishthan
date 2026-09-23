@@ -1,0 +1,194 @@
+[
+  {
+    "destination": "/",
+    "sources": [
+      "/home"
+    ]
+  },
+  {
+    "destination": "/our-work",
+    "sources": [
+      "/our10-focus-pillars",
+      "/our10-foucs-ppillers",
+      "/our-10-focus-pillars",
+      "/focus-pillars",
+      "/work"
+    ]
+  },
+  {
+    "destination": "/our-work/women-empowerment",
+    "sources": [
+      "/project-swabhiman",
+      "/project-swabhian",
+      "/swabhiman",
+      "/women-empowerment"
+    ]
+  },
+  {
+    "destination": "/our-work/education",
+    "sources": [
+      "/digital-laptop-distribution",
+      "/laptop-distribution",
+      "/laptops",
+      "/education",
+      "/girl-child-education",
+      "/girl-child-school-retention",
+      "/girl-child"
+    ]
+  },
+  {
+    "destination": "/our-work/healthcare",
+    "sources": [
+      "/mobile-health-camps",
+      "/mobile-health-screening-camps",
+      "/health-camps",
+      "/healthcare"
+    ]
+  },
+  {
+    "destination": "/our-work/animal-environment",
+    "sources": [
+      "/animal-feeding",
+      "/community-animal-feeding",
+      "/animal-welfare",
+      "/animal-environment"
+    ]
+  },
+  {
+    "destination": "/our-work/disaster-management",
+    "sources": [
+      "/winter-relief",
+      "/winter-warmth-blanket-drive",
+      "/blanket-drive",
+      "/disaster-management",
+      "/disaster-relief"
+    ]
+  },
+  {
+    "destination": "/our-work/rural-transformation",
+    "sources": [
+      "/clean-water-kiosks",
+      "/rural-clean-water-kiosks",
+      "/rural-transformation"
+    ]
+  },
+  {
+    "destination": "/our-work/sports-development",
+    "sources": [
+      "/sports-development",
+      "/sports"
+    ]
+  },
+  {
+    "destination": "/our-work/social-justice",
+    "sources": [
+      "/social-justice",
+      "/justice"
+    ]
+  },
+  {
+    "destination": "/our-work/anti-cyber-crime",
+    "sources": [
+      "/anti-cyber-crime",
+      "/cyber-crime"
+    ]
+  },
+  {
+    "destination": "/our-work/anti-drugs",
+    "sources": [
+      "/anti-drugs",
+      "/drugs-deaddiction"
+    ]
+  },
+  {
+    "destination": "/our-work/humanitarian-relief",
+    "sources": [
+      "/humanitarian-relief",
+      "/humanitarian"
+    ]
+  },
+  {
+    "destination": "/our-work/urban-renewal",
+    "sources": [
+      "/urban-renewal",
+      "/slum-support"
+    ]
+  },
+  {
+    "destination": "/our-work/arts-culture",
+    "sources": [
+      "/arts-culture",
+      "/culture"
+    ]
+  },
+  {
+    "destination": "/volunteer",
+    "sources": [
+      "/volunter",
+      "/join-us",
+      "/join",
+      "/csr"
+    ]
+  },
+  {
+    "destination": "/events",
+    "sources": [
+      "/event"
+    ]
+  },
+  {
+    "destination": "/our-story",
+    "sources": [
+      "/story",
+      "/about",
+      "/founder"
+    ]
+  },
+  {
+    "destination": "/faqs",
+    "sources": [
+      "/faq"
+    ]
+  },
+  {
+    "destination": "/contact",
+    "sources": [
+      "/reach-us"
+    ]
+  },
+  {
+    "destination": "/advisory-panel",
+    "sources": [
+      "/advisory",
+      "/advisory-board",
+      "/advisors",
+      "/panel"
+    ]
+  },
+  {
+    "destination": "/advisory-panel/:slug",
+    "sources": [
+      "/advisory/:slug",
+      "/advisory-board/:slug",
+      "/advisors/:slug"
+    ]
+  },
+  {
+    "destination": "/registration",
+    "sources": [
+      "/80g-certificate",
+      "/12a-exemption",
+      "/csr-1-mca",
+      "/legal",
+      "/compliance"
+    ]
+  },
+  {
+    "destination": "/donate",
+    "sources": [
+      "/support",
+      "/donation",
+      "/contribute"
+    ]
+  }
+]

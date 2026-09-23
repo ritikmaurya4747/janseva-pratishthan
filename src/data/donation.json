@@ -1,0 +1,444 @@
+{
+  "defaultTiers": [
+    {
+      "amount": 500,
+      "label": "₹500",
+      "impact": "Provides warm nutritional meals for 10 children"
+    },
+    {
+      "amount": 1100,
+      "label": "₹1,100",
+      "impact": "Sponsors school uniform, stationery & backpack for 1 student",
+      "popular": true
+    },
+    {
+      "amount": 2500,
+      "label": "₹2,500",
+      "impact": "Funds complete preventive health checkup & medicine for 5 women"
+    },
+    {
+      "amount": 5000,
+      "label": "₹5,000",
+      "impact": "Sponsors vocational tailoring kit & certification for an artisan"
+    },
+    {
+      "amount": 15000,
+      "label": "₹15,000",
+      "impact": "Co-sponsors a brand-new laptop for a girl STEM student"
+    }
+  ],
+  "defaultMonthlyTiers": [
+    {
+      "amount": 300,
+      "label": "₹300 / mo",
+      "impact": "Provides daily nutritious breakfast & milk for 1 child all month"
+    },
+    {
+      "amount": 600,
+      "label": "₹600 / mo",
+      "impact": "Sponsors monthly remedial tuition, books & study materials for a student"
+    },
+    {
+      "amount": 1200,
+      "label": "₹1,200 / mo",
+      "impact": "Sponsors vital monthly medicines & diabetic care for 2 elderly citizens",
+      "popular": true
+    },
+    {
+      "amount": 2500,
+      "label": "₹2,500 / mo",
+      "impact": "Complete monthly nourishment, healthcare & schooling for a distressed family"
+    },
+    {
+      "amount": 5000,
+      "label": "₹5,000 / mo",
+      "impact": "Adopts an entire rural learning center batch & teacher mentor for 1 month"
+    }
+  ],
+  "causes": [
+    {
+      "id": "general",
+      "name": "General Grassroots Impact Fund",
+      "hindiName": "सर्वोच्च प्राथमिकता निधि (General)",
+      "tagline": "Allocates where on-ground urgency is highest right now",
+      "hindiTagline": "जहाँ इस समय ज़मीनी स्तर पर सर्वाधिक आवश्यकता हो (आपात राहत व सेवा)",
+      "iconName": "Globe",
+      "badge": "Highest Priority"
+    },
+    {
+      "id": "education",
+      "name": "Girl Child Education & STEM Laptops",
+      "hindiName": "बालिका शिक्षा एवं लैपटॉप",
+      "tagline": "Bridge the digital divide & distribute laptops to girls",
+      "hindiTagline": "डिजिटल साक्षरता, छात्रवृत्तियां व छात्राओं को नया लैपटॉप",
+      "iconName": "GraduationCap",
+      "badge": "50 Laptops Drive",
+      "tiers": [
+        {
+          "amount": 600,
+          "label": "₹600",
+          "impact": "School bag, notebooks, stationery & geometry kit for 1 girl student"
+        },
+        {
+          "amount": 1200,
+          "label": "₹1,200",
+          "impact": "Complete school uniform, sturdy shoes & semester textbooks",
+          "popular": true
+        },
+        {
+          "amount": 3500,
+          "label": "₹3,500",
+          "impact": "6 months after-school remedial STEM tutoring & digital lab access"
+        },
+        {
+          "amount": 15000,
+          "label": "₹15,000",
+          "impact": "Co-sponsors a brand-new STEM laptop for an ambitious girl student"
+        },
+        {
+          "amount": 30000,
+          "label": "₹30,000",
+          "impact": "Full 1-year college scholarship grant & dedicated academic mentorship"
+        }
+      ],
+      "monthlyTiers": [
+        {
+          "amount": 300,
+          "label": "₹300 / mo",
+          "impact": "Daily morning nutritious breakfast & milk for 1 student all month"
+        },
+        {
+          "amount": 600,
+          "label": "₹600 / mo",
+          "impact": "Monthly remedial tuition fees & digital study materials",
+          "popular": true
+        },
+        {
+          "amount": 1500,
+          "label": "₹1,500 / mo",
+          "impact": "Complete monthly schooling sponsorship (Tuition, Books, Uniform & Coding Lab)"
+        },
+        {
+          "amount": 3000,
+          "label": "₹3,000 / mo",
+          "impact": "Adopts a 10-student digital literacy study batch in a village center"
+        }
+      ]
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare & Mobile Medical Camps",
+      "hindiName": "स्वास्थ्य एवं चिकित्सा राहत",
+      "tagline": "Free diagnostic clinics, elder medicines & eye screenings",
+      "hindiTagline": "मोबाइल मेडिकल वैन, निःशुल्क जांच व वरिष्ठ नागरिक दवाइयां",
+      "iconName": "HeartPulse",
+      "badge": "Medical Camps",
+      "tiers": [
+        {
+          "amount": 500,
+          "label": "₹500",
+          "impact": "Comprehensive vitals, blood sugar & diagnostic screening for 2 patients"
+        },
+        {
+          "amount": 1200,
+          "label": "₹1,200",
+          "impact": "1 month essential medicines & diabetic care for 2 elderly citizens",
+          "popular": true
+        },
+        {
+          "amount": 3000,
+          "label": "₹3,000",
+          "impact": "Sponsors full-day free doctor consultation & free medicine camp in a slum cluster"
+        },
+        {
+          "amount": 7500,
+          "label": "₹7,500",
+          "impact": "Facilitates free cataract eye surgeries & prescription spectacles for 3 seniors"
+        },
+        {
+          "amount": 15000,
+          "label": "₹15,000",
+          "impact": "Mobile medical van diagnostics, pharmacy stock & fuel for an entire week"
+        }
+      ],
+      "monthlyTiers": [
+        {
+          "amount": 400,
+          "label": "₹400 / mo",
+          "impact": "Provides chronic hypertension & diabetes medicines for 1 destitute senior citizen"
+        },
+        {
+          "amount": 800,
+          "label": "₹800 / mo",
+          "impact": "Nutritional food basket & iron/folic supplements for 2 pregnant mothers",
+          "popular": true
+        },
+        {
+          "amount": 1800,
+          "label": "₹1,800 / mo",
+          "impact": "Monthly pediatric checkups & vitamins for 15 children in informal colonies"
+        },
+        {
+          "amount": 4000,
+          "label": "₹4,000 / mo",
+          "impact": "Sustains a permanent weekly preventive health checkup clinic point"
+        }
+      ]
+    },
+    {
+      "id": "women-empowerment",
+      "name": "Project Swabhiman (Women Livelihood)",
+      "hindiName": "प्रोजेक्ट स्वाभिमान (महिला स्वावलंबन)",
+      "tagline": "Vocational tailoring, sewing machines & micro-grants",
+      "hindiTagline": "व्यावसायिक सिलाई प्रशिक्षण, सिलाई मशीन किट व स्वरोजगार",
+      "iconName": "Sparkles",
+      "badge": "Swabhiman",
+      "tiers": [
+        {
+          "amount": 800,
+          "label": "₹800",
+          "impact": "Provides practice textiles, thread spools & professional shears for a trainee"
+        },
+        {
+          "amount": 2500,
+          "label": "₹2,500",
+          "impact": "3-month certified vocational tailoring, pattern-making & business training"
+        },
+        {
+          "amount": 4500,
+          "label": "₹4,500",
+          "impact": "Sponsors heavy-duty industrial sewing machine for a newly certified woman",
+          "popular": true
+        },
+        {
+          "amount": 10000,
+          "label": "₹10,000",
+          "impact": "Complete micro-enterprise startup kit (sewing machine + initial fabric inventory)"
+        },
+        {
+          "amount": 20000,
+          "label": "₹20,000",
+          "impact": "Seeds a 4-woman self-help group micro-tailoring collective"
+        }
+      ],
+      "monthlyTiers": [
+        {
+          "amount": 350,
+          "label": "₹350 / mo",
+          "impact": "Monthly menstrual hygiene & sanitary care kits for 10 adolescent girls"
+        },
+        {
+          "amount": 750,
+          "label": "₹750 / mo",
+          "impact": "Monthly learning stipend & raw materials for 1 woman artisan",
+          "popular": true
+        },
+        {
+          "amount": 1800,
+          "label": "₹1,800 / mo",
+          "impact": "Micro-financing revolving credit fund for women home-based entrepreneurs"
+        },
+        {
+          "amount": 3500,
+          "label": "₹3,500 / mo",
+          "impact": "Sustains an entire neighborhood women tailoring skill workshop batch"
+        }
+      ]
+    },
+    {
+      "id": "anti-drugs",
+      "name": "Youth Anti-Drugs & Sports Leadership",
+      "hindiName": "युवा नशा मुक्ति एवं खेलकूद",
+      "tagline": "De-addiction counseling, sports gear & youth discipline",
+      "hindiTagline": "नशे के विरुद्ध अभियान, मानसिक परामर्श एवं खेल किट वितरण",
+      "iconName": "Trophy",
+      "badge": "Youth Leadership",
+      "tiers": [
+        {
+          "amount": 600,
+          "label": "₹600",
+          "impact": "Athletic running shoes & practice gear for an underprivileged village youth"
+        },
+        {
+          "amount": 1500,
+          "label": "₹1,500",
+          "impact": "Complete cricket / football / athletic practice kit & sports bag",
+          "popular": true
+        },
+        {
+          "amount": 3500,
+          "label": "₹3,500",
+          "impact": "Professional addiction counseling, psychological therapy & rehabilitation session"
+        },
+        {
+          "amount": 8000,
+          "label": "₹8,000",
+          "impact": "Organizes an inter-colony anti-drugs awareness sports gala & awards"
+        },
+        {
+          "amount": 15000,
+          "label": "₹15,000",
+          "impact": "Full sports academy coaching & nutritional sponsorship for 5 aspiring athletes"
+        }
+      ],
+      "monthlyTiers": [
+        {
+          "amount": 400,
+          "label": "₹400 / mo",
+          "impact": "Monthly peer counseling sessions & youth addiction prevention circles"
+        },
+        {
+          "amount": 900,
+          "label": "₹900 / mo",
+          "impact": "High-protein athletic nutrition & daily coaching for 1 youth athlete",
+          "popular": true
+        },
+        {
+          "amount": 2000,
+          "label": "₹2,000 / mo",
+          "impact": "Adopts a neighborhood open-air youth fitness club & sports mentor"
+        }
+      ]
+    },
+    {
+      "id": "animal-environment",
+      "name": "Environment & Animal Welfare",
+      "hindiName": "पर्यावरण एवं पशु-पक्षी सेवा",
+      "tagline": "Daily stray feeding, tree plantations & medical rescue",
+      "hindiTagline": "बेसहारा पशु आहार, शीतकालीन कोट, चिकित्सा व वृक्षारोपण",
+      "iconName": "Leaf",
+      "badge": "Animals & Trees",
+      "tiers": [
+        {
+          "amount": 350,
+          "label": "₹350",
+          "impact": "1 week of daily nutritious warm food & clean water for 5 stray dogs"
+        },
+        {
+          "amount": 750,
+          "label": "₹750",
+          "impact": "Plants, protects with tree-guard & geo-tags 5 native shade-giving saplings"
+        },
+        {
+          "amount": 1800,
+          "label": "₹1,800",
+          "impact": "Anti-rabies vaccination, deworming & reflective safety collars for 12 strays",
+          "popular": true
+        },
+        {
+          "amount": 5000,
+          "label": "₹5,000",
+          "impact": "Emergency ambulance rescue, surgery & foster care for a critically injured animal"
+        },
+        {
+          "amount": 12000,
+          "label": "₹12,000",
+          "impact": "Installs 20 community concrete water troughs & winter shelter beds in Delhi NCR"
+        }
+      ],
+      "monthlyTiers": [
+        {
+          "amount": 300,
+          "label": "₹300 / mo",
+          "impact": "30 days of daily street animal feeding along our volunteer route"
+        },
+        {
+          "amount": 650,
+          "label": "₹650 / mo",
+          "impact": "Nurturing, watering & organic manure care for 10 young growing trees",
+          "popular": true
+        },
+        {
+          "amount": 1500,
+          "label": "₹1,500 / mo",
+          "impact": "Sustains mobile first-aid medicine kit & bandage supplies for stray rescues"
+        },
+        {
+          "amount": 3500,
+          "label": "₹3,500 / mo",
+          "impact": "Adopts full nutritional & medical needs of an entire street colony animal pack"
+        }
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Will I get an instant 80G Tax Exemption Certificate?",
+      "questionHindi": "क्या दान करने पर 80G कर छूट की रसीद मिलेगी?",
+      "answer": "Yes, Janseva Pratishthan Foundation is duly registered under Section 80G of the Income Tax Act, 1961 (Reg: AAATS1234PF20262). 50% of your contributed amount is tax deductible. An official digitally signed receipt is generated instantly.",
+      "answerHindi": "हाँ, जनसेवा प्रतिष्ठान फाउंडेशन आयकर अधिनियम 1961 की धारा 80G के तहत विधिवत पंजीकृत (Reg: AAATS1234PF20262) है। आपका दान 50% कर कटौती के लिए मान्य है और रसीद तुरंत आपकी ईमेल पर भेजी जाती है।"
+    },
+    {
+      "question": "Why is PAN Card number mandatory for donation?",
+      "questionHindi": "दान के लिए पैन (PAN) नंबर क्यों आवश्यक है?",
+      "answer": "As per CBDT regulations, submission of PAN is mandatory for issuance of the official 10BE certificate so that your 80G deduction reflects pre-filled in your Annual Information Statement (AIS) when filing your Income Tax Return.",
+      "answerHindi": "केंद्रीय प्रत्यक्ष कर बोर्ड (CBDT) के नियमों के अनुसार, दानदाता को Form 10BE में 80G छूट का दावा करने के लिए पैन नंबर आयकर पोर्टल पर अपलोड करना अनिवार्य है।"
+    },
+    {
+      "question": "How is my financial contribution allocated and utilized?",
+      "questionHindi": "मेरा पैसा किस प्रकार उपयोग किया जाता है?",
+      "answer": "Over 88% of every rupee directly funds on-ground relief operations (e.g., student laptops, free medical diagnosis, women vocational equipment), with strict statutory transparency and zero middlemen.",
+      "answerHindi": "फाउंडेशन में 88% से अधिक धनराशि सीधे जमीनी परियोजनाओं (जैसे बालिकाओं को लैपटॉप, निःशुल्क स्वास्थ्य शिविर, महिला स्वरोजगार) में खर्च होती है, 8% स्वयंसेवक संचालन और केवल 4% प्रशासनिक व्यय में जाता है।"
+    },
+    {
+      "question": "Can corporate organizations contribute under mandatory CSR?",
+      "questionHindi": "क्या कंपनियाँ CSR फंड के तहत सहयोग कर सकती हैं?",
+      "answer": "Yes, our foundation holds MCA CSR-1 registration (Reg: CSR00078912) and is fully authorized to implement eligible Schedule VII corporate social responsibility mandates.",
+      "answerHindi": "हाँ, फाउंडेशन कॉर्पोरेट मामलों के मंत्रालय (MCA) में CSR-1 (Reg: CSR00078912) के तहत पंजीकृत है और अनुसूची VII पहलों के लिए अधिकृत है।"
+    }
+  ],
+  "upi": {
+    "vpa": "jpf@sbi",
+    "payeeName": "Janseva Pratishthan Foundation",
+    "note": "Donation-80G"
+  },
+  "bank": {
+    "title": "State Bank of India (Official Trust Current Account)",
+    "fields": [
+      {
+        "label": "BENEFICIARY NAME",
+        "copyLabel": "Account Name",
+        "value": "JANSEVA PRATISHTHAN FOUNDATION"
+      },
+      {
+        "label": "BANK",
+        "copyLabel": "Bank",
+        "value": "State Bank of India",
+        "hidden": true
+      },
+      {
+        "label": "ACCOUNT NUMBER",
+        "copyLabel": "A/C No",
+        "value": "412890123456"
+      },
+      {
+        "label": "IFSC CODE",
+        "copyLabel": "IFSC Code",
+        "value": "SBIN0001234"
+      },
+      {
+        "label": "BRANCH",
+        "copyLabel": "Branch",
+        "value": "South Extension, New Delhi"
+      }
+    ],
+    "purpose": "Donation / 80G"
+  },
+  "paymentMethods": [
+    {
+      "id": "upi",
+      "label": "UPI / QR",
+      "icon": "QrCode"
+    },
+    {
+      "id": "bank",
+      "label": "NEFT / Bank",
+      "icon": "Building2"
+    },
+    {
+      "id": "card",
+      "label": "Cards & NetBanking",
+      "icon": "CreditCard"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "articles": [
+    {
+      "id": "launch-50-laptops",
+      "slug": "from-spotlight-to-purpose-janseva-pratishthan-foundation-begins-a-new-chapter",
+      "category": "MEDIA RELEASE",
+      "title": "From spotlight to purpose: Janseva Pratishthan Foundation begins a new chapter of grassroots impact",
+      "hindiTitle": "स्पॉटलाइट से उद्देश्य तक: जनसेवा प्रतिष्ठान फाउंडेशन ने जमीनी प्रभाव के नए अध्याय की शुरुआत की",
+      "excerpt": "A New Chapter Begins: Official Launch of Janseva Pratishthan Foundation. \"Small Steps, Big Impact\" — This philosophy is at the core of everything we do. 9th August marked the grand official launch of the foundation, distributing 50 laptops to empower meritorious students...",
+      "date": "22 Aug 2026",
+      "location": "Mumbai, Maharashtra",
+      "readTime": "4 min read",
+      "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1200",
+      "imageCaption": "Official launch assembly of Janseva Pratishthan Foundation held in Mumbai, attended by community leaders, educators, and beneficiaries.",
+      "author": "Foundation Communications Desk",
+      "lead": "Marking a milestone in community-driven philanthropy, the Janseva Pratishthan Foundation officially inaugurated its statewide mission dedicated to bridging educational, healthcare, and economic divides across Maharashtra.",
+      "contentSections": [
+        {
+          "heading": "A Vision Anchored in Direct Grassroots Delivery",
+          "body": "On 9th August, the Janseva Pratishthan Foundation held its grand official launch ceremony in Mumbai. Presided over by Founder Shabbir Shaikh alongside distinguished educators, civic administrators, and grassroots activists, the central theme of the gathering was \"Small Steps, Big Impact\" — reinforcing that sustainable human upliftment occurs when aid is personal, accountable, and transparently delivered."
+        },
+        {
+          "heading": "Bridging the Digital Divide: 50 Laptops Distributed",
+          "body": "The inaugural milestone was commemorated with the immediate on-ground distribution of 50 high-performance digital laptops to meritorious female scholars and vocational students from economically challenged households. The program ensures that aspiring young coders, civil service aspirants, and graphic design trainees are not held back due to lack of digital computing infrastructure."
+        },
+        {
+          "heading": "Long-term Roadmap across Core Pillars",
+          "body": "During the keynote address, the Board unveiled the operational blueprints for its 10 Focus Pillars, with special focus on Project Swabhiman (tailoring & vocational self-reliance for women), free Mobile Health Screening Camps in dense urban settlements, and statewide anti-narcotics youth counseling clinics."
+        }
+      ],
+      "quote": {
+        "text": "Our work is not about passive donations; it is about standing shoulder-to-shoulder with those whom society has overlooked. When you provide a young girl with digital access or a patient with timely diagnostic care, you alter generations.",
+        "author": "Shabbir Shaikh",
+        "role": "Founder & Managing Trustee, Janseva Pratishthan Foundation"
+      },
+      "highlights": [
+        "50 fully-equipped laptops handed over directly with warranty and educational software packs",
+        "Over 250 community leaders, school principals, and social advocates attended the ceremony",
+        "Formal ratification of 80G tax-exempt donation pathways and transparent expenditure governance",
+        "Initiation of partnerships with municipal schools for upcoming quarterly health & nutrition camps"
+      ],
+      "stats": [
+        {
+          "label": "Laptops Awarded",
+          "value": "50+"
+        },
+        {
+          "label": "Families Impacted",
+          "value": "350+"
+        },
+        {
+          "label": "Districts Reached",
+          "value": "3"
+        }
+      ],
+      "tagColor": "text-amber-700 dark:text-amber-300"
+    },
+    {
+      "id": "nasha-mukti-campaign",
+      "slug": "nasha-mukti-abhiyan-foundation-launches-state-wide-youth-anti-drug-awareness-campaign",
+      "category": "MEDIA RELEASE",
+      "title": "Nasha Mukti Abhiyan: Foundation launches state-wide youth anti-drug awareness campaign",
+      "hindiTitle": "नशा मुक्ति अभियान: फाउंडेशन ने राज्यव्यापी युवा नशा विरोधी जागरूकता अभियान शुरू किया",
+      "excerpt": "Steering young lives away from narcotics toward constructive athletic and creative leadership. Janseva Pratishthan Foundation partners with civic authorities to conduct grassroots counseling and de-addiction drives...",
+      "date": "05 Sep 2026",
+      "location": "Thane & Mumbai",
+      "readTime": "5 min read",
+      "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1200",
+      "imageCaption": "Youth participants and volunteers gathered during the inaugural Nasha Mukti community marathon and street-theatre session.",
+      "author": "Special Welfare Correspondent",
+      "lead": "Combating the rising menace of synthetic substance abuse among school and college students, the Janseva Pratishthan Foundation has rolled out its comprehensive youth rehabilitation and vigilance initiative titled \"Nasha Mukti Abhiyan\".",
+      "contentSections": [
+        {
+          "heading": "Mobilizing Youth Through Sports and Mentorship",
+          "body": "Substance abuse is rarely just a medical issue; it stems from lack of opportunity, emotional disenfranchisement, and neighborhood vulnerability. Janseva Pratishthan Foundation has coupled psychiatric guidance with energetic sports leagues, martial arts training, and community football clubs to redirect teenage energy toward wholesome goals."
+        },
+        {
+          "heading": "Grassroots Street Theatres & Confidential Helpline",
+          "body": "Over the past month, our volunteer drama troupes have conducted 24 street plays across bus stations, college gates, and informal settlements, demystifying the stigma around addiction and offering families access to free de-addiction consultation without social embarrassment."
+        },
+        {
+          "heading": "Civic Alliances and Family Re-integration",
+          "body": "Working closely with local medical practitioners and municipal counseling centers, recovered participants are inducted into skill training programs so that their reintegration into family livelihoods is dignified and financially secure."
+        }
+      ],
+      "quote": {
+        "text": "A nation cannot prosper if its youth are trapped in despair and addiction. We are not here to judge; we are here to hold their hand, restore their dignity, and show them that their lives have immeasurable purpose.",
+        "author": "Foundation Advisory Council",
+        "role": "Youth Welfare & De-addiction Wing"
+      },
+      "highlights": [
+        "Over 2,400 students engaged across 12 educational institutions in Thane and suburban Mumbai",
+        "Free 24/7 volunteer crisis helpline launched for youth seeking confidential mental health guidance",
+        "Sports gear and running shoes distributed to 150 underprivileged youth participating in de-addiction sports academies",
+        "Tie-up with government-accredited de-addiction centers for funded clinical care"
+      ],
+      "stats": [
+        {
+          "label": "Youth Reached",
+          "value": "2,400+"
+        },
+        {
+          "label": "Street Sessions",
+          "value": "24"
+        },
+        {
+          "label": "Counseling Cases",
+          "value": "85+"
+        }
+      ],
+      "tagColor": "text-amber-700 dark:text-amber-300"
+    },
+    {
+      "id": "swabhiman-sports-gear",
+      "slug": "project-swabhiman-equipping-400-aspiring-girl-athletes-and-students",
+      "category": "COMMUNITY IMPACT",
+      "title": "Project Swabhiman: Equipping 400+ aspiring girl athletes and students with sports & academic kits",
+      "hindiTitle": "प्रोजेक्ट स्वाभिमान: 400+ होनहार छात्राओं और एथलीटों को खेल एवं शैक्षणिक किट वितरित",
+      "excerpt": "Dignity over dependency: Providing high-grade sports gear, tracksuits, athletic shoes, and digital learning materials to help young girls break barriers and compete on equal footing...",
+      "date": "14 Sep 2026",
+      "location": "Mumbai, Maharashtra",
+      "readTime": "3 min read",
+      "imageUrl": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=1200",
+      "imageCaption": "Young sports trainees receiving certified athletic kits and study material from foundation organizers.",
+      "author": "Sports for Social Justice Division",
+      "lead": "Financial constraints often force talented young girls to give up athletic competition and higher secondary studies. Under Project Swabhiman, Janseva Pratishthan Foundation has provided 400+ girls with elite training gear and scholastic supplies.",
+      "contentSections": [
+        {
+          "heading": "Breaking Socio-Economic Barriers in Athletics",
+          "body": "Young runners, boxers, and kabaddi players from municipal schools frequently compete in worn-out footwear or lacking nutritional supplements. Janseva Pratishthan Foundation intervened with customized sports shoes, moisture-wicking tracksuits, agility equipment, and specialized health nutrition packs."
+        },
+        {
+          "heading": "Integrated Academic & Career Mentorship",
+          "body": "Alongside sports gear, each recipient received a complete scholastic kit containing reference textbooks, school bags, stationery, and eligibility guidance for state sports quotas and university scholarships."
+        }
+      ],
+      "quote": {
+        "text": "When you empower a girl to run, train, and study with pride, she transforms her entire neighborhood. Project Swabhiman is our pledge that financial hardship will never extinguish athletic brilliance.",
+        "author": "Shabbir Shaikh",
+        "role": "Founder, Janseva Pratishthan Foundation"
+      },
+      "highlights": [
+        "400+ certified athletic pairs of shoes and tracksuits provided directly to girl athletes",
+        "Workshops on sports nutrition and mental resilience conducted by certified coaches",
+        "Full scholarship sponsorship pledged for 15 district-level medal winners",
+        "Follow-up monitoring to ensure zero academic dropout rates"
+      ],
+      "stats": [
+        {
+          "label": "Kits Distributed",
+          "value": "400+"
+        },
+        {
+          "label": "Schools Covered",
+          "value": "18"
+        },
+        {
+          "label": "Scholarships Awarded",
+          "value": "15"
+        }
+      ],
+      "tagColor": "text-amber-700 dark:text-amber-300"
+    },
+    {
+      "id": "mobile-health-camps-rural",
+      "slug": "free-mega-mobile-health-screening-camp-organized-for-senior-citizens-and-children",
+      "category": "COMMUNITY IMPACT",
+      "title": "Free Mega Mobile Health Screening Camp: Providing primary diagnostics to 1,200+ villagers",
+      "hindiTitle": "निःशुल्क मेगा मोबाइल स्वास्थ्य जांच शिविर: 1,200+ ग्रामीणों को प्राथमिक जांच सेवा",
+      "excerpt": "Bringing specialized cardiologists, optometrists, and pediatricians directly to doorstep communities with free medication distribution and cataract surgery linkages...",
+      "date": "18 Aug 2026",
+      "location": "Rural Thane District",
+      "readTime": "4 min read",
+      "imageUrl": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=1200",
+      "imageCaption": "Mobile clinic vans deployed on site with digital ECG, blood analysis, and optical screening equipment.",
+      "author": "Health & Humanitarian Wing",
+      "lead": "Access to primary healthcare remains a severe hurdle for daily wage earners and isolated rural clusters. Janseva Pratishthan Foundation organized a 3-day multi-specialty mobile medical camp serving more than 1,200 individuals.",
+      "contentSections": [
+        {
+          "heading": "Full Diagnostic Suite at Zero Cost",
+          "body": "Equipped with portable ultrasound, automated blood sugar analyzers, and ECG machines, volunteer physicians screened patients for hypertension, diabetes, pulmonary ailments, and age-related vision impairment."
+        },
+        {
+          "heading": "Free Medicines & Surgical Linkages",
+          "body": "Over 850 prescription packages were distributed on site, while 42 elderly citizens diagnosed with mature cataracts were scheduled for cost-free surgeries at partnered specialty eye hospitals."
+        }
+      ],
+      "quote": {
+        "text": "Healthcare is a fundamental human dignity, not a luxury reserved for those who can afford urban private clinics.",
+        "author": "Medical Camp Director",
+        "role": "Janseva Pratishthan Foundation Healthcare Panel"
+      },
+      "highlights": [
+        "1,200+ rural residents received complete health profiles and medical consultations",
+        "850+ essential medicine kits distributed with full usage guidelines in local languages",
+        "42 free cataract surgeries sponsored and scheduled with door-to-door transport"
+      ],
+      "stats": [
+        {
+          "label": "Patients Screened",
+          "value": "1,200+"
+        },
+        {
+          "label": "Medicines Given",
+          "value": "850+"
+        },
+        {
+          "label": "Surgeries Funded",
+          "value": "42"
+        }
+      ],
+      "tagColor": "text-amber-700 dark:text-amber-300"
+    }
+  ],
+  "categories": [
+    "ALL",
+    "MEDIA RELEASE",
+    "COMMUNITY IMPACT"
+  ]
+}

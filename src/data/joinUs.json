@@ -1,0 +1,72 @@
+{
+  "tabs": [
+    {
+      "id": "volunteer",
+      "icon": "Users",
+      "shortLabel": "Volunteer",
+      "label": "Volunteer Program"
+    },
+    {
+      "id": "csr",
+      "icon": "Briefcase",
+      "shortLabel": "CSR / Partner",
+      "label": "Corporate / CSR"
+    },
+    {
+      "id": "ambassador",
+      "icon": "GraduationCap",
+      "shortLabel": "Youth",
+      "label": "Youth Ambassadors"
+    }
+  ],
+  "volunteerBenefits": [
+    "Official Volunteer Certification & Letter of Recommendation",
+    "Direct mentorship under Founder Shabbir Shaikh & senior team",
+    "Flexible weekend shifts across Delhi NCR and online mentoring"
+  ],
+  "volunteerAreas": [
+    "Education & Laptop Drives",
+    "Project Swabhiman (Women Empowerment)",
+    "Healthcare & Mobile Clinics",
+    "Animal Welfare & Night Blankets",
+    "Social Media & Graphic Design",
+    "Disaster Emergency Relief Brigade"
+  ],
+  "availabilityOptions": [
+    "Weekends (Saturday/Sunday)",
+    "Weekdays (Part-time)",
+    "Full-Time Volunteer Internship",
+    "Event-Based Callout Only",
+    "Remote / Digital Mentoring"
+  ],
+  "csrBudgets": [
+    "₹2 Lakhs – ₹5 Lakhs",
+    "₹5 Lakhs – ₹25 Lakhs",
+    "₹25 Lakhs – ₹1 Crore",
+    "₹1 Crore+ Mega Program"
+  ],
+  "csrPillars": [
+    "Project Swabhiman (Women Empowerment & Skilling)",
+    "Digital Literacy & STEM Laptop Distribution",
+    "Mobile Medical Van & Preventive Screening",
+    "Urban Forestry & Environmental Sustainability",
+    "Rural Clean Water Filtration Infrastructure"
+  ],
+  "ambassadorPerks": [
+    {
+      "icon": "Sparkles",
+      "title": "Campus Chapter",
+      "desc": "Lead volunteer recruiting and charity drives within your university or school."
+    },
+    {
+      "icon": "Users",
+      "title": "Leadership Training",
+      "desc": "Receive direct coaching in public speaking, project management, and social advocacy."
+    },
+    {
+      "icon": "Award",
+      "title": "Prestigious Honor",
+      "desc": "Receive an official Ambassador Certificate personally signed by Founder Shabbir Shaikh."
+    }
+  ]
+}

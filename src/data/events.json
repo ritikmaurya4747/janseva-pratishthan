@@ -1,0 +1,54 @@
+[
+  {
+    "id": "launch-ceremony-2026",
+    "title": "Official Foundation Inaugural Launch & 50-Laptop Distribution Ceremony",
+    "date": "August 9, 2026",
+    "location": "Constitution Club / New Delhi Convention Center, India",
+    "status": "past",
+    "category": "Milestone Launch",
+    "image": "https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80",
+    "highlight": "Equipped 50 meritorious female students with high-speed laptops to foster STEM & digital readiness.",
+    "summary": "Marking the official foundation inception, Founder Shabbir Shaikh presided over an emotional ceremony where 50 deserving young students received modern laptops and sports gear. Dignitaries, educators, and community leaders commended the foundation's uncompromising commitment to dignity and grassroots action.",
+    "attendees": "450+ Attendees & Dignitaries",
+    "badge": "Historic Milestone"
+  },
+  {
+    "id": "swabhiman-hygiene-drive",
+    "title": "Project Swabhiman: Health, Hygiene & Sanitary Care Camp",
+    "date": "Upcoming • October 12, 2026",
+    "location": "Seemapuri & Yamuna Bank Clusters, Delhi NCR",
+    "status": "upcoming",
+    "category": "Women Welfare",
+    "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80",
+    "highlight": "Distributing 2,000 sanitary health kits and conducting cervical health awareness.",
+    "summary": "Led by female gynecologists and health volunteers, this mega camp will provide free checkups, sanitary supplies, and nutritional counseling for teenage girls and mothers.",
+    "attendees": "Target: 1,500 Women",
+    "badge": "Upcoming Drive"
+  },
+  {
+    "id": "digital-literacy-bootcamp",
+    "title": "Winter Youth Tech & Coding Boot Camp",
+    "date": "Upcoming • November 15-20, 2026",
+    "location": "Community Center, South Delhi",
+    "status": "upcoming",
+    "category": "Youth & STEM",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
+    "highlight": "A 5-day hands-on computer basics, coding, and resume-building workshop.",
+    "summary": "Empowering 100 first-generation college students with hands-on computer skills, resume design, and internet safety literacy guided by industry software volunteers.",
+    "attendees": "Target: 100 Students",
+    "badge": "Registration Open"
+  },
+  {
+    "id": "winter-blanket-feeder-drive",
+    "title": "Warmth & Compassion: Winter Night Blanket & Stray Animal Care",
+    "date": "Upcoming • December 5, 2026",
+    "location": "All Major Night Shelters across New Delhi & Old Delhi",
+    "status": "upcoming",
+    "category": "Humanitarian & Animal Care",
+    "image": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1200&q=80",
+    "highlight": "Distribution of 2,500 heavy winter blankets to the homeless and coats for 400 community dogs.",
+    "summary": "Our annual winter midnight convoy sets out with volunteers to distribute warm thermal blankets to pavement dwellers and protective reflective coats for street animals.",
+    "attendees": "150 Volunteers Mobilized",
+    "badge": "Volunteers Needed"
+  }
+]

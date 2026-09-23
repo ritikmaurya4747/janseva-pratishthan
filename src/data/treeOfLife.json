@@ -1,0 +1,368 @@
+{
+  "roots": [
+    {
+      "d": "M 430 470 C 430 510, 480 540, 560 560 C 600 570, 640 575, 680 580",
+      "strokeWidth": 3.5,
+      "stroke": "url(#rootGlow)",
+      "round": true
+    },
+    {
+      "d": "M 430 470 C 430 510, 380 540, 300 560 C 260 570, 220 575, 180 580",
+      "strokeWidth": 3.5,
+      "stroke": "url(#rootGlow)",
+      "round": true
+    },
+    {
+      "d": "M 430 480 C 450 530, 520 570, 590 600",
+      "strokeWidth": 2.5,
+      "stroke": "url(#rootGlow)",
+      "round": true
+    },
+    {
+      "d": "M 430 480 C 410 530, 340 570, 270 600",
+      "strokeWidth": 2.5,
+      "stroke": "url(#rootGlow)",
+      "round": true
+    },
+    {
+      "d": "M 430 490 C 440 550, 470 590, 510 620",
+      "strokeWidth": 2.0,
+      "stroke": "url(#rootGlow)",
+      "round": false
+    },
+    {
+      "d": "M 430 490 C 420 550, 390 590, 350 620",
+      "strokeWidth": 2.0,
+      "stroke": "url(#rootGlow)",
+      "round": false
+    },
+    {
+      "d": "M 430 500 C 430 560, 435 600, 430 635",
+      "strokeWidth": 3.0,
+      "stroke": "url(#rootGlow)",
+      "round": false
+    },
+    {
+      "d": "M 370 550 C 330 580, 280 610, 210 625",
+      "strokeWidth": 1.5,
+      "stroke": "#cbd5e1",
+      "opacity": 0.75,
+      "round": false
+    },
+    {
+      "d": "M 490 550 C 530 580, 580 610, 650 625",
+      "strokeWidth": 1.5,
+      "stroke": "#cbd5e1",
+      "opacity": 0.75,
+      "round": false
+    },
+    {
+      "d": "M 410 570 C 380 610, 330 630, 280 645",
+      "strokeWidth": 1.0,
+      "stroke": "#94a3b8",
+      "opacity": 0.6,
+      "round": false
+    },
+    {
+      "d": "M 450 570 C 480 610, 530 630, 580 645",
+      "strokeWidth": 1.0,
+      "stroke": "#94a3b8",
+      "opacity": 0.6,
+      "round": false
+    }
+  ],
+  "branches": [
+    {
+      "d": "M 410 290 C 370 260, 320 230, 240 220 C 190 215, 150 230, 120 260",
+      "strokeWidth": 4.5
+    },
+    {
+      "d": "M 395 310 C 350 310, 290 320, 220 340 C 180 350, 150 370, 130 400",
+      "strokeWidth": 3.5
+    },
+    {
+      "d": "M 420 270 C 390 220, 340 160, 260 130 C 210 110, 170 120, 140 150",
+      "strokeWidth": 4.0
+    },
+    {
+      "d": "M 425 250 C 410 180, 370 120, 310 90 C 260 65, 210 75, 170 100",
+      "strokeWidth": 3.5
+    },
+    {
+      "d": "M 450 290 C 490 260, 540 230, 620 220 C 670 215, 710 230, 740 260",
+      "strokeWidth": 4.5
+    },
+    {
+      "d": "M 465 310 C 510 310, 570 320, 640 340 C 680 350, 710 370, 730 400",
+      "strokeWidth": 3.5
+    },
+    {
+      "d": "M 440 270 C 470 220, 520 160, 600 130 C 650 110, 690 120, 720 150",
+      "strokeWidth": 4.0
+    },
+    {
+      "d": "M 435 250 C 450 180, 490 120, 550 90 C 600 65, 650 75, 690 100",
+      "strokeWidth": 3.5
+    },
+    {
+      "d": "M 430 250 C 430 170, 420 110, 400 60 C 410 50, 450 50, 460 60 C 440 110, 430 170, 430 250",
+      "strokeWidth": 2.5
+    },
+    {
+      "d": "M 430 200 C 415 150, 385 100, 350 70",
+      "strokeWidth": 2.5
+    },
+    {
+      "d": "M 430 200 C 445 150, 475 100, 510 70",
+      "strokeWidth": 2.5
+    },
+    {
+      "d": "M 280 180 C 250 160, 220 160, 190 180",
+      "strokeWidth": 2.0,
+      "opacity": 0.8
+    },
+    {
+      "d": "M 330 130 C 300 110, 270 115, 240 135",
+      "strokeWidth": 2.0,
+      "opacity": 0.8
+    },
+    {
+      "d": "M 580 180 C 610 160, 640 160, 670 180",
+      "strokeWidth": 2.0,
+      "opacity": 0.8
+    },
+    {
+      "d": "M 530 130 C 560 110, 590 115, 620 135",
+      "strokeWidth": 2.0,
+      "opacity": 0.8
+    },
+    {
+      "d": "M 240 280 C 200 290, 170 310, 150 340",
+      "strokeWidth": 2.0,
+      "opacity": 0.75
+    },
+    {
+      "d": "M 620 280 C 660 290, 690 310, 710 340",
+      "strokeWidth": 2.0,
+      "opacity": 0.75
+    }
+  ],
+  "leaves": [
+    {
+      "cx": 120,
+      "cy": 260,
+      "rx": 9,
+      "ry": 5,
+      "transform": "rotate(-20 120 260)"
+    },
+    {
+      "cx": 130,
+      "cy": 245,
+      "rx": 8,
+      "ry": 4,
+      "transform": "rotate(30 130 245)"
+    },
+    {
+      "cx": 140,
+      "cy": 150,
+      "rx": 9,
+      "ry": 5,
+      "transform": "rotate(-45 140 150)"
+    },
+    {
+      "cx": 155,
+      "cy": 135,
+      "rx": 8,
+      "ry": 4,
+      "transform": "rotate(15 155 135)"
+    },
+    {
+      "cx": 170,
+      "cy": 100,
+      "rx": 10,
+      "ry": 5,
+      "transform": "rotate(-30 170 100)"
+    },
+    {
+      "cx": 220,
+      "cy": 80,
+      "rx": 9,
+      "ry": 5,
+      "transform": "rotate(20 220 80)"
+    },
+    {
+      "cx": 260,
+      "cy": 65,
+      "rx": 10,
+      "ry": 5,
+      "transform": "rotate(-15 260 65)"
+    },
+    {
+      "cx": 310,
+      "cy": 55,
+      "rx": 9,
+      "ry": 5,
+      "transform": "rotate(10 310 55)"
+    },
+    {
+      "cx": 350,
+      "cy": 45,
+      "rx": 8,
+      "ry": 4,
+      "transform": "rotate(-25 350 45)"
+    },
+    {
+      "cx": 400,
+      "cy": 40,
+      "rx": 9,
+      "ry": 4,
+      "transform": "rotate(5 400 40)"
+    },
+    {
+      "cx": 430,
+      "cy": 35,
+      "rx": 10,
+      "ry": 5
+    },
+    {
+      "cx": 460,
+      "cy": 40,
+      "rx": 9,
+      "ry": 4,
+      "transform": "rotate(-5 460 40)"
+    },
+    {
+      "cx": 510,
+      "cy": 45,
+      "rx": 8,
+      "ry": 4,
+      "transform": "rotate(25 510 45)"
+    },
+    {
+      "cx": 550,
+      "cy": 55,
+      "rx": 9,
+      "ry": 5,
+      "transform": "rotate(-10 550 55)"
+    },
+    {
+      "cx": 600,
+      "cy": 65,
+      "rx": 10,
+      "ry": 5,
+      "transform": "rotate(15 600 65)"
+    },
+    {
+      "cx": 640,
+      "cy": 80,
+      "rx": 9,
+      "ry": 5,
+      "transform": "rotate(-20 640 80)"
+    },
+    {
+      "cx": 690,
+      "cy": 100,
+      "rx": 10,
+      "ry": 5,
+      "transform": "rotate(30 690 100)"
+    },
+    {
+      "cx": 720,
+      "cy": 150,
+      "rx": 9,
+      "ry": 5,
+      "transform": "rotate(45 720 150)"
+    },
+    {
+      "cx": 705,
+      "cy": 135,
+      "rx": 8,
+      "ry": 4,
+      "transform": "rotate(-15 705 135)"
+    },
+    {
+      "cx": 740,
+      "cy": 260,
+      "rx": 9,
+      "ry": 5,
+      "transform": "rotate(20 740 260)"
+    },
+    {
+      "cx": 730,
+      "cy": 245,
+      "rx": 8,
+      "ry": 4,
+      "transform": "rotate(-30 730 245)"
+    },
+    {
+      "cx": 730,
+      "cy": 400,
+      "rx": 9,
+      "ry": 5,
+      "transform": "rotate(-35 730 400)"
+    },
+    {
+      "cx": 130,
+      "cy": 400,
+      "rx": 9,
+      "ry": 5,
+      "transform": "rotate(35 130 400)"
+    }
+  ],
+  "gems": [
+    {
+      "cx": 630,
+      "cy": 190,
+      "r": 11,
+      "fill": "sapphireGem",
+      "highlight": {
+        "r": 4,
+        "opacity": 0.6
+      }
+    },
+    {
+      "cx": 230,
+      "cy": 190,
+      "r": 10,
+      "fill": "sapphireGem",
+      "highlight": {
+        "r": 3,
+        "opacity": 0.6
+      }
+    },
+    {
+      "cx": 430,
+      "cy": 110,
+      "r": 12,
+      "fill": "emeraldGem",
+      "highlight": {
+        "r": 4,
+        "opacity": 0.7
+      }
+    },
+    {
+      "cx": 280,
+      "cy": 270,
+      "r": 9,
+      "fill": "emeraldGem"
+    },
+    {
+      "cx": 580,
+      "cy": 270,
+      "r": 9,
+      "fill": "emeraldGem"
+    },
+    {
+      "cx": 340,
+      "cy": 100,
+      "r": 9,
+      "fill": "rubyGem"
+    },
+    {
+      "cx": 520,
+      "cy": 100,
+      "r": 9,
+      "fill": "rubyGem"
+    }
+  ]
+}

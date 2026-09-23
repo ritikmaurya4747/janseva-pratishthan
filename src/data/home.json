@@ -1,0 +1,582 @@
+{
+  "heroSlides": [
+    {
+      "id": "sports",
+      "pillLabel": "SPORTS",
+      "eyebrow": "SPORTS FOR DEVELOPMENT & YOUTH SPIRIT",
+      "title": "Empowering Champions Through Grassroots Athletics",
+      "subtitle": "Providing athletic gear, professional coaching, and tournament platforms to nurture discipline, resilience, and Olympic dreams in youth.",
+      "secondaryBtnText": "Explore Sports",
+      "primaryBtnText": "Support Athletes",
+      "causeId": "sports-development",
+      "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=85&w=1920",
+      "imageAlt": "Youth athletes running with determination and sports spirit"
+    },
+    {
+      "id": "health",
+      "pillLabel": "HEALTH",
+      "eyebrow": "HEALTHCARE, NUTRITION & HOLISTIC WELLBEING",
+      "title": "Compassionate Healthcare for Every Vulnerable Life",
+      "subtitle": "Delivering free mobile medical camps, preventive screenings, diagnostic care, and vital nutrition reaching deep into grassroots settlements.",
+      "secondaryBtnText": "Medical Initiatives",
+      "primaryBtnText": "Donate Medicines",
+      "causeId": "healthcare",
+      "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=85&w=1920",
+      "imageAlt": "Compassionate medical care in community wellness clinic"
+    },
+    {
+      "id": "social-justice",
+      "pillLabel": "SOCIAL-JUSTICE & WELFARE",
+      "eyebrow": "SOCIAL-JUSTICE, WELFARE & HUMAN DIGNITY",
+      "title": "Upholding Equal Rights, Legal Aid & Dignity",
+      "subtitle": "Providing free legal counsel clinics, citizen rights advocacy, government welfare access, and protection for vulnerable families.",
+      "secondaryBtnText": "Welfare Programs",
+      "primaryBtnText": "Support Justice",
+      "causeId": "social-justice",
+      "image": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=85&w=1920",
+      "imageAlt": "Community members holding hands together in unity and solidarity"
+    },
+    {
+      "id": "anti-cyber-crime",
+      "pillLabel": "ANTI-CYBER CRIME",
+      "eyebrow": "ANTI-CYBER CRIME & DIGITAL PROTECTION",
+      "title": "Shielding Youth & Citizens in the Digital Era",
+      "subtitle": "Conducting cyber safety symposiums, anti-harassment workshops, digital privacy literacy, and rapid assistance against online frauds.",
+      "secondaryBtnText": "Cyber Safety Drives",
+      "primaryBtnText": "Join Campaign",
+      "causeId": "anti-cyber-crime",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=85&w=1920",
+      "imageAlt": "Digital cyber safety protection and network security awareness"
+    },
+    {
+      "id": "anti-drugs",
+      "pillLabel": "ANTI-DRUGS",
+      "eyebrow": "ANTI-DRUGS & SUBSTANCE DE-ADDICTION",
+      "title": "Guiding Youth Away from Addiction Towards Purpose",
+      "subtitle": "Grassroots de-addiction awareness rallies, school pledge drives, empathetic counseling networks, and certified rehabilitation support.",
+      "secondaryBtnText": "Awareness Drives",
+      "primaryBtnText": "Save Young Lives",
+      "causeId": "anti-drugs",
+      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=85&w=1920",
+      "imageAlt": "Youth group standing united in healthy positive lifestyle"
+    },
+    {
+      "id": "youth-empowerment",
+      "pillLabel": "YOUTH EMPOWERMENT",
+      "eyebrow": "YOUTH EMPOWERMENT & DIGITAL SKILLING",
+      "title": "Unlocking Potential with STEM, Laptops & Leadership",
+      "subtitle": "Equipping underprivileged students with laptops, vocational digital skills, and career mentorship to break generational barriers.",
+      "secondaryBtnText": "Our Story",
+      "primaryBtnText": "Sponsor a Student",
+      "causeId": "education",
+      "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=85&w=1920",
+      "imageAlt": "Empowered students learning with enthusiasm and digital tools"
+    }
+  ],
+  "pillarsSlider": [
+    {
+      "id": "sports-development",
+      "title": "Sports",
+      "hindiTitle": "खेलकूद",
+      "sublabel": "Athletics & Gear",
+      "category": "sports",
+      "iconType": "sports"
+    },
+    {
+      "id": "healthcare",
+      "title": "Health",
+      "hindiTitle": "स्वास्थ्य एवं पोषण",
+      "sublabel": "Medical Camps & Care",
+      "category": "health",
+      "iconType": "health"
+    },
+    {
+      "id": "social-justice",
+      "title": "Social-Justice & Welfare",
+      "hindiTitle": "सामाजिक न्याय एवं कल्याण",
+      "sublabel": "Legal Aid & Rights",
+      "category": "justice",
+      "iconType": "social-justice"
+    },
+    {
+      "id": "anti-cyber-crime",
+      "title": "Anti-Cyber Crime",
+      "hindiTitle": "साइबर अपराध रोकथाम",
+      "sublabel": "Digital Safety & Fraud Defense",
+      "category": "safety",
+      "iconType": "cyber-crime"
+    },
+    {
+      "id": "anti-drugs",
+      "title": "Anti-Drugs",
+      "hindiTitle": "नशा मुक्ति अभियान",
+      "sublabel": "Counseling & De-addiction",
+      "category": "health",
+      "iconType": "anti-drugs"
+    },
+    {
+      "id": "education",
+      "title": "Youth Empowerment",
+      "hindiTitle": "युवा सशक्तिकरण",
+      "sublabel": "Laptops, STEM & Skilling",
+      "category": "education",
+      "iconType": "education"
+    }
+  ],
+  "impactPillars": [
+    {
+      "id": "education",
+      "title": "Youth Empowerment",
+      "hindiTitle": "युवा सशक्तिकरण",
+      "tag": "50+ Laptops & STEM Access",
+      "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=85&w=1200",
+      "colSpan": "lg:col-span-7",
+      "heightClass": "h-64 sm:h-72 lg:h-80"
+    },
+    {
+      "id": "social-justice",
+      "title": "Social-Justice & Welfare",
+      "hindiTitle": "सामाजिक न्याय एवं कल्याण",
+      "tag": "Human Dignity & Legal Aid",
+      "image": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&q=85&w=1200",
+      "colSpan": "lg:col-span-5",
+      "heightClass": "h-64 sm:h-72 lg:h-80"
+    },
+    {
+      "id": "anti-cyber-crime",
+      "title": "Anti-Cyber Crime",
+      "hindiTitle": "साइबर अपराध रोकथाम",
+      "tag": "Digital Scam Defense",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=85&w=1200",
+      "colSpan": "lg:col-span-5",
+      "heightClass": "h-64 sm:h-72 lg:h-80"
+    },
+    {
+      "id": "sports-development",
+      "title": "Sports",
+      "hindiTitle": "खेलकूद",
+      "tag": "Athletics & Physical Training",
+      "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=85&w=1200",
+      "colSpan": "lg:col-span-7",
+      "heightClass": "h-64 sm:h-72 lg:h-80"
+    },
+    {
+      "id": "healthcare",
+      "title": "Health",
+      "hindiTitle": "स्वास्थ्य एवं पोषण",
+      "tag": "Medical Camps & Emergency Aid",
+      "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=85&w=1200",
+      "colSpan": "lg:col-span-6",
+      "heightClass": "h-64 sm:h-72 lg:h-76"
+    },
+    {
+      "id": "anti-drugs",
+      "title": "Anti-Drugs",
+      "hindiTitle": "नशा मुक्ति अभियान",
+      "tag": "Youth Counseling & Rehab",
+      "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=85&w=1200",
+      "colSpan": "lg:col-span-6",
+      "heightClass": "h-64 sm:h-72 lg:h-76"
+    }
+  ],
+  "actionCards": [
+    {
+      "id": "volunteer",
+      "href": "/volunteer",
+      "icon": "Heart",
+      "title": "Volunteer",
+      "hindiTitle": "स्वयंसेवक",
+      "desc": "Share your skills and time on the ground.",
+      "hindiDesc": "ज़मीनी स्तर पर अपना समय और कौशल साझा करें।"
+    },
+    {
+      "id": "partner",
+      "href": "/volunteer",
+      "icon": "Users",
+      "title": "Partner",
+      "hindiTitle": "भागीदार",
+      "desc": "Align your organization with our mission.",
+      "hindiDesc": "अपने संगठन को हमारे मिशन के साथ जोड़ें।"
+    },
+    {
+      "id": "sponsor",
+      "href": "/volunteer",
+      "icon": "Award",
+      "title": "Sponsor",
+      "hindiTitle": "प्रायोजक",
+      "desc": "Finance specific regional initiatives.",
+      "hindiDesc": "विशिष्ट क्षेत्रीय पहलों और अभियानों को वित्तपोषित करें।"
+    },
+    {
+      "id": "donate",
+      "href": "/donate",
+      "icon": "HandHeart",
+      "title": "Donate",
+      "hindiTitle": "दान करें",
+      "desc": "Support our core operations directly.",
+      "hindiDesc": "हमारी मुख्य गतिविधियों और सेवा कार्यों को सीधे समर्थन दें।"
+    }
+  ],
+  "visionMission": [
+    {
+      "id": "vision",
+      "title": "Our Vision",
+      "icon": "Eye",
+      "text": "We Don't Wait for Change, we Build It, Together. The Janseva Pratishthan Foundation works alongside vulnerable communities to advance education, healthcare, and economic empowerment and many more. By breaking barriers and building opportunities together, we help create lasting change where it’s needed most."
+    },
+    {
+      "id": "mission",
+      "title": "Our Mission",
+      "icon": "Sparkles",
+      "text": "The Janseva Pratishthan Foundation was founded on a simple belief: Inequality Is Not Inevitable, it can Be Changed. We envision a world where every woman knows her worth, every child has access to education, healthcare is within reach and many more. Through our work, we strive to create a future built on dignity, empowerment, and hope for all."
+    }
+  ],
+  "treeBranches": [
+    {
+      "id": "sports-development",
+      "label": "SPORTS",
+      "sublabel": "Athletic Kits & Girls Self-Defense",
+      "short": "Grassroots athletics, athletic kit distributions, football & cricket coaching, and girls self-defense boot camps.",
+      "color": "#f59e0b",
+      "gem": "#d97706",
+      "ribbon": {
+        "ribbonId": "ribbon-sports",
+        "x": 160,
+        "y": 155,
+        "width": 145,
+        "textX": 240,
+        "textColor": "#fef08a",
+        "fontSize": 12,
+        "letterSpacing": 1.2
+      }
+    },
+    {
+      "id": "healthcare",
+      "label": "HEALTH",
+      "sublabel": "Preventive Care & Diagnostics",
+      "short": "Free mobile medical camps, diabetes/hypertension screenings, eye care with glasses, and maternal-child nutrition aid.",
+      "color": "#10b981",
+      "gem": "#059669",
+      "ribbon": {
+        "ribbonId": "ribbon-health",
+        "x": 500,
+        "y": 155,
+        "width": 145,
+        "textX": 580,
+        "textColor": "#a7f3d0",
+        "fontSize": 12,
+        "letterSpacing": 1.2
+      }
+    },
+    {
+      "id": "social-justice",
+      "label": "SOCIAL-JUSTICE & WELFARE",
+      "sublabel": "Legal Aid & Human Dignity",
+      "short": "Free community legal aid clinics, constitutional rights advocacy, senior citizen welfare, and equality initiatives.",
+      "color": "#3b82f6",
+      "gem": "#1d4ed8",
+      "ribbon": {
+        "ribbonId": "ribbon-social-justice",
+        "x": 50,
+        "y": 245,
+        "width": 280,
+        "textX": 195,
+        "textColor": "#bae6fd",
+        "fontSize": 11,
+        "letterSpacing": 1
+      }
+    },
+    {
+      "id": "anti-cyber-crime",
+      "label": "ANTI-CYBER CRIME",
+      "sublabel": "Digital Safety & Scam Prevention",
+      "short": "School and college workshops on online fraud prevention, digital banking safety, cyberbullying defense, and helpline awareness.",
+      "color": "#8b5cf6",
+      "gem": "#6d28d9",
+      "ribbon": {
+        "ribbonId": "ribbon-anti-cyber-crime",
+        "x": 475,
+        "y": 245,
+        "width": 240,
+        "textX": 600,
+        "textColor": "#ddd6fe",
+        "fontSize": 11,
+        "letterSpacing": 1.2
+      }
+    },
+    {
+      "id": "anti-drugs",
+      "label": "ANTI-DRUGS",
+      "sublabel": "Youth De-Addiction & Counseling",
+      "short": "Grassroots anti-narcotics drives, street-theatre awareness, youth counseling circles, and rehabilitation center partnerships.",
+      "color": "#ef4444",
+      "gem": "#dc2626",
+      "ribbon": {
+        "ribbonId": "ribbon-anti-drugs",
+        "x": 140,
+        "y": 330,
+        "width": 175,
+        "textX": 233,
+        "textColor": "#fecdd3",
+        "fontSize": 12,
+        "letterSpacing": 1.2
+      }
+    },
+    {
+      "id": "education",
+      "label": "YOUTH EMPOWERMENT",
+      "sublabel": "50+ Laptops & STEM Readiness",
+      "short": "Laptop distribution drives for girls, digital literacy classrooms, career guidance, and leadership mentorship programs.",
+      "color": "#facc15",
+      "gem": "#ca8a04",
+      "ribbon": {
+        "ribbonId": "ribbon-youth-empowerment",
+        "x": 475,
+        "y": 330,
+        "width": 250,
+        "textX": 605,
+        "textColor": "#fef3c7",
+        "fontSize": 11.5,
+        "letterSpacing": 1.2
+      }
+    }
+  ],
+  "treeAnatomy": [
+    {
+      "id": "roots",
+      "eyebrow": "The Roots",
+      "title": "COMPASSION",
+      "icon": "Heart",
+      "iconClass": "dark:bg-rose-500/20 bg-rose-100 dark:text-rose-300 text-rose-700",
+      "iconInnerClass": "fill-rose-400/40",
+      "cardClass": "dark:from-[#1c060d] dark:to-[#0c1f38]",
+      "text": "Deeply anchored in genuine empathy for the vulnerable, homeless, and marginalized. We believe kindness without judgment is the only foundation capable of sustaining lasting social justice."
+    },
+    {
+      "id": "trunk",
+      "eyebrow": "The Trunk",
+      "title": "SERVICE (SEVA)",
+      "icon": "Award",
+      "iconClass": "dark:bg-blue-500/20 bg-blue-100 dark:text-blue-300 text-blue-700",
+      "iconInnerClass": "",
+      "cardClass": "dark:from-[#0c2242] dark:to-[#12284c]",
+      "text": "Unyielding, disciplined, and transparent daily action. From on-ground laptop handovers to night food patrols, our service channels our empathy into tangible community infrastructure."
+    },
+    {
+      "id": "branches",
+      "eyebrow": "The Branches & Jewels",
+      "title": "CORE FOCUS PILLARS",
+      "icon": "Sparkles",
+      "iconClass": "dark:bg-amber-500/20 bg-amber-100 dark:text-amber-300 text-amber-800",
+      "iconInnerClass": "",
+      "cardClass": "dark:from-[#1c0b08] dark:to-[#0c2242]",
+      "text": "Spreading shade and empowerment across Sports, Health, Social-Justice & Welfare, Anti-Cyber Crime, Anti-Drugs, and Youth Empowerment."
+    }
+  ],
+  "homeEvents": {
+    "tabs": [
+      "Past",
+      "Upcoming",
+      "Ongoing"
+    ],
+    "items": [
+      {
+        "id": "1",
+        "category": "Past",
+        "date": {
+          "month": "AUG",
+          "day": "19",
+          "year": "2026"
+        },
+        "title": "From spotlight to purpose: Shabbir Shaikh begins a new chapter with Janseva Pratishthan",
+        "imageUrl": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1000"
+      },
+      {
+        "id": "2",
+        "category": "Past",
+        "date": {
+          "month": "AUG",
+          "day": "19",
+          "year": "2026"
+        },
+        "title": "From spotlight to purpose: Shabbir Shaikh begins a new chapter with Janseva Pratishthan",
+        "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1000"
+      },
+      {
+        "id": "3",
+        "category": "Past",
+        "date": {
+          "month": "AUG",
+          "day": "12",
+          "year": "2026"
+        },
+        "title": "I believe meaningful change can begin with just one small decision: Shabbir Shaikh on giving back to society",
+        "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=1000"
+      },
+      {
+        "id": "4",
+        "category": "Past",
+        "date": {
+          "month": "AUG",
+          "day": "11",
+          "year": "2026"
+        },
+        "title": "From spotlight to purpose: Shabbir Shaikh begins a new chapter with Janseva Pratishthan",
+        "imageUrl": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1000"
+      },
+      {
+        "id": "5",
+        "category": "Upcoming",
+        "date": {
+          "month": "OCT",
+          "day": "24",
+          "year": "2026"
+        },
+        "title": "Mega Health Camp & Wellness Workshop across 15 Rural Clusters in Maharashtra",
+        "imageUrl": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1000"
+      },
+      {
+        "id": "6",
+        "category": "Upcoming",
+        "date": {
+          "month": "NOV",
+          "day": "12",
+          "year": "2026"
+        },
+        "title": "Project Swabhiman: Annual Scholarship Distribution Ceremony for Girl Students",
+        "imageUrl": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=1000"
+      },
+      {
+        "id": "7",
+        "category": "Ongoing",
+        "date": {
+          "month": "SEP",
+          "day": "01",
+          "year": "2026"
+        },
+        "title": "Digital Literacy Drive: Weekly STEM Classes for Underprivileged Youth in Delhi NCR",
+        "imageUrl": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=1000"
+      },
+      {
+        "id": "8",
+        "category": "Ongoing",
+        "date": {
+          "month": "SEP",
+          "day": "15",
+          "year": "2026"
+        },
+        "title": "Green Earth Initiative: Continuous Urban Afforestation & Tree Plantation Campaign",
+        "imageUrl": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1000"
+      }
+    ]
+  },
+  "whereWeWork": {
+    "activeStateId": "mh",
+    "activeStateName": "Maharashtra",
+    "pin": {
+      "x": 132,
+      "y": 422
+    },
+    "office": {
+      "badge": "Active Regional Office",
+      "badgeHindi": "सक्रिय क्षेत्रीय केंद्र",
+      "area": "Goregaon, MH",
+      "title": "Mumbai Maharashtra Office",
+      "titleHindi": "मुंबई महाराष्ट्र कार्यालय",
+      "addressLine1": "507B, Lodha Supremus, Sandoz Baug, Kolset Road,",
+      "addressLine2": "Goregaon - 400063, Mumbai, Maharashtra",
+      "hours": "Mon - Sat: 9:30 AM - 6:30 PM",
+      "phone": "+91 98101 23456",
+      "mapsUrl": "https://maps.google.com/?q=Lodha+Supremus+Goregaon+Mumbai",
+      "initiatives": [
+        "Sports Development & Youth Coaching",
+        "Anti-Drugs Awareness & Counseling",
+        "Anti-Cyber Crime Workshops",
+        "Free Health Checkup Camps"
+      ]
+    }
+  },
+  "reviews": {
+    "items": [
+      {
+        "id": "rev-1",
+        "name": "Raksha Deshmukh",
+        "role": "Parent of Laptop Beneficiary",
+        "rating": 5,
+        "title": "50 Laptops Gifted: Truly inspiring and empowering!",
+        "comment": "Great initiative by Shabbir Shaikh and Janseva Pratishthan Foundation! Giving 50 brand-new laptops to deserving female students has changed my daughter’s future. She can now pursue her STEM coding classes with pride. May this noble mission reach thousands more!",
+        "date": "24 August 2026",
+        "isVerified": true,
+        "initiativeTag": "Youth Digital Empowerment",
+        "avatarColor": "from-amber-500 to-yellow-300"
+      },
+      {
+        "id": "rev-2",
+        "name": "Varun Patil",
+        "role": "Grassroots Community Volunteer",
+        "rating": 5,
+        "title": "Small Steps, Big Impact in True Reality",
+        "comment": "I have volunteered with many NGOs, but the genuine grassroots sincerity here is unmatched. During the laptop distribution and health camps, every child and elder was treated with royal dignity. Transparent, fearless, and deeply empathetic leadership.",
+        "date": "20 August 2026",
+        "isVerified": true,
+        "initiativeTag": "Grassroots Welfare",
+        "avatarColor": "from-blue-600 to-indigo-400"
+      },
+      {
+        "id": "rev-3",
+        "name": "Nandini Sharma",
+        "role": "Student & Digital Learner",
+        "rating": 5,
+        "title": "Amazing initiative by Shabbir Sir and the Foundation",
+        "comment": "Amazing initiative by Janseva Pratishthan! 50 laptop gifts to deserving students is truly inspiring and a deeply thoughtful milestone. Kudos to the entire team for believing in our potential when resources were scarce.",
+        "date": "18 August 2026",
+        "isVerified": true,
+        "initiativeTag": "Education & STEM",
+        "avatarColor": "from-rose-500 to-pink-300"
+      },
+      {
+        "id": "rev-4",
+        "name": "Sanskriti Chouhan",
+        "role": "Beneficiary Supporter & Educator",
+        "rating": 5,
+        "title": "Inspiring event that brings hope to marginalized homes",
+        "comment": "50 laptops for underprivileged students was not just an event; it was a festival of hope. What touched me most was how the foundation couples digital literacy with sports gear and moral values. Keep shining!",
+        "date": "15 August 2026",
+        "isVerified": true,
+        "initiativeTag": "Community Impact",
+        "avatarColor": "from-emerald-500 to-teal-300"
+      },
+      {
+        "id": "rev-5",
+        "name": "Mohammad Farhan",
+        "role": "Youth Sports Athlete",
+        "rating": 5,
+        "title": "Sports kits and anti-drug mentorship gave us purpose",
+        "comment": "The sports equipment and athletics coaching provided by Janseva Pratishthan Foundation kept our neighborhood youth united and away from bad habits. The Nasha Mukti pledge drives gave us self-respect and athletic ambition.",
+        "date": "10 August 2026",
+        "isVerified": true,
+        "initiativeTag": "Sports & Anti-Drugs",
+        "avatarColor": "from-purple-600 to-violet-400"
+      },
+      {
+        "id": "rev-6",
+        "name": "Dr. A. K. Kulkarni",
+        "role": "Partnering Medical Specialist",
+        "rating": 5,
+        "title": "Exemplary Healthcare Camps & Dignity",
+        "comment": "Collaborated with the foundation during mobile health and hygiene camps. From maternal diagnostic checkups to sanitary kit distribution under Project Swabhiman, the operational discipline is world-class.",
+        "date": "02 August 2026",
+        "isVerified": true,
+        "initiativeTag": "Healthcare & Nutrition",
+        "avatarColor": "from-amber-600 to-orange-400"
+      }
+    ],
+    "roleOptions": [
+      "Beneficiary / Student",
+      "Parent / Guardian",
+      "Grassroots Volunteer",
+      "Supporter / Donor",
+      "Community Member"
+    ]
+  }
+}

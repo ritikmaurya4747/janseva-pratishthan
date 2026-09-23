@@ -1,0 +1,336 @@
+{
+  "focusAreas": [
+    {
+      "id": "women-empowerment",
+      "title": "Women & Child Empowerment",
+      "hindiTitle": "महिला एवं बाल सशक्तिकरण",
+      "category": "empowerment",
+      "shortDesc": "Pioneering Project Swabhiman to foster nutrition, safety, economic independence, and dignity for women.",
+      "fullDesc": "Project Swabhiman serves as the flagship women's empowerment initiative of Janseva Pratishthan Foundation. We believe that empowering a woman transforms entire generations. Through vocational tailoring, micro-entrepreneurship incubation, menstrual hygiene education, and rights awareness, we dismantle structural barriers and help women achieve self-reliance.",
+      "stats": "3,500+ Women Enrolled",
+      "iconName": "Sparkles",
+      "accentColor": "#38bdf8",
+      "tag": "Flagship Initiative",
+      "initiatives": [
+        "Project Swabhiman micro-enterprise training",
+        "Sanitary pad distribution & reproductive healthcare workshops",
+        "Financial literacy and bank account onboarding",
+        "Legal counsel clinics for domestic rights & safety"
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education & Digital Literacy",
+      "hindiTitle": "शिक्षा एवं डिजिटल साक्षरता",
+      "category": "education",
+      "shortDesc": "Closing the digital divide with laptop distributions, scholarships, and school retention programs.",
+      "fullDesc": "Education is the most potent equalizer. The Janseva Pratishthan Foundation actively supports early childhood learning, girl-child school retention, and digital literacy. In our inaugural drive on August 9, 2026, we distributed brand-new laptops to 50 ambitious students from low-income families to ensure their STEM aspirations are never cut short.",
+      "stats": "50+ Laptops & 1,200+ School Kits",
+      "iconName": "GraduationCap",
+      "accentColor": "#2dd4bf",
+      "tag": "High Impact",
+      "initiatives": [
+        "Digital classrooms & laptop distribution drives",
+        "Girl-child secondary school retention mentorship",
+        "First-generation learner after-school tutoring",
+        "STEM workshops and college scholarship grants"
+      ]
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare & Nutrition",
+      "hindiTitle": "स्वास्थ्य एवं पोषण",
+      "category": "health",
+      "shortDesc": "Delivering mobile medical camps, preventive screenings, maternal checkups, and nutritional aid.",
+      "fullDesc": "Access to quality healthcare is a fundamental human right. Our mobile medical vans and volunteer doctors conduct free diagnostics, diabetes/hypertension screenings, eye exams with free spectacles, and comprehensive maternal-child nutritional supplements in underserved settlements.",
+      "stats": "4,200+ Screenings Conducted",
+      "iconName": "HeartPulse",
+      "accentColor": "#f43f5e",
+      "tag": "Essential Care",
+      "initiatives": [
+        "Free weekly mobile health checkup camps",
+        "Mother & child nutritional food basket distribution",
+        "Free spectacles & cataract surgery facilitation",
+        "Mental wellness counseling circles"
+      ]
+    },
+    {
+      "id": "animal-environment",
+      "title": "Environment & Animal Welfare",
+      "hindiTitle": "पर्यावरण एवं पशु कल्याण",
+      "category": "environment",
+      "shortDesc": "Urban forestry, native tree plantation, community animal feeding, and emergency rescue.",
+      "fullDesc": "Compassion transcends human boundaries. Our environmental wing runs regular native tree planting drives across public schools and degraded urban zones. Simultaneously, our animal welfare volunteers manage street dog feeding routes, winter coat distributions, anti-rabies vaccination drives, and emergency medical treatment for stray animals.",
+      "stats": "5,000+ Saplings & 800+ Strays Fed",
+      "iconName": "Leaf",
+      "accentColor": "#10b981",
+      "tag": "Earth & Wildlife",
+      "initiatives": [
+        "Miyawaki urban forestation & school greening",
+        "Daily community stray animal feeding drives",
+        "Stray vaccination & reflective safety collar campaign",
+        "Plastic-free community cleanliness marathons"
+      ]
+    },
+    {
+      "id": "rural-transformation",
+      "title": "Rural Transformation",
+      "hindiTitle": "ग्रामीण परिवर्तन",
+      "category": "community",
+      "shortDesc": "Revitalizing village economies through artisan skilling, clean water, and sustainable farming.",
+      "fullDesc": "India’s true soul lives in her villages. We partner directly with Gram Panchayats to install community water filtration units, introduce organic farming methods, and help village self-help groups (SHGs) sell handcrafted goods directly to urban markets without exploitative middlemen.",
+      "stats": "12 Partner Villages",
+      "iconName": "Compass",
+      "accentColor": "#f59e0b",
+      "tag": "Livelihood",
+      "initiatives": [
+        "Solar-powered clean drinking water kiosks",
+        "Handicraft artisan co-operatives with direct market linkage",
+        "Soil regeneration and drip-irrigation training",
+        "Village community library establishments"
+      ]
+    },
+    {
+      "id": "urban-renewal",
+      "title": "Urban Renewal & Slum Support",
+      "hindiTitle": "शहरी सुधार एवं मलिन बस्ती सहायता",
+      "category": "community",
+      "shortDesc": "Improving sanitation, lighting, and community safety within vulnerable urban settlements.",
+      "fullDesc": "Rapid urbanization frequently leaves informal settlements without basic civic amenities. Our urban renewal team facilitates community toilet refurbishment, solar street lamp installations, youth recreation zones, and mosquito control fumigation to prevent monsoon-season dengue and malaria.",
+      "stats": "8 Slum Clusters Upgraded",
+      "iconName": "Building2",
+      "accentColor": "#8b5cf6",
+      "tag": "Civic Action",
+      "initiatives": [
+        "Community sanitation block revamps",
+        "Solar street illumination in dark alleys for women safety",
+        "Waste segregation and doorstep collection advocacy",
+        "Child-safe activity hubs in high-density colonies"
+      ]
+    },
+    {
+      "id": "arts-culture",
+      "title": "Arts, Culture & Heritage",
+      "hindiTitle": "कला, संस्कृति एवं विरासत",
+      "category": "community",
+      "shortDesc": "Championing indigenous crafts, folk traditions, and empowering marginalized artisans.",
+      "fullDesc": "As a patron of cultural heritage, founder Shabbir Shaikh holds a deep reverence for India's living traditional arts. We provide direct grants and exhibition platforms for indigenous folk painters, handloom weavers, and traditional performers, ensuring ancient art forms thrive in the modern age.",
+      "stats": "250+ Master Artisans Promoted",
+      "iconName": "Palette",
+      "accentColor": "#ec4899",
+      "tag": "Cultural Pride",
+      "initiatives": [
+        "Direct artisan-to-patron exhibition showcases",
+        "Handloom skill preservation workshops for young girls",
+        "Heritage storytelling circles in public schools",
+        "Grants for endangered traditional craft masters"
+      ]
+    },
+    {
+      "id": "sports-development",
+      "title": "Sports for Development",
+      "hindiTitle": "विकास हेतु खेलकूद",
+      "category": "education",
+      "shortDesc": "Inspiring youth discipline, mental resilience, and health through athletic training and kits.",
+      "fullDesc": "During our launch ceremony, sports clothing and athletic gear were distributed alongside academic tools. We believe sports builds tenacity, teamwork, and opens doors to athletic scholarships for underprivileged youth, keeping them steered away from substance abuse and crime.",
+      "stats": "400+ Young Athletes Geared",
+      "iconName": "Trophy",
+      "accentColor": "#06b6d4",
+      "tag": "Youth Spirit",
+      "initiatives": [
+        "Sports kit & athletic shoe distribution drives",
+        "Free coaching in athletics, cricket, and martial arts",
+        "Self-defense camps for young girls",
+        "Annual Inter-Colony Youth Sports Gala"
+      ]
+    },
+    {
+      "id": "disaster-management",
+      "title": "Disaster Management & Relief",
+      "hindiTitle": "आपदा प्रबंधन एवं राहत",
+      "category": "relief",
+      "shortDesc": "Rapid deployment of dry rations, tarpaulins, and emergency medical kits during crises.",
+      "fullDesc": "When floods, seasonal cold waves, or civic emergencies strike, time is of the essence. Janseva Pratishthan Foundation maintains an active emergency reserve fund to dispatch warm blankets, waterproof shelter sheets, dry rations, and basic medicines within hours of distress calls.",
+      "stats": "5,000+ Relief Kits Dispatched",
+      "iconName": "ShieldAlert",
+      "accentColor": "#ef4444",
+      "tag": "Emergency",
+      "initiatives": [
+        "Winter night blanket drives for homeless in Delhi NCR",
+        "Flood emergency ration and clean water delivery",
+        "First aid and emergency evacuation volunteer brigade",
+        "Post-crisis livelihood rebuilding seed grants"
+      ]
+    },
+    {
+      "id": "humanitarian-relief",
+      "title": "Humanitarian Relief & Dignity",
+      "hindiTitle": "मानवीय राहत एवं गरिमा",
+      "category": "relief",
+      "shortDesc": "Preserving human dignity through community kitchens, clothing distribution, and elder care.",
+      "fullDesc": "At the foundation of all our work lies pure human empathy. We organize weekly community feasts (Langar / Annadan), distribute clothes during festive seasons, and support abandoned senior citizens in care homes with medical essentials and warm companionship.",
+      "stats": "25,000+ Warm Meals Served",
+      "iconName": "HandHeart",
+      "accentColor": "#14b8a6",
+      "tag": "Compassion",
+      "initiatives": [
+        "Weekend community nutrition & warm meal kitchens",
+        "Festive clothing and essentials gifting campaigns",
+        "Senior citizen shelter companionship & medical sponsor",
+        "Footwear & warm socks distribution drives"
+      ]
+    },
+    {
+      "id": "social-justice",
+      "title": "Social-Justice & Welfare",
+      "hindiTitle": "सामाजिक न्याय एवं कल्याण",
+      "category": "community",
+      "shortDesc": "Championing civil rights, legal counsel, community protection, and welfare equality for all citizens.",
+      "fullDesc": "True progress requires social justice and inclusive welfare. Our legal aid clinics and social welfare volunteers support underserved families, resolve exploitation disputes, ensure access to government welfare schemes, and uphold human dignity for all.",
+      "stats": "1,800+ Families Supported",
+      "iconName": "Scale",
+      "accentColor": "#3b82f6",
+      "tag": "Constitutional Welfare",
+      "initiatives": [
+        "Free community legal aid clinics & counsel",
+        "Govt welfare scheme enrollment drives (Ayushman, Pensions)",
+        "Elderly and destitute welfare protection networks",
+        "Civil rights & equality awareness symposiums"
+      ]
+    },
+    {
+      "id": "anti-cyber-crime",
+      "title": "Anti-Cyber Crime Awareness",
+      "hindiTitle": "साइबर अपराध रोकथाम",
+      "category": "education",
+      "shortDesc": "Digital safety workshops, cyber fraud prevention, and youth internet security literacy.",
+      "fullDesc": "As society undergoes rapid digital transformation, youth and vulnerable populations face growing threats from cyber scams, digital extortion, and online harassment. We conduct comprehensive cyber-safety training in schools and colleges, educating youth on safe internet navigation, digital banking safety, and cyber grievance reporting.",
+      "stats": "6,500+ Students Educated",
+      "iconName": "ShieldAlert",
+      "accentColor": "#8b5cf6",
+      "tag": "Digital Safety",
+      "initiatives": [
+        "School & college cyber fraud prevention workshops",
+        "Girls digital privacy & anti-harassment safety modules",
+        "Safe online banking & digital transaction literacy",
+        "Assistance with National Cyber Crime Reporting Portal (1930)"
+      ]
+    },
+    {
+      "id": "anti-drugs",
+      "title": "Anti-Drugs & Substance De-Addiction",
+      "hindiTitle": "नशामुक्ति एवं पुनर्वास",
+      "category": "health",
+      "shortDesc": "Youth anti-narcotics advocacy, school de-addiction awareness drives, and family rehabilitation support.",
+      "fullDesc": "Substance abuse threatens the potential of our youth. Janseva Pratishthan Foundation spearheads grassroots anti-drug campaigns, street-theatre sensitization (Nukkad Natak), school pledge drives, confidential peer counseling, and partnerships with certified rehabilitation centers to help addicted youth reclaim healthy lives.",
+      "stats": "15+ Community Drives",
+      "iconName": "ShieldCheck",
+      "accentColor": "#ef4444",
+      "tag": "Youth Vigilance",
+      "initiatives": [
+        "Grassroots youth de-addiction & anti-narcotics awareness drives",
+        "School & college anti-substance pledge campaigns",
+        "Confidential counseling and family support circles",
+        "Partnership with certified medical rehabilitation facilities"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "all",
+      "label": "All 10 Pillars"
+    },
+    {
+      "id": "empowerment",
+      "label": "Empowerment"
+    },
+    {
+      "id": "education",
+      "label": "Education & STEM"
+    },
+    {
+      "id": "health",
+      "label": "Healthcare & Nutrition"
+    },
+    {
+      "id": "environment",
+      "label": "Environment & Wildlife"
+    },
+    {
+      "id": "community",
+      "label": "Community & Culture"
+    },
+    {
+      "id": "relief",
+      "label": "Disaster Relief & Dignity"
+    }
+  ],
+  "officialBannerFields": [
+    {
+      "id": "sports-development",
+      "label": "SPORTS",
+      "short": "Grassroots athletics, tournament kits, and girls self-defense clinics",
+      "color": "#f59e0b",
+      "gem": "#d97706"
+    },
+    {
+      "id": "healthcare",
+      "label": "HEALTH",
+      "short": "Mobile health clinics, free diagnostics, and maternal-child nutrition",
+      "color": "#10b981",
+      "gem": "#059669"
+    },
+    {
+      "id": "social-justice",
+      "label": "SOCIAL-JUSTICE & WELFARE",
+      "short": "Free legal aid, community welfare, and constitutional dignity advocacy",
+      "color": "#3b82f6",
+      "gem": "#1d4ed8"
+    },
+    {
+      "id": "anti-cyber-crime",
+      "label": "ANTI-CYBER CRIME",
+      "short": "Digital safety workshops, scam awareness, and online privacy literacy",
+      "color": "#8b5cf6",
+      "gem": "#6d28d9"
+    },
+    {
+      "id": "anti-drugs",
+      "label": "ANTI-DRUGS",
+      "short": "School anti-narcotics drives, youth counseling, and de-addiction support",
+      "color": "#ef4444",
+      "gem": "#dc2626"
+    },
+    {
+      "id": "education",
+      "label": "YOUTH EMPOWERMENT",
+      "short": "50+ Laptops distribution, STEM skills, and career leadership mentorship",
+      "color": "#facc15",
+      "gem": "#ca8a04"
+    }
+  ],
+  "swabhimanStats": [
+    {
+      "value": "3,500+",
+      "label": "Women Enrolled"
+    },
+    {
+      "value": "10,000+",
+      "label": "Sanitary Kits Given"
+    },
+    {
+      "value": "450+",
+      "label": "Tailoring Graduates"
+    },
+    {
+      "value": "100%",
+      "label": "Free Services"
+    }
+  ],
+  "statutoryPoints": [
+    "Registered under Indian Trusts Act, 1882",
+    "Section 80G 50% Tax Exemption receipt",
+    "Section 12A Permanent Registration",
+    "MCA CSR-1 Eligible for Corporate Grants"
+  ]
+}

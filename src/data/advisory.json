@@ -1,0 +1,315 @@
+{
+  "members": [
+    {
+      "id": "meenakshi-sundaram",
+      "name": "Adv. Meenakshi Sundaram",
+      "hindiName": "वरिष्ठ अधिवक्ता मीनाक्षी सुंदरम",
+      "designation": "Chief Legal & Statutory Governance Advisor",
+      "hindiDesignation": "मुख्य विधिक एवं वैधानिक अनुपालन सलाहकार",
+      "credentials": "Advocate, Supreme Court of India | Constitutional Jurist & Human Rights Counsel",
+      "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80",
+      "category": "governance",
+      "experienceYears": 26,
+      "details": "With over 26 years of legal practice before the Supreme Court of India and High Courts, Adv. Meenakshi Sundaram provides strategic oversight on trust governance, statutory 80G and 12A compliances, and FCRA transparency. She also mentors the foundation on legal aid clinics for underprivileged women, rights protection, and child welfare safeguards.",
+      "hindiDetails": "भारत के सर्वोच्च न्यायालय में 26 वर्षों से अधिक के विधिक अनुभव के साथ, वरिष्ठ अधिवक्ता मीनाक्षी सुंदरम जनसेवा प्रतिष्ठान के 80G व 12A वैधानिक अनुपालन, विधिक सहायता शिविरों और महिला एवं बाल सुरक्षा नीतियों का मार्गदर्शन करती हैं।",
+      "expertise": [
+        "80G & 12A Compliance",
+        "Human Rights Law",
+        "Women Legal Aid",
+        "Trust Transparency"
+      ],
+      "quote": "True non-profit credibility is built on uncompromising legal transparency and the fearless defense of the vulnerable."
+    },
+    {
+      "id": "dr-arvind-saxena",
+      "name": "Dr. Arvind Kumar Saxena",
+      "hindiName": "डॉ. अरविंद कुमार सक्सेना",
+      "designation": "Senior Medical Advisor – Public Health & Community Medicine",
+      "hindiDesignation": "वरिष्ठ चिकित्सा सलाहकार – जनस्वास्थ्य एवं सामुदायिक चिकित्सा",
+      "credentials": "MD (Community Medicine), Former Chief Medical Officer & Public Health Consultant",
+      "photo": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80",
+      "category": "health",
+      "experienceYears": 32,
+      "details": "A veteran public health physician with three decades of government and WHO collaborative healthcare administration. Dr. Saxena architects the protocols for Janseva Pratishthan’s mobile health vans, preventive diabetes/hypertension screenings in slum clusters, and subsidized essential medicine distribution programs.",
+      "hindiDetails": "तीन दशकों से अधिक के सार्वजनिक स्वास्थ्य अनुभव वाले डॉ. सक्सेना जनसेवा प्रतिष्ठान के मोबाइल हेल्थ क्लिनिक, झुग्गी बस्तियों में निःशुल्क जांच शिविरों और जीवनरक्षक दवाओं के वितरण प्रोटोकॉल का मार्गदर्शन करते हैं।",
+      "expertise": [
+        "Mobile Clinics",
+        "Preventive Diagnostics",
+        "Maternal Health",
+        "Epidemic Screening"
+      ],
+      "quote": "Healthcare must reach the doorsteps of those who cannot afford to lose a single day’s wage to visit a clinic."
+    },
+    {
+      "id": "prof-rajeshwari-venkatraman",
+      "name": "Prof. Rajeshwari Venkatraman",
+      "hindiName": "प्रो. राजेश्वरी वेंकटरमन",
+      "designation": "Advisory Lead – Girl-Child Education & Digital Literacy",
+      "hindiDesignation": "सलाहकार प्रमुख – बालिका शिक्षा एवं डिजिटल साक्षरता",
+      "credentials": "Ph.D. in Education Policy, Former Dean of Academic Affairs & National Pedagogy Fellow",
+      "photo": "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=800&q=80",
+      "category": "education",
+      "experienceYears": 24,
+      "details": "An eminent educationist recognized for developing STEM and digital curricula for first-generation learners. She spearheads our digital equity strategy—including the Laptop Distribution drive for underprivileged girls, academic retention mentorship, and college entrance scholarship guidance.",
+      "hindiDetails": "प्रथम-पीढ़ी के छात्रों के लिए डिजिटल शिक्षा और स्टेम (STEM) पाठ्यक्रमों की विशेषज्ञ। प्रो. वेंकटरमन संस्था के 50+ लैपटॉप वितरण अभियान, स्कूल रिटेंशन मेंटरशिप और कॉलेज छात्रवृत्ति नीतियों का नेतृत्व करती हैं।",
+      "expertise": [
+        "Digital Equity",
+        "STEM Pedagogy",
+        "School Retention",
+        "Girls Scholarship"
+      ],
+      "quote": "When you place a digital laptop in the hands of a young girl, you rewrite the destiny of her entire household."
+    },
+    {
+      "id": "col-raghvendra-singh",
+      "name": "Col. Raghvendra Pratap Singh (Retd.)",
+      "hindiName": "कर्नल राघवेंद्र प्रताप सिंह (सेवानिवृत्त)",
+      "designation": "Senior Advisor – Disaster Response & Humanitarian Logistics",
+      "hindiDesignation": "वरिष्ठ सलाहकार – आपदा प्रबंधन एवं त्वरित मानवीय राहत",
+      "credentials": "Sena Medal Veteran, Logistics & Emergency Management Specialist",
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
+      "category": "relief",
+      "experienceYears": 28,
+      "details": "Having commanded logistics operations across high-altitude and flood-prone terrains in the Indian Army, Col. Singh coordinates the foundation’s disaster relief blueprint, seasonal winter blanket distribution drives, and emergency ration logistics with military-grade precision and zero intermediate loss.",
+      "hindiDetails": "भारतीय सेना में 28 वर्षों की विशिष्ट सेवा के उपरांत, कर्नल सिंह जनसेवा प्रतिष्ठान के आपदा राहत अभियानों, शीतकालीन कंबल वितरण और आपातकालीन राशन रसद को पूर्ण पारदर्शिता और त्वरित गति से संचालित करते हैं।",
+      "expertise": [
+        "Emergency Logistics",
+        "Winter Blanket Drives",
+        "Disaster Relief",
+        "Field Volunteer Command"
+      ],
+      "quote": "In moments of crisis, speed, discipline, and uncompromising compassion are the only currencies that matter."
+    },
+    {
+      "id": "dr-priya-nair",
+      "name": "Dr. Priya Dharshini Nair",
+      "hindiName": "डॉ. प्रिया दर्शिनी नायर",
+      "designation": "Chief Advisor – Women Empowerment & Micro-Enterprise",
+      "hindiDesignation": "मुख्य सलाहकार – महिला सशक्तिकरण एवं स्वावलंबन",
+      "credentials": "Ph.D. in Rural Economics, Senior Consultant for Women Self-Help Groups (SHGs)",
+      "photo": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80",
+      "category": "empowerment",
+      "experienceYears": 21,
+      "details": "A pioneer in rural livelihoods and micro-entrepreneurship models for rural women. Dr. Nair serves as the principal strategist behind Project Swabhiman, directing the establishment of tailoring production hubs, financial literacy workshops, and sustainable sanitary hygiene initiatives.",
+      "hindiDetails": "ग्रामीण आजीविका और स्वयं सहायता समूहों (SHG) की विशेषज्ञ। डॉ. नायर प्रोजेक्ट स्वाभिमान के अंतर्गत सिलाई-कढ़ाई केंद्रों की स्थापना, वित्तीय साक्षरता और महिला माइक्रो-उद्यमिता का ढांचा तैयार करती हैं।",
+      "expertise": [
+        "Project Swabhiman",
+        "Micro-Finance & SHG",
+        "Vocational Skill Centers",
+        "Sanitary Hygiene"
+      ],
+      "quote": "Economic independence gives a woman not just an income, but a voice, safety, and self-determination."
+    },
+    {
+      "id": "vikramaditya-sharma",
+      "name": "Vikramaditya Sharma",
+      "hindiName": "विक्रमादित्य शर्मा",
+      "designation": "Strategic Advisor – Cyber Safety, Youth Shield & Anti-Narcotics",
+      "hindiDesignation": "रणनीतिक सलाहकार – साइबर सुरक्षा, युवा संरक्षण एवं नशा मुक्ति",
+      "credentials": "Cybersecurity Fellow, Ex-Advisor to Digital Crime Units & Youth De-Addiction Mentor",
+      "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+      "category": "youth-safety",
+      "experienceYears": 18,
+      "details": "Advising government bodies and youth networks on digital fraud prevention and youth resilience. Vikramaditya guides the foundation’s anti-cyber crime workshops in schools and universities, alongside community de-addiction and rehabilitation outreach programs.",
+      "hindiDetails": "साइबर अपराध रोकथाम और नशा मुक्ति कार्यक्रमों के विशेषज्ञ। विक्रमादित्य जनसेवा प्रतिष्ठान के स्कूल-कॉलेजों में एंटी-साइबर फ्रॉड वर्कशॉप और युवाओं को नशे के चंगुल से बचाने के जागरूकता अभियानों का मार्गदर्शन करते हैं।",
+      "expertise": [
+        "Anti-Cyber Crime",
+        "Youth Counseling",
+        "Drug De-Addiction",
+        "Digital Awareness"
+      ],
+      "quote": "Shielding our youth from online predators and drug cartels is our highest duty toward India’s future."
+    },
+    {
+      "id": "ca-rajesh-agrawal",
+      "name": "CA Rajesh G. Agrawal",
+      "hindiName": "सीए राजेश जी. अग्रवाल",
+      "designation": "Advisory Member – Institutional Audit, Finance & CSR Alignment",
+      "hindiDesignation": "सलाहकार सदस्य – वित्तीय ऑडिट, ट्रस्ट अनुपालन एवं सीएसआर",
+      "credentials": "FCA, Senior Partner at Agrawal & Associates | Registered Trust Auditor",
+      "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80",
+      "category": "governance",
+      "experienceYears": 29,
+      "details": "Fellow Chartered Accountant with three decades of experience in non-profit auditing, CSR Section 135 reporting, and public domain accountability. He ensures that every single rupee of public donation and corporate CSR grant is audited, tracked, and documented for 80G tax benefit compliance.",
+      "hindiDetails": "वरिष्ठ चार्टर्ड अकाउंटेंट जो तीन दशकों से ट्रस्ट ऑडिट और सीएसआर अनुपालन में कार्यरत हैं। वे यह सुनिश्चित करते हैं कि दान की प्रत्येक पाई का पारदर्शी हिसाब रखा जाए और दाताओं को त्वरित 80G रसीदें मिलें।",
+      "expertise": [
+        "CSR-1 Compliance",
+        "Statutory Trust Audit",
+        "80G Certification",
+        "Zero Leakage Protocols"
+      ],
+      "quote": "Financial discipline and public audits are the bedrock upon which genuine citizen trust is sustained."
+    },
+    {
+      "id": "sunita-murthy",
+      "name": "Sunita Murthy",
+      "hindiName": "सुनीता मूर्ति",
+      "designation": "Advisory Member – Child Nutrition & Slum Welfare",
+      "hindiDesignation": "सलाहकार सदस्य – बाल पोषण एवं मलिन बस्ती कल्याण",
+      "credentials": "Public Nutritionist, Former Director of Urban Community Feeding Initiatives",
+      "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+      "category": "health",
+      "experienceYears": 20,
+      "details": "Advocating for eradication of childhood malnutrition in urban slum clusters. Sunita designs nutritional baskets distributed to pregnant mothers and malnourished children, and oversees community kitchen hygiene standards for Janseva Pratishthan.",
+      "hindiDetails": "शहरी बस्तियों में बाल कुपोषण उन्मूलन की प्रमुख आवाज। सुनीता गर्भवती माताओं व बच्चों के लिए पौष्टिक आहार किट तैयार करती हैं और सामुदायिक रसोई की गुणवत्ता सुनिश्चित करती हैं।",
+      "expertise": [
+        "Maternal Nutrition",
+        "Slum Outreach",
+        "Child Care Baskets",
+        "Community Kitchens"
+      ],
+      "quote": "A nourished child is a child equipped to learn, grow, and break free from poverty."
+    }
+  ],
+  "charter": {
+    "title": "Advisory Council Mandate & Ethics Charter",
+    "hindiTitle": "सलाहकार परिषद अधिदेश एवं आचार संहिता",
+    "summary": "The Advisory Panel of Janseva Pratishthan Foundation serves as an independent, honorary body of distinguished jurists, medical practitioners, educational policy scholars, and defense veterans. Their mandate is to provide governance oversight, strategic counsel, and ensure uncompromised statutory integrity across all foundation initiatives.",
+    "hindiSummary": "जनसेवा प्रतिष्ठान फाउंडेशन की सलाहकार समिति प्रतिष्ठित न्यायविदों, डॉक्टरों, शिक्षाविदों और सैन्य अधिकारियों की एक स्वतंत्र व मानद परिषद है, जो ट्रस्ट के कार्यक्रमों में पारदर्शिता, प्रभावशीलता और उच्च नैतिक मानकों को सुनिश्चित करती है।",
+    "pillars": [
+      {
+        "title": "Honorary & Independent",
+        "hindiTitle": "मानद एवं निष्पक्ष परामर्श",
+        "desc": "All advisory members serve in a purely honorary, pro-bono capacity to preserve neutral, ethical, and fearless guidance."
+      },
+      {
+        "title": "Statutory 80G & Legal Integrity",
+        "hindiTitle": "वैधानिक 80G एवं विधिक शुचिता",
+        "desc": "Active review of audit reports, tax filings, legal charters, and regulatory disclosures to guarantee complete public trust."
+      },
+      {
+        "title": "Last-Mile Impact Audits",
+        "hindiTitle": "ज़मीनी प्रभाव का प्रत्यक्ष मूल्यांकन",
+        "desc": "Regular field inspections of laptop distributions, Swabhiman tailoring centers, and mobile medical camps."
+      },
+      {
+        "title": "Strategic Horizon Planning",
+        "hindiTitle": "दीर्घकालिक सामाजिक दृष्टि",
+        "desc": "Architecting 5-year intervention roadmaps to address emerging challenges like cyber crime, substance abuse, and digital inequality."
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": "all",
+      "label": "All Advisors",
+      "hindiLabel": "सभी सलाहकार"
+    },
+    {
+      "id": "governance",
+      "label": "Legal & Governance",
+      "hindiLabel": "विधिक एवं शासन",
+      "longLabel": "Legal & Statutory Governance",
+      "longHindiLabel": "विधिक एवं वैधानिक शासन",
+      "icon": "Scale",
+      "iconColor": "text-amber-500"
+    },
+    {
+      "id": "health",
+      "label": "Healthcare",
+      "hindiLabel": "स्वास्थ्य एवं चिकित्सा",
+      "longLabel": "Public Health & Medicine",
+      "longHindiLabel": "जनस्वास्थ्य एवं चिकित्सा",
+      "icon": "HeartPulse",
+      "iconColor": "text-rose-500"
+    },
+    {
+      "id": "education",
+      "label": "Education & STEM",
+      "hindiLabel": "शिक्षा एवं डिजिटल",
+      "longLabel": "Education & Digital Literacy",
+      "longHindiLabel": "बालिका शिक्षा एवं डिजिटल साक्षरता",
+      "icon": "GraduationCap",
+      "iconColor": "text-emerald-500"
+    },
+    {
+      "id": "empowerment",
+      "label": "Women Empowerment",
+      "hindiLabel": "महिला सशक्तिकरण",
+      "longLabel": "Women Empowerment & Enterprise",
+      "longHindiLabel": "महिला सशक्तिकरण एवं स्वावलंबन",
+      "icon": "Sparkles",
+      "iconColor": "text-sky-500"
+    },
+    {
+      "id": "relief",
+      "label": "Disaster & Logistics",
+      "hindiLabel": "आपदा एवं रसद",
+      "longLabel": "Disaster Relief & Logistics",
+      "longHindiLabel": "आपदा प्रबंधन एवं रसद",
+      "icon": "ShieldCheck",
+      "iconColor": "text-blue-500"
+    },
+    {
+      "id": "youth-safety",
+      "label": "Youth & Cyber Safety",
+      "hindiLabel": "युवा एवं साइबर सुरक्षा",
+      "longLabel": "Youth & Cyber Security",
+      "longHindiLabel": "युवा संरक्षण एवं साइबर सुरक्षा",
+      "icon": "Award",
+      "iconColor": "text-purple-500"
+    }
+  ],
+  "highlights": [
+    {
+      "label": "100% Honorary & Pro-Bono",
+      "hindiLabel": "100% मानद एवं गैर-लाभकारी",
+      "iconColor": "text-emerald-500"
+    },
+    {
+      "label": "80G & 12A Statutory Audit",
+      "hindiLabel": "80G एवं 12A वैधानिक शुचिता",
+      "iconColor": "text-amber-500"
+    },
+    {
+      "label": "Field Ground Verification",
+      "hindiLabel": "प्रत्यक्ष ज़मीनी निरीक्षण",
+      "iconColor": "text-sky-500"
+    }
+  ],
+  "stats": [
+    {
+      "value": "8+",
+      "label": "Senior Advisors",
+      "hindiLabel": "विशेषज्ञ सलाहकार"
+    },
+    {
+      "value": "25+",
+      "label": "Avg Yrs Experience",
+      "hindiLabel": "औसत वर्ष अनुभव"
+    },
+    {
+      "value": "100%",
+      "label": "Honorary Service",
+      "hindiLabel": "मानद सेवा"
+    },
+    {
+      "value": "80G",
+      "label": "Audited Compliance",
+      "hindiLabel": "ऑडिटेड अनुपालन"
+    }
+  ],
+  "credentials": [
+    {
+      "label": "Status",
+      "hindiLabel": "भूमिका",
+      "value": "100% Honorary (Pro-Bono)",
+      "hindiValue": "100% मानद (Pro-Bono)",
+      "valueClass": "text-emerald-600 dark:text-emerald-400"
+    },
+    {
+      "label": "Mandate",
+      "hindiLabel": "प्राथमिक अधिदेश",
+      "value": "Strategic Governance",
+      "hindiValue": "रणनीतिक एवं वैधानिक",
+      "valueClass": "dark:text-slate-200 text-slate-800"
+    },
+    {
+      "label": "Compliance",
+      "hindiLabel": "अनुपालन",
+      "value": "80G & 12A Certified",
+      "hindiValue": "80G & 12A Certified",
+      "valueClass": "text-amber-700 dark:text-amber-300"
+    }
+  ]
+}
