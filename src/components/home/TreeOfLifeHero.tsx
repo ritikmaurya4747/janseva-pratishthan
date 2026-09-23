@@ -19,9 +19,9 @@ export function TreeOfLifeHero() {
     >
       {/* Background Gradients: Royal Navy Blue in Dark, Warm Pearl & Amber in Light */}
       <div className="absolute inset-0 dark:bg-linear-to-br dark:from-[#061224] dark:via-[#0f2142] dark:to-[#1c060d] bg-linear-to-b from-[#fbf9f4] via-[#f7f2e7] to-[#f3ecdc] -z-20 transition-colors duration-300" />
-      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 w-[600px] h-[600px] dark:bg-blue-600/15 bg-amber-400/10 rounded-full blur-[140px] pointer-events-none -z-10" />
-      <div className="absolute bottom-10 right-1/4 w-[500px] h-[500px] dark:bg-rose-900/20 bg-rose-400/8 rounded-full blur-[130px] pointer-events-none -z-10" />
-      <div className="absolute top-1/2 right-1/3 w-[400px] h-[400px] dark:bg-amber-500/10 bg-yellow-400/10 rounded-full blur-[120px] pointer-events-none -z-10" />
+      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 w-150 h-150 dark:bg-blue-600/15 bg-amber-400/10 rounded-full blur-[140px] pointer-events-none -z-10" />
+      <div className="absolute bottom-10 right-1/4 w-125 h-125 dark:bg-rose-900/20 bg-rose-400/8 rounded-full blur-[130px] pointer-events-none -z-10" />
+      <div className="absolute top-1/2 right-1/3 w-100 h-100 dark:bg-amber-500/10 bg-yellow-400/10 rounded-full blur-[120px] pointer-events-none -z-10" />
 
       {/* Constellation Grid Dots on Top Right */}
       <div className="absolute top-8 right-8 sm:right-16 pointer-events-none opacity-40">
