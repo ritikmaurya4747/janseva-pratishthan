@@ -15,7 +15,7 @@ export function OurWorkView() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Header Title & Intro */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full dark:bg-gradient-to-r dark:from-blue-950 dark:to-[#2c0812] bg-amber-100 text-amber-900 border border-transparent hover:border-amber-300/60 text-sm font-semibold uppercase tracking-widest shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full dark:bg-linear-to-r dark:from-blue-950 dark:to-[#2c0812] bg-amber-100 text-amber-900 border border-transparent hover:border-amber-300/60 text-sm font-semibold uppercase tracking-widest shadow-sm">
             <FoundationLogo size="xs" showLabel={false} />
             <span>Our 10 Core Focus Areas</span>
           </div>
@@ -30,7 +30,7 @@ export function OurWorkView() {
         </div>
 
         {/* Flagship Project Swabhiman Highlight Banner */}
-        <div className="relative rounded-3xl overflow-hidden dark:bg-gradient-to-r dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-gradient-to-r from-amber-100/90 via-amber-50 to-amber-100/90 border border-transparent hover:border-amber-300/60 p-8 sm:p-10 shadow-xl">
+        <div className="relative rounded-3xl overflow-hidden dark:bg-linear-to-r dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-linear-to-r from-amber-100/90 via-amber-50 to-amber-100/90 border border-transparent hover:border-amber-300/60 p-8 sm:p-10 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
               <span className="text-sm font-bold uppercase tracking-[0.2em] bg-amber-400 text-slate-950 px-2.5 py-1 rounded shadow">
@@ -65,7 +65,7 @@ export function OurWorkView() {
             <div className="lg:col-span-4 flex flex-col gap-3 justify-center">
               <Link
                 href={pillarHref("women-empowerment")}
-                className="w-full py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_20px_rgba(212,175,55,0.4)] border-none transition-all flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_20px_rgba(212,175,55,0.4)] border-none transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>View Full Swabhiman Page</span>
                 <ArrowRight className="w-4 h-4" />

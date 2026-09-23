@@ -203,7 +203,7 @@ export function DonateView() {
 
         {/* Hero Banner Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] bg-gradient-to-r from-amber-500/15 via-yellow-500/20 to-amber-500/15 text-[#8d6916] dark:text-amber-300 border border-amber-400/30">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] bg-linear-to-r from-amber-500/15 via-yellow-500/20 to-amber-500/15 text-[#8d6916] dark:text-amber-300 border border-amber-400/30">
             <Sparkles className="w-3.5 h-3.5" />
             <span>
               {isHindi
@@ -246,7 +246,7 @@ export function DonateView() {
           >
             <div className="text-center space-y-3">
               <div className="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center mx-auto text-emerald-600 dark:text-emerald-400 shadow-md">
-                <Check className="w-8 h-8 stroke-[3]" />
+                <Check className="w-8 h-8 stroke-3" />
               </div>
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
                 {isHindi
@@ -471,7 +471,7 @@ export function DonateView() {
                     initial={{ opacity: 0, y: -8 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.2 }}
-                    className="mb-6 p-4 rounded-2xl bg-gradient-to-r from-amber-500/15 via-amber-400/10 to-emerald-500/10 border border-amber-300/80 dark:border-amber-400/30 flex items-start gap-3.5"
+                    className="mb-6 p-4 rounded-2xl bg-linear-to-r from-amber-500/15 via-amber-400/10 to-emerald-500/10 border border-amber-300/80 dark:border-amber-400/30 flex items-start gap-3.5"
                   >
                     <div className="p-2 rounded-xl bg-amber-400/25 text-amber-950 dark:text-amber-300 shrink-0 mt-0.5">
                       <Repeat className="w-4 h-4" />
@@ -635,7 +635,7 @@ export function DonateView() {
                             }}
                             className={`p-3.5 rounded-2xl text-left border transition-all relative cursor-pointer flex flex-col justify-between ${
                               isSelected
-                                ? "bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-300 text-slate-950 border-amber-400 shadow-md transform -translate-y-0.5"
+                                ? "bg-linear-to-r from-amber-300 via-amber-200 to-yellow-300 text-slate-950 border-amber-400 shadow-md transform -translate-y-0.5"
                                 : "bg-slate-50 dark:bg-[#08182e] text-slate-800 dark:text-slate-200 border-slate-200 dark:border-slate-800 hover:border-amber-300/80 dark:hover:border-amber-400/40"
                             }`}
                           >
@@ -1021,7 +1021,7 @@ export function DonateView() {
                   <div className="pt-2">
                     <button
                       type="submit"
-                      className="w-full py-4 rounded-2xl font-bold uppercase tracking-wider text-stone-950 bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-400 hover:from-amber-200 hover:to-yellow-300 shadow-[0_4px_25px_rgba(212,175,55,0.45)] border-none transition-all cursor-pointer flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0"
+                      className="w-full py-4 rounded-2xl font-bold uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-amber-200 to-yellow-400 hover:from-amber-200 hover:to-yellow-300 shadow-[0_4px_25px_rgba(212,175,55,0.45)] border-none transition-all cursor-pointer flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0"
                     >
                       <Heart className="w-5 h-5 fill-stone-950 text-stone-950" />
                       <span>
@@ -1050,7 +1050,7 @@ export function DonateView() {
             {/* Right Column: 80G Tax Savings & Statutory Trust Transparency (5 cols) */}
             <div className="lg:col-span-5 space-y-6">
               {/* Live 80G Tax Savings Calculator Card */}
-              <div className="bg-gradient-to-br from-amber-500/10 via-amber-500/5 to-transparent dark:from-[#0a182c] dark:via-[#0c2242] dark:to-[#0a182c] border border-amber-300/80 dark:border-amber-400/30 rounded-3xl p-6 sm:p-7 shadow-sm space-y-4">
+              <div className="bg-linear-to-br from-amber-500/10 via-amber-500/5 to-transparent dark:from-[#0a182c] dark:via-[#0c2242] dark:to-[#0a182c] border border-amber-300/80 dark:border-amber-400/30 rounded-3xl p-6 sm:p-7 shadow-sm space-y-4">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2.5 text-amber-800 dark:text-amber-300">
                     <ShieldCheck className="w-5 h-5" />
@@ -1252,7 +1252,7 @@ export function DonateView() {
                       </span>
                     </div>
                     <div className="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
-                      <div className="bg-gradient-to-r from-amber-500 to-amber-400 h-full w-[88%]" />
+                      <div className="bg-linear-to-r from-amber-500 to-amber-400 h-full w-[88%]" />
                     </div>
                   </div>
 

@@ -1,12 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
 import { FOUNDATION_INFO } from "@/data";
 import { ROUTES } from "@/lib/routes";
+import Image from "next/image";
+import Link from "next/link";
 
 const { founder } = FOUNDATION_INFO;
 
-/** Server Component — only the entrance animation (<Reveal>) runs on the client. */
 export function FounderSection() {
   return (
     <section className="relative w-full py-16 sm:py-24 bg-[#fbf9f4] dark:bg-[#071324] transition-colors duration-300">
@@ -15,7 +14,7 @@ export function FounderSection() {
           y={30}
           duration={0.8}
           margin="-100px"
-          className="relative bg-gradient-to-br from-[#0c2242] to-[#12284c] dark:from-[#081525] dark:to-[#170810] rounded-[2rem] sm:rounded-[2.5rem] p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center shadow-2xl border-none"
+          className="relative bg-linear-to-br from-[#0c2242] to-[#12284c] dark:from-[#081525] dark:to-[#170810] rounded-rounded-4xl sm:rounded-rounded-4xl p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center shadow-2xl border-none"
         >
           {/* Big opening quote mark */}
           <div className="absolute -top-8 sm:-top-10 left-8 sm:left-14 pointer-events-none select-none">
@@ -82,7 +81,7 @@ export function FounderSection() {
             <div className="pt-2">
               <Link
                 href={ROUTES.ourStory}
-                className="inline-block px-7 py-3 rounded-xl font-bold text-sm uppercase tracking-[0.15em] text-stone-950 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:-translate-y-0.5 border-none"
+                className="inline-block px-7 py-3 rounded-xl font-bold text-sm uppercase tracking-[0.15em] text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:-translate-y-0.5 border-none"
               >
                 READ FULL FOUNDER&apos;S LETTER
               </Link>
@@ -91,7 +90,7 @@ export function FounderSection() {
 
           {/* Right Image */}
           <div className="w-full lg:w-[42%] shrink-0">
-            <div className="relative w-full aspect-[4/5] rounded-[1.5rem] sm:rounded-[2rem] overflow-hidden shadow-xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+            <div className="relative w-full aspect-4/5 rounded-rounded-3xl sm:rounded-4xl overflow-hidden shadow-xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
               <Image
                 src={founder.photo}
                 alt={`${founder.displayName} - Founder`}
@@ -99,7 +98,7 @@ export function FounderSection() {
                 sizes="(min-width: 1024px) 42vw, 100vw"
                 className="object-cover object-top"
               />
-              <div className="absolute inset-0 border border-black/5 dark:border-white/10 rounded-[1.5rem] sm:rounded-[2rem] pointer-events-none" />
+              <div className="absolute inset-0 border border-black/5 dark:border-white/10 rounded-3xl sm:rounded-4xl pointer-events-none" />
             </div>
           </div>
         </Reveal>

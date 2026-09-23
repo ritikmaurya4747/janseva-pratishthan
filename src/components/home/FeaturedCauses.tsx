@@ -32,7 +32,7 @@ export function FeaturedCauses() {
           {featuredCauses.map((cause) => (
             <div
               key={cause.id}
-              className="group relative rounded-2xl dark:bg-gradient-to-b dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 bg-white hover:bg-amber-50/50 border border-transparent hover:border-amber-300/60 p-6 transition-all duration-300 hover:-translate-y-1 shadow-md flex flex-col justify-between"
+              className="group relative rounded-2xl dark:bg-linear-to-b dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 bg-white hover:bg-amber-50/50 border border-transparent hover:border-amber-300/60 p-6 transition-all duration-300 hover:-translate-y-1 shadow-md flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">

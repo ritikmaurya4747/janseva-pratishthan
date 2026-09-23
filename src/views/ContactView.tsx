@@ -16,7 +16,7 @@ export function ContactView() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Header Title */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full dark:bg-gradient-to-r dark:from-blue-950 dark:to-[#2c0812] bg-amber-100/80 border border-transparent hover:border-amber-300/60 dark:border-none dark:text-amber-300 text-amber-900 text-sm font-semibold uppercase tracking-widest shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full dark:bg-linear-to-r dark:from-blue-950 dark:to-[#2c0812] bg-amber-100/80 border border-transparent hover:border-amber-300/60 dark:border-none dark:text-amber-300 text-amber-900 text-sm font-semibold uppercase tracking-widest shadow-sm">
             <FoundationLogo size="xs" showLabel={false} />
             <span>Official Communications</span>
           </div>
@@ -33,7 +33,7 @@ export function ContactView() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
           {/* Contact Details Column */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="p-6 rounded-2xl dark:bg-gradient-to-br dark:from-[#0c2242] dark:to-[#1e0710] bg-white border border-transparent hover:border-amber-300/60 space-y-6 shadow-md">
+            <div className="p-6 rounded-2xl dark:bg-linear-to-br dark:from-[#0c2242] dark:to-[#1e0710] bg-white border border-transparent hover:border-amber-300/60 space-y-6 shadow-md">
               <h3 className="font-display text-xl font-bold dark:text-white text-slate-900 border-none pb-2">
                 Headquarters & Secretariat
               </h3>

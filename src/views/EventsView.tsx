@@ -16,7 +16,7 @@ export function EventsView() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         {/* Header Title */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full dark:bg-gradient-to-r dark:from-blue-950 dark:to-[#2c0812] bg-amber-100 text-amber-900 border border-transparent hover:border-amber-300/60 text-sm font-semibold uppercase tracking-widest shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full dark:bg-linear-to-r dark:from-blue-950 dark:to-[#2c0812] bg-amber-100 text-amber-900 border border-transparent hover:border-amber-300/60 text-sm font-semibold uppercase tracking-widest shadow-sm">
             <FoundationLogo size="xs" showLabel={false} />
             <span>Moments of Impact</span>
           </div>
@@ -34,7 +34,7 @@ export function EventsView() {
         {pastEvents.map((evt) => (
           <div
             key={evt.id}
-            className="rounded-3xl dark:bg-gradient-to-r dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 p-6 sm:p-10 shadow-xl overflow-hidden"
+            className="rounded-3xl dark:bg-linear-to-r dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 p-6 sm:p-10 shadow-xl overflow-hidden"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-6 relative rounded-2xl overflow-hidden border-none shadow-xl group">
@@ -47,7 +47,7 @@ export function EventsView() {
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="w-full h-80 sm:h-96 object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#061122] via-[#061122]/30 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-[#061122] via-[#061122]/30 to-transparent" />
                 <div className="absolute top-4 left-4">
                   <span className="text-sm font-bold uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-1 rounded shadow">
                     {evt.badge}

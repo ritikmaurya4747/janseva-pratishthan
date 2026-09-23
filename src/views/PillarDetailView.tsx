@@ -59,7 +59,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
         </div>
 
         {/* Dedicated Program Hero Card */}
-        <div className="relative rounded-3xl overflow-hidden dark:bg-gradient-to-br dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 p-8 sm:p-12 shadow-xl space-y-8">
+        <div className="relative rounded-3xl overflow-hidden dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 p-8 sm:p-12 shadow-xl space-y-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <div
@@ -109,7 +109,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <Link
               href={donateHref(pillar.id)}
-              className="px-7 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_25px_rgba(212,175,55,0.45)] border-none transition-all flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
+              className="px-7 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_25px_rgba(212,175,55,0.45)] border-none transition-all flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
             >
               <Heart className="w-4 h-4 fill-slate-950" />
               <span>Sponsor / Support this Initiative (80G)</span>
@@ -128,7 +128,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2 space-y-8">
             {/* Comprehensive Narrative */}
-            <div className="rounded-2xl dark:bg-gradient-to-br dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 bg-white border border-slate-200/80 p-6 sm:p-8 shadow-md space-y-4">
+            <div className="rounded-2xl dark:bg-linear-to-br dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 bg-white border border-slate-200/80 p-6 sm:p-8 shadow-md space-y-4">
               <h3 className="font-display text-xl sm:text-2xl font-bold dark:text-white text-slate-900">
                 Program Vision & Grassroots Strategy
               </h3>
@@ -144,7 +144,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
             </div>
 
             {/* Active Initiatives Checklist */}
-            <div className="rounded-2xl dark:bg-gradient-to-br dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 bg-white border border-slate-200/80 p-6 sm:p-8 shadow-md space-y-5">
+            <div className="rounded-2xl dark:bg-linear-to-br dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 bg-white border border-slate-200/80 p-6 sm:p-8 shadow-md space-y-5">
               <h3 className="font-display text-lg sm:text-xl font-bold dark:text-amber-200 text-amber-900">
                 Core On-Ground Initiatives & Interventions
               </h3>
@@ -190,7 +190,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
             </div>
 
             {/* Quick Donor Callout */}
-            <div className="p-6 rounded-2xl dark:bg-gradient-to-b dark:from-[#1a0812] dark:to-[#0c2242] bg-gradient-to-b from-amber-50 to-amber-100/70 border border-transparent hover:border-amber-300/60 shadow-md text-center space-y-3">
+            <div className="p-6 rounded-2xl dark:bg-linear-to-b dark:from-[#1a0812] dark:to-[#0c2242] bg-linear-to-b from-amber-50 to-amber-100/70 border border-transparent hover:border-amber-300/60 shadow-md text-center space-y-3">
               <FoundationLogo size="sm" showLabel={false} className="mx-auto" />
               <h4 className="font-display text-base font-bold dark:text-white text-slate-900">
                 Join Our Mission
@@ -201,7 +201,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
               </p>
               <Link
                 href={donateHref(pillar.id)}
-                className="block w-full py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-300 to-yellow-400 shadow-md border-none cursor-pointer"
+                className="block w-full py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 to-yellow-400 shadow-md border-none cursor-pointer"
               >
                 Contribute Today
               </Link>

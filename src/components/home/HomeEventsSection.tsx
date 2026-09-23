@@ -8,7 +8,6 @@ import { HOME_EVENTS } from "@/data";
 import type { HomeEvent } from "@/types";
 import { ROUTES } from "@/lib/routes";
 
-/** Client Component: tab state + layout animations. */
 export function HomeEventsSection() {
   const [activeTab, setActiveTab] = useState<HomeEvent["category"]>(
     HOME_EVENTS.tabs[0],
@@ -49,7 +48,7 @@ export function HomeEventsSection() {
               {activeTab === tab && (
                 <motion.div
                   layoutId="activeTabIndicator"
-                  className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#c59426] dark:bg-amber-400"
+                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#c59426] dark:bg-amber-400"
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 />
               )}
@@ -84,11 +83,11 @@ export function HomeEventsSection() {
                       sizes="(min-width: 768px) 50vw, 100vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent dark:from-black/50 pointer-events-none" />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent dark:from-black/50 pointer-events-none" />
                   </div>
 
                   <div className="p-6 sm:p-8 flex items-stretch gap-6 sm:gap-8 flex-1">
-                    <div className="flex flex-col items-center justify-center shrink-0 border-r border-slate-100 dark:border-slate-700/50 pr-6 sm:pr-8 min-w-[4.5rem]">
+                    <div className="flex flex-col items-center justify-center shrink-0 border-r border-slate-100 dark:border-slate-700/50 pr-6 sm:pr-8 min-w-18">
                       <span className="text-sm font-bold text-[#c59426] dark:text-amber-400 uppercase tracking-widest">
                         {event.date.month}
                       </span>

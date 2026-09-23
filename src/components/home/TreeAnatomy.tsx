@@ -4,7 +4,7 @@ import { Icon } from "@/lib/icons";
 /** Server Component — roots / trunk / branches cards from home.json → treeAnatomy. */
 export function TreeAnatomy() {
   return (
-    <section className="py-20 dark:bg-gradient-to-b dark:from-[#050e1c] dark:to-[#0a1830] bg-[#fbf9f4] relative border-none">
+    <section className="py-20 dark:bg-linear-to-b dark:from-[#050e1c] dark:to-[#0a1830] bg-[#fbf9f4] relative border-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
           <span className="text-sm font-bold uppercase tracking-[0.24em] dark:text-amber-300 text-amber-800">
@@ -24,7 +24,7 @@ export function TreeAnatomy() {
           {TREE_ANATOMY.map((item) => (
             <div
               key={item.id}
-              className={`p-6 rounded-2xl dark:bg-gradient-to-br ${item.cardClass} bg-white border border-transparent hover:border-amber-300/60 shadow-md space-y-4 transition-all`}
+              className={`p-6 rounded-2xl dark:bg-linear-to-br ${item.cardClass} bg-white border border-transparent hover:border-amber-300/60 shadow-md space-y-4 transition-all`}
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="space-y-1">

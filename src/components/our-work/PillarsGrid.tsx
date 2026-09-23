@@ -25,7 +25,7 @@ export function PillarsGrid() {
             onClick={() => setActiveCategory(cat.id)}
             className={`px-4 py-2 rounded-full text-sm font-semibold tracking-wider uppercase transition-all cursor-pointer border-none shadow-sm ${
               activeCategory === cat.id
-                ? "bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 text-slate-950 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
+                ? "bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 text-slate-950 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
                 : "dark:bg-[#0c2242]/70 dark:text-slate-300 dark:hover:text-white dark:hover:bg-[#0c2242] bg-white text-slate-700 hover:text-amber-900 hover:bg-amber-50 border border-slate-200/70"
             }`}
           >
@@ -42,7 +42,7 @@ export function PillarsGrid() {
               key={cause.id}
               id={`cause-card-${cause.id}`}
               href={pillarHref(cause.id)}
-              className="group rounded-2xl p-6 transition-all duration-300 flex flex-col justify-between border border-slate-200/80 hover:border-amber-300/60 shadow-md cursor-pointer dark:bg-gradient-to-b dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 dark:hover:from-[#13305a] dark:hover:to-[#280c16] bg-white hover:bg-amber-50/40 hover:-translate-y-1 hover:shadow-xl"
+              className="group rounded-2xl p-6 transition-all duration-300 flex flex-col justify-between border border-slate-200/80 hover:border-amber-300/60 shadow-md cursor-pointer dark:bg-linear-to-b dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 dark:hover:from-[#13305a] dark:hover:to-[#280c16] bg-white hover:bg-amber-50/40 hover:-translate-y-1 hover:shadow-xl"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">

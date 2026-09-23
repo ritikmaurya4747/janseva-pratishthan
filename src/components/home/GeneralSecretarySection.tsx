@@ -78,7 +78,7 @@ export function GeneralSecretarySection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative bg-gradient-to-br from-[#0c2242] via-[#0e2a52] to-[#12243d] dark:from-[#081525] dark:via-[#0c1d33] dark:to-[#140812] rounded-[2rem] sm:rounded-[2.5rem] p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-16 items-center shadow-2xl border border-amber-400/20"
+          className="relative bg-linear-to-br from-[#0c2242] via-[#0e2a52] to-[#12243d] dark:from-[#081525] dark:via-[#0c1d33] dark:to-[#140812] rounded-4xl sm:rounded-[2.5rem] p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-16 items-center shadow-2xl border border-amber-400/20"
         >
           {/* Big closing quote mark */}
           <div className="absolute -top-8 sm:-top-10 right-8 sm:right-14 pointer-events-none select-none">
@@ -136,7 +136,7 @@ export function GeneralSecretarySection() {
             <div className="pt-2 flex flex-wrap gap-3">
               <Link
                 href={ROUTES.joinUs}
-                className="px-6 py-3 rounded-xl font-bold text-sm uppercase tracking-[0.14em] text-stone-950 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:-translate-y-0.5 border-none"
+                className="px-6 py-3 rounded-xl font-bold text-sm uppercase tracking-[0.14em] text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:-translate-y-0.5 border-none"
               >
                 Connect With Secretary&apos;s Office
               </Link>
@@ -155,7 +155,7 @@ export function GeneralSecretarySection() {
           <div className="w-full lg:w-[38%] shrink-0">
             <div
               onClick={() => fileInputRef.current?.click()}
-              className="relative w-full aspect-[4/5] max-w-sm mx-auto rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-slate-900 group cursor-pointer transition-transform duration-300 hover:scale-[1.01]"
+              className="relative w-full aspect-4/5 max-w-sm mx-auto rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-slate-900 group cursor-pointer transition-transform duration-300 hover:scale-[1.01]"
               title="Click photo to select/update image"
             >
               <Image

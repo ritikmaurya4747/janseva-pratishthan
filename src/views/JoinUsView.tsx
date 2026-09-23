@@ -67,11 +67,11 @@ export function JoinUsView() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
         {/* Header Intro */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full dark:bg-gradient-to-r dark:from-blue-950 dark:to-[#2c0812] bg-amber-100 text-amber-900 border border-transparent hover:border-amber-300/60 text-xs sm:text-sm font-semibold uppercase tracking-widest shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full dark:bg-linear-to-r dark:from-blue-950 dark:to-[#2c0812] bg-amber-100 text-amber-900 border border-transparent hover:border-amber-300/60 text-xs sm:text-sm font-semibold uppercase tracking-widest shadow-sm">
             <FoundationLogo size="xs" showLabel={false} />
             <span>Join Our Mission</span>
           </div>
-          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold dark:text-white text-slate-900 tracking-tight break-words">
+          <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold dark:text-white text-slate-900 tracking-tight wrap-break-word">
             Stand With Us. Create Grassroots Impact.
           </h1>
           <p className="text-sm sm:text-base dark:text-slate-300 text-slate-600 leading-relaxed max-w-2xl mx-auto">
@@ -91,7 +91,7 @@ export function JoinUsView() {
                   onClick={() => setActiveTab(tab.id as TabId)}
                   className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 px-1.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider transition-all cursor-pointer border-none text-center ${
                     activeTab === tab.id
-                      ? "bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 text-slate-950 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
+                      ? "bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 text-slate-950 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
                       : "dark:text-slate-300 text-slate-700 hover:dark:text-white hover:text-slate-950"
                   }`}
                 >
@@ -113,7 +113,7 @@ export function JoinUsView() {
         {activeTab === "volunteer" && (
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             <div className="lg:col-span-5 space-y-6">
-              <div className="p-6 rounded-2xl dark:bg-gradient-to-br dark:from-[#0c2242] dark:to-[#1e0710] bg-white border border-transparent hover:border-amber-300/60 shadow-xl space-y-4">
+              <div className="p-6 rounded-2xl dark:bg-linear-to-br dark:from-[#0c2242] dark:to-[#1e0710] bg-white border border-transparent hover:border-amber-300/60 shadow-xl space-y-4">
                 <span className="text-sm font-bold uppercase tracking-widest dark:text-amber-300 text-amber-800">
                   Why Volunteer With Us?
                 </span>
@@ -140,7 +140,7 @@ export function JoinUsView() {
 
             {/* Volunteer Form */}
             <div className="lg:col-span-7">
-              <div className="rounded-2xl dark:bg-gradient-to-br dark:from-[#0c2242] dark:via-[#210810] dark:to-[#0c2242] bg-white border border-slate-200/80 p-6 sm:p-8 shadow-xl">
+              <div className="rounded-2xl dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#210810] dark:to-[#0c2242] bg-white border border-slate-200/80 p-6 sm:p-8 shadow-xl">
                 {!isSubmitted ? (
                   <form onSubmit={handleVolunteerSubmit} className="space-y-4">
                     <h3 className="font-display text-xl font-bold dark:text-white text-slate-900">
@@ -252,7 +252,7 @@ export function JoinUsView() {
 
                     <button
                       type="submit"
-                      className="w-full py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_20px_rgba(212,175,55,0.4)] border-none transition-all flex items-center justify-center gap-2 cursor-pointer"
+                      className="w-full py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_20px_rgba(212,175,55,0.4)] border-none transition-all flex items-center justify-center gap-2 cursor-pointer"
                     >
                       <Sparkles className="w-4 h-4" />
                       <span>Submit Volunteer Application</span>
@@ -289,7 +289,7 @@ export function JoinUsView() {
 
         {/* Tab 2: Corporate CSR */}
         {activeTab === "csr" && (
-          <div className="rounded-2xl dark:bg-gradient-to-br dark:from-[#0c2242] dark:via-[#210810] dark:to-[#0c2242] bg-white border border-slate-200/80 p-5 sm:p-8 shadow-xl max-w-4xl mx-auto space-y-6">
+          <div className="rounded-2xl dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#210810] dark:to-[#0c2242] bg-white border border-slate-200/80 p-5 sm:p-8 shadow-xl max-w-4xl mx-auto space-y-6">
             <div className="space-y-2 border-none pb-4">
               <span className="text-sm font-bold uppercase tracking-widest dark:text-amber-300 text-amber-800">
                 Corporate Social Responsibility
@@ -381,7 +381,7 @@ export function JoinUsView() {
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_20px_rgba(212,175,55,0.4)] border-none transition-all flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_20px_rgba(212,175,55,0.4)] border-none transition-all flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <Briefcase className="w-4 h-4" />
                   <span>Request CSR Partnership Proposal & Kit</span>
@@ -404,7 +404,7 @@ export function JoinUsView() {
 
         {/* Tab 3: Youth Ambassadors */}
         {activeTab === "ambassador" && (
-          <div className="rounded-2xl dark:bg-gradient-to-br dark:from-[#0c2242] dark:via-[#210810] dark:to-[#0c2242] bg-white border border-slate-200/80 p-5 sm:p-8 shadow-xl max-w-4xl mx-auto space-y-6">
+          <div className="rounded-2xl dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#210810] dark:to-[#0c2242] bg-white border border-slate-200/80 p-5 sm:p-8 shadow-xl max-w-4xl mx-auto space-y-6">
             <div className="text-center space-y-2">
               <span className="text-sm font-bold uppercase tracking-widest dark:text-amber-300 text-amber-800">
                 Next-Gen Leadership
@@ -442,7 +442,7 @@ export function JoinUsView() {
             <div className="text-center pt-2">
               <button
                 onClick={() => setActiveTab("volunteer")}
-                className="px-6 py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_15px_rgba(212,175,55,0.4)] border-none transition-all cursor-pointer"
+                className="px-6 py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_15px_rgba(212,175,55,0.4)] border-none transition-all cursor-pointer"
               >
                 Apply for Youth Fellowship (via Volunteer Form)
               </button>

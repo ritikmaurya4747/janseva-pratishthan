@@ -89,7 +89,7 @@ export function NewsArticleView({ slug }: { slug: string }) {
           scale={0.98}
           className="mb-10 rounded-2xl overflow-hidden border border-slate-200/90 dark:border-amber-400/20 shadow-md bg-slate-100 dark:bg-slate-900"
         >
-          <div className="relative aspect-[16/9] w-full">
+          <div className="relative aspect-video w-full">
             <Image
               src={article.imageUrl}
               alt={article.title}
@@ -148,7 +148,7 @@ export function NewsArticleView({ slug }: { slug: string }) {
 
           {/* Quote Callout Box */}
           {article.quote && (
-            <div className="my-8 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-amber-50/70 to-white dark:from-[#0a182c] dark:to-[#0c2242] border border-amber-200 dark:border-amber-400/30 shadow-sm relative overflow-hidden">
+            <div className="my-8 p-6 sm:p-8 rounded-2xl bg-linear-to-br from-amber-50/70 to-white dark:from-[#0a182c] dark:to-[#0c2242] border border-amber-200 dark:border-amber-400/30 shadow-sm relative overflow-hidden">
               <Quote className="w-10 h-10 text-amber-300/40 dark:text-amber-500/20 absolute -top-1 right-3" />
               <p className="italic text-base sm:text-lg text-slate-800 dark:text-amber-100/90 leading-relaxed mb-4">
                 &ldquo;{article.quote.text}&rdquo;
@@ -203,7 +203,7 @@ export function NewsArticleView({ slug }: { slug: string }) {
           <div className="flex items-center gap-3">
             <Link
               href={ROUTES.donate}
-              className="px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 shadow-md transition-all cursor-pointer inline-flex items-center gap-2"
+              className="px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 shadow-md transition-all cursor-pointer inline-flex items-center gap-2"
             >
               <Heart className="w-4 h-4 fill-white/30" />
               <span>Support This Initiative</span>
@@ -225,7 +225,7 @@ export function NewsArticleView({ slug }: { slug: string }) {
                   href={newsHref(item.slug)}
                   className="group bg-white dark:bg-[#0c2242] rounded-xl overflow-hidden border border-slate-200/80 dark:border-amber-400/20 shadow-sm hover:shadow-lg transition-all cursor-pointer flex flex-col"
                 >
-                  <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100 dark:bg-slate-900">
+                  <div className="relative aspect-16/10 w-full overflow-hidden bg-slate-100 dark:bg-slate-900">
                     <Image
                       src={item.imageUrl}
                       alt={item.title}

@@ -9,7 +9,7 @@ export function LaunchSpotlight() {
   const launchEvent = FOUNDATION_EVENTS[0];
 
   return (
-    <section className="py-20 dark:bg-gradient-to-br dark:from-[#0c1f38] dark:via-[#1a070f] dark:to-[#071324] bg-[#fbf9f4] border-y border-transparent hover:border-amber-300/60 transition-colors">
+    <section className="py-20 dark:bg-linear-to-br dark:from-[#0c1f38] dark:via-[#1a070f] dark:to-[#071324] bg-[#fbf9f4] border-y border-transparent hover:border-amber-300/60 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Left Image & Badge */}
@@ -22,7 +22,7 @@ export function LaunchSpotlight() {
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="w-full h-80 sm:h-96 object-cover transform group-hover:scale-105 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#061122] via-[#061122]/40 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-[#061122] via-[#061122]/40 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6">
               <span className="inline-block text-sm font-bold uppercase tracking-widest bg-amber-400 text-slate-950 px-2.5 py-1 rounded mb-2 shadow">
                 {launchEvent.badge}

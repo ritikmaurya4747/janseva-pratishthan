@@ -169,16 +169,16 @@ export function ReviewsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4 }}
-              className="min-w-[290px] sm:min-w-[340px] max-w-[340px] snap-start flex flex-col justify-between bg-white dark:bg-gradient-to-b dark:from-[#0c2242] dark:to-[#081528] rounded-2xl p-6 sm:p-7 border border-slate-200/90 dark:border-amber-400/20 shadow-md hover:shadow-xl dark:shadow-[0_10px_30px_rgba(0,0,0,0.3)] transition-all duration-300 hover:-translate-y-1 relative group"
+              className="min-w-72.5 sm:min-w-85 max-w-85 snap-start flex flex-col justify-between bg-white dark:bg-linear-to-b dark:from-[#0c2242] dark:to-[#081528] rounded-2xl p-6 sm:p-7 border border-slate-200/90 dark:border-amber-400/20 shadow-md hover:shadow-xl dark:shadow-[0_10px_30px_rgba(0,0,0,0.3)] transition-all duration-300 hover:-translate-y-1 relative group"
             >
               {/* Background decorative quote watermark */}
-              <div className="absolute top-4 right-5 text-slate-100 dark:text-white/[0.04] pointer-events-none group-hover:text-amber-500/10 transition-colors">
+              <div className="absolute top-4 right-5 text-slate-100 dark:text-white/4 pointer-events-none group-hover:text-amber-500/10 transition-colors">
                 <Quote className="w-12 h-12" />
               </div>
 
               <div className="space-y-3 relative z-10">
                 {/* Category / Initiative Tag & Date Header */}
-                <div className="flex items-center justify-between gap-2 min-h-[26px]">
+                <div className="flex items-center justify-between gap-2 min-h-6.5">
                   {rev.initiativeTag && (
                     <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md bg-amber-400/10 border border-amber-400/25 text-[#996515] dark:text-amber-300">
                       {rev.initiativeTag}
@@ -219,7 +219,7 @@ export function ReviewsSection() {
                 <div className="flex items-center gap-3">
                   {/* Initials Avatar */}
                   <div
-                    className={`w-9 h-9 rounded-full bg-gradient-to-tr ${rev.avatarColor || "from-amber-400 to-yellow-200"} p-0.5 shadow-sm`}
+                    className={`w-9 h-9 rounded-full bg-linear-to-tr ${rev.avatarColor || "from-amber-400 to-yellow-200"} p-0.5 shadow-sm`}
                   >
                     <div className="w-full h-full rounded-full bg-[#0c2242] text-amber-200 font-bold text-sm flex items-center justify-center">
                       {rev.name.charAt(0)}
@@ -255,7 +255,7 @@ export function ReviewsSection() {
         <div className="text-center pt-8 sm:pt-10">
           <button
             onClick={() => setIsModalOpen(true)}
-            className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full font-bold text-sm uppercase tracking-[0.14em] text-slate-950 bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 hover:from-amber-300 hover:to-yellow-200 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_25px_rgba(212,175,55,0.5)] hover:-translate-y-0.5 border-none active:scale-95"
+            className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full font-bold text-sm uppercase tracking-[0.14em] text-slate-950 bg-linear-to-r from-amber-400 via-yellow-300 to-amber-500 hover:from-amber-300 hover:to-yellow-200 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_25px_rgba(212,175,55,0.5)] hover:-translate-y-0.5 border-none active:scale-95"
           >
             <Edit3 className="w-4 h-4 text-slate-950" />
             <span>Write A Review</span>
@@ -430,7 +430,7 @@ export function ReviewsSection() {
                   </button>
                   <button
                     type="submit"
-                    className="px-6 py-2.5 rounded-xl text-sm font-bold uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-400 to-yellow-300 hover:from-amber-300 hover:to-yellow-200 transition-all cursor-pointer shadow-md"
+                    className="px-6 py-2.5 rounded-xl text-sm font-bold uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-400 to-yellow-300 hover:from-amber-300 hover:to-yellow-200 transition-all cursor-pointer shadow-md"
                   >
                     Submit Review
                   </button>

@@ -13,7 +13,6 @@ const highlightLinkClass =
 const headingClass =
   "font-display text-xl font-bold dark:text-amber-300 text-amber-900 tracking-wide";
 
-/** Server Component — only the newsletter form is shipped as client JS. */
 export function Footer() {
   const { contact } = FOUNDATION_INFO;
 
@@ -22,9 +21,9 @@ export function Footer() {
       id="foundation-footer"
       className="relative dark:bg-[#050c18] bg-[#ede5d4] border-t dark:border-transparent border-transparent hover:border-amber-300/60 dark:text-slate-300 text-slate-700 pt-16 pb-12 overflow-hidden transition-colors duration-300"
     >
-      <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-amber-400/80 to-transparent absolute top-0 left-0" />
-      <div className="absolute -top-24 left-1/4 w-[500px] h-44 dark:bg-blue-600/10 bg-amber-400/10 blur-[100px] pointer-events-none" />
-      <div className="absolute -top-24 right-1/4 w-[500px] h-44 dark:bg-rose-900/15 bg-rose-400/10 blur-[100px] pointer-events-none" />
+      <div className="w-full h-0.5 bg-linear-to-r from-transparent via-amber-400/80 to-transparent absolute top-0 left-0" />
+      <div className="absolute -top-24 left-1/4 w-125 h-44 dark:bg-blue-600/10 bg-amber-400/10 blur-[100px] pointer-events-none" />
+      <div className="absolute -top-24 right-1/4 w-125 h-44 dark:bg-rose-900/15 bg-rose-400/10 blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12 pb-12 border-none">

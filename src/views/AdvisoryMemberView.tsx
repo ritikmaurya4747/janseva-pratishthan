@@ -76,7 +76,7 @@ export function AdvisoryMemberView({ slug }: { slug: string }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Left Column: Portrait & Key Credentials */}
             <div className="lg:col-span-4 space-y-6">
-              <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden p-1 bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-600 shadow-xl">
+              <div className="relative aspect-4/5 w-full rounded-2xl overflow-hidden p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 shadow-xl">
                 <div className="w-full h-full rounded-xl overflow-hidden relative bg-slate-900">
                   <FallbackImage
                     src={member.photo}
@@ -87,7 +87,7 @@ export function AdvisoryMemberView({ slug }: { slug: string }) {
                     sizes="(min-width: 1024px) 33vw, 100vw"
                     className="object-cover object-top"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                   {member.experienceYears && (
                     <div className="absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold dark:bg-black/80 bg-white/95 dark:text-amber-300 text-amber-900 backdrop-blur-md shadow-md border border-amber-400/40">
@@ -155,7 +155,7 @@ export function AdvisoryMemberView({ slug }: { slug: string }) {
 
               {/* Quote Block */}
               {member.quote && (
-                <div className="p-5 sm:p-6 rounded-2xl dark:bg-gradient-to-r dark:from-amber-400/15 dark:to-transparent bg-amber-50/80 border-l-4 border-amber-400 dark:border-amber-400 space-y-2">
+                <div className="p-5 sm:p-6 rounded-2xl dark:bg-linear-to-r dark:from-amber-400/15 dark:to-transparent bg-amber-50/80 border-l-4 border-amber-400 dark:border-amber-400 space-y-2">
                   <Quote className="w-5 h-5 text-amber-600 dark:text-amber-400" />
                   <p className="text-sm sm:text-base italic dark:text-amber-100 text-slate-800 leading-relaxed font-sans">
                     "{member.quote}"
@@ -276,7 +276,7 @@ export function AdvisoryMemberView({ slug }: { slug: string }) {
                 className="group rounded-2xl dark:bg-[#0c2242] bg-white border border-slate-200 dark:border-white/10 hover:border-amber-400/60 p-4 shadow-md hover:shadow-xl transition-all cursor-pointer flex flex-col justify-between font-sans"
               >
                 <div className="space-y-3">
-                  <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden bg-slate-900">
+                  <div className="relative aspect-4/3 w-full rounded-xl overflow-hidden bg-slate-900">
                     <FallbackImage
                       src={other.photo}
                       fallbackName={other.name}

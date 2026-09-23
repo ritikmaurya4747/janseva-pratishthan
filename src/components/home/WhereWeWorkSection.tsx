@@ -30,10 +30,10 @@ export function WhereWeWorkSection() {
   const [hoveredState, setHoveredState] = useState<string | null>(null);
 
   return (
-    <section className="relative w-full py-16 sm:py-24 bg-[#fbf9f4] dark:bg-[#060e1c] border-t border-black/5 dark:border-white/5 transition-colors duration-300 overflow-hidden">
+    <section className="relative w-full py-16 sm:py-24 bg-[#fbf9f4] dark:bg-brand-deep border-t border-black/5 dark:border-white/5 transition-colors duration-300 overflow-hidden">
       {/* Subtle brand ambient glow in the background */}
       <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-amber-500/5 dark:bg-amber-400/5 rounded-full blur-3xl pointer-events-none -z-10" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#87101c]/5 dark:bg-[#87101c]/10 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-maroon-crimson/5 dark:bg-brand-maroon-crimson/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* ========================================================================= */}
@@ -60,7 +60,7 @@ export function WhereWeWorkSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* LEFT: INDIA VECTOR MAP - Styled in Brand Deep Navy & Royal Gold Accent */}
           <div className="lg:col-span-7 flex justify-center items-center relative">
-            <div className="relative w-full max-w-[540px] aspect-[612/696] select-none">
+            <div className="relative w-full max-w-540px aspect-612/696 select-none">
               {/* SVG Map of India with States */}
               <svg
                 viewBox={IndiaMapData.viewBox}
@@ -100,21 +100,15 @@ export function WhereWeWorkSection() {
                         strokeWidth={strokeWidth}
                         strokeLinejoin="round"
                         strokeLinecap="round"
-                        className={`transition-all duration-300 cursor-pointer ${
-                          isMaharashtra
-                            ? "dark:fill-[#d4af37] fill-[#c59b27] hover:brightness-110"
+                        aria-label={`${loc.name}${isMaharashtra ? " (Operational Regional Center)" : ""
+                          }`}
+                        className={`transition-all duration-300 cursor-pointer ${isMaharashtra
+                            ? "dark:fill-brand-gold fill-[#c59b27] hover:brightness-110"
                             : "dark:fill-[#0d2346] fill-[#133568] dark:hover:fill-[#1e457e] hover:fill-[#1a4484]"
-                        }`}
+                          }`}
                         onMouseEnter={() => setHoveredState(loc.name)}
                         onMouseLeave={() => setHoveredState(null)}
-                      >
-                        <title>
-                          {loc.name}
-                          {isMaharashtra
-                            ? " (Operational Regional Center)"
-                            : ""}
-                        </title>
-                      </path>
+                      />
                     );
                   })}
                 </g>
@@ -132,11 +126,11 @@ export function WhereWeWorkSection() {
                   {/* Stable brand gold & crimson halo */}
                   <circle
                     r="26"
-                    className="fill-[#d4af37]/35 dark:fill-[#d4af37]/40"
+                    className="fill-brand-gold/35 dark:fill-brand-gold/40"
                   />
                   <circle
                     r="15"
-                    className="fill-[#87101c]/45 dark:fill-[#87101c]/50"
+                    className="fill-brand-maroon-crimson/45 dark:fill-brand-maroon-crimson/50"
                   />
                 </g>
 
@@ -157,7 +151,7 @@ export function WhereWeWorkSection() {
                   {/* Pin Body - Imperial Crimson (#87101c) with Gold Stroke */}
                   <path
                     d="M13 0C5.82 0 0 5.82 0 13c0 9.2 13 18.5 13 18.5s13-9.3 13-18.5c0-7.18-5.82-13-13-13z"
-                    className="fill-[#87101c] stroke-[#facc15] stroke-[1.8] transition-transform duration-200 group-hover:scale-110 drop-shadow-md"
+                    className="fill-brand-maroon-crimson stroke-brand-gold stroke-[1.8] transition-transform duration-200 group-hover:scale-110 drop-shadow-md"
                     style={{ transformOrigin: "13px 30px" }}
                   />
 
@@ -170,7 +164,7 @@ export function WhereWeWorkSection() {
                   />
 
                   {/* Tiny Center Gold Spark */}
-                  <circle cx="13" cy="12" r="1.8" className="fill-[#d4af37]" />
+                  <circle cx="13" cy="12" r="1.8" className="fill-brand-gold" />
                 </g>
               </svg>
 
@@ -195,12 +189,12 @@ export function WhereWeWorkSection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="relative bg-white dark:bg-[#0a1c38] rounded-3xl p-7 sm:p-9 shadow-xl dark:shadow-2xl border border-slate-200/80 dark:border-amber-400/20 space-y-6"
+              className="relative bg-white dark:bg-brand-navy rounded-3xl p-7 sm:p-9 shadow-xl dark:shadow-2xl border border-slate-200/80 dark:border-amber-400/20 space-y-6"
             >
               {/* Badge & Active Status (Brand Royal Gold / Crimson Theme) */}
               <div className="flex items-center justify-between">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold bg-amber-500/10 text-[#a47b1e] dark:text-amber-300 border border-amber-500/30">
-                  <span className="w-2 h-2 rounded-full bg-[#87101c] dark:bg-amber-400 animate-pulse" />
+                  <span className="w-2 h-2 rounded-full bg-brand-maroon-crimson dark:bg-amber-400 animate-pulse" />
                   {t(office.badge, office.badgeHindi)}
                 </span>
                 <span className="text-sm font-medium text-slate-500 dark:text-slate-400">
@@ -220,7 +214,7 @@ export function WhereWeWorkSection() {
 
               {/* Address with MapPin Icon */}
               <div className="flex items-start gap-3.5 text-slate-700 dark:text-slate-300">
-                <div className="w-8 h-8 rounded-full bg-amber-50 dark:bg-amber-400/10 flex-shrink-0 flex items-center justify-center text-amber-700 dark:text-amber-300 mt-0.5">
+                <div className="w-8 h-8 rounded-full bg-amber-50 dark:bg-amber-400/10 shrink-0 flex items-center justify-center text-amber-700 dark:text-amber-300 mt-0.5">
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div className="text-sm leading-relaxed">
@@ -236,11 +230,11 @@ export function WhereWeWorkSection() {
               {/* Quick Contact & Timings Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 border-t border-slate-100 dark:border-white/5">
                 <div className="flex items-center gap-2.5 text-sm text-slate-600 dark:text-slate-400">
-                  <Clock className="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0" />
+                  <Clock className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
                   <span>{office.hours}</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-sm text-slate-600 dark:text-slate-400">
-                  <Phone className="w-4 h-4 text-amber-600 dark:text-amber-400 flex-shrink-0" />
+                  <Phone className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0" />
                   <a
                     href={`tel:${office.phone.replace(/\s/g, "")}`}
                     className="hover:text-amber-600 dark:hover:text-amber-300 transition-colors"
@@ -274,7 +268,7 @@ export function WhereWeWorkSection() {
                   href={office.mapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#103264] hover:bg-[#0a1c38] dark:bg-amber-400 dark:hover:bg-amber-300 text-white dark:text-slate-950 font-semibold text-sm tracking-wide shadow-md hover:shadow-lg transition-all"
+                  className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-brand-blue hover:bg-brand-navy dark:bg-amber-400 dark:hover:bg-amber-300 text-white dark:text-slate-950 font-semibold text-sm tracking-wide shadow-md hover:shadow-lg transition-all"
                 >
                   <Navigation className="w-3.5 h-3.5" />
                   <span>

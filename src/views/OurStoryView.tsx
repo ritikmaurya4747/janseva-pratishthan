@@ -22,7 +22,7 @@ export function OurStoryView() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         {/* Header Intro */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full dark:bg-gradient-to-r dark:from-blue-950 dark:to-[#2c0812] bg-amber-100 text-amber-900 border border-transparent hover:border-amber-300/60 text-sm font-semibold uppercase tracking-widest shadow-sm">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full dark:bg-linear-to-r dark:from-blue-950 dark:to-[#2c0812] bg-amber-100 text-amber-900 border border-transparent hover:border-amber-300/60 text-sm font-semibold uppercase tracking-widest shadow-sm">
             <FoundationLogo size="xs" showLabel={false} />
             <span>The Genesis & The Vision</span>
           </div>
@@ -37,11 +37,11 @@ export function OurStoryView() {
         </div>
 
         {/* Founder Feature Section */}
-        <div className="rounded-3xl dark:bg-gradient-to-r dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-white border border-slate-200/90 dark:border-amber-400/20 p-8 sm:p-12 shadow-xl">
+        <div className="rounded-3xl dark:bg-linear-to-r dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-white border border-slate-200/90 dark:border-amber-400/20 p-8 sm:p-12 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Founder Avatar & Bio Card with Photo */}
             <div className="lg:col-span-5 xl:col-span-4 text-center lg:text-left space-y-4 lg:border-r border-slate-200 dark:border-white/10 lg:pr-8">
-              <div className="relative w-full max-w-[280px] sm:max-w-[320px] aspect-[4/5] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-2xl p-1 bg-gradient-to-tr from-amber-400 via-yellow-100 to-amber-600">
+              <div className="relative w-full max-w-70 sm:max-w-[320px] aspect-4/5 mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-2xl p-1 bg-linear-to-tr from-amber-400 via-yellow-100 to-amber-600">
                 <div className="relative w-full h-full rounded-xl overflow-hidden bg-slate-900">
                   <Image
                     src={founder.photo}
@@ -127,7 +127,7 @@ export function OurStoryView() {
         </div>
 
         {/* General Secretary Profile & Operational Commitment */}
-        <div className="rounded-3xl dark:bg-gradient-to-br dark:from-[#0c2242] dark:via-[#112745] dark:to-[#1a0710] bg-white border border-slate-200/90 dark:border-amber-400/20 p-8 sm:p-12 shadow-xl">
+        <div className="rounded-3xl dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#112745] dark:to-[#1a0710] bg-white border border-slate-200/90 dark:border-amber-400/20 p-8 sm:p-12 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Secretary Narrative */}
             <div className="lg:col-span-7 xl:col-span-8 space-y-4 order-2 lg:order-1">
@@ -180,7 +180,7 @@ export function OurStoryView() {
 
             {/* Secretary Bio Sidebar with Full-Sized Portrait matching Founder */}
             <div className="lg:col-span-5 xl:col-span-4 text-center lg:text-left space-y-4 lg:border-l border-slate-200 dark:border-white/10 lg:pl-8 order-1 lg:order-2">
-              <div className="relative w-full max-w-[280px] sm:max-w-[320px] aspect-[4/5] mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-2xl p-1 bg-gradient-to-tr from-amber-400 via-yellow-100 to-amber-600">
+              <div className="relative w-full max-w-70 sm:max-w-[320px] aspect-4/5 mx-auto lg:mx-0 rounded-2xl overflow-hidden shadow-2xl p-1 bg-linear-to-tr from-amber-400 via-yellow-100 to-amber-600">
                 <div className="relative w-full h-full rounded-xl overflow-hidden bg-slate-900">
                   <SecretaryPhoto
                     className="object-cover object-top"
@@ -232,7 +232,7 @@ export function OurStoryView() {
             {STORY.principles.map((pr, idx) => (
               <div
                 key={pr.title}
-                className="p-6 rounded-2xl dark:bg-gradient-to-br dark:from-[#0c2242]/90 dark:to-[#1d070f]/90 bg-white border border-slate-200/80 transition-all space-y-2.5 shadow-md"
+                className="p-6 rounded-2xl dark:bg-linear-to-br dark:from-[#0c2242]/90 dark:to-[#1d070f]/90 bg-white border border-slate-200/80 transition-all space-y-2.5 shadow-md"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-lg dark:bg-amber-400/20 dark:text-amber-300 bg-amber-100 text-amber-900 flex items-center justify-center text-sm font-bold font-mono border border-transparent hover:border-amber-300/60">
@@ -256,7 +256,7 @@ export function OurStoryView() {
         </div>
 
         {/* Governance & Trust Commitment */}
-        <div className="rounded-2xl dark:bg-gradient-to-br dark:from-[#0a1b33] dark:to-[#1f060d] bg-gradient-to-br from-amber-100/90 via-amber-50 to-amber-100/90 border border-transparent hover:border-amber-300/60 p-8 text-center space-y-4 max-w-4xl mx-auto shadow-xl">
+        <div className="rounded-2xl dark:bg-linear-to-br dark:from-[#0a1b33] dark:to-[#1f060d] bg-linear-to-br from-amber-100/90 via-amber-50 to-amber-100/90 border border-transparent hover:border-amber-300/60 p-8 text-center space-y-4 max-w-4xl mx-auto shadow-xl">
           <ShieldCheck className="w-10 h-10 text-amber-500 mx-auto" />
           <h3 className="font-display text-2xl font-bold dark:text-white text-slate-900">
             100% Commitment to Financial & Moral Integrity
@@ -276,7 +276,7 @@ export function OurStoryView() {
             </Link>
             <Link
               href={ROUTES.donate}
-              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 text-slate-950 text-sm font-bold uppercase tracking-wider hover:from-amber-200 hover:to-yellow-100 transition-colors shadow cursor-pointer border-none"
+              className="px-5 py-2.5 rounded-xl bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 text-slate-950 text-sm font-bold uppercase tracking-wider hover:from-amber-200 hover:to-yellow-100 transition-colors shadow cursor-pointer border-none"
             >
               Support Our Work
             </Link>

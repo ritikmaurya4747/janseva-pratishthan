@@ -1,11 +1,11 @@
-import { Fragment } from "react";
-import Link from "next/link";
-import { ArrowRight, CheckCircle2, Heart, ShieldCheck } from "lucide-react";
-import { FoundationLogo } from "@/components/FoundationLogo";
 import { Reveal } from "@/components/ui/Reveal";
-import { TreeOfLife } from "./TreeOfLife";
 import { FOUNDATION_INFO, OFFICIAL_BANNER_FIELDS } from "@/data";
 import { ROUTES, pillarHref } from "@/lib/routes";
+import { ArrowRight, CheckCircle2, Heart, ShieldCheck } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { Fragment } from "react";
+import { TreeOfLife } from "./TreeOfLife";
 
 /**
  * Server Component: "Small Steps, Big Impact" hero with the Tree of Life.
@@ -17,11 +17,11 @@ export function TreeOfLifeHero() {
       id="tree-of-life-section"
       className="relative pt-12 sm:pt-16 pb-16 lg:pb-24 overflow-hidden border-b border-transparent dark:border-transparent hover:border-amber-300/60"
     >
-      {/* Background Gradients: Royal Navy Blue in Dark, Warm Pearl & Amber in Light */}
-      <div className="absolute inset-0 dark:bg-gradient-to-br dark:from-[#061224] dark:via-[#0f2142] dark:to-[#1c060d] bg-gradient-to-b from-[#fbf9f4] via-[#f7f2e7] to-[#f3ecdc] -z-20 transition-colors duration-300" />
-      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 w-[600px] h-[600px] dark:bg-blue-600/15 bg-amber-400/10 rounded-full blur-[140px] pointer-events-none -z-10" />
-      <div className="absolute bottom-10 right-1/4 w-[500px] h-[500px] dark:bg-rose-900/20 bg-rose-400/8 rounded-full blur-[130px] pointer-events-none -z-10" />
-      <div className="absolute top-1/2 right-1/3 w-[400px] h-[400px] dark:bg-amber-500/10 bg-yellow-400/10 rounded-full blur-[120px] pointer-events-none -z-10" />
+      {/* Background linear: Royal Navy Blue in Dark, Warm Pearl & Amber in Light */}
+      <div className="absolute inset-0 dark:bg-linear-to-br dark:from-[#061224] dark:via-[#0f2142] dark:to-[#1c060d] bg-linear-to-b from-[#fbf9f4] via-[#f7f2e7] to-[#f3ecdc] -z-20 transition-colors duration-300" />
+      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 w-150 h-150 dark:bg-blue-600/15 bg-amber-400/10 rounded-full blur-[140px] pointer-events-none -z-10" />
+      <div className="absolute bottom-10 right-1/4 w-125 h-125 dark:bg-rose-900/20 bg-rose-400/8 rounded-full blur-[130px] pointer-events-none -z-10" />
+      <div className="absolute top-1/2 right-1/3 w-100 h-100 dark:bg-amber-500/10 bg-yellow-400/10 rounded-full blur-[120px] pointer-events-none -z-10" />
 
       {/* Constellation Grid Dots on Top Right */}
       <div className="absolute top-8 right-8 sm:right-16 pointer-events-none opacity-40">
@@ -103,12 +103,20 @@ export function TreeOfLifeHero() {
           >
             {/* Trust Badge & Official Crest Emblem Indicator */}
             <div className="flex flex-wrap items-center gap-2.5">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full dark:bg-gradient-to-r dark:from-blue-950/70 dark:to-[#2c0812]/70 dark:text-amber-200 bg-amber-100/90 text-amber-900 border border-transparent hover:border-amber-300/60 text-sm font-semibold tracking-wide shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full dark:bg-linear-to-r dark:from-blue-950/70 dark:to-[#2c0812]/70 dark:text-amber-200 bg-amber-100/90 text-amber-900 border border-transparent hover:border-amber-300/60 text-sm font-semibold tracking-wide shadow-sm">
                 <ShieldCheck className="w-3.5 h-3.5 dark:text-amber-300 text-amber-700" />
                 <span>Registered Public Charitable Trust • 80G Tax Exempt</span>
               </div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full dark:bg-[#18050b]/80 dark:text-amber-300 bg-rose-50 text-rose-900 border border-transparent hover:border-rose-300/60 text-sm font-medium shadow-sm">
-                <FoundationLogo size="xs" showLabel={false} />
+                <Image
+        src="/logo.jpeg"
+        alt="Foundation Logo"
+        width={96}
+        height={96}
+        quality={100}
+        className="w-12 h-12 group-hover:scale-105 transition-transform shrink-0 object-contain"
+        priority
+      />
                 <span>Official Emblem</span>
               </div>
             </div>
@@ -123,7 +131,7 @@ export function TreeOfLifeHero() {
                 </span>
               </h1>
               {/* Refined Gold Underline Accent */}
-              <div className="w-28 h-[2px] bg-gradient-to-r from-amber-400 via-yellow-200 to-transparent rounded-full mt-3" />
+              <div className="w-28 h-0.5 bg-linear-to-r from-amber-400 via-yellow-200 to-transparent rounded-full mt-3" />
             </div>
 
             {/* Subtitle text */}
@@ -132,7 +140,7 @@ export function TreeOfLifeHero() {
             </p>
 
             {/* Core Mantra Quote Pill in Royal Navy & Maroon */}
-            <div className="p-4 rounded-xl dark:bg-gradient-to-r dark:from-[#0c2242] dark:via-[#1c0811] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 shadow-md max-w-xl">
+            <div className="p-4 rounded-xl dark:bg-linear-to-r dark:from-[#0c2242] dark:via-[#1c0811] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 shadow-md max-w-xl">
               <p className="text-sm italic dark:text-amber-100/95 text-slate-800 font-editorial">
                 "{FOUNDATION_INFO.coreBelief}"
               </p>
@@ -146,7 +154,7 @@ export function TreeOfLifeHero() {
               <Link
                 id="hero-explore-work-btn"
                 href={ROUTES.ourWork}
-                className="px-6 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_25px_rgba(212,175,55,0.4)] border-none transition-all flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
+                className="px-6 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_25px_rgba(212,175,55,0.4)] border-none transition-all flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
               >
                 <span>Explore 10 Focus Areas</span>
                 <ArrowRight className="w-4 h-4" />
@@ -155,7 +163,7 @@ export function TreeOfLifeHero() {
               <Link
                 id="hero-donate-btn"
                 href={ROUTES.donate}
-                className="px-5 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider dark:text-amber-200 dark:bg-gradient-to-r dark:from-[#0c213f] dark:to-[#250810] dark:hover:from-[#132d54] dark:hover:to-[#330b16] text-amber-900 bg-amber-100 hover:bg-amber-200 border border-transparent hover:border-amber-300/60 shadow-sm transition-all flex items-center gap-2 cursor-pointer"
+                className="px-5 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider dark:text-amber-200 dark:bg-linear-to-r dark:from-[#0c213f] dark:to-[#250810] dark:hover:from-[#132d54] dark:hover:to-[#330b16] text-amber-900 bg-amber-100 hover:bg-amber-200 border border-transparent hover:border-amber-300/60 shadow-sm transition-all flex items-center gap-2 cursor-pointer"
               >
                 <Heart className="w-4 h-4 fill-amber-400/40 text-amber-600 dark:text-amber-300" />
                 <span>Donate / 80G Relief</span>
@@ -201,10 +209,18 @@ export function TreeOfLifeHero() {
           delay={0.3}
           className="mt-12 rounded-2xl overflow-hidden shadow-[0_15px_50px_rgba(0,0,0,0.25)] border-none"
         >
-          <div className="flex flex-col lg:flex-row items-stretch bg-gradient-to-r from-[#cfa139] via-[#bf8e2a] to-[#0c2652]">
+          <div className="flex flex-col lg:flex-row items-stretch bg-linear-to-r from-[#cfa139] via-[#bf8e2a] to-[#0c2652]">
             {/* Left Gold Section with Crest Logo */}
             <div className="flex items-center gap-4 px-6 py-4 bg-[#c59426] shrink-0 border-none">
-              <FoundationLogo size="md" showLabel={false} />
+              <Image
+        src="/logo.jpeg"
+        alt="Foundation Logo"
+        width={96}
+        height={96}
+        quality={100}
+        className="w-12 h-12 group-hover:scale-105 transition-transform shrink-0 object-contain"
+        priority
+      />
               <div className="text-stone-950 font-display">
                 <span className="text-sm uppercase tracking-widest font-bold block text-stone-900/80">
                   Registered Trust
@@ -240,7 +256,7 @@ export function TreeOfLifeHero() {
 
               <Link
                 href={ROUTES.ourWork}
-                className="shrink-0 px-4 py-2 rounded-xl text-sm font-bold uppercase tracking-wider bg-gradient-to-r from-amber-300 to-yellow-400 text-stone-950 hover:from-amber-200 hover:to-yellow-200 shadow-md border-none transition-all cursor-pointer flex items-center gap-1.5"
+                className="shrink-0 px-4 py-2 rounded-xl text-sm font-bold uppercase tracking-wider bg-linear-to-r from-amber-300 to-yellow-400 text-stone-950 hover:from-amber-200 hover:to-yellow-200 shadow-md border-none transition-all cursor-pointer flex items-center gap-1.5"
               >
                 <span>Explore Work</span>
                 <ArrowRight className="w-3.5 h-3.5" />

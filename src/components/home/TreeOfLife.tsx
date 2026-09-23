@@ -19,7 +19,7 @@ export function TreeOfLife() {
   return (
     <div
       id="tree-of-life-showcase"
-      className="relative w-full max-w-[620px] mx-auto select-none"
+      className="relative w-full max-w-155 mx-auto select-none"
     >
       {/* Background Amber, Royal Blue & Gold Radial Atmosphere Glow */}
       <div className="absolute inset-0 dark:bg-radial dark:from-amber-500/20 dark:via-[#4a0a14]/20 dark:to-transparent bg-radial from-amber-200/40 via-amber-100/20 to-transparent blur-3xl -z-10 pointer-events-none transform scale-110" />
@@ -298,7 +298,7 @@ export function TreeOfLife() {
           initial={{ opacity: 0, y: 10, scale: 0.96 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: 10 }}
-          className="mt-3 p-4 rounded-xl dark:bg-gradient-to-r dark:from-[#0c2242]/95 dark:via-[#230810]/95 dark:to-[#0c2242]/95 dark:text-slate-100 bg-white text-slate-800 border border-transparent hover:border-amber-300/60 backdrop-blur-md shadow-xl text-left"
+          className="mt-3 p-4 rounded-xl dark:bg-linear-to-r dark:from-[#0c2242]/95 dark:via-[#230810]/95 dark:to-[#0c2242]/95 dark:text-slate-100 bg-white text-slate-800 border border-transparent hover:border-amber-300/60 backdrop-blur-md shadow-xl text-left"
         >
           {TREE_BRANCHES.filter((b) => b.id === activeBranch).map((b) => (
             <div key={b.id} className="flex items-start justify-between gap-3">

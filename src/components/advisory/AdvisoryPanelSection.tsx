@@ -19,7 +19,6 @@ import {
 import { useLanguage } from "@/context/LanguageContext";
 import { advisorHref } from "@/lib/routes";
 
-/** Client Component: category filter for the advisory council grid (used on /advisory-panel and /our-story). */
 export function AdvisoryPanelSection() {
   const { t } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -97,7 +96,7 @@ export function AdvisoryPanelSection() {
           >
             <div className="space-y-4">
               {/* Member Photo with Golden Frame & Badges */}
-              <div className="relative aspect-[4/5] w-full rounded-xl overflow-hidden bg-slate-900 shadow-md p-1 bg-gradient-to-tr from-amber-400/90 via-yellow-200 to-amber-600/90">
+              <div className="relative aspect-4/5 w-full rounded-xl overflow-hidden bg-slate-900 shadow-md p-1 bg-linear-to-tr from-amber-400/90 via-yellow-200 to-amber-600/90">
                 <div className="w-full h-full rounded-lg overflow-hidden relative">
                   <FallbackImage
                     src={member.photo}
@@ -107,8 +106,8 @@ export function AdvisoryPanelSection() {
                     sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
-                  {/* Subtle dark gradient overlay at bottom of photo for text contrast */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
+                  {/* Subtle dark linear overlay at bottom of photo for text contrast */}
+                  <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                   {/* Experience Badge */}
                   {member.experienceYears && (
@@ -156,7 +155,7 @@ export function AdvisoryPanelSection() {
       </div>
 
       {/* Advisory Mandate & Ethics Charter Card */}
-      <div className="rounded-3xl dark:bg-gradient-to-r dark:from-[#0a1c36] dark:via-[#190914] dark:to-[#0a1c36] bg-white border border-slate-200/90 dark:border-amber-400/25 p-8 sm:p-12 shadow-xl space-y-8">
+      <div className="rounded-3xl dark:bg-linear-to-r dark:from-[#0a1c36] dark:via-[#190914] dark:to-[#0a1c36] bg-white border border-slate-200/90 dark:border-amber-400/25 p-8 sm:p-12 shadow-xl space-y-8">
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300 dark:bg-amber-400/10 bg-amber-100 border border-amber-400/25 font-sans">
             <BookOpen className="w-3.5 h-3.5" />

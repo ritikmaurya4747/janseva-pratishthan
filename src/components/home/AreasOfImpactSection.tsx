@@ -43,7 +43,7 @@ export function AreasOfImpactSection() {
                 sizes="(min-width: 1024px) 60vw, (min-width: 640px) 50vw, 100vw"
                 className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/85 via-black/35 to-transparent transition-opacity duration-300" />
 
               <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/40 backdrop-blur-md border border-white/20 flex items-center justify-center text-white/80 group-hover:text-amber-300 group-hover:bg-black/60 transition-all opacity-0 group-hover:opacity-100 transform translate-y-1 group-hover:translate-y-0">
                 <ArrowUpRight className="w-4 h-4" />

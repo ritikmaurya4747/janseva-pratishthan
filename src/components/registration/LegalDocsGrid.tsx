@@ -54,7 +54,7 @@ export function LegalDocsGrid() {
           {LEGAL_DOCS.map((doc) => (
             <div
               key={doc.registrationNumber}
-              className="rounded-2xl dark:bg-gradient-to-b dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 bg-white border border-slate-200/80 hover:border-amber-300/60 p-6 flex flex-col justify-between transition-all duration-300 shadow-md space-y-4 hover:-translate-y-0.5"
+              className="rounded-2xl dark:bg-linear-to-b dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 bg-white border border-slate-200/80 hover:border-amber-300/60 p-6 flex flex-col justify-between transition-all duration-300 shadow-md space-y-4 hover:-translate-y-0.5"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
@@ -108,11 +108,11 @@ export function LegalDocsGrid() {
       {/* Certificate Viewer Modal */}
       {selectedDoc && (
         <div
-          className="fixed inset-0 z-50 !m-0 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 overscroll-contain"
+          className="fixed inset-0 z-50 m-0! bg-black/85 backdrop-blur-md flex items-center justify-center p-4 overscroll-contain"
           onClick={() => setSelectedDoc(null)}
         >
           <div
-            className="relative w-full max-w-xl dark:bg-gradient-to-br dark:from-[#0c2242] dark:via-[#210810] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 rounded-2xl p-6 sm:p-8 shadow-2xl dark:text-slate-100 text-slate-900 space-y-5 max-h-[90vh] overflow-y-auto overscroll-contain"
+            className="relative w-full max-w-xl dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#210810] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 rounded-2xl p-6 sm:p-8 shadow-2xl dark:text-slate-100 text-slate-900 space-y-5 max-h-[90vh] overflow-y-auto overscroll-contain"
             onClick={(e) => e.stopPropagation()}
           >
             <button

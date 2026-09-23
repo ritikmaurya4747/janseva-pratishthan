@@ -28,7 +28,7 @@ export function HeroSlider() {
   return (
     <section
       id="main-hero-slider"
-      className="relative w-full h-[600px] sm:h-[660px] md:h-[720px] lg:h-[780px] overflow-hidden select-none bg-[#080e18]"
+      className="relative w-full h-150 sm:h-165 md:h-195 lg:h-195 overflow-hidden select-none bg-[#080e18]"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       aria-label="Foundation Highlights Slider"
@@ -54,18 +54,18 @@ export function HeroSlider() {
                 sizes="100vw"
                 priority={index === 0}
                 loading={index === 0 ? undefined : "eager"}
-                className={`object-cover object-center brightness-[1.05] contrast-[1.02] transition-transform duration-[7500ms] ease-out ${
+                className={`object-cover object-center brightness-[1.05] contrast-[1.02] transition-transform duration-7500 ease-out ${
                   isActive ? "scale-100" : "scale-105"
                 }`}
               />
               <div className="absolute inset-0 bg-black/30" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/40" />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-black/50" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/25 to-black/40" />
+              <div className="absolute inset-0 bg-linear-to-r from-black/50 via-transparent to-black/50" />
             </div>
           );
         })}
 
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-amber-500/10 rounded-full blur-[120px] pointer-events-none z-10" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-150 h-150 bg-amber-500/10 rounded-full blur-[120px] pointer-events-none z-10" />
       </div>
 
       {/* Content Container */}
@@ -101,7 +101,7 @@ export function HeroSlider() {
                     ? pillarHref(currentSlide.causeId)
                     : ROUTES.ourWork
                 }
-                className="px-6 sm:px-7 py-3 rounded-lg font-bold text-sm tracking-wide text-white bg-[#87101c] hover:bg-[#a31422] active:scale-95 border border-[#d4af37]/30 hover:border-[#facc15]/60 shadow-[0_4px_18px_rgba(135,16,28,0.5)] transition-all duration-200 cursor-pointer"
+                className="px-6 sm:px-7 py-3 rounded-lg font-bold text-sm tracking-wide text-white bg-brand-maroon-crimson hover:bg-[#a31422] active:scale-95 border border-brand-gold/30 hover:border-brand-gold-bright/60 shadow-[0_4px_18px_rgba(135,16,28,0.5)] transition-all duration-200 cursor-pointer"
               >
                 {currentSlide.secondaryBtnText}
               </Link>
@@ -109,7 +109,7 @@ export function HeroSlider() {
               <Link
                 id="hero-slider-donate-btn"
                 href={ROUTES.donate}
-                className="px-6 sm:px-7 py-3 rounded-lg font-bold text-sm tracking-wide text-stone-950 bg-[#d4af37] hover:bg-[#e2ad3b] active:scale-95 border border-transparent hover:border-[#facc15] shadow-[0_4px_20px_rgba(212,175,55,0.55)] transition-all duration-200 cursor-pointer"
+                className="px-6 sm:px-7 py-3 rounded-lg font-bold text-sm tracking-wide text-stone-950 bg-brand-gold hover:bg-[#e2ad3b] active:scale-95 border border-transparent hover:border-brand-gold-bright shadow-[0_4px_20px_rgba(212,175,55,0.55)] transition-all duration-200 cursor-pointer"
               >
                 {currentSlide.primaryBtnText}
               </Link>
@@ -128,7 +128,7 @@ export function HeroSlider() {
               onClick={() => setCurrentIndex(index)}
               className={`transition-all duration-300 rounded-full cursor-pointer border-none p-0 ${
                 isActive
-                  ? "w-8 h-2.5 bg-[#d4af37] shadow-[0_0_12px_rgba(212,175,55,0.85)] border border-[#facc15]"
+                  ? "w-8 h-2.5 bg-brand-gold shadow-[0_0_12px_rgba(212,175,55,0.85)] border border-brand-gold-bright"
                   : "w-2.5 h-2.5 bg-white/40 hover:bg-white/70"
               }`}
               title={`Go to slide ${index + 1}: ${slide.title}`}

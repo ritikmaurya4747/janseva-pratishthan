@@ -3,7 +3,6 @@
 import { useState, type FormEvent } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
-/** Only interactive piece of the footer — kept as a small client island. */
 export function NewsletterForm() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);

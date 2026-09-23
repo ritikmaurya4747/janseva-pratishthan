@@ -134,7 +134,7 @@ export function NewsListView() {
             className="group mb-12 bg-white dark:bg-[#0c2242] rounded-3xl overflow-hidden border border-slate-200/90 dark:border-amber-400/20 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer grid grid-cols-1 lg:grid-cols-12"
           >
             {/* Image Column */}
-            <div className="lg:col-span-7 relative aspect-[16/10] lg:aspect-auto overflow-hidden bg-slate-100 dark:bg-slate-900">
+            <div className="lg:col-span-7 relative aspect-16/10 lg:aspect-auto overflow-hidden bg-slate-100 dark:bg-slate-900">
               <Image
                 src={featuredArticle.imageUrl}
                 alt={featuredArticle.title}
@@ -195,7 +195,7 @@ export function NewsListView() {
                 className="group flex flex-col bg-white dark:bg-[#0c2242] rounded-2xl overflow-hidden border border-slate-200/90 dark:border-amber-400/20 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
               >
                 {/* Image */}
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100 dark:bg-slate-900">
+                <div className="relative aspect-16/10 w-full overflow-hidden bg-slate-100 dark:bg-slate-900">
                   <Image
                     src={item.imageUrl}
                     alt={item.title}
@@ -203,7 +203,7 @@ export function NewsListView() {
                     sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                     className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
 
                 {/* Body */}
@@ -234,7 +234,7 @@ export function NewsListView() {
         )}
 
         {/* Media Kit & Inquiries Box */}
-        <div className="mt-16 p-8 rounded-3xl bg-gradient-to-r from-amber-50/50 via-white to-amber-50/50 dark:from-[#0a182c] dark:via-[#0c2242] dark:to-[#0a182c] border border-amber-200/80 dark:border-amber-400/20 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-16 p-8 rounded-3xl bg-linear-to-r from-amber-50/50 via-white to-amber-50/50 dark:from-[#0a182c] dark:via-[#0c2242] dark:to-[#0a182c] border border-amber-200/80 dark:border-amber-400/20 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 text-center md:text-left">
             <h4 className="font-display text-xl font-bold text-slate-900 dark:text-white flex items-center justify-center md:justify-start gap-2">
               <Building2 className="w-5 h-5 text-amber-600 dark:text-amber-400" />
@@ -260,7 +260,7 @@ export function NewsListView() {
             </Link>
             <Link
               href={ROUTES.registration}
-              className="px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 shadow-md transition-all cursor-pointer"
+              className="px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 shadow-md transition-all cursor-pointer"
             >
               Statutory Credentials
             </Link>

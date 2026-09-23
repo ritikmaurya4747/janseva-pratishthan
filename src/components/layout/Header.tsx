@@ -1,8 +1,10 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useLanguage } from "@/context/LanguageContext";
+import { useTheme } from "@/context/ThemeContext";
+import { MAIN_NAV, WORK_MENU } from "@/data";
+import { Icon } from "@/lib/icons";
+import { ROUTES, isActivePath, pillarHref } from "@/lib/routes";
 import {
   ArrowRight,
   ChevronDown,
@@ -13,22 +15,19 @@ import {
   Sun,
   X,
 } from "lucide-react";
-import { FoundationLogo } from "@/components/FoundationLogo";
-import { useTheme } from "@/context/ThemeContext";
-import { useLanguage } from "@/context/LanguageContext";
-import { MAIN_NAV, WORK_MENU } from "@/data";
-import { Icon } from "@/lib/icons";
-import { ROUTES, isActivePath, pillarHref } from "@/lib/routes";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
+import FoundationLogo from "../FoundationLogo";
 
 const desktopLinkClass = (active: boolean) =>
-  `relative px-2 lg:px-2 xl:px-3 py-1.5 text-xs xl:text-sm font-semibold tracking-normal xl:tracking-wider transition-all duration-200 uppercase cursor-pointer border-none whitespace-nowrap shrink-0 ${
-    active
-      ? "dark:text-amber-200 text-amber-800 font-bold"
-      : "dark:text-slate-300 dark:hover:text-amber-100 text-slate-700 hover:text-amber-800"
+  `relative px-2 lg:px-2 xl:px-3 py-1.5 text-xs xl:text-sm font-semibold tracking-normal xl:tracking-wider transition-all duration-200 uppercase cursor-pointer border-none whitespace-nowrap shrink-0 ${active
+    ? "dark:text-amber-200 text-amber-800 font-bold"
+    : "dark:text-slate-300 dark:hover:text-amber-100 text-slate-700 hover:text-amber-800"
   }`;
 
 const ActiveUnderline = () => (
-  <span className="absolute bottom-0 left-2 right-2 h-0.5 bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-400 rounded-full" />
+  <span className="absolute bottom-0 left-2 right-2 h-0.5 bg-linear-to-r from-amber-400 via-yellow-300 to-amber-400 rounded-full" />
 );
 
 export function Header() {
@@ -65,10 +64,10 @@ export function Header() {
   return (
     <header
       id="main-header"
-      className="sticky top-0 z-50 w-full backdrop-blur-md transition-colors duration-200 border-none shadow-md dark:bg-gradient-to-r dark:from-[#050e1c]/95 dark:via-[#1a060d]/95 dark:to-[#050e1c]/95 dark:text-slate-100 bg-white/95 text-slate-900 border-b border-transparent hover:border-amber-300/60"
+      className="sticky top-0 z-50 w-full backdrop-blur-md transition-colors duration-200 border-none shadow-md dark:bg-linear-to-r dark:from-[#050e1c]/95 dark:via-[#1a060d]/95 dark:to-[#050e1c]/95 dark:text-slate-100 bg-white/95 text-slate-900 border-b border-transparent hover:border-amber-300/60"
     >
       {/* Top Hairline Gold Glow */}
-      <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-amber-400/80 to-transparent" />
+      <div className="w-full h-0.5 bg-linear-to-r from-transparent via-amber-400/80 to-transparent" />
 
       <div className="w-full max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 h-20 flex items-center justify-between gap-2 lg:gap-4">
         {/* Brand Logo & Official Crest */}
@@ -128,11 +127,10 @@ export function Header() {
                     {t(item.label, item.hindiLabel)}
                   </span>
                   <ChevronDown
-                    className={`w-3.5 h-3.5 transition-transform duration-200 shrink-0 ${
-                      workDropdownOpen
+                    className={`w-3.5 h-3.5 transition-transform duration-200 shrink-0 ${workDropdownOpen
                         ? "rotate-180 dark:text-amber-300 text-amber-700"
                         : "dark:text-slate-400 text-slate-500"
-                    }`}
+                      }`}
                   />
                   {isActive && <ActiveUnderline />}
                 </Link>
@@ -144,7 +142,7 @@ export function Header() {
                     onMouseLeave={closeWorkDropdown}
                     className="absolute left-0 top-full pt-2 w-screen max-w-3xl z-50 animate-in fade-in slide-in-from-top-2 duration-150"
                   >
-                    <div className="rounded-2xl border-none shadow-2xl p-6 backdrop-blur-2xl transition-colors duration-200 dark:bg-gradient-to-br dark:from-[#0c2242] dark:via-[#210810] dark:to-[#0c2242] dark:text-slate-100 bg-white text-slate-900 border border-transparent hover:border-amber-300/60">
+                    <div className="rounded-2xl border-none shadow-2xl p-6 backdrop-blur-2xl transition-colors duration-200 dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#210810] dark:to-[#0c2242] dark:text-slate-100 bg-white text-slate-900 border border-transparent hover:border-amber-300/60">
                       {/* Dropdown Header Bar */}
                       <div className="flex items-center justify-between pb-4 border-none border-b-0">
                         <div>
@@ -258,7 +256,7 @@ export function Header() {
           <Link
             id="header-donate-btn"
             href={ROUTES.donate}
-            className="relative inline-flex items-center gap-1.5 xl:gap-2 px-3.5 xl:px-5 py-2 rounded-full text-xs xl:text-sm font-bold uppercase tracking-wider text-stone-950 bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-400 hover:from-amber-200 hover:to-yellow-200 shadow-md hover:shadow-lg border-none transition-all cursor-pointer transform hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap shrink-0 no-underline"
+            className="relative inline-flex items-center gap-1.5 xl:gap-2 px-3.5 xl:px-5 py-2 rounded-full text-xs xl:text-sm font-bold uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-amber-200 to-yellow-400 hover:from-amber-200 hover:to-yellow-200 shadow-md hover:shadow-lg border-none transition-all cursor-pointer transform hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap shrink-0 no-underline"
           >
             <Heart className="w-3.5 h-3.5 fill-stone-950 text-stone-950" />
             <span>Donate</span>
@@ -326,11 +324,10 @@ export function Header() {
                   id={`mobile-nav-${item.id}`}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-semibold tracking-wider uppercase transition-colors flex items-center justify-between cursor-pointer border-none ${
-                    isActive
+                  className={`w-full text-left px-3.5 py-2.5 rounded-lg text-sm font-semibold tracking-wider uppercase transition-colors flex items-center justify-between cursor-pointer border-none ${isActive
                       ? "dark:bg-amber-500/15 dark:text-amber-200 bg-amber-100 text-amber-800 font-bold"
                       : "dark:text-slate-300 dark:hover:bg-[#08182e] dark:hover:text-amber-100 text-slate-700 hover:bg-slate-100 hover:text-amber-800"
-                  }`}
+                    }`}
                 >
                   <span>{t(item.label, item.hindiLabel)}</span>
                   {isActive && (
@@ -397,7 +394,7 @@ export function Header() {
               id="mobile-drawer-donate-btn"
               href={ROUTES.donate}
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold uppercase tracking-wider text-stone-950 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 shadow-md border-none cursor-pointer no-underline"
+              className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 shadow-md border-none cursor-pointer no-underline"
             >
               <Heart className="w-4 h-4 fill-stone-950" />
               <span>
