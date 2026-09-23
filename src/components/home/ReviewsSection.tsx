@@ -219,7 +219,7 @@ export function ReviewsSection() {
                 <div className="flex items-center gap-3">
                   {/* Initials Avatar */}
                   <div
-                    className={`w-9 h-9 rounded-full bg-linear-to-tr ${rev.avatarColor || "from-amber-400 to-yellow-200"} p-0.5 shadow-sm`}
+                    className={`w-10 h-8.5 rounded-full bg-linear-to-tr ${rev.avatarColor || "from-amber-400 to-yellow-200"} p-0.5 shadow-sm`}
                   >
                     <div className="w-full h-full rounded-full bg-[#0c2242] text-amber-200 font-bold text-sm flex items-center justify-center">
                       {rev.name.charAt(0)}
