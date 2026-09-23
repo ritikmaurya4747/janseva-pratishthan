@@ -1,11 +1,11 @@
+import { Fragment } from "react";
+import Link from "next/link";
+import { ArrowRight, CheckCircle2, Heart, ShieldCheck } from "lucide-react";
+import { FoundationLogo } from "@/components/FoundationLogo";
 import { Reveal } from "@/components/ui/Reveal";
+import { TreeOfLife } from "./TreeOfLife";
 import { FOUNDATION_INFO, OFFICIAL_BANNER_FIELDS } from "@/data";
 import { ROUTES, pillarHref } from "@/lib/routes";
-import { ArrowRight, CheckCircle2, Heart, ShieldCheck } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { Fragment } from "react";
-import { TreeOfLife } from "./TreeOfLife";
 
 /**
  * Server Component: "Small Steps, Big Impact" hero with the Tree of Life.
@@ -17,11 +17,11 @@ export function TreeOfLifeHero() {
       id="tree-of-life-section"
       className="relative pt-12 sm:pt-16 pb-16 lg:pb-24 overflow-hidden border-b border-transparent dark:border-transparent hover:border-amber-300/60"
     >
-      {/* Background linear: Royal Navy Blue in Dark, Warm Pearl & Amber in Light */}
+      {/* Background Gradients: Royal Navy Blue in Dark, Warm Pearl & Amber in Light */}
       <div className="absolute inset-0 dark:bg-linear-to-br dark:from-[#061224] dark:via-[#0f2142] dark:to-[#1c060d] bg-linear-to-b from-[#fbf9f4] via-[#f7f2e7] to-[#f3ecdc] -z-20 transition-colors duration-300" />
-      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 w-150 h-150 dark:bg-blue-600/15 bg-amber-400/10 rounded-full blur-[140px] pointer-events-none -z-10" />
-      <div className="absolute bottom-10 right-1/4 w-125 h-125 dark:bg-rose-900/20 bg-rose-400/8 rounded-full blur-[130px] pointer-events-none -z-10" />
-      <div className="absolute top-1/2 right-1/3 w-100 h-100 dark:bg-amber-500/10 bg-yellow-400/10 rounded-full blur-[120px] pointer-events-none -z-10" />
+      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 w-[600px] h-[600px] dark:bg-blue-600/15 bg-amber-400/10 rounded-full blur-[140px] pointer-events-none -z-10" />
+      <div className="absolute bottom-10 right-1/4 w-[500px] h-[500px] dark:bg-rose-900/20 bg-rose-400/8 rounded-full blur-[130px] pointer-events-none -z-10" />
+      <div className="absolute top-1/2 right-1/3 w-[400px] h-[400px] dark:bg-amber-500/10 bg-yellow-400/10 rounded-full blur-[120px] pointer-events-none -z-10" />
 
       {/* Constellation Grid Dots on Top Right */}
       <div className="absolute top-8 right-8 sm:right-16 pointer-events-none opacity-40">
@@ -108,15 +108,7 @@ export function TreeOfLifeHero() {
                 <span>Registered Public Charitable Trust • 80G Tax Exempt</span>
               </div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full dark:bg-[#18050b]/80 dark:text-amber-300 bg-rose-50 text-rose-900 border border-transparent hover:border-rose-300/60 text-sm font-medium shadow-sm">
-                <Image
-        src="/logo.jpeg"
-        alt="Foundation Logo"
-        width={96}
-        height={96}
-        quality={100}
-        className="w-12 h-12 group-hover:scale-105 transition-transform shrink-0 object-contain"
-        priority
-      />
+                <FoundationLogo size="xs" showLabel={false} />
                 <span>Official Emblem</span>
               </div>
             </div>
@@ -212,15 +204,7 @@ export function TreeOfLifeHero() {
           <div className="flex flex-col lg:flex-row items-stretch bg-linear-to-r from-[#cfa139] via-[#bf8e2a] to-[#0c2652]">
             {/* Left Gold Section with Crest Logo */}
             <div className="flex items-center gap-4 px-6 py-4 bg-[#c59426] shrink-0 border-none">
-              <Image
-        src="/logo.jpeg"
-        alt="Foundation Logo"
-        width={96}
-        height={96}
-        quality={100}
-        className="w-12 h-12 group-hover:scale-105 transition-transform shrink-0 object-contain"
-        priority
-      />
+              <FoundationLogo size="md" showLabel={false} />
               <div className="text-stone-950 font-display">
                 <span className="text-sm uppercase tracking-widest font-bold block text-stone-900/80">
                   Registered Trust
