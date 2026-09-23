@@ -2,6 +2,7 @@ import { FOUNDATION_INFO } from "@/data";
 import { ROUTES } from "@/lib/routes";
 import Image from "next/image";
 import Link from "next/link";
+import FoundationLogo from "../FoundationLogo";
 
 export function FounderVision() {
   return (
@@ -12,15 +13,7 @@ export function FounderVision() {
           <div className="relative inline-block mx-auto">
             <div className="w-24 h-24 rounded-full bg-linear-to-tr from-amber-400 via-yellow-100 to-amber-600 p-1 mx-auto shadow-2xl">
               <div className="w-full h-full rounded-full dark:bg-[#081528] bg-slate-900 flex items-center justify-center overflow-hidden">
-                <Image
-                  src="/logo.jpeg"
-                  alt="Foundation Logo"
-                  width={96}
-                  height={96}
-                  quality={100}
-                  className="w-12 h-12 group-hover:scale-105 transition-transform shrink-0 object-contain"
-                  priority
-                />
+                <FoundationLogo size="md" showLabel={false} />
               </div>
             </div>
             <div className="absolute -bottom-1 -right-1 px-2 py-0.5 rounded-full bg-rose-900 border-none text-sm font-bold text-amber-200 uppercase shadow">
