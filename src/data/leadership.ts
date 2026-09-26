@@ -40,7 +40,7 @@ export const LEADERSHIP: LeadershipMember[] = [
     quote:
       "True social transformation begins at the grassroots, where empathy meets decisive, transparent action. At Janseva Pratishthan Foundation, our work is dedicated to building an equitable and resilient society across six vital frontiers: nurturing youth potential through Sports, delivering accessible Healthcare, championing Social Justice & Welfare, defending citizens from Cyber Crime, spearheading grassroots Anti-Drugs De-Addiction drives, and creating future-ready leaders through Youth Empowerment. When we protect a young person's dignity, health, and dreams today, we secure the foundation of an entire nation.",
     highlightWords: [...CORE_PILLARS],
-    photo: "/shabbir.jpg",
+    photo: "/shabbir.png",
     ctaLabel: "READ FULL FOUNDER'S LETTER",
     ctaHref: "/our-story",
   },
