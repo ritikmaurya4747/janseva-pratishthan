@@ -1,5 +1,6 @@
-import { HomeView } from "@/views/HomeView";
+import HomeView  from "@/views/HomeView";
 
-export default function HomePage() {
+const  page =()=> {
   return <HomeView />;
 }
+export default page;

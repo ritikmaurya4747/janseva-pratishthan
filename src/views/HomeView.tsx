@@ -1,4 +1,4 @@
-import { AreasOfImpactSection } from "@/components/home/AreasOfImpactSection";
+import AreasOfImpactSection from "@/components/home/AreasOfImpactSection";
 import { FeaturedCauses } from "@/components/home/FeaturedCauses";
 import FounderSection from "@/components/home/FounderSection";
 import { FounderVision } from "@/components/home/FounderVision";
@@ -11,7 +11,7 @@ import { PillarsIconSlider } from "@/components/home/PillarsIconSlider";
 import { ReviewsSection } from "@/components/home/ReviewsSection";
 import { TreeAnatomy } from "@/components/home/TreeAnatomy";
 import { TreeOfLifeHero } from "@/components/home/TreeOfLifeHero";
-import { VisionMissionSection } from "@/components/home/VisionMissionSection";
+import VisionMissionSection from "@/components/home/VisionMissionSection";
 import { WhatsNewSection } from "@/components/home/WhatsNewSection";
 import { WhereWeWorkSection } from "@/components/home/WhereWeWorkSection";
 
@@ -19,7 +19,7 @@ import { WhereWeWorkSection } from "@/components/home/WhereWeWorkSection";
  * Server Component. Every section is self-contained (imports its own data),
  * so the home page is just an ordered list — no props anywhere.
  */
-export function HomeView() {
+const HomeView =() =>{
   return (
     <div
       id="home-view"
@@ -45,3 +45,4 @@ export function HomeView() {
     </div>
   );
 }
+export default HomeView;

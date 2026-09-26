@@ -4,8 +4,7 @@ import { FoundationLogo } from "@/components/FoundationLogo";
 import { UpcomingEvents } from "@/components/events/UpcomingEvents";
 import { FOUNDATION_EVENTS } from "@/data";
 
-/** Server Component for /events. Only the upcoming list (RSVP modal) is a client island. */
-export function EventsView() {
+const Events =()=> {
   const pastEvents = FOUNDATION_EVENTS.filter((e) => e.status === "past");
 
   return (
@@ -98,3 +97,4 @@ export function EventsView() {
     </div>
   );
 }
+export default Events

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { EventsView } from "@/views/EventsView";
+import Events from "./components/Events"
 
 export const metadata: Metadata = {
   title: "Events & Community Drives",
@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     "Milestone ceremonies, laptop distributions, health camps and winter blanket drives by Janseva Pratishthan Foundation.",
 };
 
-export default function EventsPage() {
-  return <EventsView />;
+const page =()=> {
+  return <Events />;
 }
+export default page;

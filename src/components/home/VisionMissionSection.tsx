@@ -3,9 +3,9 @@ import { VISION_MISSION } from "@/data";
 import { Icon } from "@/lib/icons";
 
 /** Server Component — both cards are rendered from home.json → visionMission. */
-export function VisionMissionSection() {
+const VisionMissionSection = () => {
   return (
-    <section className="relative w-full pb-16 sm:pb-24 bg-[#fbf9f4] dark:bg-[#071324] transition-colors duration-300">
+    <section className="relative w-full bg-[#fbf9f4] dark:bg-[#071324] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {VISION_MISSION.map((card, index) => (
@@ -37,3 +37,4 @@ export function VisionMissionSection() {
     </section>
   );
 }
+export default VisionMissionSection;
