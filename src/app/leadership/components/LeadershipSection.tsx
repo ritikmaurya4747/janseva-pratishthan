@@ -43,7 +43,7 @@ export function LeadershipCard({
   return (
     <section
       id={member.id}
-      className="relative w-full pt-16 sm:pt-24 bg-[#fbf9f4] dark:bg-[#071324] transition-colors duration-300"
+      className="relative w-full py-12 sm:py-20 bg-[#fbf9f4] dark:bg-[#071324] transition-colors duration-300"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal
