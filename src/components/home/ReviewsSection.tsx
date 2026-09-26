@@ -215,7 +215,7 @@ export function ReviewsSection() {
               </div>
 
               {/* Reviewer Profile Footer */}
-              <div className="pt-4 mt-5 border-t border-slate-100 dark:border-white/10 flex items-center justify-between relative z-10">
+              <div className="pt-4 mt-5 border-t border-slate-100 dark:border-white/10 flex items-center justify-between max-sm:flex-wrap max-sm:gap-x-3 max-sm:gap-y-2 relative z-10">
                 <div className="flex items-center gap-3">
                   {/* Initials Avatar */}
                   <div

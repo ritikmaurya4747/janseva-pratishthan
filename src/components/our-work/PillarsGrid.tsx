@@ -23,7 +23,7 @@ export function PillarsGrid() {
           <button
             key={cat.id}
             onClick={() => setActiveCategory(cat.id)}
-            className={`px-4 py-2 rounded-full text-sm font-semibold tracking-wider uppercase transition-all cursor-pointer border-none shadow-sm ${
+            className={`px-4 py-2 max-sm:px-3 max-sm:py-1.5 max-sm:text-xs max-sm:tracking-wide rounded-full text-sm font-semibold tracking-wider uppercase transition-all cursor-pointer border-none shadow-sm ${
               activeCategory === cat.id
                 ? "bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 text-slate-950 shadow-[0_0_15px_rgba(212,175,55,0.4)]"
                 : "dark:bg-[#0c2242]/70 dark:text-slate-300 dark:hover:text-white dark:hover:bg-[#0c2242] bg-white text-slate-700 hover:text-amber-900 hover:bg-amber-50 border border-slate-200/70"
@@ -90,12 +90,12 @@ export function PillarsGrid() {
                 </div>
               </div>
 
-              <div className="pt-5 mt-4 border-none flex items-center justify-between">
+              <div className="pt-5 mt-4 border-none flex items-center justify-between max-sm:gap-3">
                 <span className="text-sm font-semibold dark:text-amber-200 text-amber-800">
                   {cause.stats}
                 </span>
-                <div className="flex items-center gap-2">
-                  <span className="text-sm font-semibold dark:text-amber-300 dark:group-hover:underline text-amber-800 flex items-center gap-1">
+                <div className="flex items-center gap-2 max-sm:shrink-0">
+                  <span className="text-sm font-semibold dark:text-amber-300 dark:group-hover:underline text-amber-800 flex items-center gap-1 max-sm:whitespace-nowrap">
                     <span>View Program</span>
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
                   </span>

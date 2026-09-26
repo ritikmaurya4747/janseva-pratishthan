@@ -31,10 +31,10 @@ export function RegistrationView() {
         </div>
 
         {/* 80G & 12A Highlight Banner */}
-        <div className="rounded-3xl dark:bg-linear-to-r dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 p-8 sm:p-10 shadow-xl">
+        <div className="rounded-3xl dark:bg-linear-to-r dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 p-6 sm:p-10 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-3">
-              <span className="text-sm font-bold uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-1 rounded shadow">
+              <span className="max-sm:inline-block text-sm font-bold uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-1 rounded shadow">
                 Tax Benefit for Indian Citizens & Corporates
               </span>
               <h2 className="font-display text-2xl sm:text-3xl font-bold dark:text-white text-slate-900">
@@ -61,7 +61,7 @@ export function RegistrationView() {
             <div className="lg:col-span-4 flex flex-col justify-center gap-3">
               <Link
                 href={ROUTES.donate}
-                className="w-full py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_20px_rgba(212,175,55,0.4)] border-none transition-all flex items-center justify-center gap-2 cursor-pointer"
+                className="w-full max-sm:px-4 max-sm:tracking-wide max-sm:text-center py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_20px_rgba(212,175,55,0.4)] border-none transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Heart className="w-4 h-4 fill-slate-950" />
                 <span>Make an 80G Donation</span>

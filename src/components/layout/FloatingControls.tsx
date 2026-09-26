@@ -19,8 +19,8 @@ export function FloatingControls() {
 
   return (
     <>
-      {/* Floating Left Tab: "JOIN US" */}
-      <div className="fixed left-0 top-1/2 -translate-y-1/2 z-40">
+      {/* Floating Left Tab: "JOIN US" (desktop only — on smaller screens it covered page content) */}
+      <div className="hidden lg:block fixed left-0 top-1/2 -translate-y-1/2 z-40">
         <Link
           id="floating-join-us-tab"
           href={ROUTES.joinUs}
@@ -36,6 +36,19 @@ export function FloatingControls() {
           </span>
         </Link>
       </div>
+
+      {/* Mobile / tablet "JOIN US" pill — bottom-left, vertically centred with the WhatsApp button */}
+      <Link
+        id="floating-join-us-pill"
+        href={ROUTES.joinUs}
+        className="lg:hidden fixed bottom-7 left-4 sm:left-6 z-40 flex items-center gap-2 h-12 px-4 rounded-full bg-[#0c2242] dark:bg-[#081525] text-amber-300 active:scale-95 shadow-[0_4px_20px_rgba(0,0,0,0.4)] backdrop-blur-md transition-all cursor-pointer"
+        title="Join Janseva Pratishthan Foundation as a Volunteer or Partner"
+      >
+        <BookmarkCheck className="w-4 h-4 text-amber-400" />
+        <span className="text-xs font-bold tracking-[0.2em] uppercase select-none">
+          Join Us
+        </span>
+      </Link>
 
       {/* Floating Bottom-Right WhatsApp Chat Button */}
       <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end">
@@ -99,7 +112,7 @@ export function FloatingControls() {
               <button
                 id="send-whatsapp-btn"
                 onClick={handleSendWhatsApp}
-                className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-bold uppercase tracking-wider text-white bg-[#25D366] hover:bg-[#20ba59] transition-all shadow-md cursor-pointer border-none"
+                className="w-full max-sm:px-4 max-sm:tracking-wide max-sm:text-center flex items-center justify-center gap-2 py-2.5 rounded-xl text-sm font-bold uppercase tracking-wider text-white bg-[#25D366] hover:bg-[#20ba59] transition-all shadow-md cursor-pointer border-none"
               >
                 <Send className="w-3.5 h-3.5" />
                 <span>Chat on WhatsApp</span>

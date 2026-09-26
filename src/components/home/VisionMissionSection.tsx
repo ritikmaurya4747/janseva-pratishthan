@@ -14,7 +14,7 @@ export function VisionMissionSection() {
               duration={0.6}
               delay={index * 0.1}
               margin="-100px"
-              className="bg-white dark:bg-[#0a182b] p-8 sm:p-12 lg:p-14 rounded-3xl sm:rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.04)] dark:shadow-[0_10px_40px_rgba(0,0,0,0.2)] border-none"
+              className="bg-white dark:bg-[#0a182b] p-6 sm:p-12 lg:p-14 rounded-3xl sm:rounded-[2.5rem] shadow-[0_10px_40px_rgba(0,0,0,0.04)] dark:shadow-[0_10px_40px_rgba(0,0,0,0.2)] border-none"
             >
               <div className="flex items-center justify-between gap-4 mb-6">
                 <h3 className="text-2xl sm:text-3xl font-display font-bold text-slate-900 dark:text-slate-100">

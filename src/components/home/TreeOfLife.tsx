@@ -301,7 +301,7 @@ export function TreeOfLife() {
           className="mt-3 p-4 rounded-xl dark:bg-linear-to-r dark:from-[#0c2242]/95 dark:via-[#230810]/95 dark:to-[#0c2242]/95 dark:text-slate-100 bg-white text-slate-800 border border-transparent hover:border-amber-300/60 backdrop-blur-md shadow-xl text-left"
         >
           {TREE_BRANCHES.filter((b) => b.id === activeBranch).map((b) => (
-            <div key={b.id} className="flex items-start justify-between gap-3">
+            <div key={b.id} className="flex items-start justify-between gap-3 max-sm:flex-col">
               <div>
                 <div className="flex items-center gap-2">
                   <span

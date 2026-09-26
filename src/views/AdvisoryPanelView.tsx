@@ -39,7 +39,7 @@ export function AdvisoryPanelView() {
         </nav>
 
         {/* Hero Banner Section */}
-        <div className="relative rounded-3xl dark:bg-linear-to-r dark:from-[#091a33] dark:via-[#1c0812] dark:to-[#091a33] bg-white border border-slate-200/90 dark:border-amber-400/25 p-8 sm:p-12 lg:p-16 shadow-2xl overflow-hidden">
+        <div className="relative rounded-3xl dark:bg-linear-to-r dark:from-[#091a33] dark:via-[#1c0812] dark:to-[#091a33] bg-white border border-slate-200/90 dark:border-amber-400/25 p-6 sm:p-12 lg:p-16 shadow-2xl overflow-hidden">
           {/* Ambient Lighting Orbs */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -93,7 +93,7 @@ export function AdvisoryPanelView() {
         <AdvisoryPanelSection />
 
         {/* Advisory Secretariat & Institutional Contact Banner */}
-        <div className="rounded-3xl dark:bg-linear-to-r dark:from-[#091b34] dark:to-[#170a16] bg-slate-100 border border-slate-200/80 dark:border-white/10 p-8 sm:p-12 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="rounded-3xl dark:bg-linear-to-r dark:from-[#091b34] dark:to-[#170a16] bg-slate-100 border border-slate-200/80 dark:border-white/10 p-6 sm:p-12 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-3 text-center md:text-left max-w-xl">
             <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300">
               <Building2 className="w-4 h-4" />

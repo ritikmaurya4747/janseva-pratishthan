@@ -38,7 +38,7 @@ export function UpcomingEvents() {
     <>
       {/* Upcoming Events Section */}
       <div className="space-y-8">
-        <div className="border-none pb-4 flex items-center justify-between">
+        <div className="border-none pb-4 flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-2">
           <h3 className="font-display text-2xl sm:text-3xl font-bold dark:text-white text-slate-900">
             Upcoming Community Action Drives
           </h3>
@@ -163,7 +163,7 @@ export function UpcomingEvents() {
 
                 <button
                   type="submit"
-                  className="w-full py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_15px_rgba(212,175,55,0.4)] border-none transition-all cursor-pointer"
+                  className="w-full max-sm:px-4 max-sm:tracking-wide max-sm:text-center py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_15px_rgba(212,175,55,0.4)] border-none transition-all cursor-pointer"
                 >
                   Generate Digital Entry Pass
                 </button>

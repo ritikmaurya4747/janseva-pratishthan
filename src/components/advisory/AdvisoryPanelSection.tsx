@@ -155,7 +155,7 @@ export function AdvisoryPanelSection() {
       </div>
 
       {/* Advisory Mandate & Ethics Charter Card */}
-      <div className="rounded-3xl dark:bg-linear-to-r dark:from-[#0a1c36] dark:via-[#190914] dark:to-[#0a1c36] bg-white border border-slate-200/90 dark:border-amber-400/25 p-8 sm:p-12 shadow-xl space-y-8">
+      <div className="rounded-3xl dark:bg-linear-to-r dark:from-[#0a1c36] dark:via-[#190914] dark:to-[#0a1c36] bg-white border border-slate-200/90 dark:border-amber-400/25 p-5 sm:p-12 shadow-xl space-y-8">
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300 dark:bg-amber-400/10 bg-amber-100 border border-amber-400/25 font-sans">
             <BookOpen className="w-3.5 h-3.5" />
@@ -169,7 +169,7 @@ export function AdvisoryPanelSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-sm:gap-4">
           {ADVISORY_CHARTER.pillars.map((pillar, idx) => (
             <div
               key={pillar.title}

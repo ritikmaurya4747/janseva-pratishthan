@@ -186,7 +186,7 @@ export function DonateView() {
     <div className="w-full bg-[#fbf9f4] dark:bg-[#071324] transition-colors duration-300 min-h-screen py-10 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Breadcrumb / Back Link */}
-        <div className="mb-6 flex items-center justify-between">
+        <div className="mb-6 flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-3">
           <Link
             href={ROUTES.home}
             className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-[#a47b1e] dark:hover:text-amber-400 transition-colors cursor-pointer"
@@ -524,7 +524,7 @@ export function DonateView() {
                 <form onSubmit={handleDonateSubmit} className="space-y-6">
                   {/* Step 1: Choose Impact Mission (Focus Area) */}
                   <div id="cause-selection-section" className="space-y-3">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between max-sm:flex-wrap max-sm:gap-x-3 max-sm:gap-y-1.5">
                       <label className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-amber-300 flex items-center gap-1.5">
                         <span>
                           1.{" "}
@@ -599,7 +599,7 @@ export function DonateView() {
 
                   {/* Step 2: Select Amount (Cause-Tailored Tiers) */}
                   <div className="space-y-3 pt-1">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between max-sm:flex-wrap max-sm:gap-x-3 max-sm:gap-y-1.5">
                       <label className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-amber-300">
                         2.{" "}
                         {frequency === "monthly"
@@ -907,7 +907,7 @@ export function DonateView() {
 
                   {/* Step 4: Donor Details for 80G Certificate */}
                   <div className="space-y-3 pt-2">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between max-sm:flex-wrap max-sm:gap-x-3 max-sm:gap-y-1.5">
                       <label className="text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-amber-300">
                         4.{" "}
                         {isHindi
@@ -1021,9 +1021,9 @@ export function DonateView() {
                   <div className="pt-2">
                     <button
                       type="submit"
-                      className="w-full py-4 rounded-2xl font-bold uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-amber-200 to-yellow-400 hover:from-amber-200 hover:to-yellow-300 shadow-[0_4px_25px_rgba(212,175,55,0.45)] border-none transition-all cursor-pointer flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0"
+                      className="w-full py-4 max-sm:px-4 max-sm:text-sm max-sm:tracking-wide max-sm:text-center rounded-2xl font-bold uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-amber-200 to-yellow-400 hover:from-amber-200 hover:to-yellow-300 shadow-[0_4px_25px_rgba(212,175,55,0.45)] border-none transition-all cursor-pointer flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0"
                     >
-                      <Heart className="w-5 h-5 fill-stone-950 text-stone-950" />
+                      <Heart className="w-5 h-5 max-sm:shrink-0 fill-stone-950 text-stone-950" />
                       <span>
                         {frequency === "monthly"
                           ? isHindi
@@ -1199,7 +1199,7 @@ export function DonateView() {
 
               {/* Statutory Legal Certifications Card */}
               <div className="bg-white dark:bg-[#0c2242] border border-slate-200/90 dark:border-amber-400/25 rounded-3xl p-6 sm:p-7 shadow-sm space-y-4">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between max-sm:flex-wrap max-sm:gap-2">
                   <h4 className="font-display text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
                     <FileText className="w-4 h-4 text-[#a47b1e] dark:text-amber-400" />
                     <span>Statutory Trust Registration</span>

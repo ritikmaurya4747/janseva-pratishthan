@@ -19,7 +19,7 @@ export function Footer() {
   return (
     <footer
       id="foundation-footer"
-      className="relative dark:bg-[#050c18] bg-[#ede5d4] border-t dark:border-transparent border-transparent hover:border-amber-300/60 dark:text-slate-300 text-slate-700 pt-16 pb-12 overflow-hidden transition-colors duration-300"
+      className="relative dark:bg-[#050c18] bg-[#ede5d4] border-t dark:border-transparent border-transparent hover:border-amber-300/60 dark:text-slate-300 text-slate-700 pt-16 pb-12 max-lg:pb-24 overflow-hidden transition-colors duration-300"
     >
       <div className="w-full h-0.5 bg-linear-to-r from-transparent via-amber-400/80 to-transparent absolute top-0 left-0" />
       <div className="absolute -top-24 left-1/4 w-125 h-44 dark:bg-blue-600/10 bg-amber-400/10 blur-[100px] pointer-events-none" />
@@ -128,14 +128,14 @@ export function Footer() {
 
         {/* Bottom Bar: Copyright & Compliance */}
         <div className="pt-8 border-t dark:border-slate-800/80 border-slate-300/60 flex flex-col sm:flex-row items-center justify-between text-sm dark:text-slate-400 text-slate-600 gap-4">
-          <p>
+          <p className="max-sm:text-center">
             © {new Date().getFullYear()} {FOUNDATION_INFO.name}. All Rights
             Reserved.
           </p>
-          <div className="flex flex-wrap items-center gap-4 text-sm">
+          <div className="flex flex-wrap items-center gap-4 max-sm:justify-center max-sm:gap-y-2 text-sm">
             {FOOTER_LINKS.legalLinks.map((link, index) => (
               <Fragment key={link.label}>
-                {index > 0 && <span>•</span>}
+                {index > 0 && <span className="max-sm:hidden">•</span>}
                 <Link
                   href={link.href}
                   className="dark:hover:text-amber-200 hover:text-amber-800 cursor-pointer text-slate-600 dark:text-slate-400"

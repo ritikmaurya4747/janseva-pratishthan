@@ -70,7 +70,7 @@ export function ContactView() {
                 href={`${contact.whatsappLink}?text=${encodeURIComponent(CONTACT_PAGE.whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3 rounded-xl dark:bg-emerald-600/30 dark:hover:bg-emerald-600/40 dark:text-emerald-200 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300/50 text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-colors cursor-pointer shadow-sm"
+                className="w-full max-sm:px-4 max-sm:tracking-wide max-sm:text-center py-3 rounded-xl dark:bg-emerald-600/30 dark:hover:bg-emerald-600/40 dark:text-emerald-200 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300/50 text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-colors cursor-pointer shadow-sm"
               >
                 <MessageCircle className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
                 <span>Instant Connect via WhatsApp</span>

@@ -26,7 +26,7 @@ export function TreeAnatomy() {
               key={item.id}
               className={`p-6 rounded-2xl dark:bg-linear-to-br ${item.cardClass} bg-white border border-transparent hover:border-amber-300/60 shadow-md space-y-4 transition-all`}
             >
-              <div className="flex items-start justify-between gap-4">
+              <div className="flex items-start justify-between gap-4 md:max-lg:flex-col-reverse md:max-lg:gap-3">
                 <div className="space-y-1">
                   <span className="text-xs uppercase font-bold tracking-widest dark:text-amber-300 text-amber-800 block">
                     {item.eyebrow}

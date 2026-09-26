@@ -14,7 +14,7 @@ export function FounderSection() {
           y={30}
           duration={0.8}
           margin="-100px"
-          className="relative bg-linear-to-br from-[#0c2242] to-[#12284c] dark:from-[#081525] dark:to-[#170810] rounded-rounded-4xl sm:rounded-rounded-4xl p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center shadow-2xl border-none"
+          className="relative bg-linear-to-br from-[#0c2242] to-[#12284c] dark:from-[#081525] dark:to-[#170810] rounded-rounded-4xl sm:rounded-rounded-4xl p-6 sm:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center shadow-2xl border-none"
         >
           {/* Big opening quote mark */}
           <div className="absolute -top-8 sm:-top-10 left-8 sm:left-14 pointer-events-none select-none">
@@ -33,7 +33,7 @@ export function FounderSection() {
               Founder&apos;s Vision & Pledge
             </div>
 
-            <blockquote className="text-[1rem] sm:text-[1.125rem] lg:text-[1.18rem] font-sans text-slate-100 dark:text-slate-200 leading-[1.85] sm:leading-[1.95] text-justify lg:text-left font-normal">
+            <blockquote className="text-[1rem] sm:text-[1.125rem] lg:text-[1.18rem] font-sans text-slate-100 dark:text-slate-200 leading-[1.85] sm:leading-[1.95] text-left sm:text-justify lg:text-left font-normal">
               &ldquo;True social transformation begins at the grassroots, where
               empathy meets decisive, transparent action. At Janseva Pratishthan
               Foundation, our work is dedicated to building an equitable and
@@ -81,7 +81,7 @@ export function FounderSection() {
             <div className="pt-2">
               <Link
                 href={ROUTES.ourStory}
-                className="inline-block px-7 py-3 rounded-xl font-bold text-sm uppercase tracking-[0.15em] text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:-translate-y-0.5 border-none"
+                className="inline-block px-7 py-3 max-sm:w-full max-sm:px-4 max-sm:text-center max-sm:tracking-wider rounded-xl font-bold text-sm uppercase tracking-[0.15em] text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:-translate-y-0.5 border-none"
               >
                 READ FULL FOUNDER&apos;S LETTER
               </Link>
@@ -90,7 +90,7 @@ export function FounderSection() {
 
           {/* Right Image */}
           <div className="w-full lg:w-[42%] shrink-0">
-            <div className="relative w-full aspect-4/5 rounded-rounded-3xl sm:rounded-4xl overflow-hidden shadow-xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+            <div className="relative w-full max-lg:max-w-sm max-lg:mx-auto aspect-4/5 rounded-rounded-3xl sm:rounded-4xl overflow-hidden shadow-xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
               <Image
                 src={founder.photo}
                 alt={`${founder.displayName} - Founder`}

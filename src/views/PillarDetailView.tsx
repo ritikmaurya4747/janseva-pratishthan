@@ -59,11 +59,11 @@ export function PillarDetailView({ slug }: { slug: string }) {
         </div>
 
         {/* Dedicated Program Hero Card */}
-        <div className="relative rounded-3xl overflow-hidden dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 p-8 sm:p-12 shadow-xl space-y-8">
+        <div className="relative rounded-3xl overflow-hidden dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 p-6 sm:p-12 shadow-xl space-y-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <div
-                className="w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg border-none"
+                className="w-14 h-14 max-sm:shrink-0 rounded-2xl flex items-center justify-center shadow-lg border-none"
                 style={{
                   backgroundColor: `${pillar.accentColor}25`,
                   color: pillar.accentColor,
@@ -72,7 +72,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
                 <Icon name={pillar.iconName} className="w-7 h-7" />
               </div>
               <div>
-                <span className="text-sm font-bold uppercase tracking-[0.24em] dark:text-amber-400 text-amber-800 block">
+                <span className="text-sm font-bold uppercase tracking-[0.24em] max-sm:tracking-widest dark:text-amber-400 text-amber-800 block">
                   Janseva Pratishthan Impact Pillar
                 </span>
                 <span className="text-sm px-2.5 py-0.5 rounded-full dark:bg-blue-950 dark:text-amber-200 bg-amber-100 text-amber-900 font-semibold uppercase tracking-wider border-none shadow-sm">
@@ -81,7 +81,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
               </div>
             </div>
 
-            <div className="px-4 py-2 rounded-xl dark:bg-[#08182e]/80 bg-amber-50 border border-transparent hover:border-amber-300/60 shadow text-right">
+            <div className="px-4 py-2 rounded-xl dark:bg-[#08182e]/80 bg-amber-50 border border-transparent hover:border-amber-300/60 shadow text-right max-sm:w-full max-sm:text-left">
               <span className="text-sm uppercase tracking-wider dark:text-slate-400 text-slate-500 block">
                 Impact Reach
               </span>
@@ -109,14 +109,14 @@ export function PillarDetailView({ slug }: { slug: string }) {
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <Link
               href={donateHref(pillar.id)}
-              className="px-7 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_25px_rgba(212,175,55,0.45)] border-none transition-all flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
+              className="px-7 py-3.5 max-sm:w-full max-sm:justify-center max-sm:px-4 max-sm:text-center rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_25px_rgba(212,175,55,0.45)] border-none transition-all flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
             >
               <Heart className="w-4 h-4 fill-slate-950" />
               <span>Sponsor / Support this Initiative (80G)</span>
             </Link>
             <Link
               href={ROUTES.joinUs}
-              className="px-6 py-3.5 rounded-xl font-semibold text-sm tracking-wider dark:text-amber-200 dark:bg-[#08182e] dark:hover:bg-[#122e59] text-slate-800 bg-slate-100 hover:bg-slate-200 border border-slate-200 shadow-sm transition-colors flex items-center gap-2 cursor-pointer"
+              className="px-6 py-3.5 max-sm:w-full max-sm:justify-center max-sm:px-4 max-sm:text-center rounded-xl font-semibold text-sm tracking-wider dark:text-amber-200 dark:bg-[#08182e] dark:hover:bg-[#122e59] text-slate-800 bg-slate-100 hover:bg-slate-200 border border-slate-200 shadow-sm transition-colors flex items-center gap-2 cursor-pointer"
             >
               <Users className="w-4 h-4 dark:text-amber-300 text-amber-800" />
               <span>Volunteer for this Program</span>
@@ -201,7 +201,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
               </p>
               <Link
                 href={donateHref(pillar.id)}
-                className="block w-full py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 to-yellow-400 shadow-md border-none cursor-pointer"
+                className="block w-full max-sm:px-4 max-sm:tracking-wide max-sm:text-center py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 to-yellow-400 shadow-md border-none cursor-pointer"
               >
                 Contribute Today
               </Link>

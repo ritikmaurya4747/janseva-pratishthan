@@ -78,7 +78,7 @@ export function GeneralSecretarySection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative bg-linear-to-br from-[#0c2242] via-[#0e2a52] to-[#12243d] dark:from-[#081525] dark:via-[#0c1d33] dark:to-[#140812] rounded-4xl sm:rounded-[2.5rem] p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-16 items-center shadow-2xl border border-amber-400/20"
+          className="relative bg-linear-to-br from-[#0c2242] via-[#0e2a52] to-[#12243d] dark:from-[#081525] dark:via-[#0c1d33] dark:to-[#140812] rounded-4xl sm:rounded-[2.5rem] p-6 sm:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-16 items-center shadow-2xl border border-amber-400/20"
         >
           {/* Big closing quote mark */}
           <div className="absolute -top-8 sm:-top-10 right-8 sm:right-14 pointer-events-none select-none">
@@ -97,7 +97,7 @@ export function GeneralSecretarySection() {
               General Secretary&apos;s Message & Commitment
             </div>
 
-            <blockquote className="text-[1rem] sm:text-[1.125rem] lg:text-[1.18rem] font-sans text-slate-100 dark:text-slate-200 leading-[1.85] sm:leading-[1.95] text-justify lg:text-left font-normal">
+            <blockquote className="text-[1rem] sm:text-[1.125rem] lg:text-[1.18rem] font-sans text-slate-100 dark:text-slate-200 leading-[1.85] sm:leading-[1.95] text-left sm:text-justify lg:text-left font-normal">
               &ldquo;{secretary.quote}&rdquo;
             </blockquote>
 
@@ -117,7 +117,7 @@ export function GeneralSecretarySection() {
             </div>
 
             <div className="space-y-1 pt-3 border-t border-white/10">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 max-sm:flex-wrap">
                 <h3 className="text-xl sm:text-2xl font-bold text-amber-300 tracking-tight">
                   {secretary.displayName}
                 </h3>
@@ -136,14 +136,14 @@ export function GeneralSecretarySection() {
             <div className="pt-2 flex flex-wrap gap-3">
               <Link
                 href={ROUTES.joinUs}
-                className="px-6 py-3 rounded-xl font-bold text-sm uppercase tracking-[0.14em] text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:-translate-y-0.5 border-none"
+                className="px-6 py-3 max-sm:w-full max-sm:px-4 max-sm:text-center max-sm:tracking-wider rounded-xl font-bold text-sm uppercase tracking-[0.14em] text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:-translate-y-0.5 border-none"
               >
                 Connect With Secretary&apos;s Office
               </Link>
 
               <button
                 onClick={() => setShowGovernanceModal(true)}
-                className="px-5 py-3 rounded-xl font-bold text-sm uppercase tracking-[0.12em] text-slate-200 bg-white/10 hover:bg-white/15 border border-white/20 hover:border-amber-300/40 transition-all cursor-pointer flex items-center gap-2"
+                className="px-5 py-3 max-sm:w-full max-sm:px-4 max-sm:justify-center max-sm:tracking-wider rounded-xl font-bold text-sm uppercase tracking-[0.12em] text-slate-200 bg-white/10 hover:bg-white/15 border border-white/20 hover:border-amber-300/40 transition-all cursor-pointer flex items-center gap-2"
               >
                 <FileText className="w-3.5 h-3.5 text-amber-300" />
                 <span>Governance & Compliance</span>

@@ -108,16 +108,16 @@ export function NewsArticleView({ slug }: { slug: string }) {
 
         {/* Quick Impact Stats if available */}
         {article.stats && article.stats.length > 0 && (
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-10">
+          <div className="grid grid-cols-3 gap-4 max-sm:gap-2 mb-10">
             {article.stats.map((stat) => (
               <div
                 key={stat.label}
-                className="p-4 rounded-xl bg-white dark:bg-[#0c2242] border border-slate-200/80 dark:border-amber-400/20 text-center shadow-sm"
+                className="p-4 max-sm:px-2 max-sm:py-3 rounded-xl bg-white dark:bg-[#0c2242] border border-slate-200/80 dark:border-amber-400/20 text-center shadow-sm"
               >
-                <div className="font-display text-2xl sm:text-3xl font-bold text-[#a47b1e] dark:text-amber-300">
+                <div className="font-display text-xl sm:text-3xl font-bold text-[#a47b1e] dark:text-amber-300">
                   {stat.value}
                 </div>
-                <div className="text-xs text-slate-600 dark:text-slate-400 font-medium uppercase tracking-wider mt-1">
+                <div className="text-xs text-slate-600 dark:text-slate-400 font-medium uppercase tracking-wider max-sm:tracking-normal mt-1">
                   {stat.label}
                 </div>
               </div>

@@ -151,7 +151,7 @@ export function NewsListView() {
             </div>
 
             {/* Content Column */}
-            <div className="lg:col-span-5 p-8 sm:p-10 flex flex-col justify-between space-y-4">
+            <div className="lg:col-span-5 p-6 sm:p-10 flex flex-col justify-between space-y-4">
               <div className="space-y-3">
                 <div className="text-xs font-bold uppercase tracking-[0.2em] text-[#a47b1e] dark:text-amber-400">
                   {featuredArticle.category}
@@ -166,7 +166,7 @@ export function NewsListView() {
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+              <div className="pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
                 <div className="flex items-center gap-3">
                   <span>{featuredArticle.date}</span>
                   <span>•</span>
@@ -234,7 +234,7 @@ export function NewsListView() {
         )}
 
         {/* Media Kit & Inquiries Box */}
-        <div className="mt-16 p-8 rounded-3xl bg-linear-to-r from-amber-50/50 via-white to-amber-50/50 dark:from-[#0a182c] dark:via-[#0c2242] dark:to-[#0a182c] border border-amber-200/80 dark:border-amber-400/20 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="mt-16 p-8 max-sm:p-6 rounded-3xl bg-linear-to-r from-amber-50/50 via-white to-amber-50/50 dark:from-[#0a182c] dark:via-[#0c2242] dark:to-[#0a182c] border border-amber-200/80 dark:border-amber-400/20 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-2 text-center md:text-left">
             <h4 className="font-display text-xl font-bold text-slate-900 dark:text-white flex items-center justify-center md:justify-start gap-2">
               <Building2 className="w-5 h-5 text-amber-600 dark:text-amber-400" />
@@ -251,16 +251,16 @@ export function NewsListView() {
             </div>
           </div>
 
-          <div className="flex items-center gap-3 shrink-0">
+          <div className="flex items-center gap-3 shrink-0 max-sm:w-full max-sm:flex-col">
             <Link
               href={ROUTES.contact}
-              className="px-5 py-2.5 rounded-xl text-sm font-bold text-slate-800 dark:text-white bg-white dark:bg-[#11274a] border border-slate-200 dark:border-amber-400/30 hover:bg-amber-50 transition-colors shadow-sm cursor-pointer"
+              className="px-5 py-2.5 max-sm:w-full max-sm:text-center rounded-xl text-sm font-bold text-slate-800 dark:text-white bg-white dark:bg-[#11274a] border border-slate-200 dark:border-amber-400/30 hover:bg-amber-50 transition-colors shadow-sm cursor-pointer"
             >
               Contact Press Desk
             </Link>
             <Link
               href={ROUTES.registration}
-              className="px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 shadow-md transition-all cursor-pointer"
+              className="px-5 py-2.5 max-sm:w-full max-sm:text-center rounded-xl text-sm font-bold text-white bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 shadow-md transition-all cursor-pointer"
             >
               Statutory Credentials
             </Link>

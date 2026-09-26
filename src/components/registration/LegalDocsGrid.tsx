@@ -41,7 +41,7 @@ export function LegalDocsGrid() {
     <>
       {/* Legal Certificates Grid */}
       <div className="space-y-6">
-        <div className="border-none pb-2 flex items-center justify-between">
+        <div className="border-none pb-2 flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-2">
           <h3 className="font-display text-2xl font-bold dark:text-white text-slate-900">
             Official Legal Registrations & Accreditations
           </h3>
@@ -57,8 +57,8 @@ export function LegalDocsGrid() {
               className="rounded-2xl dark:bg-linear-to-b dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 bg-white border border-slate-200/80 hover:border-amber-300/60 p-6 flex flex-col justify-between transition-all duration-300 shadow-md space-y-4 hover:-translate-y-0.5"
             >
               <div>
-                <div className="flex items-center justify-between mb-3">
-                  <div className="w-9 h-9 rounded-xl dark:bg-amber-400/20 dark:text-amber-300 bg-amber-100 text-amber-900 flex items-center justify-center shadow">
+                <div className="flex items-center justify-between max-sm:gap-3 mb-3">
+                  <div className="max-sm:shrink-0 w-9 h-9 rounded-xl dark:bg-amber-400/20 dark:text-amber-300 bg-amber-100 text-amber-900 flex items-center justify-center shadow">
                     <FileText className="w-4 h-4" />
                   </div>
                   <span className="text-sm font-bold uppercase tracking-wider px-2 py-0.5 rounded dark:bg-blue-950 dark:text-amber-200 bg-blue-50 text-blue-900 border border-blue-200/40 shadow-sm">

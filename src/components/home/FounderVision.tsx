@@ -8,7 +8,7 @@ export function FounderVision() {
   return (
     <section className="py-20 dark:bg-[#040a14] bg-[#f7f2e7] border-none transition-colors">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative p-8 sm:p-12 rounded-3xl dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#240810] dark:to-[#07152b] bg-white border border-transparent hover:border-amber-300/60 shadow-xl text-center space-y-6">
+        <div className="relative p-6 sm:p-12 rounded-3xl dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#240810] dark:to-[#07152b] bg-white border border-transparent hover:border-amber-300/60 shadow-xl text-center space-y-6">
           {/* Founder Profile Avatar with Coat-of-Arms Crest Ring */}
           <div className="relative inline-block mx-auto">
             <div className="w-24 h-24 rounded-full bg-linear-to-tr from-amber-400 via-yellow-100 to-amber-600 p-1 mx-auto shadow-2xl">

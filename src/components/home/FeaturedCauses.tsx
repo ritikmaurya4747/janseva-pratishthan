@@ -35,7 +35,7 @@ export function FeaturedCauses() {
               className="group relative rounded-2xl dark:bg-linear-to-b dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 bg-white hover:bg-amber-50/50 border border-transparent hover:border-amber-300/60 p-6 transition-all duration-300 hover:-translate-y-1 shadow-md flex flex-col justify-between"
             >
               <div>
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-between mb-4 max-sm:flex-wrap max-sm:gap-2">
                   <span className="text-sm font-bold uppercase tracking-wider px-2 py-0.5 rounded dark:bg-blue-950/90 dark:text-amber-200 bg-amber-100 text-amber-900 border-none">
                     {cause.tag}
                   </span>

@@ -37,7 +37,7 @@ export function OurStoryView() {
         </div>
 
         {/* Founder Feature Section */}
-        <div className="rounded-3xl dark:bg-linear-to-r dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-white border border-slate-200/90 dark:border-amber-400/20 p-8 sm:p-12 shadow-xl">
+        <div className="rounded-3xl dark:bg-linear-to-r dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-white border border-slate-200/90 dark:border-amber-400/20 p-6 sm:p-12 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Founder Avatar & Bio Card with Photo */}
             <div className="lg:col-span-5 xl:col-span-4 text-center lg:text-left space-y-4 lg:border-r border-slate-200 dark:border-white/10 lg:pr-8">
@@ -127,7 +127,7 @@ export function OurStoryView() {
         </div>
 
         {/* General Secretary Profile & Operational Commitment */}
-        <div className="rounded-3xl dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#112745] dark:to-[#1a0710] bg-white border border-slate-200/90 dark:border-amber-400/20 p-8 sm:p-12 shadow-xl">
+        <div className="rounded-3xl dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#112745] dark:to-[#1a0710] bg-white border border-slate-200/90 dark:border-amber-400/20 p-6 sm:p-12 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Secretary Narrative */}
             <div className="lg:col-span-7 xl:col-span-8 space-y-4 order-2 lg:order-1">

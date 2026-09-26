@@ -238,7 +238,7 @@ export function Header() {
         </nav>
 
         {/* Right Action: Dark/Light Mode Toggle & Donate CTA */}
-        <div className="hidden sm:flex items-center space-x-2 xl:space-x-3 shrink-0">
+        <div className="hidden sm:flex items-center space-x-2 xl:space-x-3 shrink-0 max-lg:ml-auto">
           <button
             id="theme-toggle-btn"
             onClick={toggleTheme}
@@ -268,7 +268,7 @@ export function Header() {
           <button
             id="mobile-quick-theme-toggle"
             onClick={toggleTheme}
-            className="p-2 rounded-full dark:bg-amber-400/10 dark:text-amber-300 bg-amber-100 text-amber-900 border-none cursor-pointer"
+            className="sm:hidden p-2 rounded-full dark:bg-amber-400/10 dark:text-amber-300 bg-amber-100 text-amber-900 border-none cursor-pointer"
             aria-label={themeLabel}
           >
             {isDarkMode ? (
@@ -394,7 +394,7 @@ export function Header() {
               id="mobile-drawer-donate-btn"
               href={ROUTES.donate}
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 shadow-md border-none cursor-pointer no-underline"
+              className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm sm:text-base text-center font-bold uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 shadow-md border-none cursor-pointer no-underline"
             >
               <Heart className="w-4 h-4 fill-stone-950" />
               <span>

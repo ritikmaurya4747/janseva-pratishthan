@@ -115,11 +115,11 @@ export function AdvisoryMemberView({ slug }: { slug: string }) {
                 </div>
                 <div className="space-y-2 text-xs">
                   {ADVISORY_CREDENTIALS.map((row) => (
-                    <div key={row.label} className="flex justify-between">
+                    <div key={row.label} className="flex justify-between max-sm:gap-3">
                       <span className="text-slate-500 dark:text-slate-400">
                         <T en={row.label} hi={row.hindiLabel} />
                       </span>
-                      <span className={`font-semibold ${row.valueClass}`}>
+                      <span className={`font-semibold max-sm:text-right ${row.valueClass}`}>
                         <T en={row.value} hi={row.hindiValue} />
                       </span>
                     </div>
@@ -213,7 +213,7 @@ export function AdvisoryMemberView({ slug }: { slug: string }) {
               <div className="pt-6 border-t border-slate-200 dark:border-white/10 flex flex-wrap items-center gap-4">
                 <Link
                   href={ROUTES.contact}
-                  className="px-6 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider dark:bg-amber-400 dark:text-slate-950 bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-lg hover:shadow-xl transition-all cursor-pointer border-none"
+                  className="px-6 py-3 max-sm:w-full max-sm:px-4 max-sm:text-center rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider dark:bg-amber-400 dark:text-slate-950 bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-lg hover:shadow-xl transition-all cursor-pointer border-none"
                 >
                   <T
                     en={"Contact Advisory Office"}
@@ -223,7 +223,7 @@ export function AdvisoryMemberView({ slug }: { slug: string }) {
 
                 <Link
                   href={ROUTES.donate}
-                  className="px-6 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider dark:bg-white/10 dark:hover:bg-white/20 dark:text-white bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 dark:border-white/10 shadow transition-all cursor-pointer"
+                  className="px-6 py-3 max-sm:w-full max-sm:px-4 max-sm:text-center rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider dark:bg-white/10 dark:hover:bg-white/20 dark:text-white bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 dark:border-white/10 shadow transition-all cursor-pointer"
                 >
                   <T
                     en={"Support Programs (80G Tax Exemption)"}
@@ -237,7 +237,7 @@ export function AdvisoryMemberView({ slug }: { slug: string }) {
 
         {/* Explore Other Advisory Members Carousel/Grid */}
         <div className="space-y-6 pt-6 font-sans">
-          <div className="flex items-center justify-between border-b border-slate-200 dark:border-white/10 pb-3">
+          <div className="flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-2 border-b border-slate-200 dark:border-white/10 pb-3">
             <div>
               <h3 className="font-sans text-xl sm:text-2xl font-bold dark:text-white text-slate-900">
                 <T
