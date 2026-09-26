@@ -17,7 +17,7 @@ const FounderSection = () => {
     <>
       <LeadershipCard member={founder} imageOnLeft={false} />
 
-      <div className="w-full flex justify-center pb-16 sm:pb-24 mt-8 bg-[#fbf9f4] dark:bg-[#071324]px-0 max-sm:px-4">
+      <div className="w-full flex justify-center pb-16 sm:pb-24 mt-8 bg-[#fbf9f4] dark:bg-[#071324]px-0 max-sm:px-12">
         <Link
           href={"/leadership"}
           className="flex items-center justify-center gap-2 px-7 py-3 max-sm:w-full max-sm:px-4 max-sm:text-center max-sm:tracking-wider rounded-xl font-bold text-sm uppercase tracking-[0.15em] text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:-translate-y-0.5 border-none"
