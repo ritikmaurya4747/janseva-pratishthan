@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/ui/Reveal";
-import { PartnerService } from "@/data/partner";
+import { PartnerService } from "../type/partnerTypes";
 
 const  PartnerServices =({ services }: { services: PartnerService[] })=> {
   if (services.length === 0) return null;

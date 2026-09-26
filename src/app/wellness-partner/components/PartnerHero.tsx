@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Reveal } from "@/components/ui/Reveal";
-import { PartnerProfile } from "@/data/partner";
+import { PartnerProfile } from "../type/partnerTypes";
 
 const PartnerHero = ({ partner }: { partner: PartnerProfile }) => {
     return (
