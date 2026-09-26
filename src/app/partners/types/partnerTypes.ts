@@ -12,6 +12,7 @@ export type PartnerStat = {
 };
 
 export type PartnerProfile = {
+  /** Used in the URL: /partners/[slug] */
   slug: string;
   heroBadge: string;
   orgName: string;
@@ -24,10 +25,13 @@ export type PartnerProfile = {
   md: {
     displayName: string;
     designation: string;
+    /** Expertise line only — org name is NOT repeated here, it already appears in the role line below the name */
     background: string;
     quote: string;
     highlightWords?: string[];
     photo: string;
+    /** MD-specific contact link. Falls back to the partner's own ctaHref if not set. */
+    ctaHref?: string;
   };
   ctaLabel: string;
   ctaHref: string;

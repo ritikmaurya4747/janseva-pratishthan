@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
-import { PartnerProfile } from "../type/partnerTypes";
+import { PartnerProfile } from "../types/partnerTypes";
 
 const renderQuote = (quote: string, highlightWords: string[] = []) => {
   if (highlightWords.length === 0) return quote;
@@ -26,15 +26,11 @@ const renderQuote = (quote: string, highlightWords: string[] = []) => {
 type PartnerCardProps = {
   partner: PartnerProfile;
   ctaLabel?: string;
-  ctaHref?: string;
 };
 
-const PartnerCard = ({
-  partner,
-  ctaLabel = "Get In Touch",
-//   ctaHref = partner_default_href(),
-}: PartnerCardProps) => {
+const PartnerCard = ({ partner, ctaLabel = "Get In Touch" }: PartnerCardProps) => {
   const { md } = partner;
+  const ctaHref = md.ctaHref ?? partner.ctaHref;
 
   return (
     <section className="relative w-full py-16 sm:py-24 bg-[#fbf9f4] dark:bg-[#071324] transition-colors duration-300">
@@ -80,7 +76,7 @@ const PartnerCard = ({
 
             <div className="pt-2">
               <Link
-                href={"/contact"}
+                href={ctaHref}
                 className="inline-block px-7 py-3 max-sm:w-full max-sm:px-4 max-sm:text-center max-sm:tracking-wider rounded-xl font-bold text-sm uppercase tracking-[0.15em] text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:-translate-y-0.5 border-none"
               >
                 {ctaLabel}

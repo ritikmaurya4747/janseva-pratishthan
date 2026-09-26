@@ -1,7 +1,11 @@
 import { Reveal } from "@/components/ui/Reveal";
-import { PartnerService } from "../type/partnerTypes";
+import { PartnerService } from "../types/partnerTypes";
 
-const  PartnerServices =({ services }: { services: PartnerService[] })=> {
+type PartnerServicesProps = {
+  services: PartnerService[];
+};
+
+const PartnerServices = ({ services }: PartnerServicesProps) => {
   if (services.length === 0) return null;
 
   return (
@@ -49,5 +53,6 @@ const  PartnerServices =({ services }: { services: PartnerService[] })=> {
       </div>
     </section>
   );
-}
+};
+
 export default PartnerServices;
