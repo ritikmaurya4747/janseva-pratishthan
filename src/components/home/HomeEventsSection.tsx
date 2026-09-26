@@ -4,15 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { HOME_EVENTS } from "@/data";
-import type { HomeEvent } from "@/types";
+import { FOUNDATION_EVENTS_LIST, EventItem } from "@/data/events";
 import { ROUTES } from "@/lib/routes";
 
-export function HomeEventsSection() {
-  const [activeTab, setActiveTab] = useState<HomeEvent["category"]>(
-    HOME_EVENTS.tabs[0],
-  );
-  const filteredEvents = HOME_EVENTS.items.filter(
+const tabs = ["Past", "Upcoming", "Ongoing"] as const;
+
+const HomeEventsSection = () => {
+  const [activeTab, setActiveTab] = useState<typeof tabs[number]>("Past");
+  
+  const filteredEvents = FOUNDATION_EVENTS_LIST.filter(
     (event) => event.category === activeTab,
   );
 
@@ -34,7 +34,7 @@ export function HomeEventsSection() {
 
         {/* Tabs */}
         <div className="flex items-center justify-center gap-8 mb-12 border-b border-slate-200 dark:border-slate-800">
-          {HOME_EVENTS.tabs.map((tab) => (
+          {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -66,45 +66,50 @@ export function HomeEventsSection() {
           <AnimatePresence mode="popLayout">
             {filteredEvents.length > 0 ? (
               filteredEvents.map((event) => (
-                <motion.div
+                <Link
                   key={event.id}
-                  layout
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  transition={{ duration: 0.4 }}
-                  className="bg-white dark:bg-[#0c2242] rounded-3xl overflow-hidden shadow-[0_4px_25px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_25px_rgba(0,0,0,0.2)] flex flex-col group cursor-pointer"
+                  href={`/events/${event.slug}`}
+                  className="block group cursor-pointer"
                 >
-                  <div className="w-full h-64 sm:h-80 overflow-hidden relative">
-                    <Image
-                      src={event.imageUrl}
-                      alt={event.title}
-                      fill
-                      sizes="(min-width: 768px) 50vw, 100vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent dark:from-black/50 pointer-events-none" />
-                  </div>
+                  <motion.div
+                    layout
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    transition={{ duration: 0.4 }}
+                    className="bg-white dark:bg-[#0c2242] rounded-3xl overflow-hidden shadow-[0_4px_25px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_25px_rgba(0,0,0,0.2)] flex flex-col h-full"
+                  >
+                    <div className="w-full h-64 sm:h-80 overflow-hidden relative">
+                      <Image
+                        src={event.imageUrl}
+                        alt={event.title}
+                        fill
+                        sizes="(min-width: 768px) 50vw, 100vw"
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent dark:from-black/50 pointer-events-none" />
+                    </div>
 
-                  <div className="p-6 sm:p-8 flex items-stretch gap-6 sm:gap-8 flex-1">
-                    <div className="flex flex-col items-center justify-center shrink-0 border-r border-slate-100 dark:border-slate-700/50 pr-6 sm:pr-8 min-w-18">
-                      <span className="text-sm font-bold text-[#c59426] dark:text-amber-400 uppercase tracking-widest">
-                        {event.date.month}
-                      </span>
-                      <span className="text-3xl font-display font-bold text-slate-900 dark:text-white leading-none my-1">
-                        {event.date.day}
-                      </span>
-                      <span className="text-sm font-bold text-slate-400 dark:text-slate-500">
-                        {event.date.year}
-                      </span>
+                    <div className="p-6 sm:p-8 flex items-stretch gap-6 sm:gap-8 flex-1">
+                      <div className="flex flex-col items-center justify-center shrink-0 border-r border-slate-100 dark:border-slate-700/50 pr-6 sm:pr-8 min-w-18">
+                        <span className="text-sm font-bold text-[#c59426] dark:text-amber-400 uppercase tracking-widest">
+                          {event.date.month}
+                        </span>
+                        <span className="text-3xl font-display font-bold text-slate-900 dark:text-white leading-none my-1">
+                          {event.date.day}
+                        </span>
+                        <span className="text-sm font-bold text-slate-400 dark:text-slate-500">
+                          {event.date.year}
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <h4 className="text-sm sm:text-base font-bold text-slate-900 dark:text-slate-100 leading-snug group-hover:text-[#c59426] dark:group-hover:text-amber-300 transition-colors">
+                          {event.title}
+                        </h4>
+                      </div>
                     </div>
-                    <div className="flex items-center">
-                      <h4 className="text-sm sm:text-base font-bold text-slate-900 dark:text-slate-100 leading-snug group-hover:text-[#c59426] dark:group-hover:text-amber-300 transition-colors">
-                        {event.title}
-                      </h4>
-                    </div>
-                  </div>
-                </motion.div>
+                  </motion.div>
+                </Link>
               ))
             ) : (
               <motion.div
@@ -130,3 +135,4 @@ export function HomeEventsSection() {
     </section>
   );
 }
+export default HomeEventsSection ;

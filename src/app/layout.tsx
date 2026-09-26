@@ -135,13 +135,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
-      </head>
       <body className="bg-[#fbf9f4] text-slate-900 antialiased selection:bg-amber-500/20 selection:text-amber-900">
         <Providers>
           <div className="min-h-screen flex flex-col transition-colors duration-300 w-full max-w-full overflow-x-hidden bg-[#fbf9f4] text-slate-900 selection:bg-amber-500/20 selection:text-amber-900 dark:bg-[#050e1c] dark:text-slate-100 dark:selection:bg-amber-500/30 dark:selection:text-amber-200">

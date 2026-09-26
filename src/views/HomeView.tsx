@@ -4,7 +4,7 @@ import FounderSection from "@/components/home/FounderSection";
 import { FounderVision } from "@/components/home/FounderVision";
 import { HeroSlider } from "@/components/home/HeroSlider";
 import { HomeCta } from "@/components/home/HomeCta";
-import { HomeEventsSection } from "@/components/home/HomeEventsSection";
+import HomeEventsSection from "@/components/home/HomeEventsSection";
 import { ImpactMetrics } from "@/components/home/ImpactMetrics";
 import { LaunchSpotlight } from "@/components/home/LaunchSpotlight";
 import { PillarsIconSlider } from "@/components/home/PillarsIconSlider";

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Calendar, MapPin, Users } from "lucide-react";
 import { FoundationLogo } from "@/components/FoundationLogo";
-import { UpcomingEvents } from "@/components/events/UpcomingEvents";
+import { UpcomingEvents } from "@/app/events/components/UpcomingEvents";
 import { FOUNDATION_EVENTS } from "@/data";
 
 const Events =()=> {
