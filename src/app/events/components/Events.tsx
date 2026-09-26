@@ -1,12 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Calendar, MapPin, Users } from "lucide-react";
 import { FoundationLogo } from "@/components/FoundationLogo";
-import { UpcomingEvents } from "@/app/events/components/UpcomingEvents";
-import { FOUNDATION_EVENTS } from "@/data";
+import  UpcomingEvents  from "@/app/events/components/UpcomingEvents";
+import { FOUNDATION_EVENTS_LIST } from "@/data/events";
 
-const Events =()=> {
-  const pastEvents = FOUNDATION_EVENTS.filter((e) => e.status === "past");
-
+const Events = () => {
+  // Filter only Past and Ongoing events for the grid archive
+  const archiveEvents = FOUNDATION_EVENTS_LIST.filter(
+    (evt) => evt.category === "Past" || evt.category === "Ongoing"
+  );
   return (
     <div
       id="events-page"
@@ -23,78 +26,84 @@ const Events =()=> {
             Transformative Gatherings & Community Drives
           </h1>
           <p className="text-sm sm:text-base dark:text-slate-300 text-slate-600 leading-relaxed">
-            From monumental milestone ceremonies to nocturnal winter blanket
-            caravans, witness our compassion transformed into on-ground
-            celebration and solidarity.
+            From monumental milestone ceremonies to community initiatives, witness our compassion transformed into on-ground celebration and solidarity.
           </p>
         </div>
 
-        {/* Featured Historic Inaugural Launch Event */}
-        {pastEvents.map((evt) => (
-          <div
-            key={evt.id}
-            className="rounded-3xl dark:bg-linear-to-r dark:from-[#0c2242] dark:via-[#240810] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 p-6 sm:p-10 shadow-xl overflow-hidden"
-          >
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              <div className="lg:col-span-6 relative rounded-2xl overflow-hidden border-none shadow-xl group">
-                <Image
-                  src={evt.image}
-                  alt={evt.title}
-                  width={1200}
-                  height={800}
-                  priority
-                  sizes="(min-width: 1024px) 50vw, 100vw"
-                  className="w-full h-80 sm:h-96 object-cover transform group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-linear-to-t from-[#061122] via-[#061122]/30 to-transparent" />
-                <div className="absolute top-4 left-4">
-                  <span className="text-sm font-bold uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-1 rounded shadow">
-                    {evt.badge}
-                  </span>
-                </div>
-              </div>
+        {/* All Events Grid Listing */}
+        <div className="space-y-8">
+          <h2 className="text-2xl sm:text-3xl font-display font-bold text-slate-900 dark:text-white">
+            All Events & Drives Archive
+          </h2>
 
-              <div className="lg:col-span-6 space-y-4">
-                <span className="text-sm font-bold uppercase tracking-widest dark:text-amber-300 text-amber-800">
-                  {evt.category}
-                </span>
-                <h2 className="font-display text-2xl sm:text-3xl font-bold dark:text-white text-slate-900">
-                  {evt.title}
-                </h2>
-                <div className="flex flex-wrap gap-4 text-sm dark:text-amber-200 text-amber-800">
-                  <span className="flex items-center gap-1.5">
-                    <Calendar className="w-4 h-4 text-amber-500" />
-                    {evt.date}
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <MapPin className="w-4 h-4 text-amber-500" />
-                    {evt.location}
-                  </span>
-                  <span className="flex items-center gap-1.5">
-                    <Users className="w-4 h-4 text-amber-500" />
-                    {evt.attendees}
-                  </span>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {archiveEvents.map((evt) => (
+              <Link
+                key={evt.id}
+                href={`/events/${evt.slug}`}
+                className="block group cursor-pointer"
+              >
+                <div className="bg-white dark:bg-[#0c2242] rounded-3xl overflow-hidden shadow-xl border border-transparent hover:border-amber-300/60 flex flex-col h-full transition-all duration-300">
+                  <div className="relative w-full h-64 sm:h-72 overflow-hidden">
+                    <Image
+                      src={evt.imageUrl}
+                      alt={evt.title}
+                      fill
+                      sizes="(min-width: 768px) 50vw, 100vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
+                    <div className="absolute top-4 left-4">
+                      <span className="text-xs font-bold uppercase tracking-wider bg-amber-400 text-slate-950 px-3 py-1 rounded-full shadow">
+                        {evt.category}
+                      </span>
+                    </div>
+                  </div>
 
-                <p className="text-sm dark:text-slate-200 text-slate-700 leading-relaxed">
-                  {evt.summary}
-                </p>
+                  <div className="p-6 sm:p-8 flex flex-col justify-between flex-1 space-y-4">
+                    <div className="space-y-3">
+                      <div className="flex flex-wrap items-center gap-4 text-xs font-semibold dark:text-amber-300 text-amber-800">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="w-3.5 h-3.5 text-amber-500" />
+                          {evt.date.day} {evt.date.month}, {evt.date.year}
+                        </span>
+                        {evt.location && (
+                          <span className="flex items-center gap-1">
+                            <MapPin className="w-3.5 h-3.5 text-amber-500" />
+                            {evt.location}
+                          </span>
+                        )}
+                      </div>
 
-                <div className="p-4 rounded-xl dark:bg-[#08182e]/90 bg-amber-50 border border-transparent hover:border-amber-300/60 text-sm dark:text-amber-100 text-amber-950 shadow-sm">
-                  <span className="font-bold dark:text-white text-slate-900 block mb-1">
-                    Impact Highlight:
-                  </span>
-                  {evt.highlight}
+                      <h3 className="font-display text-xl sm:text-2xl font-bold dark:text-white text-slate-900 group-hover:text-amber-600 dark:group-hover:text-amber-300 transition-colors">
+                        {evt.title}
+                      </h3>
+
+                      {evt.summary && (
+                        <p className="text-sm dark:text-slate-300 text-slate-600 line-clamp-2 leading-relaxed">
+                          {evt.summary}
+                        </p>
+                      )}
+                    </div>
+
+                    {evt.highlight && (
+                      <div className="p-3 rounded-xl dark:bg-[#08182e] bg-amber-50 text-xs dark:text-amber-100 text-amber-950 border border-transparent">
+                        <span className="font-bold block mb-0.5">Impact Highlight:</span>
+                        {evt.highlight}
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </div>
+              </Link>
+            ))}
           </div>
-        ))}
+        </div>
 
         {/* Upcoming drives + RSVP modal (client island) */}
         <UpcomingEvents />
       </div>
     </div>
   );
-}
-export default Events
+};
+
+export default Events;

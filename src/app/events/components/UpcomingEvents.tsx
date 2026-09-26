@@ -4,21 +4,19 @@ import Image from "next/image";
 import { useState, type FormEvent } from "react";
 import confetti from "canvas-confetti";
 import { Calendar, CheckCircle2, MapPin, X } from "lucide-react";
-import { FOUNDATION_EVENTS } from "@/data";
-import type { FoundationEvent } from "@/types";
+import { FOUNDATION_EVENTS_LIST, type EventItem } from "@/data/events";
 
 /** Client island: upcoming drives + the RSVP / digital pass modal. */
-export function UpcomingEvents() {
-  const [selectedEvent, setSelectedEvent] = useState<FoundationEvent | null>(
-    null,
-  );
+const UpcomingEvents = () => {
+  const [selectedEvent, setSelectedEvent] = useState<EventItem | null>(null);
   const [rsvpName, setRsvpName] = useState("");
   const [rsvpEmail, setRsvpEmail] = useState("");
   const [rsvpPhone, setRsvpPhone] = useState("");
   const [rsvpPassGenerated, setRsvpPassGenerated] = useState(false);
 
-  const upcomingEvents = FOUNDATION_EVENTS.filter(
-    (e) => e.status === "upcoming",
+  // Filter events by the "Upcoming" category
+  const upcomingEvents = FOUNDATION_EVENTS_LIST.filter(
+    (e) => e.category === "Upcoming"
   );
 
   const handleRsvpSubmit = (e: FormEvent) => {
@@ -51,24 +49,24 @@ export function UpcomingEvents() {
           {upcomingEvents.map((event) => (
             <div
               key={event.id}
-              className="rounded-2xl dark:bg-gradient-to-b dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 bg-white border border-slate-200/80 hover:border-amber-300/60 p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-md"
+              className="rounded-2xl dark:bg-linear-to-b dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 bg-white border border-slate-200/80 hover:border-amber-300/60 p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-md"
             >
               <div className="space-y-3">
                 <div className="relative rounded-xl overflow-hidden h-44 border-none shadow">
                   <Image
-                    src={event.image}
+                    src={event.imageUrl}
                     alt={event.title}
                     fill
                     sizes="(min-width: 768px) 33vw, 100vw"
                     className="object-cover"
                   />
                   <span className="absolute top-2.5 right-2.5 text-sm font-bold uppercase tracking-wider bg-blue-950/90 text-amber-300 border-none px-2 py-0.5 rounded shadow">
-                    {event.badge}
+                    {event.category}
                   </span>
                 </div>
 
                 <span className="text-sm font-bold uppercase tracking-wider dark:text-amber-300 text-amber-800 block">
-                  {event.category}
+                  {event.category} Drive
                 </span>
 
                 <h4 className="font-display text-lg font-bold dark:text-white text-slate-900 leading-snug">
@@ -78,22 +76,26 @@ export function UpcomingEvents() {
                 <div className="space-y-1 text-sm dark:text-slate-300 text-slate-600">
                   <div className="flex items-center gap-1.5 dark:text-amber-200 text-amber-800">
                     <Calendar className="w-3.5 h-3.5 text-amber-500 shrink-0" />
-                    <span>{event.date}</span>
+                    <span>{`${event.date.day} ${event.date.month}, ${event.date.year}`}</span>
                   </div>
-                  <div className="flex items-center gap-1.5 dark:text-slate-300 text-slate-600">
-                    <MapPin className="w-3.5 h-3.5 text-amber-500 shrink-0" />
-                    <span className="line-clamp-1">{event.location}</span>
-                  </div>
+                  {event.location && (
+                    <div className="flex items-center gap-1.5 dark:text-slate-300 text-slate-600">
+                      <MapPin className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                      <span className="line-clamp-1">{event.location}</span>
+                    </div>
+                  )}
                 </div>
 
-                <p className="text-sm dark:text-slate-300 text-slate-600 line-clamp-3 leading-relaxed">
-                  {event.summary}
-                </p>
+                {event.summary && (
+                  <p className="text-sm dark:text-slate-300 text-slate-600 line-clamp-3 leading-relaxed">
+                    {event.summary}
+                  </p>
+                )}
               </div>
 
               <div className="pt-5 mt-4 border-none flex items-center justify-between">
                 <span className="text-sm dark:text-slate-400 text-slate-500">
-                  {event.attendees}
+                  {event.attendees || "Open"}
                 </span>
                 <button
                   onClick={() => {
@@ -112,8 +114,8 @@ export function UpcomingEvents() {
 
       {/* RSVP Modal */}
       {selectedEvent && (
-        <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 !m-0">
-          <div className="relative w-full max-w-lg dark:bg-gradient-to-br dark:from-[#0c2242] dark:via-[#210810] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 rounded-2xl p-6 shadow-2xl dark:text-slate-100 text-slate-900">
+        <div className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 m-0!">
+          <div className="relative w-full max-w-lg dark:bg-linear-to-br dark:from-[#0c2242] dark:via-[#210810] dark:to-[#0c2242] bg-white border border-transparent hover:border-amber-300/60 rounded-2xl p-6 shadow-2xl dark:text-slate-100 text-slate-900">
             <button
               onClick={() => setSelectedEvent(null)}
               className="absolute top-4 right-4 p-1.5 rounded-full dark:text-slate-400 dark:hover:text-white dark:hover:bg-white/10 text-slate-500 hover:text-slate-900 hover:bg-slate-100 cursor-pointer border-none"
@@ -163,7 +165,7 @@ export function UpcomingEvents() {
 
                 <button
                   type="submit"
-                  className="w-full max-sm:px-4 max-sm:tracking-wide max-sm:text-center py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-gradient-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_15px_rgba(212,175,55,0.4)] border-none transition-all cursor-pointer"
+                  className="w-full max-sm:px-4 max-sm:tracking-wide max-sm:text-center py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_15px_rgba(212,175,55,0.4)] border-none transition-all cursor-pointer"
                 >
                   Generate Digital Entry Pass
                 </button>
@@ -196,8 +198,8 @@ export function UpcomingEvents() {
                   <div className="space-y-1 text-sm">
                     <div>ATTENDEE: {rsvpName}</div>
                     <div>EVENT: {selectedEvent.title}</div>
-                    <div>DATE: {selectedEvent.date}</div>
-                    <div>VENUE: {selectedEvent.location}</div>
+                    <div>DATE: {`${selectedEvent.date.day} ${selectedEvent.date.month}, ${selectedEvent.date.year}`}</div>
+                    <div>VENUE: {selectedEvent.location || "TBD"}</div>
                   </div>
                 </div>
 
@@ -214,4 +216,6 @@ export function UpcomingEvents() {
       )}
     </>
   );
-}
+};
+
+export default UpcomingEvents;

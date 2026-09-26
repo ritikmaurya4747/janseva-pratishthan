@@ -1,17 +1,16 @@
 "use client";
 
+import { FOUNDATION_EVENTS_LIST } from "@/data/events";
+import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
-import { FOUNDATION_EVENTS_LIST, EventItem } from "@/data/events";
-import { ROUTES } from "@/lib/routes";
 
 const tabs = ["Past", "Upcoming", "Ongoing"] as const;
 
 const HomeEventsSection = () => {
   const [activeTab, setActiveTab] = useState<typeof tabs[number]>("Past");
-  
+
   const filteredEvents = FOUNDATION_EVENTS_LIST.filter(
     (event) => event.category === activeTab,
   );
@@ -38,11 +37,10 @@ const HomeEventsSection = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`relative pb-4 text-sm font-semibold transition-colors bg-transparent border-none cursor-pointer ${
-                activeTab === tab
+              className={`relative pb-4 text-sm font-semibold transition-colors bg-transparent border-none cursor-pointer ${activeTab === tab
                   ? "text-[#c59426] dark:text-amber-400"
                   : "text-slate-400 hover:text-slate-600 dark:text-slate-500 dark:hover:text-slate-300"
-              }`}
+                }`}
             >
               {tab}
               {activeTab === tab && (
@@ -125,8 +123,8 @@ const HomeEventsSection = () => {
 
         <div className="mt-16 flex justify-center">
           <Link
-            href={ROUTES.events}
-            className="px-8 py-3.5 rounded-full text-sm font-bold uppercase tracking-wider text-white dark:text-slate-950 bg-[#745e31] hover:bg-[#5c4a25] dark:bg-amber-400 dark:hover:bg-amber-300 transition-colors shadow-lg cursor-pointer border-none"
+            href={"/events"}
+            className="inline-block px-8 py-3.5 max-sm:w-full max-sm:px-4 max-sm:text-center max-sm:tracking-wider rounded-full font-bold text-sm uppercase tracking-[0.15em] text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:-translate-y-0.5 border-none"
           >
             READ MORE
           </Link>
@@ -135,4 +133,4 @@ const HomeEventsSection = () => {
     </section>
   );
 }
-export default HomeEventsSection ;
+export default HomeEventsSection;
