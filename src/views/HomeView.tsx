@@ -1,21 +1,19 @@
-import { HeroSlider } from "@/components/home/HeroSlider";
-import { PillarsIconSlider } from "@/components/home/PillarsIconSlider";
-import { FounderSection } from "@/components/home/FounderSection";
-import { GeneralSecretarySection } from "@/components/home/GeneralSecretarySection";
-import { VisionMissionSection } from "@/components/home/VisionMissionSection";
-import { HomeEventsSection } from "@/components/home/HomeEventsSection";
 import { AreasOfImpactSection } from "@/components/home/AreasOfImpactSection";
-import { WhereWeWorkSection } from "@/components/home/WhereWeWorkSection";
-import { WhatsNewSection } from "@/components/home/WhatsNewSection";
-import { ReviewsSection } from "@/components/home/ReviewsSection";
-import { TreeOfLifeHero } from "@/components/home/TreeOfLifeHero";
-import { ImpactMetrics } from "@/components/home/ImpactMetrics";
-import { TreeAnatomy } from "@/components/home/TreeAnatomy";
 import { FeaturedCauses } from "@/components/home/FeaturedCauses";
-import { LaunchSpotlight } from "@/components/home/LaunchSpotlight";
+import FounderSection from "@/components/home/FounderSection";
 import { FounderVision } from "@/components/home/FounderVision";
+import { HeroSlider } from "@/components/home/HeroSlider";
 import { HomeCta } from "@/components/home/HomeCta";
-import { LeadershipSection } from "@/components/home/LeadershipSection";
+import { HomeEventsSection } from "@/components/home/HomeEventsSection";
+import { ImpactMetrics } from "@/components/home/ImpactMetrics";
+import { LaunchSpotlight } from "@/components/home/LaunchSpotlight";
+import { PillarsIconSlider } from "@/components/home/PillarsIconSlider";
+import { ReviewsSection } from "@/components/home/ReviewsSection";
+import { TreeAnatomy } from "@/components/home/TreeAnatomy";
+import { TreeOfLifeHero } from "@/components/home/TreeOfLifeHero";
+import { VisionMissionSection } from "@/components/home/VisionMissionSection";
+import { WhatsNewSection } from "@/components/home/WhatsNewSection";
+import { WhereWeWorkSection } from "@/components/home/WhereWeWorkSection";
 
 /**
  * Server Component. Every section is self-contained (imports its own data),
@@ -29,8 +27,7 @@ export function HomeView() {
     >
       <HeroSlider />
       <PillarsIconSlider />
-      {/* <FounderSection /> */}
-      <LeadershipSection />
+      <FounderSection />
       {/* <GeneralSecretarySection /> */}
       <VisionMissionSection />
       <HomeEventsSection />

@@ -33,7 +33,7 @@ function renderQuote(quote: string, highlightWords: string[] = []) {
 }
 
 /** Renders one leader's card — same exact UI as the original Founder section. */
-function LeadershipCard({
+export function LeadershipCard({
   member,
   imageOnLeft,
 }: {
@@ -43,9 +43,9 @@ function LeadershipCard({
   return (
     <section
       id={member.id}
-      className="relative w-full py-16 sm:py-24 bg-[#fbf9f4] dark:bg-[#071324] transition-colors duration-300"
+      className="relative w-full pt-16 sm:pt-24 bg-[#fbf9f4] dark:bg-[#071324] transition-colors duration-300"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto pl-9 pr-4 sm:px-6 lg:px-8">
         <Reveal
           y={30}
           duration={0.8}
