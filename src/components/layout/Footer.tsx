@@ -78,12 +78,12 @@ export function Footer() {
 
           {/* Key Initiatives */}
           <div className="space-y-3">
-            <h4 className={headingClass}>Key Initiatives</h4>
+            <h4 className={headingClass}>Our Impact & Partners</h4>
             <ul className="space-y-2 text-sm">
               {FOOTER_LINKS.initiatives.map((initiative) => (
                 <li key={initiative.label}>
                   <Link
-                    href={pillarHref(initiative.pillarId)}
+                    href={pillarHref(initiative.href)}
                     className={linkClass}
                   >
                     {initiative.label}

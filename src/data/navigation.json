@@ -200,50 +200,22 @@
         "label": "Advisory Panel"
       },
       {
-        "href": "/wellness-partner",
-        "label": "Wellness Partner"
-      },
-      {
         "href": "/volunteer",
         "label": "Volunteer & CSR"
       },
       {
         "href": "/faqs",
         "label": "Frequently Asked Questions"
-      },
-      {
-        "href": "/registration",
-        "label": "Legal Registration & 80G"
       }
     ],
     "initiatives": [
       {
-        "pillarId": "women-empowerment",
-        "label": "Project Swabhiman (Women)"
+        "href": "/partners",
+        "label": "All Partners & Collaborators"
       },
       {
-        "pillarId": "education",
-        "label": "Digital Laptop Distribution"
-      },
-      {
-        "pillarId": "healthcare",
-        "label": "Mobile Health Screening Camps"
-      },
-      {
-        "pillarId": "education",
-        "label": "Girl Child School Retention"
-      },
-      {
-        "pillarId": "animal-environment",
-        "label": "Community Animal Feeding"
-      },
-      {
-        "pillarId": "disaster-management",
-        "label": "Winter Warmth Blanket Drive"
-      },
-      {
-        "pillarId": "rural-transformation",
-        "label": "Rural Clean Water Kiosks"
+        "href": "/partners/influx-healthtech",
+        "label": "Influx Healthtech (Wellness)"
       }
     ],
     "legalLinks": [
