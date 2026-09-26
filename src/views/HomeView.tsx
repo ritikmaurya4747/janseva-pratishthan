@@ -15,6 +15,7 @@ import { FeaturedCauses } from "@/components/home/FeaturedCauses";
 import { LaunchSpotlight } from "@/components/home/LaunchSpotlight";
 import { FounderVision } from "@/components/home/FounderVision";
 import { HomeCta } from "@/components/home/HomeCta";
+import { LeadershipSection } from "@/components/home/LeadershipSection";
 
 /**
  * Server Component. Every section is self-contained (imports its own data),
@@ -28,8 +29,9 @@ export function HomeView() {
     >
       <HeroSlider />
       <PillarsIconSlider />
-      <FounderSection />
-      <GeneralSecretarySection />
+      {/* <FounderSection /> */}
+      <LeadershipSection />
+      {/* <GeneralSecretarySection /> */}
       <VisionMissionSection />
       <HomeEventsSection />
       <AreasOfImpactSection />
