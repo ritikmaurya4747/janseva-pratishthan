@@ -20,7 +20,7 @@ export function FloatingControls() {
   return (
     <>
       {/* Floating Left Tab: "JOIN US" */}
-      <div className="fixed left-0 top-1/2 -translate-y-1/2 z-40">
+      <div className="fixed left-0 top-1/2 -translate-y-1/2 z-40 transform-gpu will-change-transform">
         <Link
           id="floating-join-us-tab"
           href={ROUTES.joinUs}
@@ -38,7 +38,7 @@ export function FloatingControls() {
       </div>
 
       {/* Floating Bottom-Right WhatsApp Chat Button */}
-      <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end">
+      <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end transform-gpu will-change-transform">
         <AnimatePresence>
           {waModalOpen && (
             <motion.div
