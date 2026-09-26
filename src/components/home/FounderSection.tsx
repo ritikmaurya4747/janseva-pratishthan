@@ -14,7 +14,7 @@ export function FounderSection() {
           y={30}
           duration={0.8}
           margin="-100px"
-          className="relative bg-linear-to-br from-[#0c2242] to-[#12284c] dark:from-[#081525] dark:to-[#170810] rounded-rounded-4xl sm:rounded-rounded-4xl p-6 sm:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center shadow-2xl border-none"
+          className="relative bg-linear-to-br from-[#0c2242] to-[#12284c] dark:from-[#081525] dark:to-[#170810] rounded-4xl sm:rounded-4xl p-6 sm:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center shadow-2xl border-none"
         >
           {/* Big opening quote mark */}
           <div className="absolute -top-8 sm:-top-10 left-8 sm:left-14 pointer-events-none select-none">
@@ -28,9 +28,9 @@ export function FounderSection() {
           </div>
 
           {/* Left Text Content */}
-          <div className="flex-1 space-y-6 mt-4 sm:mt-0">
+          <div className="flex-1 space-y-6 mt-5 sm:mt-0">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-300 text-sm font-semibold tracking-wider uppercase">
-              Founder&apos;s Vision & Pledge
+              Founder & National President 
             </div>
 
             <blockquote className="text-[1rem] sm:text-[1.125rem] lg:text-[1.18rem] font-sans text-slate-100 dark:text-slate-200 leading-[1.85] sm:leading-[1.95] text-left sm:text-justify lg:text-left font-normal">
@@ -90,7 +90,7 @@ export function FounderSection() {
 
           {/* Right Image */}
           <div className="w-full lg:w-[42%] shrink-0">
-            <div className="relative w-full max-lg:max-w-sm max-lg:mx-auto aspect-4/5 rounded-rounded-3xl sm:rounded-4xl overflow-hidden shadow-xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+            <div className="relative w-full max-lg:max-w-sm max-lg:mx-auto aspect-4/5 rounded-3xl sm:rounded-4xl overflow-hidden shadow-xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
               <Image
                 src={founder.photo}
                 alt={`${founder.displayName} - Founder`}

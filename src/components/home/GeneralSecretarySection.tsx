@@ -92,9 +92,8 @@ export function GeneralSecretarySection() {
           </div>
 
           <div className="flex-1 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-400/15 border border-amber-400/30 text-amber-300 text-sm font-semibold tracking-wider uppercase">
-              <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
-              General Secretary&apos;s Message & Commitment
+            <div className="inline-flex mt-5 items-center gap-2 px-5 py-1 rounded-full bg-amber-400/15 border border-amber-400/30 text-amber-300 text-sm font-semibold tracking-wider uppercase">
+              National General Secretary
             </div>
 
             <blockquote className="text-[1rem] sm:text-[1.125rem] lg:text-[1.18rem] font-sans text-slate-100 dark:text-slate-200 leading-[1.85] sm:leading-[1.95] text-left sm:text-justify lg:text-left font-normal">
