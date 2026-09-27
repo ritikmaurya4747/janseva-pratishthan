@@ -62,7 +62,7 @@ export function OurGoalSection() {
                 <div className="space-y-1.5">
                   {goal.initiatives.map((item, idx) => (
                     <div key={idx} className="flex items-start gap-2 text-xs sm:text-sm dark:text-slate-300 text-slate-700">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-500 dark:text-emerald-400 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-amber-500 dark:text-amber-400 shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </div>
                   ))}

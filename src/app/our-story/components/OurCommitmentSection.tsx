@@ -8,8 +8,8 @@ export function OurCommitmentSection() {
   return (
     <section className="space-y-10" id="our-commitments">
       <div className="text-center max-w-3xl mx-auto space-y-3">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full dark:bg-emerald-400/10 bg-emerald-50 text-emerald-800 dark:text-emerald-300 border border-emerald-400/30 text-xs font-bold uppercase tracking-wider shadow-xs">
-          <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full dark:bg-amber-400/10 bg-amber-100 text-amber-900 dark:text-amber-300 border border-amber-400/30 text-xs font-bold uppercase tracking-wider shadow-xs">
+          <ShieldCheck className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
           <span>Uncompromising Integrity</span>
         </div>
         <h2 className="font-display text-3xl sm:text-4xl font-bold dark:text-white text-slate-900 tracking-tight">
@@ -31,8 +31,8 @@ export function OurCommitmentSection() {
               {/* Header with Stat and Badge */}
               <div className="flex items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-2xl dark:bg-emerald-400/15 bg-emerald-50 dark:text-emerald-300 text-emerald-800 border border-emerald-400/30 flex items-center justify-center shadow-xs">
-                    <Icon name={item.icon} className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+                  <div className="w-12 h-12 rounded-2xl dark:bg-amber-400/15 bg-amber-50 dark:text-amber-300 text-amber-800 border border-amber-300/40 flex items-center justify-center shadow-xs">
+                    <Icon name={item.icon} className="w-6 h-6 text-amber-600 dark:text-amber-400" />
                   </div>
                   <div>
                     <span className="font-display text-2xl sm:text-3xl font-black text-amber-600 dark:text-amber-400">
@@ -44,7 +44,7 @@ export function OurCommitmentSection() {
                   </div>
                 </div>
 
-                <span className="px-3 py-1 rounded-full text-xs font-semibold dark:bg-emerald-950/80 dark:text-emerald-300 bg-emerald-100 text-emerald-900 border border-emerald-300/40 shrink-0">
+                <span className="px-3 py-1 rounded-full text-xs font-semibold dark:bg-blue-950/80 dark:text-amber-300 bg-amber-100/80 text-amber-900 border border-amber-300/50 shrink-0">
                   {item.badge}
                 </span>
               </div>
@@ -63,8 +63,8 @@ export function OurCommitmentSection() {
 
             {/* Bottom Actions */}
             <div className="mt-6 pt-4 border-t border-slate-100 dark:border-white/10 flex items-center justify-between text-xs">
-              <span className="inline-flex items-center gap-1.5 text-emerald-700 dark:text-emerald-400 font-semibold">
-                <FileCheck2 className="w-4 h-4" />
+              <span className="inline-flex items-center gap-1.5 text-amber-700 dark:text-amber-300 font-semibold">
+                <FileCheck2 className="w-4 h-4 text-amber-600 dark:text-amber-400" />
                 Statutorily Guaranteed
               </span>
               <Link
