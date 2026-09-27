@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { OurStoryView } from "@/views/OurStoryView";
+import  OurStoryView  from "@/app/our-story/components/OurStoryView";
 
 export const metadata: Metadata = {
   title: "Our Story & Leadership",

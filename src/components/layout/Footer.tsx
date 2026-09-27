@@ -83,7 +83,7 @@ export function Footer() {
               {FOOTER_LINKS.initiatives.map((initiative) => (
                 <li key={initiative.label}>
                   <Link
-                    href={pillarHref(initiative.href)}
+                    href={(initiative.href)}
                     className={linkClass}
                   >
                     {initiative.label}

@@ -9,11 +9,7 @@ import { ROUTES } from "@/lib/routes";
 
 const { founder, generalSecretary: secretary } = FOUNDATION_INFO;
 
-/**
- * Server Component for /our-story.
- * Client islands: <SecretaryPhoto> (reads localStorage) and <AdvisoryPanelSection> (filters).
- */
-export function OurStoryView() {
+const OurStoryView =()=> {
   return (
     <div
       id="our-story-page"
@@ -250,11 +246,6 @@ export function OurStoryView() {
           </div>
         </div>
 
-        {/* Honorary Advisory Panel Section */}
-        <div className="pt-8">
-          <AdvisoryPanelSection />
-        </div>
-
         {/* Governance & Trust Commitment */}
         <div className="rounded-2xl dark:bg-linear-to-br dark:from-[#0a1b33] dark:to-[#1f060d] bg-linear-to-br from-amber-100/90 via-amber-50 to-amber-100/90 border border-transparent hover:border-amber-300/60 p-8 text-center space-y-4 max-w-4xl mx-auto shadow-xl">
           <ShieldCheck className="w-10 h-10 text-amber-500 mx-auto" />
@@ -286,3 +277,4 @@ export function OurStoryView() {
     </div>
   );
 }
+export default OurStoryView;
