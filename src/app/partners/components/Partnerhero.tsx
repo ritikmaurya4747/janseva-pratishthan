@@ -21,12 +21,12 @@ const PartnerHero = ({ partner }: PartnerHeroProps) => {
           </div>
 
           {partner.logo && (
-            <div className="relative w-40 h-16 sm:w-48 sm:h-20 mx-auto mb-6">
+            <div className="relative w-28 h-28 mx-auto mb-6 rounded-full overflow-hidden bg-white">
               <Image
                 src={partner.logo}
                 alt={`${partner.orgName} logo`}
                 fill
-                className="object-contain"
+                className="object-cover"
               />
             </div>
           )}
