@@ -1,15 +1,17 @@
-import Image from "next/image";
-import Link from "next/link";
-import { CheckCircle2, ShieldCheck, Sparkles } from "lucide-react";
-import { AdvisoryPanelSection } from "@/components/advisory/AdvisoryPanelSection";
 import { FoundationLogo } from "@/components/FoundationLogo";
-import { SecretaryPhoto } from "@/components/ui/SecretaryPhoto";
 import { FOUNDATION_INFO, STORY } from "@/data";
 import { ROUTES } from "@/lib/routes";
+import { ShieldCheck, Sparkles } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { OurIdeasSection } from "./OurIdeasSection";
+import { OurGoalSection } from "./OurGoalSection";
+import { OurApproachSection } from "./OurApproachSection";
+import { OurCommitmentSection } from "./OurCommitmentSection";
 
 const { founder, generalSecretary: secretary } = FOUNDATION_INFO;
 
-const OurStoryView =()=> {
+const OurStoryView = () => {
   return (
     <div
       id="our-story-page"
@@ -121,7 +123,17 @@ const OurStoryView =()=> {
             </div>
           </div>
         </div>
+        {/* 1. Our Ideas Section */}
+        <OurIdeasSection />
 
+        {/* 2. Our Goals Section */}
+        <OurGoalSection />
+
+        {/* 3. Our Approach Section */}
+        <OurApproachSection />
+
+        {/* 4. Our Commitment Section */}
+        <OurCommitmentSection />
         {/* Guiding Principles Grid */}
         <div className="space-y-8">
           <div className="text-center max-w-2xl mx-auto space-y-2">
