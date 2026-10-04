@@ -1,23 +1,26 @@
 "use client";
 
-import Link from "next/link";
-import { useState } from "react";
+import { FallbackImage } from "@/components/ui/FallbackImage";
+import { useLanguage } from "@/context/LanguageContext";
+import { ADVISOR_CREDENTIALS, ADVISOR_STATS, ADVISORY_MEMBERS } from "@/data/advisory";
+import { advisorHref } from "@/lib/routes";
 import {
+  Award,
+  BadgeCheck,
   BookOpen,
   CheckCircle2,
   ChevronRight,
   ShieldCheck,
+  TrendingUp,
+  Users,
 } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
 import { CategoryIcon } from "./CategoryIcon";
-import { FallbackImage } from "@/components/ui/FallbackImage";
-import {
-  ADVISORY_CATEGORIES,
-  ADVISORY_CHARTER,
-  ADVISORY_HIGHLIGHTS,
-  ADVISORY_MEMBERS,
-} from "@/data";
-import { useLanguage } from "@/context/LanguageContext";
-import { advisorHref } from "@/lib/routes";
+import { ADVISORY_CATEGORIES, ADVISORY_CHARTER, ADVISORY_HIGHLIGHTS } from "@/data";
+
+// Stats icons mapping
+const STAT_ICONS = [Users, TrendingUp, Award, BadgeCheck];
 
 export function AdvisoryPanelSection() {
   const { t } = useLanguage();
@@ -67,6 +70,48 @@ export function AdvisoryPanelSection() {
         </div>
       </div>
 
+      {/* ==================== STATS STRIP ==================== */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        {ADVISOR_STATS.map((stat, idx) => {
+          const Icon = STAT_ICONS[idx % STAT_ICONS.length];
+          return (
+            <div
+              key={stat.label}
+              className="rounded-2xl dark:bg-[#0c2242] bg-white border border-slate-200 dark:border-white/10 p-5 sm:p-6 shadow-md hover:shadow-xl hover:border-amber-400/60 transition-all flex items-center gap-4"
+            >
+              <div className="w-11 h-11 shrink-0 rounded-xl dark:bg-amber-400/15 bg-amber-100 dark:text-amber-300 text-amber-800 flex items-center justify-center">
+                <Icon className="w-5 h-5" />
+              </div>
+              <div className="text-left">
+                <div className="font-sans text-2xl sm:text-3xl font-bold dark:text-white text-slate-900 leading-none">
+                  {stat.value}
+                </div>
+                <div className="font-sans text-[11px] sm:text-xs font-semibold dark:text-slate-400 text-slate-600 mt-1 uppercase tracking-wide">
+                  {t(stat.label, stat.hindiLabel)}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* ==================== CREDENTIALS STRIP ==================== */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        {ADVISOR_CREDENTIALS.map((cred) => (
+          <div
+            key={cred.label}
+            className="rounded-2xl dark:bg-white/5 bg-slate-50 border border-slate-200 dark:border-white/10 p-4 text-center space-y-1"
+          >
+            <div className="font-sans text-[11px] font-bold uppercase tracking-widest dark:text-slate-400 text-slate-500">
+              {t(cred.label, cred.hindiLabel)}
+            </div>
+            <div className={`font-sans text-sm sm:text-base font-bold ${cred.valueClass}`}>
+              {t(cred.value, cred.hindiValue)}
+            </div>
+          </div>
+        ))}
+      </div>
+
       {/* Category Filter Pills */}
       <div className="flex items-center justify-center flex-wrap gap-2 pt-2">
         {ADVISORY_CATEGORIES.map((cat) => (
@@ -106,7 +151,6 @@ export function AdvisoryPanelSection() {
                     sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
-                  {/* Subtle dark linear overlay at bottom of photo for text contrast */}
                   <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                   {/* Experience Badge */}
@@ -126,7 +170,7 @@ export function AdvisoryPanelSection() {
                 </div>
               </div>
 
-              {/* Title, Designation & Credentials - Clean & Focused */}
+              {/* Title, Designation & Credentials */}
               <div className="space-y-1.5 text-left font-sans">
                 <h3 className="font-sans text-lg sm:text-xl font-bold dark:text-white text-slate-900 leading-snug group-hover:text-amber-500 transition-colors">
                   {t(member.name, member.hindiName)}

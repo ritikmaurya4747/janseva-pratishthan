@@ -35,12 +35,21 @@ import events from "./events.json";
 import faqs from "./faqs.json";
 import legal from "./legal.json";
 import donation from "./donation.json";
-import advisory from "./advisory.json";
 import news from "./news.json";
 import story from "./story.json";
 import joinUs from "./joinUs.json";
 import contact from "./contact.json";
 import treeOfLife from "./treeOfLife.json";
+
+/* ✅ Advisory data ab JSON se nahi, TS file se aayega */
+import {
+  ADVISORY_MEMBERS as ADVISORY_MEMBERS_DATA,
+  ADVISORY_CHARTER as ADVISORY_CHARTER_DATA,
+  ADVISOR_CATEGORIES,
+  ADVISOR_HIGHLIGHTS,
+  ADVISOR_STATS,
+  ADVISOR_CREDENTIALS,
+} from "./advisory";
 
 /* ------------------------------ Site / brand ------------------------------ */
 export const FOUNDATION_INFO = site;
@@ -119,12 +128,12 @@ export const PAYMENT_METHODS = donation.paymentMethods as {
 }[];
 
 /* -------------------------------- Advisory -------------------------------- */
-export const ADVISORY_MEMBERS = advisory.members as AdvisoryMember[];
-export const ADVISORY_CHARTER = advisory.charter;
-export const ADVISORY_CATEGORIES = advisory.categories as AdvisoryCategory[];
-export const ADVISORY_HIGHLIGHTS = advisory.highlights;
-export const ADVISORY_STATS = advisory.stats;
-export const ADVISORY_CREDENTIALS = advisory.credentials;
+export const ADVISORY_MEMBERS = ADVISORY_MEMBERS_DATA as AdvisoryMember[];
+export const ADVISORY_CHARTER = ADVISORY_CHARTER_DATA;
+export const ADVISORY_CATEGORIES = ADVISOR_CATEGORIES as AdvisoryCategory[];
+export const ADVISORY_HIGHLIGHTS = ADVISOR_HIGHLIGHTS;
+export const ADVISORY_STATS = ADVISOR_STATS;
+export const ADVISORY_CREDENTIALS = ADVISOR_CREDENTIALS;
 
 export const getAdvisoryMember = (id: string) =>
   ADVISORY_MEMBERS.find((member) => member.id === id);

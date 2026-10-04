@@ -1,13 +1,12 @@
 import Link from "next/link";
 import { ArrowRight, Building2, ChevronRight } from "lucide-react";
-import { AdvisoryPanelSection } from "@/components/advisory/AdvisoryPanelSection";
 import { FoundationLogo } from "@/components/FoundationLogo";
 import { T } from "@/components/ui/T";
-import { ADVISORY_STATS } from "@/data";
 import { ROUTES } from "@/lib/routes";
+import { AdvisoryPanelSection } from "./AdvisoryPanelSection";
+import { ADVISORY_STATS } from "@/data";
 
-/** Server Component for /advisory-panel. The filterable member grid is a client island. */
-export function AdvisoryPanelView() {
+export const AdvisoryPanelView = () => {
   return (
     <div
       id="advisory-panel-page"
@@ -143,3 +142,4 @@ export function AdvisoryPanelView() {
     </div>
   );
 }
+export default AdvisoryPanelView;

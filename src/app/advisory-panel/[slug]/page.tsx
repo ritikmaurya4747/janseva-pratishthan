@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { AdvisoryMemberView } from "@/views/AdvisoryMemberView";
-import { ADVISORY_MEMBERS, getAdvisoryMember } from "@/data";
+import AdvisoryMemberView from "../components/AdvisoryMemberView";
+import { ADVISORY_MEMBERS } from "@/data/advisory";
+import { getAdvisoryMember } from "@/data";
 
 type Props = { params: Promise<{ slug: string }> };
 
-/** One static page per advisory member (advisory.json). */
 export function generateStaticParams() {
   return ADVISORY_MEMBERS.map((member) => ({ slug: member.id }));
 }

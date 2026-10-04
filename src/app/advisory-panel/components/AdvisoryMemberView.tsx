@@ -8,7 +8,7 @@ import {
   Quote,
   ShieldCheck,
 } from "lucide-react";
-import { CategoryIcon } from "@/components/advisory/CategoryIcon";
+import { CategoryIcon } from "@/app/advisory-panel/components/CategoryIcon";
 import { FallbackImage } from "@/components/ui/FallbackImage";
 import { T } from "@/components/ui/T";
 import {
@@ -19,8 +19,7 @@ import {
 } from "@/data";
 import { ROUTES, advisorHref } from "@/lib/routes";
 
-/** Server Component for /advisory-panel/[slug]. Member data comes from advisory.json. */
-export function AdvisoryMemberView({ slug }: { slug: string }) {
+const AdvisoryMemberView = ({ slug }: { slug: string }) => {
   const member = getAdvisoryMember(slug);
   if (!member) notFound();
 
@@ -316,3 +315,4 @@ export function AdvisoryMemberView({ slug }: { slug: string }) {
     </div>
   );
 }
+export default AdvisoryMemberView;

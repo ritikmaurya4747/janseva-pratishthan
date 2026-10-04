@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { AdvisoryPanelView } from "@/views/AdvisoryPanelView";
+import AdvisoryPanelView from "./components/AdvisoryPanelView";
 
 export const metadata: Metadata = {
   title: "Advisory Panel",
