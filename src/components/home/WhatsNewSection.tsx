@@ -36,15 +36,17 @@ export function WhatsNewSection() {
               margin="-50px"
               className="group flex flex-col bg-white dark:bg-[#0c2242] rounded-2xl overflow-hidden border border-slate-200/90 dark:border-amber-400/20 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             >
-              <div className="relative aspect-16/10 w-full overflow-hidden bg-slate-100 dark:bg-slate-900">
-                <Image
-                  src={item.imageUrl}
-                  alt={item.title}
-                  fill
-                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 m-3 mb-0 rounded-xl overflow-hidden shadow-sm">
+                <div className="relative aspect-16/10 w-full rounded-lg overflow-hidden bg-slate-100 dark:bg-slate-900">
+                  <Image
+                    src={item.imageUrl}
+                    alt={item.title}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                </div>
               </div>
 
               <div className="flex flex-col flex-1 p-6 sm:p-7 space-y-3">

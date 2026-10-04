@@ -34,31 +34,33 @@ const AreasOfImpactSection = () => {
               key={pillar.id}
               href={pillarHref(pillar.id)}
               delay={idx * 0.08}
-              className={`group relative ${pillar.colSpan} ${pillar.heightClass} rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 border border-black/5 dark:border-white/10`}
+              className={`group relative ${pillar.colSpan} ${pillar.heightClass} rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 p-1 bg-linear-to-tr from-amber-400/90 via-yellow-200 to-amber-600/90`}
             >
-              <Image
-                src={pillar.image}
-                alt={pillar.title}
-                fill
-                sizes="(min-width: 1024px) 60vw, (min-width: 640px) 50vw, 100vw"
-                className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-              />
-              <div className="absolute inset-0 bg-linear-to-t from-black/85 via-black/35 to-transparent transition-opacity duration-300" />
+              <div className="relative w-full h-full rounded-xl sm:rounded-[1.35rem] overflow-hidden">
+                <Image
+                  src={pillar.image}
+                  alt={pillar.title}
+                  fill
+                  sizes="(min-width: 1024px) 60vw, (min-width: 640px) 50vw, 100vw"
+                  className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-black/85 via-black/35 to-transparent transition-opacity duration-300" />
 
-              <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/40 backdrop-blur-md border border-white/20 flex items-center justify-center text-white/80 group-hover:text-amber-300 group-hover:bg-black/60 transition-all opacity-0 group-hover:opacity-100 transform translate-y-1 group-hover:translate-y-0">
-                <ArrowUpRight className="w-4 h-4" />
-              </div>
+                <div className="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/40 backdrop-blur-md border border-white/20 flex items-center justify-center text-white/80 group-hover:text-amber-300 group-hover:bg-black/60 transition-all opacity-0 group-hover:opacity-100 transform translate-y-1 group-hover:translate-y-0">
+                  <ArrowUpRight className="w-4 h-4" />
+                </div>
 
-              <div className="absolute bottom-5 sm:bottom-6 left-5 sm:left-6 right-5 sm:right-6 space-y-1">
-                <span className="inline-block text-sm font-semibold text-amber-300 uppercase tracking-wider">
-                  {pillar.tag}
-                </span>
-                <h3 className="font-display text-xl sm:text-2xl font-bold text-white tracking-wide group-hover:text-amber-200 transition-colors">
-                  {pillar.title}
-                </h3>
-                <p className="text-sm text-slate-300/90 font-medium">
-                  {pillar.hindiTitle}
-                </p>
+                <div className="absolute bottom-5 sm:bottom-6 left-5 sm:left-6 right-5 sm:right-6 space-y-1">
+                  <span className="inline-block text-sm font-semibold text-amber-300 uppercase tracking-wider">
+                    {pillar.tag}
+                  </span>
+                  <h3 className="font-display text-xl sm:text-2xl font-bold text-white tracking-wide group-hover:text-amber-200 transition-colors">
+                    {pillar.title}
+                  </h3>
+                  <p className="text-sm text-slate-300/90 font-medium">
+                    {pillar.hindiTitle}
+                  </p>
+                </div>
               </div>
             </RevealLink>
           ))}

@@ -86,15 +86,16 @@ const PartnerCard = ({ partner, ctaLabel = "Get In Touch" }: PartnerCardProps) =
 
           {/* Image */}
           <div className="w-full lg:w-[42%] shrink-0">
-            <div className="relative w-full max-lg:max-w-sm max-lg:mx-auto aspect-4/5 rounded-3xl sm:rounded-4xl overflow-hidden shadow-xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
-              <Image
-                src={md.photo}
-                alt={`${md.displayName} - ${md.designation}`}
-                fill
-                sizes="(min-width: 1024px) 42vw, 100vw"
-                className="object-cover object-top"
-              />
-              <div className="absolute inset-0 border border-black/5 dark:border-white/10 rounded-3xl sm:rounded-4xl pointer-events-none" />
+            <div className="relative w-full max-lg:max-w-sm max-lg:mx-auto aspect-4/5 rounded-3xl sm:rounded-4xl overflow-hidden shadow-xl dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600">
+              <div className="relative w-full h-full rounded-[1.35rem] sm:rounded-[1.85rem] overflow-hidden bg-slate-900">
+                <Image
+                  src={md.photo}
+                  alt={`${md.displayName} - ${md.designation}`}
+                  fill
+                  sizes="(min-width: 1024px) 42vw, 100vw"
+                  className="object-cover object-top"
+                />
+              </div>
             </div>
           </div>
         </Reveal>

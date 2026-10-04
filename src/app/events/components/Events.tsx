@@ -44,19 +44,21 @@ const Events = () => {
                 className="block group cursor-pointer"
               >
                 <div className="bg-white dark:bg-[#0c2242] rounded-3xl overflow-hidden shadow-xl border border-transparent hover:border-amber-300/60 flex flex-col h-full transition-all duration-300">
-                  <div className="relative w-full h-64 sm:h-72 overflow-hidden">
-                    <Image
-                      src={evt.imageUrl}
-                      alt={evt.title}
-                      fill
-                      sizes="(min-width: 768px) 50vw, 100vw"
-                      className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
-                    <div className="absolute top-4 left-4">
-                      <span className="text-xs font-bold uppercase tracking-wider bg-amber-400 text-slate-950 px-3 py-1 rounded-full shadow">
-                        {evt.category}
-                      </span>
+                  <div className="p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 m-3 sm:m-4 mb-0 rounded-2xl overflow-hidden shadow-md">
+                    <div className="relative w-full h-60 sm:h-68 overflow-hidden rounded-xl">
+                      <Image
+                        src={evt.imageUrl}
+                        alt={evt.title}
+                        fill
+                        sizes="(min-width: 768px) 50vw, 100vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
+                      <div className="absolute top-4 left-4">
+                        <span className="text-xs font-bold uppercase tracking-wider bg-amber-400 text-slate-950 px-3 py-1 rounded-full shadow">
+                          {evt.category}
+                        </span>
+                      </div>
                     </div>
                   </div>
 

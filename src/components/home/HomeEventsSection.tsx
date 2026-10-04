@@ -77,15 +77,17 @@ const HomeEventsSection = () => {
                     transition={{ duration: 0.4 }}
                     className="bg-white dark:bg-[#0c2242] rounded-3xl overflow-hidden shadow-[0_4px_25px_rgba(0,0,0,0.05)] dark:shadow-[0_4px_25px_rgba(0,0,0,0.2)] flex flex-col h-full"
                   >
-                    <div className="w-full h-64 sm:h-80 overflow-hidden relative">
-                      <Image
-                        src={event.imageUrl}
-                        alt={event.title}
-                        fill
-                        sizes="(min-width: 768px) 50vw, 100vw"
-                        className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent dark:from-black/50 pointer-events-none" />
+                    <div className="p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 m-3 sm:m-4 mb-0 rounded-2xl overflow-hidden shadow-md">
+                      <div className="w-full h-60 sm:h-76 overflow-hidden relative rounded-xl">
+                        <Image
+                          src={event.imageUrl}
+                          alt={event.title}
+                          fill
+                          sizes="(min-width: 768px) 50vw, 100vw"
+                          className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent dark:from-black/50 pointer-events-none" />
+                      </div>
                     </div>
 
                     <div className="p-6 sm:p-8 flex items-stretch gap-6 sm:gap-8 flex-1">

@@ -87,23 +87,25 @@ export function NewsArticleView({ slug }: { slug: string }) {
           onMount
           y={0}
           scale={0.98}
-          className="mb-10 rounded-2xl overflow-hidden border border-slate-200/90 dark:border-amber-400/20 shadow-md bg-slate-100 dark:bg-slate-900"
+          className="mb-10 rounded-2xl overflow-hidden p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 shadow-xl"
         >
-          <div className="relative aspect-video w-full">
-            <Image
-              src={article.imageUrl}
-              alt={article.title}
-              fill
-              priority
-              sizes="(min-width: 896px) 896px, 100vw"
-              className="object-cover object-center"
-            />
-          </div>
-          {article.imageCaption && (
-            <div className="p-3.5 bg-slate-50 dark:bg-[#0a182c] border-t border-slate-200/80 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-400 italic">
-              Photo: {article.imageCaption}
+          <div className="rounded-xl overflow-hidden bg-slate-900">
+            <div className="relative aspect-video w-full">
+              <Image
+                src={article.imageUrl}
+                alt={article.title}
+                fill
+                priority
+                sizes="(min-width: 896px) 896px, 100vw"
+                className="object-cover object-center"
+              />
             </div>
-          )}
+            {article.imageCaption && (
+              <div className="p-3.5 bg-slate-50 dark:bg-[#0a182c] border-t border-slate-200/80 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-400 italic">
+                Photo: {article.imageCaption}
+              </div>
+            )}
+          </div>
         </Reveal>
 
         {/* Quick Impact Stats if available */}
@@ -225,14 +227,16 @@ export function NewsArticleView({ slug }: { slug: string }) {
                   href={newsHref(item.slug)}
                   className="group bg-white dark:bg-[#0c2242] rounded-xl overflow-hidden border border-slate-200/80 dark:border-amber-400/20 shadow-sm hover:shadow-lg transition-all cursor-pointer flex flex-col"
                 >
-                  <div className="relative aspect-16/10 w-full overflow-hidden bg-slate-100 dark:bg-slate-900">
-                    <Image
-                      src={item.imageUrl}
-                      alt={item.title}
-                      fill
-                      sizes="(min-width: 768px) 33vw, 100vw"
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
+                  <div className="p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 m-2.5 mb-0 rounded-lg overflow-hidden shadow-sm">
+                    <div className="relative aspect-16/10 w-full rounded-md overflow-hidden bg-slate-100 dark:bg-slate-900">
+                      <Image
+                        src={item.imageUrl}
+                        alt={item.title}
+                        fill
+                        sizes="(min-width: 768px) 33vw, 100vw"
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
                   </div>
                   <div className="p-4 flex flex-col flex-1 space-y-2">
                     <span className="text-[11px] font-bold uppercase tracking-wider text-[#a47b1e] dark:text-amber-400">

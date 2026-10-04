@@ -134,19 +134,23 @@ export function NewsListView() {
             className="group mb-12 bg-white dark:bg-[#0c2242] rounded-3xl overflow-hidden border border-slate-200/90 dark:border-amber-400/20 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer grid grid-cols-1 lg:grid-cols-12"
           >
             {/* Image Column */}
-            <div className="lg:col-span-7 relative aspect-16/10 lg:aspect-auto overflow-hidden bg-slate-100 dark:bg-slate-900">
-              <Image
-                src={featuredArticle.imageUrl}
-                alt={featuredArticle.title}
-                fill
-                priority
-                sizes="(min-width: 1024px) 58vw, 100vw"
-                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute top-4 left-4">
-                <span className="px-3.5 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-[#0c2242]/90 text-amber-300 backdrop-blur-md shadow-md border border-amber-400/30">
-                  Featured Release
-                </span>
+            <div className="lg:col-span-7 p-3 sm:p-4">
+              <div className="relative aspect-16/10 lg:aspect-auto w-full h-full min-h-[260px] sm:min-h-[320px] rounded-2xl overflow-hidden p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 shadow-md">
+                <div className="relative w-full h-full rounded-xl overflow-hidden bg-slate-900">
+                  <Image
+                    src={featuredArticle.imageUrl}
+                    alt={featuredArticle.title}
+                    fill
+                    priority
+                    sizes="(min-width: 1024px) 58vw, 100vw"
+                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="px-3.5 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-[#0c2242]/90 text-amber-300 backdrop-blur-md shadow-md border border-amber-400/30">
+                      Featured Release
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -195,15 +199,17 @@ export function NewsListView() {
                 className="group flex flex-col bg-white dark:bg-[#0c2242] rounded-2xl overflow-hidden border border-slate-200/90 dark:border-amber-400/20 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
               >
                 {/* Image */}
-                <div className="relative aspect-16/10 w-full overflow-hidden bg-slate-100 dark:bg-slate-900">
-                  <Image
-                    src={item.imageUrl}
-                    alt={item.title}
-                    fill
-                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 m-3 mb-0 rounded-xl overflow-hidden shadow-sm">
+                  <div className="relative aspect-16/10 w-full rounded-lg overflow-hidden bg-slate-100 dark:bg-slate-900">
+                    <Image
+                      src={item.imageUrl}
+                      alt={item.title}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-linear-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </div>
                 </div>
 
                 {/* Body */}

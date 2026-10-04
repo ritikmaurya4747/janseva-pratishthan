@@ -276,15 +276,17 @@ export function AdvisoryMemberView({ slug }: { slug: string }) {
                 className="group rounded-2xl dark:bg-[#0c2242] bg-white border border-slate-200 dark:border-white/10 hover:border-amber-400/60 p-4 shadow-md hover:shadow-xl transition-all cursor-pointer flex flex-col justify-between font-sans"
               >
                 <div className="space-y-3">
-                  <div className="relative aspect-4/3 w-full rounded-xl overflow-hidden bg-slate-900">
-                    <FallbackImage
-                      src={other.photo}
-                      fallbackName={other.name}
-                      alt={other.name}
-                      fill
-                      sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-                      className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
-                    />
+                  <div className="relative aspect-4/3 w-full rounded-xl overflow-hidden p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 shadow-md">
+                    <div className="w-full h-full rounded-lg overflow-hidden relative bg-slate-900">
+                      <FallbackImage
+                        src={other.photo}
+                        fallbackName={other.name}
+                        alt={other.name}
+                        fill
+                        sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+                        className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
                   </div>
 
                   <div>

@@ -154,23 +154,25 @@ export function GeneralSecretarySection() {
           <div className="w-full lg:w-[38%] shrink-0">
             <div
               onClick={() => fileInputRef.current?.click()}
-              className="relative w-full aspect-4/5 max-w-sm mx-auto rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-slate-900 group cursor-pointer transition-transform duration-300 hover:scale-[1.01]"
+              className="relative w-full aspect-4/5 max-w-sm mx-auto rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 group cursor-pointer transition-transform duration-300 hover:scale-[1.01]"
               title="Click photo to select/update image"
             >
-              <Image
-                src={photoUrl}
-                alt={`${secretary.displayName} - ${secretary.role}`}
-                fill
-                sizes="(min-width: 1024px) 384px, 90vw"
-                className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-              />
-              <input
-                ref={fileInputRef}
-                type="file"
-                accept="image/*"
-                onChange={handleImageUpload}
-                className="hidden"
-              />
+              <div className="w-full h-full rounded-xl sm:rounded-[1.35rem] overflow-hidden relative bg-slate-900">
+                {/* <Image
+                  src={photoUrl}
+                  alt={`${secretary.displayName} - ${secretary.role}`}
+                  fill
+                  sizes="(min-width: 1024px) 384px, 90vw"
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                /> */}
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  onChange={handleImageUpload}
+                  className="hidden"
+                />
+              </div>
             </div>
           </div>
         </motion.div>

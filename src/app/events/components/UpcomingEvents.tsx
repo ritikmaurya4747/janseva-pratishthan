@@ -52,17 +52,19 @@ const UpcomingEvents = () => {
               className="rounded-2xl dark:bg-linear-to-b dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 bg-white border border-slate-200/80 hover:border-amber-300/60 p-6 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-md"
             >
               <div className="space-y-3">
-                <div className="relative rounded-xl overflow-hidden h-44 border-none shadow">
-                  <Image
-                    src={event.imageUrl}
-                    alt={event.title}
-                    fill
-                    sizes="(min-width: 768px) 33vw, 100vw"
-                    className="object-cover"
-                  />
-                  <span className="absolute top-2.5 right-2.5 text-sm font-bold uppercase tracking-wider bg-blue-950/90 text-amber-300 border-none px-2 py-0.5 rounded shadow">
-                    {event.category}
-                  </span>
+                <div className="relative rounded-xl overflow-hidden h-44 shadow p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600">
+                  <div className="relative w-full h-full rounded-lg overflow-hidden">
+                    <Image
+                      src={event.imageUrl}
+                      alt={event.title}
+                      fill
+                      sizes="(min-width: 768px) 33vw, 100vw"
+                      className="object-cover"
+                    />
+                    <span className="absolute top-2.5 right-2.5 text-sm font-bold uppercase tracking-wider bg-blue-950/90 text-amber-300 border-none px-2 py-0.5 rounded shadow">
+                      {event.category}
+                    </span>
+                  </div>
                 </div>
 
                 <span className="text-sm font-bold uppercase tracking-wider dark:text-amber-300 text-amber-800 block">
