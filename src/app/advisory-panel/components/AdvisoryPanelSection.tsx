@@ -154,11 +154,11 @@ export function AdvisoryPanelSection() {
                   <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
                   {/* Experience Badge */}
-                  {member.experienceYears && (
+                  {/* {member.experienceYears && (
                     <div className="absolute top-2.5 right-2.5 px-2.5 py-1 rounded-full text-[11px] font-bold dark:bg-black/75 bg-white/95 dark:text-amber-300 text-amber-900 backdrop-blur-md shadow-md border border-amber-400/30">
                       {member.experienceYears}+ {t("Yrs Exp", "वर्ष अनुभव")}
                     </div>
-                  )}
+                  )} */}
 
                   {/* Domain Category Pill */}
                   <div className="absolute bottom-2.5 left-2.5 flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-black/80 text-white backdrop-blur-md border border-white/20 shadow-sm">

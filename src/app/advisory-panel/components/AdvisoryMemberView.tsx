@@ -88,12 +88,12 @@ const AdvisoryMemberView = ({ slug }: { slug: string }) => {
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-80" />
 
-                  {member.experienceYears && (
+                  {/* {member.experienceYears && (
                     <div className="absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold dark:bg-black/80 bg-white/95 dark:text-amber-300 text-amber-900 backdrop-blur-md shadow-md border border-amber-400/40">
                       {member.experienceYears}+{" "}
                       <T en={"Yrs Experience"} hi={"वर्ष अनुभव"} />
                     </div>
-                  )}
+                  )} */}
 
                   <div className="absolute bottom-3 left-3 flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-black/80 text-white backdrop-blur-md border border-white/20">
                     <CategoryIcon category={member.category} size="w-4 h-4" />
