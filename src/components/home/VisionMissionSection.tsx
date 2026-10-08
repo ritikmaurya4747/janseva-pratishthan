@@ -27,7 +27,7 @@ const VisionMissionSection = () => {
                   />
                 </div>
               </div>
-              <p className="text-[1rem] sm:text-[1.05rem] text-slate-600 dark:text-slate-300/90 leading-relaxed font-normal">
+              <p className="text-justify text-[1rem] sm:text-[1.05rem] text-slate-600 dark:text-slate-300/90 leading-relaxed font-normal">
                 {card.text}
               </p>
             </Reveal>
