@@ -275,7 +275,7 @@ const AdvisoryMemberView = ({ slug }: { slug: string }) => {
                 className="group rounded-2xl dark:bg-[#0c2242] bg-white border border-slate-200 dark:border-white/10 hover:border-amber-400/60 p-4 shadow-md hover:shadow-xl transition-all cursor-pointer flex flex-col justify-between font-sans"
               >
                 <div className="space-y-3">
-                  <div className="relative aspect-4/3 w-full rounded-xl overflow-hidden p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 shadow-md">
+                  <div className="relative aspect-4/5 w-full rounded-xl overflow-hidden p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 shadow-md">
                     <div className="w-full h-full rounded-lg overflow-hidden relative bg-slate-900">
                       <FallbackImage
                         src={other.photo}
