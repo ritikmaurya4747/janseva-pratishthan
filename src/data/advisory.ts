@@ -95,7 +95,7 @@ export const ADVISORY_MEMBERS: AdvisoryMember[] = [
     designation: "Advisor – Janseva Pratishthan Foundation",
     hindiDesignation: "सलाहकार – जनसेवा प्रतिष्ठान फाउंडेशन",
     credentials: "Additional Commissioner – Department of Revenue, Government of India | Indian Revenue Service (2008 Batch) | Ex-Zonal Director, Narcotics Control Bureau, Mumbai | Formerly with DRI, NIA & Customs",
-    photo: "/Hon. Shri. Sameer Wankhede.jpeg",
+    photo: "/Hon. Shri. Sameer Wankhede.png",
     category: "anti-drug",
     experienceYears: 17,
     details: "Hon. Shri. Sameer Dnyandev Wankhede is an Indian Revenue Service officer of the 2008 batch, currently posted as Additional Commissioner under the Department of Revenue, Ministry of Finance. He has served in several important enforcement and investigative assignments, including the Customs Department, Directorate of Revenue Intelligence (DRI), National Investigation Agency (NIA), and Narcotics Control Bureau (NCB), where he served as Zonal Director, Mumbai. As Advisor to Janseva Pratishthan Foundation, his experience contributes strategic guidance to the Foundation's Nasha-Mukta Bharat (Drug-Free India) initiatives — particularly in anti-drug awareness, youth empowerment, community education, responsible citizenship, and prevention of substance abuse. His association strengthens the Foundation's mission to promote a drug-free, disciplined, educated, and empowered society while supporting grassroots awareness initiatives among children, youth, families, and communities.",
