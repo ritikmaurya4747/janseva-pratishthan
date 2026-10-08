@@ -133,105 +133,49 @@ export const ADVISORY_MEMBERS: AdvisoryMember[] = [
     quote: "Believe in yourself, that's where the magic begins."
   },
   {
-    id: "col-raghvendra-singh",
-    name: "Col. Raghvendra Pratap Singh (Retd.)",
-    hindiName: "कर्नल राघवेंद्र प्रताप सिंह (सेवानिवृत्त)",
-    designation: "Senior Advisor – Disaster Response & Humanitarian Logistics",
-    hindiDesignation: "वरिष्ठ सलाहकार – आपदा प्रबंधन एवं त्वरित मानवीय राहत",
-    credentials: "Sena Medal Veteran, Logistics & Emergency Management Specialist",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
-    category: "relief",
-    experienceYears: 28,
-    details: "Having commanded logistics operations across high-altitude and flood-prone terrains in the Indian Army, Col. Singh coordinates the foundation's disaster relief blueprint, seasonal winter blanket distribution drives, and emergency ration logistics with military-grade precision and zero intermediate loss.",
-    hindiDetails: "भारतीय सेना में 28 वर्षों की विशिष्ट सेवा के उपरांत, कर्नल सिंह जनसेवा प्रतिष्ठान के आपदा राहत अभियानों, शीतकालीन कंबल वितरण और आपातकालीन राशन रसद को पूर्ण पारदर्शिता और त्वरित गति से संचालित करते हैं।",
-    expertise: [
-      "Emergency Logistics",
-      "Winter Blanket Drives",
-      "Disaster Relief",
-      "Field Volunteer Command"
-    ],
-    quote: "In moments of crisis, speed, discipline, and uncompromising compassion are the only currencies that matter."
-  },
-  {
-    id: "dr-priya-nair",
-    name: "Dr. Priya Dharshini Nair",
-    hindiName: "डॉ. प्रिया दर्शिनी नायर",
-    designation: "Chief Advisor – Women Empowerment & Micro-Enterprise",
-    hindiDesignation: "मुख्य सलाहकार – महिला सशक्तिकरण एवं स्वावलंबन",
-    credentials: "Ph.D. in Rural Economics, Senior Consultant for Women Self-Help Groups (SHGs)",
-    photo: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80",
-    category: "empowerment",
-    experienceYears: 21,
-    details: "A pioneer in rural livelihoods and micro-entrepreneurship models for rural women. Dr. Nair serves as the principal strategist behind Project Swabhiman, directing the establishment of tailoring production hubs, financial literacy workshops, and sustainable sanitary hygiene initiatives.",
-    hindiDetails: "ग्रामीण आजीविका और स्वयं सहायता समूहों (SHG) की विशेषज्ञ। डॉ. नायर प्रोजेक्ट स्वाभिमान के अंतर्गत सिलाई-कढ़ाई केंद्रों की स्थापना, वित्तीय साक्षरता और महिला माइक्रो-उद्यमिता का ढांचा तैयार करती हैं।",
-    expertise: [
-      "Project Swabhiman",
-      "Micro-Finance & SHG",
-      "Vocational Skill Centers",
-      "Sanitary Hygiene"
-    ],
-    quote: "Economic independence gives a woman not just an income, but a voice, safety, and self-determination."
-  },
-  {
-    id: "vikramaditya-sharma",
-    name: "Vikramaditya Sharma",
-    hindiName: "विक्रमादित्य शर्मा",
-    designation: "Strategic Advisor – Cyber Safety, Youth Shield & Anti-Narcotics",
-    hindiDesignation: "रणनीतिक सलाहकार – साइबर सुरक्षा, युवा संरक्षण एवं नशा मुक्ति",
-    credentials: "Cybersecurity Fellow, Ex-Advisor to Digital Crime Units & Youth De-Addiction Mentor",
-    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
-    category: "youth-safety",
-    experienceYears: 18,
-    details: "Advising government bodies and youth networks on digital fraud prevention and youth resilience. Vikramaditya guides the foundation's anti-cyber crime workshops in schools and universities, alongside community de-addiction and rehabilitation outreach programs.",
-    hindiDetails: "साइबर अपराध रोकथाम और नशा मुक्ति कार्यक्रमों के विशेषज्ञ। विक्रमादित्य जनसेवा प्रतिष्ठान के स्कूल-कॉलेजों में एंटी-साइबर फ्रॉड वर्कशॉप और युवाओं को नशे के चंगुल से बचाने के जागरूकता अभियानों का मार्गदर्शन करते हैं।",
-    expertise: [
-      "Anti-Cyber Crime",
-      "Youth Counseling",
-      "Drug De-Addiction",
-      "Digital Awareness"
-    ],
-    quote: "Shielding our youth from online predators and drug cartels is our highest duty toward India's future."
-  },
-  {
-    id: "ca-rajesh-agrawal",
-    name: "CA Rajesh G. Agrawal",
-    hindiName: "सीए राजेश जी. अग्रवाल",
-    designation: "Advisory Member – Institutional Audit, Finance & CSR Alignment",
-    hindiDesignation: "सलाहकार सदस्य – वित्तीय ऑडिट, ट्रस्ट अनुपालन एवं सीएसआर",
-    credentials: "FCA, Senior Partner at Agrawal & Associates | Registered Trust Auditor",
-    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=800&q=80",
-    category: "governance",
-    experienceYears: 29,
-    details: "Fellow Chartered Accountant with three decades of experience in non-profit auditing, CSR Section 135 reporting, and public domain accountability. He ensures that every single rupee of public donation and corporate CSR grant is audited, tracked, and documented for 80G tax benefit compliance.",
-    hindiDetails: "वरिष्ठ चार्टर्ड अकाउंटेंट जो तीन दशकों से ट्रस्ट ऑडिट और सीएसआर अनुपालन में कार्यरत हैं। वे यह सुनिश्चित करते हैं कि दान की प्रत्येक पाई का पारदर्शी हिसाब रखा जाए और दाताओं को त्वरित 80G रसीदें मिलें।",
-    expertise: [
-      "CSR-1 Compliance",
-      "Statutory Trust Audit",
-      "80G Certification",
-      "Zero Leakage Protocols"
-    ],
-    quote: "Financial discipline and public audits are the bedrock upon which genuine citizen trust is sustained."
-  },
-  {
-    id: "sunita-murthy",
-    name: "Sunita Murthy",
-    hindiName: "सुनीता मूर्ति",
-    designation: "Advisory Member – Child Nutrition & Slum Welfare",
-    hindiDesignation: "सलाहकार सदस्य – बाल पोषण एवं मलिन बस्ती कल्याण",
-    credentials: "Public Nutritionist, Former Director of Urban Community Feeding Initiatives",
-    photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80",
+    id: "dr-deepnarayan-shukla",
+    name: "Dr. Deepnarayan Shukla",
+    hindiName: "डॉ. दीपनारायण शुक्ला",
+    designation: "Advisor – Doctors Wing & Health Awareness",
+    hindiDesignation: "सलाहकार – डॉक्टर्स विंग एवं स्वास्थ्य जागरूकता",
+    credentials: "Ex-Dean – Poddar Ayurvedic College | Ayurveda & Healthcare Education | Public Health Awareness | Preventive Healthcare",
+    photo: "/Dr. Deepnarayan Shukla.png",
     category: "health",
-    experienceYears: 20,
-    details: "Advocating for eradication of childhood malnutrition in urban slum clusters. Sunita designs nutritional baskets distributed to pregnant mothers and malnourished children, and oversees community kitchen hygiene standards for Janseva Pratishthan.",
-    hindiDetails: "शहरी बस्तियों में बाल कुपोषण उन्मूलन की प्रमुख आवाज। सुनीता गर्भवती माताओं व बच्चों के लिए पौष्टिक आहार किट तैयार करती हैं और सामुदायिक रसोई की गुणवत्ता सुनिश्चित करती हैं।",
+    experienceYears: 30,
+    details: "Dr. Deepnarayan Shukla is an experienced Ayurvedic medical and academic professional who has served as Dean of Poddar Ayurvedic College. His association with medical education and Ayurveda brings valuable knowledge to community-oriented healthcare and health-awareness initiatives. As Advisor to the Doctors Wing & Health Awareness division of Janseva Pratishthan Foundation, Dr. Shukla provides guidance for initiatives promoting preventive healthcare, Ayurveda and holistic wellness, health education, medical awareness camps, healthy living, and community health outreach. His guidance supports the Foundation in developing doctor-led health awareness programs, reaching underserved communities, and encouraging people — especially children, youth, women, and senior citizens — to adopt healthier lifestyles and seek timely healthcare.",
+    hindiDetails: "डॉ. दीपनारायण शुक्ला एक अनुभवी आयुर्वेदिक चिकित्सा एवं शैक्षणिक पेशेवर हैं, जिन्होंने पोद्दार आयुर्वेदिक कॉलेज के डीन के रूप में सेवा दी है। चिकित्सा शिक्षा और आयुर्वेद से उनका जुड़ाव समुदाय-उन्मुख स्वास्थ्य सेवा और स्वास्थ्य जागरूकता पहलों के लिए मूल्यवान ज्ञान प्रदान करता है। जनसेवा प्रतिष्ठान फाउंडेशन के डॉक्टर्स विंग एवं स्वास्थ्य जागरूकता प्रभाग के सलाहकार के रूप में, डॉ. शुक्ला निवारक स्वास्थ्य सेवा, आयुर्वेद एवं समग्र कल्याण, स्वास्थ्य शिक्षा, चिकित्सा जागरूकता शिविरों, स्वस्थ जीवन शैली और सामुदायिक स्वास्थ्य आउटरीच को बढ़ावा देने वाली पहलों के लिए मार्गदर्शन प्रदान करते हैं। उनका मार्गदर्शन फाउंडेशन को डॉक्टर-नेतृत्व वाले स्वास्थ्य जागरूकता कार्यक्रम विकसित करने, वंचित समुदायों तक पहुँचने और विशेषकर बच्चों, युवाओं, महिलाओं एवं वरिष्ठ नागरिकों को स्वस्थ जीवन शैली अपनाने और समय पर स्वास्थ्य सेवा प्राप्त करने के लिए प्रोत्साहित करने में सहायता करता है।",
     expertise: [
-      "Maternal Nutrition",
-      "Slum Outreach",
-      "Child Care Baskets",
-      "Community Kitchens"
+      "Ayurveda & Holistic Wellness",
+      "Preventive Healthcare",
+      "Medical Education & Training",
+      "Health Awareness Camps",
+      "Community Health Outreach",
+      "Healthy Living & Nutrition"
     ],
-    quote: "A nourished child is a child equipped to learn, grow, and break free from poverty."
-  }
+    quote: "Health is the foundation of a strong, productive and empowered society."
+  },
+  {
+    id: "dr-munir-chandniwala",
+    name: "Dr. Munir Chandniwala",
+    hindiName: "डॉ. मुनीर चांदनीवाला",
+    designation: "Advisor & Wellness Partner – Janseva Pratishthan Foundation",
+    hindiDesignation: "सलाहकार एवं वेलनेस पार्टनर – जनसेवा प्रतिष्ठान फाउंडेशन",
+    credentials: "Chairman & Managing Director – Influx Healthtech Limited | Pharmacist | Nutraceutical & Wellness Entrepreneur | Healthcare Manufacturing & Innovation",
+    photo: "/Dr. Munir Chandniwala.jpeg",
+    category: "health",
+    experienceYears: 25,
+    details: "Dr. Munir Abdul Ganee Chandniwala is the Founder and Managing Director of Influx Healthtech Limited, a healthcare-focused contract development and manufacturing company working across nutraceuticals, dietary supplements, cosmetics, Ayurvedic/herbal products, veterinary nutrition, and homecare. He holds a Bachelor of Pharmacy, a postgraduate qualification in Management & Business Administration, and a Ph.D.; he is a registered pharmacist with the Maharashtra State Pharmacy Council and has extensive experience in the nutraceutical, Ayurvedic, cosmetics, and healthcare-manufacturing sectors. He has also completed a Diploma in Nutrition. As Advisor & Wellness Partner to Janseva Pratishthan Foundation, Dr. Chandniwala provides strategic guidance for initiatives focused on health awareness, nutrition education, preventive wellness, sports nutrition, healthy lifestyles, youth fitness, and community health programs. His association helps the Foundation develop doctor-, nutrition-, and wellness-oriented awareness campaigns — particularly for children, youth, women, athletes, and underserved communities — supporting the broader vision of a healthier, fitter, and more empowered India.",
+    hindiDetails: "डॉ. मुनीर अब्दुल गनी चांदनीवाला इनफ्लक्स हेल्थटेक लिमिटेड के संस्थापक एवं प्रबंध निदेशक हैं — एक स्वास्थ्य-केंद्रित कॉन्ट्रैक्ट डेवलपमेंट एवं मैन्युफैक्चरिंग कंपनी जो न्यूट्रास्यूटिकल्स, आहार पूरक, कॉस्मेटिक्स, आयुर्वेदिक/हर्बल उत्पाद, पशु पोषण और होमकेयर के क्षेत्र में कार्यरत है। उन्होंने बैचलर ऑफ फार्मेसी, प्रबंधन एवं व्यवसाय प्रशासन में स्नातकोत्तर योग्यता और पीएच.डी. प्राप्त की है; वे महाराष्ट्र राज्य फार्मेसी परिषद के साथ पंजीकृत फार्मासिस्ट हैं और न्यूट्रास्यूटिकल, आयुर्वेदिक, कॉस्मेटिक्स एवं स्वास्थ्य-निर्माण क्षेत्रों में उनका व्यापक अनुभव है। उन्होंने पोषण में डिप्लोमा भी पूरा किया है। जनसेवा प्रतिष्ठान फाउंडेशन के सलाहकार एवं वेलनेस पार्टनर के रूप में, डॉ. चांदनीवाला स्वास्थ्य जागरूकता, पोषण शिक्षा, निवारक वेलनेस, खेल पोषण, स्वस्थ जीवन शैली, युवा फिटनेस और सामुदायिक स्वास्थ्य कार्यक्रमों पर केंद्रित पहलों के लिए रणनीतिक मार्गदर्शन प्रदान करते हैं। उनका जुड़ाव फाउंडेशन को विशेषकर बच्चों, युवाओं, महिलाओं, खिलाड़ियों एवं वंचित समुदायों के लिए डॉक्टर-, पोषण- एवं वेलनेस-उन्मुख जागरूकता अभियान विकसित करने में सहायता करता है, जो एक स्वस्थ, फिट और अधिक सशक्त भारत की व्यापक दृष्टि का समर्थन करता है।",
+    expertise: [
+      "Nutraceuticals & Dietary Supplements",
+      "Nutrition Education & Wellness",
+      "Preventive Healthcare",
+      "Sports Nutrition & Youth Fitness",
+      "Ayurvedic & Herbal Products",
+      "Healthcare Manufacturing & Innovation"
+    ],
+    quote: "Better health begins with better awareness, better nutrition and a commitment to wellness."
+  },
 ];
 
 // ============================================================
