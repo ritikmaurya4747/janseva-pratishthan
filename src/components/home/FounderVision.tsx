@@ -22,7 +22,7 @@ export function FounderVision() {
 
           <div className="space-y-2">
             <span className="text-sm font-bold uppercase tracking-widest dark:text-amber-300 text-amber-800">
-              Founder & Chairperson
+              Founder & National President
             </span>
             <h3 className="font-display text-2xl sm:text-3xl font-bold dark:text-white text-slate-900">
               {FOUNDATION_INFO.founder.name}

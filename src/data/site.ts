@@ -78,7 +78,7 @@ export const FOUNDATION_INFO: FoundationInfo = {
       hindiQuote:
         "सच्चा सामाजिक बदलाव ज़मीनी स्तर से शुरू होता है—जब हम खेलकूद, स्वास्थ्य, सामाजिक न्याय, साइबर सुरक्षा, नशा मुक्ति और युवा सशक्तिकरण के ज़रिए हर युवा को सुरक्षा, स्वाभिमान और उज्ज्वल भविष्य प्रदान करते हैं।",
       visionSummary:
-        "Founded to bridge societal gaps from the grassroots level, Janseva Pratishthan Foundation channels empathy into actionable, transparent, and scalable interventions across its six core pillars.",
+        "Janseva Pratishthan Foundation was born from a simple but powerful belief: nation-building begins with serving people. Our mission is to create a healthier, safer, educated, empowered and socially responsible India by connecting social service with decisive action and measurable impact.",
     },
   },
   generalSecretary: {
@@ -90,13 +90,13 @@ export const FOUNDATION_INFO: FoundationInfo = {
       hindiQuote:
         "सामाजिक सेवा में नेतृत्व का असली पैमाना ज़मीनी पारदर्शिता और निष्ठा है। जनसेवा प्रतिष्ठान में हमारा संकल्प है कि हर राहत और सशक्तिकरण अंतिम व्यक्ति तक बिना किसी देरी और पूरी ईमानदारी से पहुंचे।",
       pillars: [
-        "100% Transparent, Audited & 80G Compliant Trust Governance",
-        "Direct Last-Mile Distribution with Zero Intermediary Leakage",
-        "Statewide Youth Volunteer Cadre Coordination",
-        "Empathetic & Rapid Response Community Operations",
+        "Organisational Administration & Programme Coordination",
+        "Youth Engagement, Health, Fitness & Sports Awareness",
+        "Coordination with Educational Institutions & Community Organisations",
+        "Strengthening the Foundation's Grassroots Implementation Network",
       ],
       secretaryEmail: "secretary@jansevapratishthan.org",
-      title: "Executive Operations, Governance & Institutional Strategy",
+      title: "Administration, Programme Execution & Youth Engagement",
       governanceCards: [
         {
           icon: "Sparkles",

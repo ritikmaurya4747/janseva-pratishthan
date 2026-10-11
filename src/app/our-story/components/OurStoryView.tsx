@@ -53,13 +53,13 @@ const OurStoryView = () => {
               </div>
               <div className="space-y-1">
                 <span className="text-xs font-bold uppercase tracking-widest text-amber-700 dark:text-amber-300">
-                  Founder & Chairperson
+                  Founder & National President
                 </span>
                 <h2 className="font-display text-2xl sm:text-3xl font-bold dark:text-white text-slate-900">
-                  Shabbir Shaikh
+                  {founder.name}
                 </h2>
                 <p className="text-xs sm:text-sm dark:text-slate-400 text-slate-500">
-                  Social Activist, Humanitarian & Grassroots Philanthropist
+                  {founder.background}
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 justify-center lg:justify-start pt-1">
@@ -88,23 +88,18 @@ const OurStoryView = () => {
                 &ldquo;{founder.quote}&rdquo;
               </blockquote>
               <p className="text-sm dark:text-slate-300 text-slate-700 leading-relaxed">
-                "Having worked closely with families across grassroots
-                settlements, I recognized that lasting upliftment requires an
-                unyielding, 360-degree shield for our communities. A talented
-                youngster denied sports coaching and gear, a family trapped
-                without access to basic healthcare, vulnerable citizens deprived
-                of legal protection, or youth falling prey to digital scams and
-                substance abuse—these are urgent, interconnected challenges that
-                we cannot ignore."
+                Janseva Pratishthan Foundation was born from a simple but
+                powerful belief: nation-building begins with serving people. Our
+                mission is to create a healthier, safer, educated, empowered and
+                socially responsible India by connecting social service with
+                decisive action and measurable impact.
               </p>
               <p className="text-sm dark:text-slate-300 text-slate-700 leading-relaxed">
-                "Janseva Pratishthan Foundation was established with a singular
-                conviction: to convert compassion into accountable, transparent
-                frontline service. Through our six core pillars—Sports, Health,
-                Social Justice & Welfare, Anti-Cyber Crime, Anti-Drugs, and
-                Youth Empowerment—we measure our impact not by grand claims, but
-                by the tangible security, dignity, and aspirations restored in
-                every life we touch."
+                With 18 years of experience in the fitness industry, his journey
+                has been closely connected with sports, fitness, young people and
+                community networks. His philosophy is simple: &ldquo;Empower the
+                youth, protect the vulnerable, strengthen communities and build a
+                healthier, safer and more responsible India.&rdquo;
               </p>
               <div className="pt-4 mt-2 border-t border-slate-200/80 dark:border-white/10 flex flex-wrap items-center justify-between gap-4">
                 <div>
@@ -112,7 +107,7 @@ const OurStoryView = () => {
                     Mr. Shabbir Shaikh
                   </p>
                   <p className="text-xs dark:text-slate-400 text-slate-500">
-                    Founder & Chairperson — Janseva Pratishthan Foundation
+                    Founder & National President — Janseva Pratishthan Foundation
                   </p>
                 </div>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 text-xs font-semibold">

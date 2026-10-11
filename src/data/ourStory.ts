@@ -61,13 +61,15 @@ export const STORY_PRINCIPLES: StoryPrinciple[] = [
 ];
 
 export const STORY_FOUNDER_TAGS: string[] = [
-  "Grassroots Philanthropist",
-  "Community & Youth Shield",
+  "Social & Youth Leader",
+  "18 Years in Fitness Industry",
+  "Community Development Advocate",
 ];
 
 export const STORY_SECRETARY_TAGS: string[] = [
-  "Institutional Governance",
-  "Grassroots Mobilization",
+  "B.Ed. in English",
+  "Fitness Enthusiast",
+  "Youth Engagement",
 ];
 
 export const STORY_GOALS: StoryGoal[] = [
