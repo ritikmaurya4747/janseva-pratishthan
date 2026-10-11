@@ -68,7 +68,7 @@ export interface AdvisorCredential {
 export const ADVISORY_MEMBERS: AdvisoryMember[] = [
   {
     id: "hon-shri-krishna-prakash",
-    name: "Hon. Shri. Krishna Prakash, IPS",
+    name: "Hon. Shri. Krishna Prakash, IPS ADG, Maharashtra (Police Training)",
     hindiName: "सम्मत श्री कृष्ण प्रकाश, आईपीएस",
     designation: "Chief Advisor – Janseva Pratishthan Foundation",
     hindiDesignation: "मुख्य सलाहकार – जनसेवा प्रतिष्ठान फाउंडेशन",
@@ -90,7 +90,7 @@ export const ADVISORY_MEMBERS: AdvisoryMember[] = [
   },
   {
     id: "hon-shri-sameer-wankhede-irs",
-    name: "Hon. Shri. Sameer Wankhede, IRS",
+    name: "Hon. Shri. Sameer Wankhede, IRS Addl. Commissioner",
     hindiName: "सम्मत श्री समीर वानखेड़े, आईआरएस",
     designation: "Advisor – Janseva Pratishthan Foundation",
     hindiDesignation: "सलाहकार – जनसेवा प्रतिष्ठान फाउंडेशन",
@@ -112,7 +112,7 @@ export const ADVISORY_MEMBERS: AdvisoryMember[] = [
   },
   {
     id: "shri-prashant-karulkar",
-    name: "Shri. Prashant Karulkar",
+    name: "Shri. Prashant Karulkar - Chairperson, Karulkar Pratishthan",
     hindiName: "श्री प्रशांत करुलकर",
     designation: "Advisor & Mentor – Janseva Pratishthan Foundation",
     hindiDesignation: "सलाहकार एवं मार्गदर्शक – जनसेवा प्रतिष्ठान फाउंडेशन",
