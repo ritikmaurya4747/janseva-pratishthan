@@ -2,8 +2,7 @@
 
 import { FallbackImage } from "@/components/ui/FallbackImage";
 import { useLanguage } from "@/context/LanguageContext";
-import { ADVISOR_CREDENTIALS, ADVISOR_STATS, ADVISORY_MEMBERS } from "@/data/advisory";
-import { advisorHref } from "@/lib/routes";
+import { ADVISORY_CREDENTIALS, ADVISORY_STATS, ADVISORY_MEMBERS, ADVISORY_CATEGORIES, ADVISORY_CHARTER, ADVISORY_HIGHLIGHTS } from "@/data/advisory";
 import {
   Award,
   BadgeCheck,
@@ -17,7 +16,6 @@ import {
 import Link from "next/link";
 import { useState } from "react";
 import { CategoryIcon } from "./CategoryIcon";
-import { ADVISORY_CATEGORIES, ADVISORY_CHARTER, ADVISORY_HIGHLIGHTS } from "@/data";
 
 // Stats icons mapping
 const STAT_ICONS = [Users, TrendingUp, Award, BadgeCheck];
@@ -72,7 +70,7 @@ export function AdvisoryPanelSection() {
 
       {/* ==================== STATS STRIP ==================== */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-        {ADVISOR_STATS.map((stat, idx) => {
+        {ADVISORY_STATS.map((stat, idx) => {
           const Icon = STAT_ICONS[idx % STAT_ICONS.length];
           return (
             <div
@@ -97,7 +95,7 @@ export function AdvisoryPanelSection() {
 
       {/* ==================== CREDENTIALS STRIP ==================== */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        {ADVISOR_CREDENTIALS.map((cred) => (
+        {ADVISORY_CREDENTIALS.map((cred) => (
           <div
             key={cred.label}
             className="rounded-2xl dark:bg-white/5 bg-slate-50 border border-slate-200 dark:border-white/10 p-4 text-center space-y-1"
@@ -136,7 +134,7 @@ export function AdvisoryPanelSection() {
           <Link
             key={member.id}
             id={`advisory-member-${member.id}`}
-            href={advisorHref(member.id)}
+            href={`/advisory-panel/${member.id}`}
             className="group rounded-2xl dark:bg-[#0c2242] bg-white border border-slate-200 dark:border-white/10 hover:border-amber-400/60 dark:hover:border-amber-400/60 p-5 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between cursor-pointer"
           >
             <div className="space-y-4">

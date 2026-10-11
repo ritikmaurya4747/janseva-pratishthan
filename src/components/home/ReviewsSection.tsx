@@ -14,8 +14,7 @@ import {
   HeartHandshake,
   Award,
 } from "lucide-react";
-import { REVIEWS } from "@/data";
-import type { ReviewItem } from "@/types";
+import { REVIEWS, type ReviewItem } from "@/data/home";
 
 /** Client Component: carousel scroll, review modal and local form state. */
 export function ReviewsSection() {

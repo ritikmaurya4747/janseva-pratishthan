@@ -1,7 +1,6 @@
 import { Target, CheckCircle2, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Icon } from "@/lib/icons";
-import { ROUTES } from "@/lib/routes";
 import { STORY_GOALS } from "@/data/ourStory";
 
 export function OurGoalSection() {
@@ -76,7 +75,7 @@ export function OurGoalSection() {
                 {goal.highlightMetric}
               </span>
               <Link
-                href={ROUTES.donate}
+                href="/donate"
                 className="inline-flex items-center gap-1 font-bold text-amber-700 dark:text-amber-300 hover:text-amber-600 dark:hover:text-amber-200 transition-colors"
               >
                 Support this goal <ArrowRight className="w-3.5 h-3.5" />

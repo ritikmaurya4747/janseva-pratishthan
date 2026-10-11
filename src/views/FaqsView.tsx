@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { FaqExplorer } from "@/components/faqs/FaqExplorer";
 import { FoundationLogo } from "@/components/FoundationLogo";
-import { ROUTES } from "@/lib/routes";
 
 /** Server Component for /faqs. Search, filters and the accordion are a client island. */
 export function FaqsView() {
@@ -43,7 +42,7 @@ export function FaqsView() {
             </p>
           </div>
           <Link
-            href={ROUTES.contact}
+            href="/contact"
             className="px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all shadow-md shrink-0 flex items-center gap-2 cursor-pointer border-none"
           >
             <span>Reach Foundation Desk</span>

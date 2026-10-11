@@ -13,9 +13,8 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import IndiaMapData from "@svg-maps/india";
-import { WHERE_WE_WORK } from "@/data";
+import { WHERE_WE_WORK } from "@/data/home";
 import { useLanguage } from "@/context/LanguageContext";
-import { ROUTES } from "@/lib/routes";
 
 const {
   office,
@@ -278,7 +277,7 @@ export function WhereWeWorkSection() {
                 </a>
 
                 <Link
-                  href={ROUTES.contact}
+                  href="/contact"
                   className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:hover:bg-white/15 text-slate-800 dark:text-white font-medium text-sm tracking-wide border border-slate-200 dark:border-white/10 transition-all cursor-pointer"
                 >
                   <Mail className="w-3.5 h-3.5" />

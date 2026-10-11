@@ -5,9 +5,9 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { motion } from "motion/react";
 import { ArrowRight, BookOpen, Building2, Search } from "lucide-react";
-import { FOUNDATION_INFO, NEWS_ARTICLES, NEWS_CATEGORIES } from "@/data";
+import { NEWS_ARTICLES, NEWS_CATEGORIES } from "@/data/news";
+import { FOUNDATION_INFO } from "@/data/site";
 import { useLanguage } from "@/context/LanguageContext";
-import { ROUTES, newsHref } from "@/lib/routes";
 
 const MotionLink = motion.create(Link);
 
@@ -127,7 +127,7 @@ export function NewsListView() {
         {/* Featured Hero Article Card (if available) */}
         {featuredArticle && (
           <MotionLink
-            href={newsHref(featuredArticle.slug)}
+            href={`/news/${featuredArticle.slug}`}
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
@@ -192,7 +192,7 @@ export function NewsListView() {
             {remainingArticles.map((item, idx) => (
               <MotionLink
                 key={item.id}
-                href={newsHref(item.slug)}
+                href={`/news/${item.slug}`}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: idx * 0.05 }}
@@ -259,13 +259,13 @@ export function NewsListView() {
 
           <div className="flex items-center gap-3 shrink-0 max-sm:w-full max-sm:flex-col">
             <Link
-              href={ROUTES.contact}
+              href="/contact"
               className="px-5 py-2.5 max-sm:w-full max-sm:text-center rounded-xl text-sm font-bold text-slate-800 dark:text-white bg-white dark:bg-[#11274a] border border-slate-200 dark:border-amber-400/30 hover:bg-amber-50 transition-colors shadow-sm cursor-pointer"
             >
               Contact Press Desk
             </Link>
             <Link
-              href={ROUTES.registration}
+              href="/registration"
               className="px-5 py-2.5 max-sm:w-full max-sm:text-center rounded-xl text-sm font-bold text-white bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 shadow-md transition-all cursor-pointer"
             >
               Statutory Credentials

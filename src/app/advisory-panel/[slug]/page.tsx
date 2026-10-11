@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import AdvisoryMemberView from "../components/AdvisoryMemberView";
-import { ADVISORY_MEMBERS } from "@/data/advisory";
-import { getAdvisoryMember } from "@/data";
+import { ADVISORY_MEMBERS, getAdvisoryMember } from "@/data/advisory";
 
 type Props = { params: Promise<{ slug: string }> };
 

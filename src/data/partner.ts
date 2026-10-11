@@ -56,7 +56,7 @@ export const PARTNERS: PartnerProfile[] = [
       ctaHref: "mailto:contact@influxhealthtech.com", // TODO: confirm real contact
     },
     ctaLabel: "Partner With Us",
-    ctaHref: "/join-us",
+    ctaHref: "/volunteer",
   },
 
   // TODO: future partners just get added here as new objects.

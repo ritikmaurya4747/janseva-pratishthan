@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { BookmarkCheck, MessageCircle, Send, X } from "lucide-react";
-import { FLOATING_CONTROLS, FOUNDATION_INFO } from "@/data";
-import { ROUTES } from "@/lib/routes";
+import { FLOATING_CONTROLS } from "@/data/navigation";
+import { FOUNDATION_INFO } from "@/data/site";
 
 export function FloatingControls() {
   const [waModalOpen, setWaModalOpen] = useState(false);
@@ -23,7 +23,7 @@ export function FloatingControls() {
       <div className="fixed left-0 top-1/2 -translate-y-1/2 z-40 transform-gpu will-change-transform">
         <Link
           id="floating-join-us-tab"
-          href={ROUTES.joinUs}
+          href="/volunteer"
           className="group flex items-center gap-2 bg-[#0c2242] dark:bg-[#081525] text-amber-300 hover:text-amber-200 hover:bg-[#122e57] dark:hover:bg-[#112440] border-none rounded-r-xl rounded-l-none px-2 py-4 shadow-[0_4px_20px_rgba(0,0,0,0.4)] backdrop-blur-md transition-all duration-300 transform origin-left hover:scale-y-105 cursor-pointer"
           style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
           title="Join Janseva Pratishthan Foundation as a Volunteer or Partner"

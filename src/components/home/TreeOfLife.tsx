@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion } from "motion/react";
 import { ArrowRight } from "lucide-react";
-import { TREE_BRANCHES, TREE_GEOMETRY } from "@/data";
-import { pillarHref } from "@/lib/routes";
+import { TREE_BRANCHES } from "@/data/home";
+import { TREE_GEOMETRY } from "@/data/treeOfLife";
 
 /**
  * Client Component: clicking a ribbon highlights that branch and opens its callout.
@@ -318,7 +318,7 @@ export function TreeOfLife() {
               </div>
               <Link
                 id={`learn-more-${b.id}`}
-                href={pillarHref(b.id)}
+                href={`/our-work/${b.id}`}
                 className="shrink-0 inline-flex items-center gap-1 text-sm font-semibold px-3 py-1.5 rounded-lg dark:bg-amber-400/20 dark:hover:bg-amber-400/30 dark:text-amber-200 bg-amber-100 hover:bg-amber-200 text-amber-900 border border-transparent hover:border-amber-300/60 transition-colors cursor-pointer"
               >
                 Explore Pillar <ArrowRight className="w-3.5 h-3.5" />

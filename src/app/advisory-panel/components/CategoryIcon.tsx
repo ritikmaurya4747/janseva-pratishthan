@@ -1,4 +1,4 @@
-import { getAdvisoryCategory } from "@/data";
+import { getAdvisoryCategory } from "@/data/advisory";
 import { Icon } from "@/lib/icons";
 
 /** Coloured icon for an advisory category (config lives in advisory.json → categories). */

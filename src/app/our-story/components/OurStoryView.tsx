@@ -1,6 +1,6 @@
 import { FoundationLogo } from "@/components/FoundationLogo";
-import { FOUNDATION_INFO, STORY } from "@/data";
-import { ROUTES } from "@/lib/routes";
+import { STORY } from "@/data/ourStory";
+import { FOUNDATION_INFO } from "@/data/site";
 import { ShieldCheck, Sparkles } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -181,13 +181,13 @@ const OurStoryView = () => {
           </p>
           <div className="pt-2 flex flex-wrap justify-center gap-4">
             <Link
-              href={ROUTES.registration}
+              href="/registration"
               className="px-5 py-2.5 rounded-xl dark:bg-amber-400/20 dark:hover:bg-amber-400/30 dark:text-amber-200 bg-amber-100 hover:bg-amber-200 text-amber-900 border border-transparent hover:border-amber-300/60 text-sm font-bold uppercase tracking-wider transition-colors cursor-pointer"
             >
               View Statutory Registrations & 80G
             </Link>
             <Link
-              href={ROUTES.donate}
+              href="/donate"
               className="px-5 py-2.5 rounded-xl bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 text-slate-950 text-sm font-bold uppercase tracking-wider hover:from-amber-200 hover:to-yellow-100 transition-colors shadow cursor-pointer border-none"
             >
               Support Our Work

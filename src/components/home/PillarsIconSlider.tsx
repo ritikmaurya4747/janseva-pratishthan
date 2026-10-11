@@ -4,9 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion } from "motion/react";
 import { MedallionEmblem } from "./MedallionEmblem";
-import { PILLARS_SLIDER } from "@/data";
+import { PILLARS_SLIDER } from "@/data/home";
 import { useLanguage } from "@/context/LanguageContext";
-import { pillarHref } from "@/lib/routes";
 
 const MotionLink = motion.create(Link);
 
@@ -25,7 +24,7 @@ export function PillarsIconSlider() {
       {TRACK.map((pillar, index) => (
         <MotionLink
           key={`${pillar.id}-${isDuplicate ? "dup" : "orig"}-${index}`}
-          href={pillarHref(pillar.id)}
+          href={`/our-work/${pillar.id}`}
           tabIndex={
             isDuplicate || index >= PILLARS_SLIDER.length ? -1 : undefined
           }

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { FOUNDATION_INFO } from "@/data";
+import { FOUNDATION_INFO } from "@/data/site";
 
 export const SECRETARY_PHOTO_KEY = "janseva_deepak_parki_photo";
 

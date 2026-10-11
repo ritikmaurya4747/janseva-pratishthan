@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PillarDetailView } from "@/views/PillarDetailView";
-import { FOCUS_AREAS, getFocusArea } from "@/data";
+import { FOCUS_AREAS, getFocusArea } from "@/data/pillars";
 
 type Props = { params: Promise<{ slug: string }> };
 

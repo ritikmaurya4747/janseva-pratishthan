@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { FOCUS_AREAS } from "@/data";
-import { ROUTES, donateHref, pillarHref } from "@/lib/routes";
+import { FOCUS_AREAS } from "@/data/pillars";
 
 /** Server Component — first four focus areas as teaser cards. */
 export function FeaturedCauses() {
@@ -20,7 +19,7 @@ export function FeaturedCauses() {
             </h2>
           </div>
           <Link
-            href={ROUTES.ourWork}
+            href="/our-work"
             className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider dark:text-amber-300 dark:hover:text-white text-amber-800 hover:text-amber-950 transition-colors cursor-pointer border-none bg-transparent"
           >
             <span>View All 10 Pillars</span>
@@ -55,14 +54,14 @@ export function FeaturedCauses() {
 
               <div className="pt-5 mt-4 border-none flex items-center justify-between">
                 <Link
-                  href={pillarHref(cause.id)}
+                  href={`/our-work/${cause.id}`}
                   className="text-sm font-semibold dark:text-amber-300 dark:hover:text-white text-amber-800 hover:text-amber-950 flex items-center gap-1 transition-colors cursor-pointer border-none bg-transparent"
                 >
                   <span>Read Details</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
                 <Link
-                  href={donateHref(cause.id)}
+                  href={`/donate?cause=${cause.id}`}
                   className="text-sm px-2.5 py-1 rounded dark:bg-amber-400/20 dark:hover:bg-amber-400/30 dark:text-amber-200 bg-amber-100 hover:bg-amber-200 text-amber-900 font-semibold transition-colors border border-transparent hover:border-amber-300/60 cursor-pointer"
                 >
                   Support

@@ -14,8 +14,7 @@ import {
 import { ShareButtons } from "@/components/news/ShareButtons";
 import { Reveal } from "@/components/ui/Reveal";
 import { T } from "@/components/ui/T";
-import { NEWS_ARTICLES, getNewsArticleBySlug } from "@/data";
-import { ROUTES, newsHref } from "@/lib/routes";
+import { NEWS_ARTICLES, getNewsArticleBySlug } from "@/data/news";
 
 /**
  * Server Component for /news/[slug]. The article is looked up from news.json;
@@ -35,7 +34,7 @@ export function NewsArticleView({ slug }: { slug: string }) {
         {/* Top Breadcrumb & Back Button */}
         <div className="flex items-center justify-between gap-4 mb-8 pt-2">
           <Link
-            href={ROUTES.news}
+            href="/news"
             className="inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-[#a47b1e] dark:text-amber-400 hover:text-[#78570f] dark:hover:text-amber-300 transition-colors cursor-pointer group"
           >
             <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
@@ -193,7 +192,7 @@ export function NewsArticleView({ slug }: { slug: string }) {
         {/* Article Footer & Action Callout */}
         <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
           <Link
-            href={ROUTES.news}
+            href="/news"
             className="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-[#a47b1e] dark:hover:text-amber-400 transition-colors cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -204,7 +203,7 @@ export function NewsArticleView({ slug }: { slug: string }) {
 
           <div className="flex items-center gap-3">
             <Link
-              href={ROUTES.donate}
+              href="/donate"
               className="px-5 py-2.5 rounded-xl text-sm font-bold text-white bg-linear-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 shadow-md transition-all cursor-pointer inline-flex items-center gap-2"
             >
               <Heart className="w-4 h-4 fill-white/30" />
@@ -224,7 +223,7 @@ export function NewsArticleView({ slug }: { slug: string }) {
               {relatedArticles.map((item) => (
                 <Link
                   key={item.id}
-                  href={newsHref(item.slug)}
+                  href={`/news/${item.slug}`}
                   className="group bg-white dark:bg-[#0c2242] rounded-xl overflow-hidden border border-slate-200/80 dark:border-amber-400/20 shadow-sm hover:shadow-lg transition-all cursor-pointer flex flex-col"
                 >
                   <div className="p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 m-2.5 mb-0 rounded-lg overflow-hidden shadow-sm">

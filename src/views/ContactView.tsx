@@ -1,7 +1,8 @@
 import { MessageCircle } from "lucide-react";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { FoundationLogo } from "@/components/FoundationLogo";
-import { CONTACT_PAGE, FOUNDATION_INFO } from "@/data";
+import { CONTACT_PAGE } from "@/data/contact";
+import { FOUNDATION_INFO } from "@/data/site";
 import { Icon } from "@/lib/icons";
 
 const { contact } = FOUNDATION_INFO;

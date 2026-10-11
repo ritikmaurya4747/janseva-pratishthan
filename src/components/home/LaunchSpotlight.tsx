@@ -1,13 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Calendar } from "lucide-react";
-import { FOUNDATION_EVENTS } from "@/data";
-import { ROUTES } from "@/lib/routes";
 
 /** Server Component — spotlight on the inaugural laptop distribution event. */
 export function LaunchSpotlight() {
-  const launchEvent = FOUNDATION_EVENTS[0];
-
   return (
     <section className="py-20 dark:bg-linear-to-br dark:from-[#0c1f38] dark:via-[#1a070f] dark:to-[#071324] bg-[#fbf9f4] border-y border-transparent hover:border-amber-300/60 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,7 +12,7 @@ export function LaunchSpotlight() {
           <div className="lg:col-span-6 relative rounded-2xl overflow-hidden shadow-xl group p-1 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600">
             <div className="relative w-full h-80 sm:h-96 rounded-xl overflow-hidden">
               <Image
-                src={launchEvent.image}
+                src="https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=1200&q=80"
                 alt="Laptop Distribution Ceremony"
                 width={1200}
                 height={800}
@@ -26,7 +22,7 @@ export function LaunchSpotlight() {
               <div className="absolute inset-0 bg-linear-to-t from-[#061122] via-[#061122]/40 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <span className="inline-block text-sm font-bold uppercase tracking-widest bg-amber-400 text-slate-950 px-2.5 py-1 rounded mb-2 shadow">
-                  {launchEvent.badge}
+                  Historic Milestone
                 </span>
                 <h4 className="font-display text-xl sm:text-2xl font-bold text-white">
                   50 Laptops Distributed to Meritorious Girl Students
@@ -62,7 +58,7 @@ export function LaunchSpotlight() {
 
             <div className="pt-2 flex flex-wrap gap-4">
               <Link
-                href={ROUTES.events}
+                href="/events"
                 className="px-5 py-2.5 rounded-xl font-bold text-sm uppercase tracking-wider dark:bg-amber-400/20 dark:hover:bg-amber-400/30 dark:text-amber-200 bg-amber-100 hover:bg-amber-200 text-amber-900 border border-transparent hover:border-amber-300/60 transition-colors flex items-center gap-2 cursor-pointer"
               >
                 <span>Explore Event Gallery & Future Drives</span>

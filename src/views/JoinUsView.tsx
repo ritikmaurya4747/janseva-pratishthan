@@ -4,7 +4,7 @@ import { useState, type FormEvent } from "react";
 import { Briefcase, CheckCircle2, Sparkles } from "lucide-react";
 import confetti from "canvas-confetti";
 import { FoundationLogo } from "@/components/FoundationLogo";
-import { JOIN_US } from "@/data";
+import { JOIN_US } from "@/data/joinUs";
 import { Icon } from "@/lib/icons";
 
 type TabId = "volunteer" | "csr" | "ambassador";

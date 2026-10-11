@@ -27,18 +27,17 @@ import {
   DONATION_CAUSES,
   DONATION_FAQS,
   DONATION_UPI,
-  FOUNDATION_INFO,
-  LEGAL_DOCS,
   PAYMENT_METHODS,
-} from "@/data";
+} from "@/data/donation";
+import { LEGAL_DOCS } from "@/data/legal";
+import { FOUNDATION_INFO } from "@/data/site";
 import { useLanguage } from "@/context/LanguageContext";
 import { Icon } from "@/lib/icons";
-import { ROUTES } from "@/lib/routes";
 
 /**
  * Client Component for /donate — the whole checkout is interactive.
  * The preselected cause comes from the URL (?cause=education) via useSearchParams,
- * so any page can simply <Link href={donateHref('education')}>.
+ * so any page can simply <Link href="/donate?cause=education">.
  */
 export function DonateView() {
   const { isHindi, t } = useLanguage();
@@ -188,7 +187,7 @@ export function DonateView() {
         {/* Top Breadcrumb / Back Link */}
         <div className="mb-6 flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-3">
           <Link
-            href={ROUTES.home}
+            href="/"
             className="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-[#a47b1e] dark:hover:text-amber-400 transition-colors cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -1205,7 +1204,7 @@ export function DonateView() {
                     <span>Statutory Trust Registration</span>
                   </h4>
                   <Link
-                    href={ROUTES.registration}
+                    href="/registration"
                     className="text-xs text-[#a47b1e] dark:text-amber-400 font-bold hover:underline inline-flex items-center gap-1 cursor-pointer"
                   >
                     <span>View Legal Docs</span>
@@ -1347,7 +1346,7 @@ export function DonateView() {
               </div>
             </div>
             <Link
-              href={ROUTES.contact}
+              href="/contact"
               className="px-4 py-2 rounded-xl text-xs font-bold bg-slate-900 text-white dark:bg-amber-400 dark:text-slate-950 hover:opacity-90 transition-opacity cursor-pointer shrink-0"
             >
               Contact Support

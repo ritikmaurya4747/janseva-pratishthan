@@ -2,13 +2,12 @@
 
 import { useState } from "react";
 import { Check, Share2 } from "lucide-react";
-import { newsHref } from "@/lib/routes";
 
 /** Client island: clipboard + WhatsApp share need browser APIs. */
 export function ShareButtons({ slug, title }: { slug: string; title: string }) {
   const [copied, setCopied] = useState(false);
 
-  const articleUrl = () => `${window.location.origin}${newsHref(slug)}`;
+  const articleUrl = () => `${window.location.origin}/news/${slug}`;
 
   const handleCopy = () => {
     if (!navigator.clipboard) return;

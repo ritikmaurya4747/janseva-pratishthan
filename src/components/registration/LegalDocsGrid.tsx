@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Eye, FileText, ShieldCheck, X } from "lucide-react";
-import { LEGAL_DOCS } from "@/data";
-import type { LegalDocument } from "@/types";
+import { LEGAL_DOCS, type LegalDocument } from "@/data/legal";
 
 /** Client island: certificate cards + the verification modal (scroll lock, Escape to close). */
 export function LegalDocsGrid() {

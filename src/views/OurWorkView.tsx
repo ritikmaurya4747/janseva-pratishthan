@@ -2,8 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Heart } from "lucide-react";
 import { FoundationLogo } from "@/components/FoundationLogo";
 import { PillarsGrid } from "@/components/our-work/PillarsGrid";
-import { SWABHIMAN_STATS } from "@/data";
-import { donateHref, pillarHref } from "@/lib/routes";
+import { SWABHIMAN_STATS } from "@/data/pillars";
 
 /** Server Component for /our-work. Only the filterable grid is a client island. */
 export function OurWorkView() {
@@ -64,14 +63,14 @@ export function OurWorkView() {
             </div>
             <div className="lg:col-span-4 flex flex-col gap-3 justify-center">
               <Link
-                href={pillarHref("women-empowerment")}
+                href="/our-work/women-empowerment"
                 className="w-full max-sm:px-4 max-sm:tracking-wide max-sm:text-center py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_20px_rgba(212,175,55,0.4)] border-none transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>View Full Swabhiman Page</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
-                href={donateHref("women-empowerment")}
+                href="/donate?cause=women-empowerment"
                 className="w-full py-3 rounded-xl font-semibold text-sm tracking-wider dark:text-amber-200 dark:bg-[#0c2242] dark:hover:bg-[#132e57] text-amber-900 bg-amber-100 hover:bg-amber-200 border border-transparent hover:border-amber-300/60 shadow transition-colors flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Heart className="w-3.5 h-3.5 fill-amber-500" />

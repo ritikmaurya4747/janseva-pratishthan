@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { ChevronDown, HelpCircle, Search } from "lucide-react";
-import { FAQS_DATA, FAQ_CATEGORIES } from "@/data";
+import { FAQS_DATA, FAQ_CATEGORIES } from "@/data/faqs";
 
 /** Client island: FAQ search, category filter and accordion state. */
 export function FaqExplorer() {

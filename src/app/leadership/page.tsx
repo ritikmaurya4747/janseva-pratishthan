@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { FOUNDATION_INFO } from "@/data";
+import { FOUNDATION_INFO } from "@/data/site";
 import { LeadershipSection } from "./components/LeadershipSection";
 
 export const metadata: Metadata = {

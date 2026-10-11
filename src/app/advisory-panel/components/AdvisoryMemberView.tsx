@@ -11,13 +11,7 @@ import {
 import { CategoryIcon } from "@/app/advisory-panel/components/CategoryIcon";
 import { FallbackImage } from "@/components/ui/FallbackImage";
 import { T } from "@/components/ui/T";
-import {
-  ADVISORY_CREDENTIALS,
-  ADVISORY_MEMBERS,
-  getAdvisoryCategory,
-  getAdvisoryMember,
-} from "@/data";
-import { ROUTES, advisorHref } from "@/lib/routes";
+import { ADVISORY_CREDENTIALS, ADVISORY_MEMBERS, getAdvisoryCategory, getAdvisoryMember } from "@/data/advisory";
 
 const AdvisoryMemberView = ({ slug }: { slug: string }) => {
   const member = getAdvisoryMember(slug);
@@ -41,14 +35,14 @@ const AdvisoryMemberView = ({ slug }: { slug: string }) => {
             className="flex items-center flex-wrap gap-2 text-xs sm:text-sm text-slate-500 dark:text-slate-400"
           >
             <Link
-              href={ROUTES.home}
+              href="/"
               className="hover:text-amber-600 dark:hover:text-amber-300 transition-colors border-none bg-transparent cursor-pointer p-0"
             >
               <T en={"Home"} hi={"होम"} />
             </Link>
             <ChevronRight className="w-3.5 h-3.5" />
             <Link
-              href={ROUTES.advisory}
+              href="/advisory-panel"
               className="hover:text-amber-600 dark:hover:text-amber-300 transition-colors border-none bg-transparent cursor-pointer p-0"
             >
               <T en={"Advisory Panel"} hi={"सलाहकार समिति"} />
@@ -60,7 +54,7 @@ const AdvisoryMemberView = ({ slug }: { slug: string }) => {
           </nav>
 
           <Link
-            href={ROUTES.advisory}
+            href="/advisory-panel"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider dark:bg-white/10 hover:dark:bg-amber-400/20 dark:text-amber-300 bg-white hover:bg-amber-50 text-amber-900 border border-slate-200 dark:border-white/10 shadow-sm transition-all cursor-pointer w-fit"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -211,7 +205,7 @@ const AdvisoryMemberView = ({ slug }: { slug: string }) => {
               {/* Action Buttons */}
               <div className="pt-6 border-t border-slate-200 dark:border-white/10 flex flex-wrap items-center gap-4">
                 <Link
-                  href={ROUTES.contact}
+                  href="/contact"
                   className="px-6 py-3 max-sm:w-full max-sm:px-4 max-sm:text-center rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider dark:bg-amber-400 dark:text-slate-950 bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-lg hover:shadow-xl transition-all cursor-pointer border-none"
                 >
                   <T
@@ -221,7 +215,7 @@ const AdvisoryMemberView = ({ slug }: { slug: string }) => {
                 </Link>
 
                 <Link
-                  href={ROUTES.donate}
+                  href="/donate"
                   className="px-6 py-3 max-sm:w-full max-sm:px-4 max-sm:text-center rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider dark:bg-white/10 dark:hover:bg-white/20 dark:text-white bg-slate-100 hover:bg-slate-200 text-slate-800 border border-slate-300 dark:border-white/10 shadow transition-all cursor-pointer"
                 >
                   <T
@@ -257,7 +251,7 @@ const AdvisoryMemberView = ({ slug }: { slug: string }) => {
             </div>
 
             <Link
-              href={ROUTES.advisory}
+              href="/advisory-panel"
               className="text-xs sm:text-sm font-bold text-amber-700 dark:text-amber-300 hover:underline inline-flex items-center gap-1 cursor-pointer bg-transparent border-none p-0 font-sans"
             >
               <span>
@@ -271,7 +265,7 @@ const AdvisoryMemberView = ({ slug }: { slug: string }) => {
             {otherAdvisors.slice(0, 4).map((other) => (
               <Link
                 key={other.id}
-                href={advisorHref(other.id)}
+                href={`/advisory-panel/${other.id}`}
                 className="group rounded-2xl dark:bg-[#0c2242] bg-white border border-slate-200 dark:border-white/10 hover:border-amber-400/60 p-4 shadow-md hover:shadow-xl transition-all cursor-pointer flex flex-col justify-between font-sans"
               >
                 <div className="space-y-3">

@@ -3,8 +3,7 @@ import Link from "next/link";
 import { Award, CheckCircle2, Heart } from "lucide-react";
 import { FoundationLogo } from "@/components/FoundationLogo";
 import { LegalDocsGrid } from "@/components/registration/LegalDocsGrid";
-import { LEGAL_80G_BENEFITS, TRANSPARENCY_CHARTER } from "@/data";
-import { ROUTES } from "@/lib/routes";
+import { LEGAL_80G_BENEFITS, TRANSPARENCY_CHARTER } from "@/data/legal";
 
 /** Server Component for /registration. The certificate viewer is a client island. */
 export function RegistrationView() {
@@ -60,7 +59,7 @@ export function RegistrationView() {
 
             <div className="lg:col-span-4 flex flex-col justify-center gap-3">
               <Link
-                href={ROUTES.donate}
+                href="/donate"
                 className="w-full max-sm:px-4 max-sm:tracking-wide max-sm:text-center py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_20px_rgba(212,175,55,0.4)] border-none transition-all flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Heart className="w-4 h-4 fill-slate-950" />

@@ -4,7 +4,7 @@ import { Providers } from "@/components/Providers";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingControls } from "@/components/layout/FloatingControls";
-import { FOUNDATION_INFO } from "@/data";
+import { FOUNDATION_INFO } from "@/data/site";
 
 // TODO: domain change ho to sirf yahan update karo
 const siteUrl = "https://jansevapratishthan.org";

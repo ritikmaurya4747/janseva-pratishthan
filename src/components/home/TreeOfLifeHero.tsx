@@ -4,8 +4,8 @@ import { ArrowRight, CheckCircle2, Heart, ShieldCheck } from "lucide-react";
 import { FoundationLogo } from "@/components/FoundationLogo";
 import { Reveal } from "@/components/ui/Reveal";
 import { TreeOfLife } from "./TreeOfLife";
-import { FOUNDATION_INFO, OFFICIAL_BANNER_FIELDS } from "@/data";
-import { ROUTES, pillarHref } from "@/lib/routes";
+import { OFFICIAL_BANNER_FIELDS } from "@/data/pillars";
+import { FOUNDATION_INFO } from "@/data/site";
 
 /**
  * Server Component: "Small Steps, Big Impact" hero with the Tree of Life.
@@ -145,7 +145,7 @@ export function TreeOfLifeHero() {
             <div className="flex flex-wrap items-center gap-3.5 pt-2">
               <Link
                 id="hero-explore-work-btn"
-                href={ROUTES.ourWork}
+                href="/our-work"
                 className="px-6 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_25px_rgba(212,175,55,0.4)] border-none transition-all flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
               >
                 <span>Explore 10 Focus Areas</span>
@@ -154,7 +154,7 @@ export function TreeOfLifeHero() {
 
               <Link
                 id="hero-donate-btn"
-                href={ROUTES.donate}
+                href="/donate"
                 className="px-5 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider dark:text-amber-200 dark:bg-linear-to-r dark:from-[#0c213f] dark:to-[#250810] dark:hover:from-[#132d54] dark:hover:to-[#330b16] text-amber-900 bg-amber-100 hover:bg-amber-200 border border-transparent hover:border-amber-300/60 shadow-sm transition-all flex items-center gap-2 cursor-pointer"
               >
                 <Heart className="w-4 h-4 fill-amber-400/40 text-amber-600 dark:text-amber-300" />
@@ -163,7 +163,7 @@ export function TreeOfLifeHero() {
 
               <Link
                 id="hero-join-btn"
-                href={ROUTES.joinUs}
+                href="/volunteer"
                 className="px-4 py-3.5 rounded-xl font-semibold text-sm tracking-wider dark:text-slate-300 dark:hover:text-amber-200 text-slate-700 hover:text-amber-800 transition-colors cursor-pointer"
               >
                 Join as Volunteer →
@@ -228,7 +228,7 @@ export function TreeOfLifeHero() {
                         <span className="text-amber-400/60 font-normal">|</span>
                       )}
                       <Link
-                        href={pillarHref(field.id)}
+                        href={`/our-work/${field.id}`}
                         className="hover:text-white transition-colors cursor-pointer border-none bg-transparent"
                       >
                         {field.label}
@@ -239,7 +239,7 @@ export function TreeOfLifeHero() {
               </div>
 
               <Link
-                href={ROUTES.ourWork}
+                href="/our-work"
                 className="shrink-0 px-4 py-2 rounded-xl text-sm font-bold uppercase tracking-wider bg-linear-to-r from-amber-300 to-yellow-400 text-stone-950 hover:from-amber-200 hover:to-yellow-200 shadow-md border-none transition-all cursor-pointer flex items-center gap-1.5"
               >
                 <span>Explore Work</span>

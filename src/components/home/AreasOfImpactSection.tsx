@@ -2,9 +2,8 @@ import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { RevealLink } from "@/components/ui/Reveal";
 import { T } from "@/components/ui/T";
-import { ACTION_CARDS, IMPACT_PILLARS } from "@/data";
+import { ACTION_CARDS, IMPACT_PILLARS } from "@/data/home";
 import { Icon } from "@/lib/icons";
-import { pillarHref } from "@/lib/routes";
 
 /** Server Component — photo grid + CTA cards are plain Links; only the reveal animation is client-side. */
 const AreasOfImpactSection = () => {
@@ -32,7 +31,7 @@ const AreasOfImpactSection = () => {
           {IMPACT_PILLARS.map((pillar, idx) => (
             <RevealLink
               key={pillar.id}
-              href={pillarHref(pillar.id)}
+              href={`/our-work/${pillar.id}`}
               delay={idx * 0.08}
               className={`group relative ${pillar.colSpan} ${pillar.heightClass} rounded-2xl sm:rounded-3xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300 p-1 bg-linear-to-tr from-amber-400/90 via-yellow-200 to-amber-600/90`}
             >

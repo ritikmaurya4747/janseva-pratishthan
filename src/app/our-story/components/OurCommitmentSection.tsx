@@ -1,7 +1,6 @@
 import { ShieldCheck, ArrowRight, FileCheck2 } from "lucide-react";
 import Link from "next/link";
 import { Icon } from "@/lib/icons";
-import { ROUTES } from "@/lib/routes";
 import { STORY_COMMITMENTS } from "@/data/ourStory";
 
 export function OurCommitmentSection() {
@@ -68,7 +67,7 @@ export function OurCommitmentSection() {
                 Statutorily Guaranteed
               </span>
               <Link
-                href={ROUTES.registration}
+                href="/registration"
                 className="inline-flex items-center gap-1 font-bold text-amber-700 dark:text-amber-300 hover:text-amber-600 dark:hover:text-amber-200 transition-colors"
               >
                 View Audits & Certifications <ArrowRight className="w-3.5 h-3.5" />

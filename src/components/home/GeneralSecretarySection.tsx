@@ -17,9 +17,8 @@ import {
   SECRETARY_PHOTO_KEY,
   useSecretaryPhoto,
 } from "@/components/ui/SecretaryPhoto";
-import { FOUNDATION_INFO } from "@/data";
+import { FOUNDATION_INFO } from "@/data/site";
 import { Icon } from "@/lib/icons";
-import { ROUTES } from "@/lib/routes";
 
 const { generalSecretary: secretary, founder, contact } = FOUNDATION_INFO;
 
@@ -134,7 +133,7 @@ export function GeneralSecretarySection() {
 
             <div className="pt-2 flex flex-wrap gap-3">
               <Link
-                href={ROUTES.joinUs}
+                href="/volunteer"
                 className="px-6 py-3 max-sm:w-full max-sm:px-4 max-sm:text-center max-sm:tracking-wider rounded-xl font-bold text-sm uppercase tracking-[0.14em] text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:-translate-y-0.5 border-none"
               >
                 Connect With Secretary&apos;s Office

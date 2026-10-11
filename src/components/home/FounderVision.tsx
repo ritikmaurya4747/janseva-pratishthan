@@ -1,5 +1,4 @@
-import { FOUNDATION_INFO } from "@/data";
-import { ROUTES } from "@/lib/routes";
+import { FOUNDATION_INFO } from "@/data/site";
 import Image from "next/image";
 import Link from "next/link";
 import FoundationLogo from "../FoundationLogo";
@@ -39,7 +38,7 @@ export function FounderVision() {
 
           <div className="pt-4 flex justify-center gap-4">
             <Link
-              href={ROUTES.ourStory}
+              href="/our-story"
               className="px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 text-stone-950 hover:from-amber-200 hover:to-yellow-100 transition-all shadow-md border-none cursor-pointer"
             >
               Read Shabbir&apos;s Story & The Foundation Genesis

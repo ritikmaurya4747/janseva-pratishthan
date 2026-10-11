@@ -2,9 +2,8 @@ import Link from "next/link";
 import { ArrowRight, Building2, ChevronRight } from "lucide-react";
 import { FoundationLogo } from "@/components/FoundationLogo";
 import { T } from "@/components/ui/T";
-import { ROUTES } from "@/lib/routes";
 import { AdvisoryPanelSection } from "./AdvisoryPanelSection";
-import { ADVISORY_STATS } from "@/data";
+import { ADVISORY_STATS } from "@/data/advisory";
 
 export const AdvisoryPanelView = () => {
   return (
@@ -19,14 +18,14 @@ export const AdvisoryPanelView = () => {
           className="flex items-center gap-2 text-xs sm:text-sm text-slate-500 dark:text-slate-400"
         >
           <Link
-            href={ROUTES.home}
+            href="/"
             className="hover:text-amber-600 dark:hover:text-amber-300 transition-colors border-none bg-transparent cursor-pointer p-0"
           >
             <T en={"Home"} hi={"होम"} />
           </Link>
           <ChevronRight className="w-3.5 h-3.5" />
           <Link
-            href={ROUTES.ourStory}
+            href="/our-story"
             className="hover:text-amber-600 dark:hover:text-amber-300 transition-colors border-none bg-transparent cursor-pointer p-0"
           >
             <T en={"Our Story & Governance"} hi={"हमारी कहानी एवं नेतृत्व"} />
@@ -120,7 +119,7 @@ export const AdvisoryPanelView = () => {
 
           <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
             <Link
-              href={ROUTES.contact}
+              href="/contact"
               className="px-6 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider dark:bg-amber-400 dark:text-stone-950 bg-amber-400 hover:bg-amber-300 text-stone-950 shadow-lg hover:shadow-xl transition-all cursor-pointer flex items-center justify-center gap-2 border-none"
             >
               <span>
@@ -129,7 +128,7 @@ export const AdvisoryPanelView = () => {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href={ROUTES.donate}
+              href="/donate"
               className="px-6 py-3 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wider dark:bg-white/10 dark:hover:bg-white/20 dark:text-white bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 dark:border-white/10 shadow transition-all cursor-pointer flex items-center justify-center gap-2"
             >
               <span>

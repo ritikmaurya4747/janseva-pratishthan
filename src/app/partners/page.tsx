@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { FOUNDATION_INFO } from "@/data";
 import { PARTNERS } from "@/data/partner";
+import { FOUNDATION_INFO } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Our Partners",

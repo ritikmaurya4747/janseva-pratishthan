@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from "react";
 import confetti from "canvas-confetti";
 import { CheckCircle2, Send } from "lucide-react";
-import { CONTACT_PAGE } from "@/data";
+import { CONTACT_PAGE } from "@/data/contact";
 
 /** Client island: contact form state + confetti on submit. */
 export function ContactForm() {

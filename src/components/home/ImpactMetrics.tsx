@@ -1,4 +1,4 @@
-import { FOUNDATION_INFO } from "@/data";
+import { FOUNDATION_INFO } from "@/data/site";
 
 /** Server Component — impact counters from site.json → metrics. */
 export function ImpactMetrics() {

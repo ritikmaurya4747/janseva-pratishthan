@@ -9,9 +9,8 @@ import {
   Users,
 } from "lucide-react";
 import { FoundationLogo } from "@/components/FoundationLogo";
-import { FOCUS_AREAS, STATUTORY_POINTS, getFocusArea } from "@/data";
+import { FOCUS_AREAS, STATUTORY_POINTS, getFocusArea } from "@/data/pillars";
 import { Icon } from "@/lib/icons";
-import { ROUTES, donateHref, pillarHref } from "@/lib/routes";
 
 /**
  * Server Component for /our-work/[slug].
@@ -31,14 +30,14 @@ export function PillarDetailView({ slug }: { slug: string }) {
         <div className="flex flex-wrap items-center justify-between gap-4 border-none pb-2">
           <div className="flex items-center gap-2 text-sm dark:text-slate-400 text-slate-500">
             <Link
-              href={ROUTES.home}
+              href="/"
               className="dark:hover:text-amber-200 hover:text-amber-800 transition-colors cursor-pointer border-none"
             >
               Home
             </Link>
             <span>/</span>
             <Link
-              href={ROUTES.ourWork}
+              href="/our-work"
               className="dark:hover:text-amber-200 hover:text-amber-800 transition-colors cursor-pointer border-none"
             >
               Our Work
@@ -50,7 +49,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
           </div>
 
           <Link
-            href={ROUTES.ourWork}
+            href="/our-work"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-xl dark:bg-[#0c2242] dark:hover:bg-[#153461] dark:text-amber-200 bg-amber-100 hover:bg-amber-200 text-amber-900 border border-transparent hover:border-amber-300/60 text-sm font-semibold shadow-sm transition-colors cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -108,14 +107,14 @@ export function PillarDetailView({ slug }: { slug: string }) {
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <Link
-              href={donateHref(pillar.id)}
+              href={`/donate?cause=${pillar.id}`}
               className="px-7 py-3.5 max-sm:w-full max-sm:justify-center max-sm:px-4 max-sm:text-center rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_25px_rgba(212,175,55,0.45)] border-none transition-all flex items-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
             >
               <Heart className="w-4 h-4 fill-slate-950" />
               <span>Sponsor / Support this Initiative (80G)</span>
             </Link>
             <Link
-              href={ROUTES.joinUs}
+              href="/volunteer"
               className="px-6 py-3.5 max-sm:w-full max-sm:justify-center max-sm:px-4 max-sm:text-center rounded-xl font-semibold text-sm tracking-wider dark:text-amber-200 dark:bg-[#08182e] dark:hover:bg-[#122e59] text-slate-800 bg-slate-100 hover:bg-slate-200 border border-slate-200 shadow-sm transition-colors flex items-center gap-2 cursor-pointer"
             >
               <Users className="w-4 h-4 dark:text-amber-300 text-amber-800" />
@@ -182,7 +181,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
                 ))}
               </ul>
               <Link
-                href={ROUTES.registration}
+                href="/registration"
                 className="block w-full py-2.5 rounded-xl dark:bg-amber-400/20 dark:hover:bg-amber-400/30 dark:text-amber-200 bg-amber-100 hover:bg-amber-200 text-amber-900 border border-transparent hover:border-amber-300/60 text-sm font-semibold transition-colors cursor-pointer text-center"
               >
                 View Trust Certificates
@@ -200,7 +199,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
                 across India.
               </p>
               <Link
-                href={donateHref(pillar.id)}
+                href={`/donate?cause=${pillar.id}`}
                 className="block w-full max-sm:px-4 max-sm:tracking-wide max-sm:text-center py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-slate-950 bg-linear-to-r from-amber-300 to-yellow-400 shadow-md border-none cursor-pointer"
               >
                 Contribute Today
@@ -221,7 +220,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
               </h3>
             </div>
             <Link
-              href={ROUTES.ourWork}
+              href="/our-work"
               className="text-sm dark:text-amber-300 dark:hover:text-amber-100 text-amber-800 hover:text-amber-950 font-semibold cursor-pointer border-none"
             >
               View All 10 →
@@ -234,7 +233,7 @@ export function PillarDetailView({ slug }: { slug: string }) {
               .map((other) => (
                 <Link
                   key={other.id}
-                  href={pillarHref(other.id)}
+                  href={`/our-work/${other.id}`}
                   className="text-left p-5 rounded-2xl dark:bg-[#08182e] dark:hover:bg-[#122e57] bg-white hover:bg-amber-50 border border-slate-200/80 shadow-sm transition-all space-y-2 group cursor-pointer"
                 >
                   <div className="flex items-center justify-between">

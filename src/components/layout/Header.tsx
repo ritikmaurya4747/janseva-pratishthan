@@ -2,9 +2,8 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { useTheme } from "@/context/ThemeContext";
-import { MAIN_NAV, WORK_MENU } from "@/data";
+import { MAIN_NAV, WORK_MENU } from "@/data/navigation";
 import { Icon } from "@/lib/icons";
-import { ROUTES, isActivePath, pillarHref } from "@/lib/routes";
 import {
   ArrowRight,
   ChevronDown,
@@ -29,6 +28,12 @@ const desktopLinkClass = (active: boolean) =>
 const ActiveUnderline = () => (
   <span className="absolute bottom-0 left-2 right-2 h-0.5 bg-linear-to-r from-amber-400 via-yellow-300 to-amber-400 rounded-full" />
 );
+
+/** Highlights a nav item for its own page and all nested pages. */
+const isActivePath = (pathname: string, href: string) =>
+  href === "/"
+    ? pathname === "/"
+    : pathname === href || pathname.startsWith(`${href}/`);
 
 export function Header() {
   const pathname = usePathname();
@@ -73,7 +78,7 @@ export function Header() {
         {/* Brand Logo & Official Crest */}
         <Link
           id="brand-logo-btn"
-          href={ROUTES.home}
+          href="/"
           className="flex items-center gap-2.5 xl:gap-3.5 group text-left cursor-pointer focus:outline-none border-none shrink-0"
         >
           <FoundationLogo
@@ -154,7 +159,7 @@ export function Header() {
                           </h3>
                         </div>
                         <Link
-                          href={ROUTES.ourWork}
+                          href="/our-work"
                           className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl dark:bg-amber-400/20 dark:hover:bg-amber-400/30 dark:text-amber-200 bg-amber-100 hover:bg-amber-200 text-amber-900 border-none text-sm font-semibold transition-colors cursor-pointer"
                         >
                           <span>
@@ -179,7 +184,7 @@ export function Header() {
                               {section.items.map((subItem) => (
                                 <Link
                                   key={subItem.id}
-                                  href={pillarHref(subItem.id)}
+                                  href={`/our-work/${subItem.id}`}
                                   className="w-full text-left p-2.5 rounded-xl transition-all flex items-start gap-3 group cursor-pointer border-none shadow-sm dark:bg-[#08182e]/80 dark:hover:bg-[#122e57] bg-slate-50 hover:bg-amber-50/70 border border-slate-200/60 hover:border-amber-300/60"
                                 >
                                   <div className="p-1.5 rounded-lg dark:bg-amber-400/15 dark:text-amber-300 dark:group-hover:bg-amber-400 dark:group-hover:text-slate-950 bg-amber-100 text-amber-800 group-hover:bg-amber-500 group-hover:text-white transition-colors shrink-0 mt-0.5">
@@ -222,7 +227,7 @@ export function Header() {
                           </span>
                         </div>
                         <Link
-                          href={pillarHref(WORK_MENU.banner.pillarId)}
+                          href={`/our-work/${WORK_MENU.banner.pillarId}`}
                           className="dark:text-amber-300 dark:hover:text-amber-100 text-amber-800 hover:text-amber-950 font-semibold inline-flex items-center gap-1 cursor-pointer border-none"
                         >
                           <span>{WORK_MENU.banner.ctaLabel}</span>
@@ -255,7 +260,7 @@ export function Header() {
 
           <Link
             id="header-donate-btn"
-            href={ROUTES.donate}
+            href="/donate"
             className="relative inline-flex items-center gap-1.5 xl:gap-2 px-3.5 xl:px-5 py-2 rounded-full text-xs xl:text-sm font-bold uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-amber-200 to-yellow-400 hover:from-amber-200 hover:to-yellow-200 shadow-md hover:shadow-lg border-none transition-all cursor-pointer transform hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap shrink-0 no-underline"
           >
             <Heart className="w-3.5 h-3.5 fill-stone-950 text-stone-950" />
@@ -370,7 +375,7 @@ export function Header() {
                           {section.items.map((subItem) => (
                             <Link
                               key={subItem.id}
-                              href={pillarHref(subItem.id)}
+                              href={`/our-work/${subItem.id}`}
                               onClick={() => setMobileMenuOpen(false)}
                               className="w-full text-left px-2.5 py-1.5 rounded-lg text-sm dark:text-slate-200 dark:hover:text-amber-200 dark:hover:bg-white/5 text-slate-700 hover:text-amber-800 hover:bg-white transition-colors flex items-center justify-between cursor-pointer border-none"
                             >
@@ -392,7 +397,7 @@ export function Header() {
           <div className="pt-4 border-none flex flex-col gap-2.5">
             <Link
               id="mobile-drawer-donate-btn"
-              href={ROUTES.donate}
+              href="/donate"
               onClick={() => setMobileMenuOpen(false)}
               className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-sm sm:text-base text-center font-bold uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 shadow-md border-none cursor-pointer no-underline"
             >

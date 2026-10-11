@@ -3,9 +3,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { FOCUS_AREAS, PILLAR_CATEGORIES } from "@/data";
+import { FOCUS_AREAS, PILLAR_CATEGORIES } from "@/data/pillars";
 import { Icon } from "@/lib/icons";
-import { pillarHref } from "@/lib/routes";
 
 /** Client island: category filter state for the /our-work grid. Cards are real <Link>s. */
 export function PillarsGrid() {
@@ -41,7 +40,7 @@ export function PillarsGrid() {
             <Link
               key={cause.id}
               id={`cause-card-${cause.id}`}
-              href={pillarHref(cause.id)}
+              href={`/our-work/${cause.id}`}
               className="group rounded-2xl p-6 transition-all duration-300 flex flex-col justify-between border border-slate-200/80 hover:border-amber-300/60 shadow-md cursor-pointer dark:bg-linear-to-b dark:from-[#0c2242]/90 dark:to-[#1b080f]/90 dark:hover:from-[#13305a] dark:hover:to-[#280c16] bg-white hover:bg-amber-50/40 hover:-translate-y-1 hover:shadow-xl"
             >
               <div>

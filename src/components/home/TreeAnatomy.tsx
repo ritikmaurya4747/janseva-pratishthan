@@ -1,4 +1,4 @@
-import { TREE_ANATOMY } from "@/data";
+import { TREE_ANATOMY } from "@/data/home";
 import { Icon } from "@/lib/icons";
 
 /** Server Component — roots / trunk / branches cards from home.json → treeAnatomy. */

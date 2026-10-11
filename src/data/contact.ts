@@ -1,0 +1,54 @@
+import type { ContactInfo } from "./site";
+
+export interface ContactDetailRow {
+  icon: string;
+  label: string;
+  /** Keys of FOUNDATION_INFO.contact shown in this row */
+  fields: (keyof ContactInfo)[];
+  mono?: boolean;
+}
+
+export interface ContactPageContent {
+  subjects: string[];
+  whatsappMessage: string;
+  fieldHubs: string;
+  detailRows: ContactDetailRow[];
+}
+
+export const CONTACT_PAGE: ContactPageContent = {
+  subjects: [
+    "General Inquiry",
+    "Laptop / Digital Education Request",
+    "Project Swabhiman Collaboration",
+    "CSR Partnership Discussion",
+    "Donation & 80G Tax Exemption Receipt",
+    "Media & Press Interview Request",
+  ],
+  whatsappMessage:
+    "Namaste Janseva Pratishthan Foundation! I have an inquiry regarding your programs.",
+  fieldHubs:
+    "Active field intervention chapters across Central Delhi, South Delhi, Yamuna Bank, Noida, Greater Noida, and rural outreach clusters in Uttar Pradesh and Haryana.",
+  detailRows: [
+    {
+      icon: "MapPin",
+      label: "Registered Trust Office",
+      fields: ["address"],
+    },
+    {
+      icon: "Mail",
+      label: "Official Inquiries",
+      fields: ["email", "supportEmail"],
+    },
+    {
+      icon: "Phone",
+      label: "Helpline & Desk",
+      fields: ["phone", "helpline"],
+      mono: true,
+    },
+    {
+      icon: "Clock",
+      label: "Working Hours",
+      fields: ["hours"],
+    },
+  ],
+};

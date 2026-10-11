@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Heart, Users } from "lucide-react";
-import { ROUTES } from "@/lib/routes";
 
 export function HomeCta() {
   return (
@@ -16,14 +15,14 @@ export function HomeCta() {
         </p>
         <div className="flex flex-wrap justify-center gap-4 pt-2">
           <Link
-            href={ROUTES.donate}
+            href="/donate"
             className="px-7 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 shadow-[0_0_20px_rgba(212,175,55,0.4)] border-none transition-all flex items-center gap-2 cursor-pointer"
           >
             <Heart className="w-4 h-4 fill-stone-950" />
             <span>Make a Contribution</span>
           </Link>
           <Link
-            href={ROUTES.joinUs}
+            href="/volunteer"
             className="px-7 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider dark:text-amber-200 dark:bg-linear-to-r dark:from-[#0c2242] dark:to-[#240810] dark:hover:from-[#132d54] dark:hover:to-[#330b16] text-amber-900 bg-amber-100 hover:bg-amber-200 border border-transparent hover:border-amber-300/60 transition-all flex items-center gap-2 cursor-pointer"
           >
             <Users className="w-4 h-4 dark:text-amber-300 text-amber-800" />

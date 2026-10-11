@@ -213,7 +213,7 @@ export const ADVISORY_CHARTER: AdvisoryCharter = {
 // ============================================================
 // CATEGORIES
 // ============================================================
-export const ADVISOR_CATEGORIES: AdvisorCategory[] = [
+export const ADVISORY_CATEGORIES: AdvisorCategory[] = [
   {
     id: "all",
     label: "All Advisors",
@@ -278,7 +278,7 @@ export const ADVISOR_CATEGORIES: AdvisorCategory[] = [
 // ============================================================
 // HIGHLIGHTS
 // ============================================================
-export const ADVISOR_HIGHLIGHTS: AdvisorHighlight[] = [
+export const ADVISORY_HIGHLIGHTS: AdvisorHighlight[] = [
   {
     label: "100% Honorary & Pro-Bono",
     hindiLabel: "100% मानद एवं गैर-लाभकारी",
@@ -299,7 +299,7 @@ export const ADVISOR_HIGHLIGHTS: AdvisorHighlight[] = [
 // ============================================================
 // STATS
 // ============================================================
-export const ADVISOR_STATS: AdvisorStat[] = [
+export const ADVISORY_STATS: AdvisorStat[] = [
   {
     value: "8+",
     label: "Senior Advisors",
@@ -325,7 +325,7 @@ export const ADVISOR_STATS: AdvisorStat[] = [
 // ============================================================
 // CREDENTIALS
 // ============================================================
-export const ADVISOR_CREDENTIALS: AdvisorCredential[] = [
+export const ADVISORY_CREDENTIALS: AdvisorCredential[] = [
   {
     label: "Status",
     hindiLabel: "भूमिका",
@@ -348,3 +348,8 @@ export const ADVISOR_CREDENTIALS: AdvisorCredential[] = [
     valueClass: "text-amber-700 dark:text-amber-300"
   }
 ];
+export const getAdvisoryMember = (id: string) =>
+  ADVISORY_MEMBERS.find((member) => member.id === id);
+
+export const getAdvisoryCategory = (id: string) =>
+  ADVISORY_CATEGORIES.find((category) => category.id === id);

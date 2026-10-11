@@ -1,5 +1,5 @@
 import { Reveal } from "@/components/ui/Reveal";
-import { VISION_MISSION } from "@/data";
+import { VISION_MISSION } from "@/data/home";
 import { Icon } from "@/lib/icons";
 
 /** Server Component — both cards are rendered from home.json → visionMission. */

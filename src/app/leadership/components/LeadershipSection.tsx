@@ -1,9 +1,8 @@
 import { Reveal } from "@/components/ui/Reveal";
-import { ROUTES } from "@/lib/routes";
 import Image from "next/image";
 import Link from "next/link";
 import { LEADERSHIP, type LeadershipMember } from "@/data/leadership";
-import { FOUNDATION_INFO } from "@/data";
+import { FOUNDATION_INFO } from "@/data/site";
 
 /**
  * Wraps any words listed in `highlightWords` with the same amber highlight
@@ -95,7 +94,7 @@ export function LeadershipCard({
 
             <div className="pt-2">
               <Link
-                href={member.ctaHref ?? ROUTES.ourStory}
+                href={member.ctaHref}
                 className="inline-block px-7 py-3 max-sm:w-full max-sm:px-4 max-sm:text-center max-sm:tracking-wider rounded-xl font-bold text-sm uppercase tracking-[0.15em] text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400 hover:from-amber-200 hover:to-yellow-100 transition-all cursor-pointer shadow-[0_4px_20px_rgba(212,175,55,0.25)] hover:shadow-[0_4px_25px_rgba(212,175,55,0.4)] hover:-translate-y-0.5 border-none"
               >
                 {member.ctaLabel}

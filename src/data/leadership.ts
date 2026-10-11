@@ -56,7 +56,7 @@ export const LEADERSHIP: LeadershipMember[] = [
     highlightWords: [...CORE_PILLARS],
     photo: "/anurag.png",
     ctaLabel: "CONNECT WITH VP'S OFFICE",
-    ctaHref: "/join-us",
+    ctaHref: "/volunteer",
   },
 
   {
@@ -71,7 +71,7 @@ export const LEADERSHIP: LeadershipMember[] = [
     highlightWords: [...CORE_PILLARS, "integrity", "auditability"],
     photo: "/deepakparki.png",
     ctaLabel: "CONNECT WITH SECRETARY'S OFFICE",
-    ctaHref: "/join-us",
+    ctaHref: "/volunteer",
   },
 
   {
@@ -85,6 +85,6 @@ export const LEADERSHIP: LeadershipMember[] = [
     highlightWords: [...CORE_PILLARS, "independent audits", "transparency"],
     photo: "/Shazia-Mushtaq.png",
     ctaLabel: "CONNECT WITH TREASURER'S OFFICE",
-    ctaHref: "/join-us",
+    ctaHref: "/volunteer",
   },
 ];

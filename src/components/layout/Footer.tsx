@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Mail, MapPin, Phone, ShieldCheck } from "lucide-react";
 import { FoundationLogo } from "@/components/FoundationLogo";
 import { NewsletterForm } from "./NewsletterForm";
-import { FOOTER_LINKS, FOUNDATION_INFO } from "@/data";
-import { pillarHref } from "@/lib/routes";
+import { FOOTER_LINKS } from "@/data/navigation";
+import { FOUNDATION_INFO } from "@/data/site";
 
 const linkClass =
   "inline-block dark:text-slate-300 text-slate-700 dark:hover:text-amber-200 hover:text-amber-800 transition-colors cursor-pointer text-left";

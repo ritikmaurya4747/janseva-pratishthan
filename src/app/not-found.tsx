@@ -1,4 +1,3 @@
-import { ROUTES } from "@/lib/routes";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,13 +22,13 @@ export default function NotFound() {
       </p>
       <div className="flex flex-wrap justify-center gap-3">
         <Link
-          href={ROUTES.home}
+          href="/"
           className="px-6 py-3 rounded-xl font-bold text-sm uppercase tracking-wider text-stone-950 bg-linear-to-r from-amber-300 via-yellow-200 to-amber-400"
         >
           Go to Home
         </Link>
         <Link
-          href={ROUTES.ourWork}
+          href="/our-work"
           className="px-6 py-3 rounded-xl font-bold text-sm uppercase tracking-wider dark:text-amber-200 text-amber-900 bg-amber-100 dark:bg-amber-400/20"
         >
           Explore Our Work

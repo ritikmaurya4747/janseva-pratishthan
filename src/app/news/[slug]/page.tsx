@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import { NewsArticleView } from "@/views/NewsArticleView";
-import { NEWS_ARTICLES, getNewsArticleBySlug } from "@/data";
-import { newsHref } from "@/lib/routes";
+import { NEWS_ARTICLES, getNewsArticleBySlug } from "@/data/news";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -33,6 +32,6 @@ export default async function NewsArticlePage({ params }: Props) {
   if (!article) notFound();
   // Old/short/partial slugs (e.g. the article id) → canonical URL
   if (article.slug !== decodeURIComponent(slug))
-    permanentRedirect(newsHref(article.slug));
+    permanentRedirect(`/news/${article.slug}`);
   return <NewsArticleView slug={article.slug} />;
 }

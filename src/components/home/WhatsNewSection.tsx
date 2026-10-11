@@ -2,8 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { RevealLink } from "@/components/ui/Reveal";
-import { NEWS_ARTICLES } from "@/data";
-import { ROUTES, newsHref } from "@/lib/routes";
+import { NEWS_ARTICLES } from "@/data/news";
 
 /** Server Component — the first three articles from news.json. */
 export function WhatsNewSection() {
@@ -20,7 +19,7 @@ export function WhatsNewSection() {
             What&apos;s New
           </h2>
           <Link
-            href={ROUTES.news}
+            href="/news"
             className="group inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-[#a47b1e] dark:text-amber-400 hover:text-[#78570f] dark:hover:text-amber-300 transition-colors cursor-pointer"
           >
             <span>View All News</span>
@@ -32,7 +31,7 @@ export function WhatsNewSection() {
           {displayArticles.map((item) => (
             <RevealLink
               key={item.id}
-              href={newsHref(item.slug)}
+              href={`/news/${item.slug}`}
               margin="-50px"
               className="group flex flex-col bg-white dark:bg-[#0c2242] rounded-2xl overflow-hidden border border-slate-200/90 dark:border-amber-400/20 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             >

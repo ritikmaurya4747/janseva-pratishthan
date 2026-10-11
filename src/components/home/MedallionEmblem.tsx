@@ -1,4 +1,4 @@
-import type { PillarIconType } from "@/types";
+import { type PillarIconType } from "@/data/home";
 
 /**
  * Gold medallion artwork for each focus pillar.

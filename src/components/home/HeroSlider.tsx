@@ -4,8 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { HERO_SLIDES } from "@/data";
-import { ROUTES, pillarHref } from "@/lib/routes";
+import { HERO_SLIDES } from "@/data/home";
 
 export function HeroSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -98,8 +97,8 @@ export function HeroSlider() {
                 id="hero-slider-story-btn"
                 href={
                   currentSlide.causeId
-                    ? pillarHref(currentSlide.causeId)
-                    : ROUTES.ourWork
+                    ? `/our-work/${currentSlide.causeId}`
+                    : "/our-work"
                 }
                 className="px-6 sm:px-7 py-3 rounded-lg font-bold text-sm tracking-wide text-white bg-brand-maroon-crimson hover:bg-[#a31422] active:scale-95 border border-brand-gold/30 hover:border-brand-gold-bright/60 shadow-[0_4px_18px_rgba(135,16,28,0.5)] transition-all duration-200 cursor-pointer"
               >
@@ -108,7 +107,7 @@ export function HeroSlider() {
 
               <Link
                 id="hero-slider-donate-btn"
-                href={ROUTES.donate}
+                href="/donate"
                 className="px-6 sm:px-7 py-3 rounded-lg font-bold text-sm tracking-wide text-stone-950 bg-brand-gold hover:bg-[#e2ad3b] active:scale-95 border border-transparent hover:border-brand-gold-bright shadow-[0_4px_20px_rgba(212,175,55,0.55)] transition-all duration-200 cursor-pointer"
               >
                 {currentSlide.primaryBtnText}
