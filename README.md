@@ -1,5 +1,6 @@
 # Janseva Pratishthan Foundation — Next.js 16 (App Router)
 
+
 Vite wala concept (ek `navigation.ts` resolver + 85 duplicate page folders + props drilling) hata ke
 project ab pure Next.js conventions par hai. UI / Tailwind classes wahi hain.
 
